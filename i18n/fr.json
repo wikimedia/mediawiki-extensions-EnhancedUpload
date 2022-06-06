@@ -5,7 +5,7 @@
 		]
 	},
 	"enhancedupload": "Téléversement amélioré",
-	"enhancedupload-desc": "Fournit une page spéciale avec l’option pour téléverser un ou plusieurs fichiers vers le wiki",
+	"enhancedupload-desc": "Fournit une page spéciale avec l’option pour téléverser un ou plusieurs fichiers vers le wiki local.",
 	"enhancedupload-text": "Téléverser des fichiers",
 	"enhancedupload-details-header-label": "Détails",
 	"enhancedupload-details-namespace-label": "Espace de noms",
