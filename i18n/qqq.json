@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mschlindwein"
+			"Mschlindwein",
+			"Verdy p"
 		]
 	},
 	"enhancedupload": "Special page name for [[Special:EnhancedUpload]] special page.\n{{Identical|Enhanced Upload}}",
 	"enhancedupload-desc": "{{desc|name=EnhancedUpload}}",
 	"enhancedupload-text": "Text label for entry in global action with link to special page",
 	"enhancedupload-details-header-label": "Label of section header for details",
-	"enhancedupload-details-namespace-label": "Label for namespace selection",
+	"enhancedupload-details-namespace-label": "Label for namespace selection\n{{Identical|Namespace}}",
 	"enhancedupload-details-categories-label": "Label for categories selection",
 	"enhancedupload-details-description-label": "Label for description textfield",
 	"enhancedupload-upload-button-label": "Label for button upload",
