@@ -62,5 +62,6 @@
 	"enhancedupload-ve-attachmentinspector-grid-version": "Hide version",
 	"enhancedupload-ve-attachmentinspector-grid-editor": "Hide editor",
 	"enhancedupload-ve-attachmentinspector-grid-size": "Show size",
-	"enhancedupload-ve-attachmentinspector-grid-categories": "Show categories"
+	"enhancedupload-ve-attachmentinspector-grid-categories": "Show categories",
+	"enhancedupload-attachments-tag-grid-details-title": "Details"
 }

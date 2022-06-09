@@ -38,7 +38,7 @@
 	height: auto;
 }
 
-.attachments-filelist .oojsplus-data-gridWidget-table .oojsplus-data-gridWidget-header td.oojsplus-data-gridWidget-cell {
+.attachments-filelist .oojsplus-data-gridWidget-table .oojsplus-data-gridWidget-header th.oojsplus-data-gridWidget-cell {
 	border-bottom: 1px solid #a5a5a5;
 }
 
@@ -81,12 +81,6 @@
 
 .attachments-add-dialog .mw-widget-titleSearchWidget {
 	position: relative;
-	min-height: 3em;
-}
-
-.attachments-add-dialog .oo-ui-searchWidget-query {
-	border-bottom: unset;
-	box-shadow: none;
 }
 
 .attachments-filelist .attachments-loader {
