@@ -1,14 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mschlindwein"
+			"Mschlindwein",
+			"Ajeje Brazorf",
+			"Verdy p"
 		]
 	},
 	"enhancedupload": "Special page name for [[Special:EnhancedUpload]] special page.\n{{Identical|Enhanced Upload}}",
 	"enhancedupload-desc": "{{desc|name=EnhancedUpload}}",
 	"enhancedupload-text": "Text label for entry in global action with link to special page",
 	"enhancedupload-details-header-label": "Label of section header for details",
-	"enhancedupload-details-namespace-label": "Label for namespace selection",
+	"enhancedupload-details-namespace-label": "Label for namespace selection\n{{Identical|Namespace}}",
 	"enhancedupload-details-categories-label": "Label for categories selection",
 	"enhancedupload-details-description-label": "Label for description textfield",
 	"enhancedupload-upload-button-label": "Label for button upload",
@@ -37,18 +39,18 @@
 	"enhancedupload-attachments-tag-grid-version-label": "Label for grid column which lists latest version of files",
 	"enhancedupload-attachments-tag-grid-category-label": "Label for grid column which lists categories of files",
 	"enhancedupload-attachments-tag-no-attached-files": "Label if no file is attached to tag",
-	"enhancedupload-attachments-media-dialog-cancel-title": "Title for icon button cancel",
+	"enhancedupload-attachments-media-dialog-cancel-title": "Title for icon button cancel\n\n{{Identical|Cancel}}",
 	"enhancedupload-attachments-media-dialog-add-title": "Label for action button add in dialog",
 	"enhancedupload-attachments-media-dialog-title": "Title for dialog to select a file which will be added to list",
 	"enhancedupload-attachments-media-dialog-label": "Label for search widget to search for files",
 	"enhancedupload-ui-action-new-upload-text": "Text label for action new file upload",
 	"enhancedupload-ui-action-new-upload-title": "Title for label action new file upload",
 	"enhancedupload-upload-media-dialog-title": "Title for dialog to upload a file",
-	"enhancedupload-upload-media-dialog-cancel-title": "Label for action cancel",
+	"enhancedupload-upload-media-dialog-cancel-title": "Label for action cancel\n\n{{Identical|Cancel}}",
 	"enhancedupload-upload-media-dialog-upload-title": "Label for action in dialog upload",
 	"enhancedupload-upload-media-dialog-done-title": "Label for action done",
 	"enhancedupload-ve-dialog-duplicate-confirm": "Label for confirm dialog if uploaded file is a duplicate",
-	"enhancedupload-attachments-media-dialog-details-cancel": "Title for details dialog for action cancel",
+	"enhancedupload-attachments-media-dialog-details-cancel": "Title for details dialog for action cancel\n\n{{Identical|Cancel}}",
 	"enhancedupload-attachments-media-dialog-details-upload": "Label for action in details dialog upload",
 	"enhancedupload-attachments-media-dialog-details-settings": "Title for details dialog",
 	"enhancedupload-ve-attachment-title": "Title for tag inspector dialog",

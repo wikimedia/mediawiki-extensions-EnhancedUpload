@@ -38,11 +38,13 @@
 	"enhancedupload-attachments-media-dialog-details-cancel": "キャンセル",
 	"enhancedupload-attachments-media-dialog-details-upload": "アップロード",
 	"enhancedupload-attachments-media-dialog-details-settings": "詳細",
+	"enhancedupload-ve-attachment-title": "添付ファイル",
 	"enhancedupload-ve-attachmentinspector-title": "タイトル",
 	"enhancedupload-ve-attachmentinspector-prefix": "接頭辞",
 	"enhancedupload-ve-attachmentinspector-categories": "カテゴリ",
 	"enhancedupload-ve-attachmentinspector-desc": "説明",
 	"enhancedupload-attachments-tag-grid-editor-label": "編集者",
+	"enhancedupload-ve-attachmentinspector-grid-version": "版を隠す",
 	"enhancedupload-ve-attachmentinspector-grid-size": "サイズを表示",
 	"enhancedupload-ve-attachmentinspector-grid-categories": "カテゴリを表示"
 }
