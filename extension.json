@@ -190,7 +190,9 @@
 				"enhancedupload-attachments-tag-grid-category-label",
 				"enhancedupload-attachments-tag-no-attached-files",
 				"enhancedupload-attachments-tag-grid-editor-label",
-				"enhancedupload-attachments-tag-grid-details-title"
+				"enhancedupload-attachments-tag-grid-details-title",
+				"enhancedupload-attachments-tag-grid-remove-title",
+				"enhancedupload-attachments-confirm-remove"
 			]
 		},
 		"ext.enhancedupload.attachments.styles": {

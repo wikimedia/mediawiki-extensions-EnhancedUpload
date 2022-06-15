@@ -38,13 +38,22 @@
 	height: auto;
 }
 
+/* stylelint-disable declaration-no-important */
 .attachments-filelist .oojsplus-data-gridWidget-table .oojsplus-data-gridWidget-header th.oojsplus-data-gridWidget-cell {
 	border-bottom: 1px solid #a5a5a5;
+	border-right-color: transparent !important;
 }
+/* stylelint-enable declaration-no-important */
 
 .attachments-filelist .oojsplus-data-gridWidget {
 	background-color: #fafafc;
 }
+
+/* stylelint-disable unit-disallowed-list */
+.attachments-filelist .oojsplus-data-gridWidget .oojsplus-data-gridWidget-table .oojsplus-data-gridWidget-header th .header-button {
+	font-size: 0.875rem;
+}
+/* stylelint-enable unit-disallowed-list */
 
 .attachments-filelist .drag-file .oojsplus-data-gridWidget {
 	background-color: #fff;
@@ -58,6 +67,10 @@
 .attachments-filelist .oojsplus-data-gridWidget-cell a.oo-ui-buttonElement-button:hover {
 	color: var( --link-fg );
 	font-weight: normal;
+}
+
+.attachments-filelist .oojsplus-data-paginator {
+	background-color: transparent;
 }
 
 .attachments-filelist .enhancedUpload-widget .heading,
@@ -102,4 +115,8 @@
 
 .attachments-filelist .enhancedUpload-widget {
 	display: none;
+}
+
+.attachments-filelist .oo-ui-popupWidget-body-padded > :first-child {
+	margin: 10px;
 }

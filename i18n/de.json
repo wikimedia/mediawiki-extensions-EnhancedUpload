@@ -64,5 +64,7 @@
 	"enhancedupload-ve-attachmentinspector-grid-editor": "Bearbeiter verstecken",
 	"enhancedupload-ve-attachmentinspector-grid-size": "Größe anzeigen",
 	"enhancedupload-ve-attachmentinspector-grid-categories": "Kategorien anzeigen",
-	"enhancedupload-attachments-tag-grid-details-title": "Details"
+	"enhancedupload-attachments-tag-grid-details-title": "Details",
+	"enhancedupload-attachments-tag-grid-remove-title": "Entfernen",
+	"enhancedupload-attachments-confirm-remove": "Datei „$1“ aus der Liste entfernen?"
 }
