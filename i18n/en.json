@@ -62,5 +62,12 @@
 	"enhancedupload-ve-attachmentinspector-grid-version": "Hide version",
 	"enhancedupload-ve-attachmentinspector-grid-editor": "Hide editor",
 	"enhancedupload-ve-attachmentinspector-grid-size": "Show size",
+<<<<<<< HEAD   (77f43e Localisation updates from https://translatewiki.net.)
 	"enhancedupload-ve-attachmentinspector-grid-categories": "Show categories"
+=======
+	"enhancedupload-ve-attachmentinspector-grid-categories": "Show categories",
+	"enhancedupload-attachments-tag-grid-details-title": "Details",
+	"enhancedupload-attachments-tag-grid-remove-title": "Remove",
+	"enhancedupload-attachments-confirm-remove": "Remove file \"$1\" from list?"
+>>>>>>> CHANGE (81644d Fix delete in grid)
 }

@@ -62,5 +62,12 @@
 	"enhancedupload-ve-attachmentinspector-grid-version": "Label for switch if version should be hidden",
 	"enhancedupload-ve-attachmentinspector-grid-editor": "Label for switch if editor should be hidden",
 	"enhancedupload-ve-attachmentinspector-grid-size": "Label for switch if size should be visible",
+<<<<<<< HEAD   (77f43e Localisation updates from https://translatewiki.net.)
 	"enhancedupload-ve-attachmentinspector-grid-categories": "Label for switch if categories should be visible"
+=======
+	"enhancedupload-ve-attachmentinspector-grid-categories": "Label for switch if categories should be visible",
+	"enhancedupload-attachments-tag-grid-details-title": "Titel for icon with link to details\n{{identical|Details}}",
+	"enhancedupload-attachments-tag-grid-remove-title": "Title for icon to remove row from grid",
+	"enhancedupload-attachments-confirm-remove": "Label for confirm prompt if file should be removed from list\nParameters:\n* $1 - file name"
+>>>>>>> CHANGE (81644d Fix delete in grid)
 }
