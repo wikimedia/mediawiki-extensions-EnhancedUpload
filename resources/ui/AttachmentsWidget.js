@@ -105,13 +105,14 @@ enhancedUpload.ui.AttachmentsWidget.prototype.addGrid = function () {
 		dataLoaded.done( function ( files ) {
 			me.gridCfg = {
 				pageSize: 10,
-				deletable: me.editRight,
 				columns: {
 					filename: {
 						headerText: mw.message( 'enhancedupload-attachments-tag-grid-file-label' ).plain(),
 						type: 'url',
 						editable: false,
-						urlProperty: 'file_url'
+						urlProperty: 'file_url',
+						sortable: true,
+						filter: { type: 'string' }
 					}
 				},
 				data: files
@@ -120,13 +121,20 @@ enhancedUpload.ui.AttachmentsWidget.prototype.addGrid = function () {
 
 			me.grid = new OOJSPlus.ui.data.GridWidget( me.gridCfg );
 			me.grid.connect( me, {
-				rowDeleteComplete: 'removeItems',
 				action: function ( action, row ) {
-					if ( action !== 'details' ) {
-						return;
+					if ( action === 'details' ) {
+						var fileTitle = mw.Title.newFromText( 'File:' + row.filename );
+						window.open( fileTitle.getUrl(), '_blank' );
 					}
-					var fileTitle = mw.Title.newFromText( 'File:' + row.filename );
-					window.open( fileTitle.getUrl(), '_blank' );
+					if ( action === 'remove' ) {
+						OO.ui.confirm( mw.message( 'enhancedupload-attachments-confirm-remove', row.filename ).plain() )
+							.done( function ( confirmed ) {
+								if ( !confirmed ) {
+									return;
+								}
+								me.removeItems( row );
+							} );
+					}
 				}
 			} );
 
@@ -179,6 +187,15 @@ enhancedUpload.ui.AttachmentsWidget.prototype.setupColumns = function () {
 		actionId: 'details',
 		icon: 'infoFilled'
 	};
+
+	if ( this.editRight ) {
+		this.gridCfg.columns.remove = {
+			type: 'action',
+			title: mw.message( 'enhancedupload-attachments-tag-grid-remove-title' ).plain(),
+			actionId: 'remove',
+			icon: 'close'
+		};
+	}
 };
 
 enhancedUpload.ui.AttachmentsWidget.prototype.getGridData = function () {
@@ -330,7 +347,7 @@ enhancedUpload.ui.AttachmentsWidget.prototype.addItems = function ( widget, item
 
 enhancedUpload.ui.AttachmentsWidget.prototype.removeItems = function ( row ) {
 	var me = this,
-		items = [ row.row.filename ];
+		items = [ row.filename ];
 
 	mw.loader.using( 'ext.enhancedUpload.attachments.api' ).done( function () {
 		var api = new enhancedUpload.api.Api(),

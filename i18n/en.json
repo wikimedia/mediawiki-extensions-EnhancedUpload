@@ -63,5 +63,7 @@
 	"enhancedupload-ve-attachmentinspector-grid-editor": "Hide editor",
 	"enhancedupload-ve-attachmentinspector-grid-size": "Show size",
 	"enhancedupload-ve-attachmentinspector-grid-categories": "Show categories",
-	"enhancedupload-attachments-tag-grid-details-title": "Details"
+	"enhancedupload-attachments-tag-grid-details-title": "Details",
+	"enhancedupload-attachments-tag-grid-remove-title": "Remove",
+	"enhancedupload-attachments-confirm-remove": "Remove file \"$1\" from list?"
 }
