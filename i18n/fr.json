@@ -63,5 +63,7 @@
 	"enhancedupload-ve-attachmentinspector-grid-editor": "Masquer l’éditeur",
 	"enhancedupload-ve-attachmentinspector-grid-size": "Montrer la taille",
 	"enhancedupload-ve-attachmentinspector-grid-categories": "Montrer les catégories",
-	"enhancedupload-attachments-tag-grid-details-title": "Détails"
+	"enhancedupload-attachments-tag-grid-details-title": "Détails",
+	"enhancedupload-attachments-tag-grid-remove-title": "Enlever",
+	"enhancedupload-attachments-confirm-remove": "Enlever le fichier « $1 » de la liste ?"
 }
