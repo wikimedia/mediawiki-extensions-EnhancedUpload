@@ -5,6 +5,7 @@ namespace MediaWiki\Extension\EnhancedUpload\Rest;
 use CommentStoreComment;
 use Exception;
 use MediaWiki\Extension\EnhancedUpload\AttachmentTagModifier;
+use MediaWiki\MediaWikiServices;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Rest\HttpException;
 use MediaWiki\Rest\SimpleHandler;
@@ -127,7 +128,12 @@ class RemoveAttachments extends SimpleHandler {
 	 * @return string
 	 */
 	private function getWikiText( $title ) {
-		$wikiPage = WikiPage::factory( $title );
+		if ( method_exists( MediaWikiServices::class, 'getWikiPageFactory' ) ) {
+			// MW 1.36+
+			$wikiPage = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $title );
+		} else {
+			$wikiPage = WikiPage::factory( $title );
+		}
 		if ( !$wikiPage ) {
 			return Status::newFatal( 'Invalid WikiPage' );
 		}
@@ -147,7 +153,12 @@ class RemoveAttachments extends SimpleHandler {
 	 * @return Status
 	 */
 	private function savePage( $title, WikitextContent $content, $user ): Status {
-		$wikiPage = WikiPage::factory( $title );
+		if ( method_exists( MediaWikiServices::class, 'getWikiPageFactory' ) ) {
+			// MW 1.36+
+			$wikiPage = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $title );
+		} else {
+			$wikiPage = WikiPage::factory( $title );
+		}
 		$revision = null;
 		try {
 			$updater = $wikiPage->newPageUpdater( $user );
