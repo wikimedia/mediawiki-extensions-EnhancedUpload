@@ -46,5 +46,6 @@
 	"enhancedupload-attachments-tag-grid-editor-label": "Muokkain",
 	"enhancedupload-ve-attachmentinspector-grid-size": "Näytä koko",
 	"enhancedupload-ve-attachmentinspector-grid-categories": "Näytä luokat",
-	"enhancedupload-attachments-tag-grid-details-title": "Tiedot"
+	"enhancedupload-attachments-tag-grid-details-title": "Tiedot",
+	"enhancedupload-attachments-tag-grid-remove-title": "Poista"
 }

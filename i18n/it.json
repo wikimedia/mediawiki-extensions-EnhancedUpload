@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"enhancedupload-attachments-tag-grid-remove-title": "Rimuovi",
+	"enhancedupload-attachments-confirm-remove": "Rimuovi il file \"$1\" dall'elenco?"
+}
