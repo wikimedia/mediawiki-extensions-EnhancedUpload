@@ -311,6 +311,7 @@
 				"ui/booklet/pages/ResultPage.js"
 			],
 			"dependencies": [
+				"ext.enhancedUpload.uploadWidget",
 				"ext.enhancedUpload.widgets"
 			]
 		},
