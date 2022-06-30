@@ -22,9 +22,6 @@
 
 .enhancedUpload-widget .file-preview-widget {
 	margin: 20px 0;
-}
-
-.enhancedUpload-widget .file-preview {
 	height: auto;
 	max-height: 180px;
 	overflow-x: auto;
