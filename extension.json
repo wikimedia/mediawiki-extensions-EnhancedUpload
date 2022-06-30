@@ -49,7 +49,6 @@
 		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin",
 		"SkinTemplateNavigation::Universal": "addContentActions",
 		"SpecialPage_initList": "special-upload",
-		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
 		"BSInsertMagicAjaxGetData": "MediaWiki\\Extension\\EnhancedUpload\\Hook\\BSInsertMagicAjaxGetData\\AddAttachmentTag::callback"
 	},
 	"HookHandlers": {
@@ -70,9 +69,6 @@
 		},
 		"special-upload": {
 			"class": "MediaWiki\\Extension\\EnhancedUpload\\Hook\\SpecialPage_initList\\OverwriteSpecialUpload"
-		},
-		"common-user-interface": {
-			"class": "MediaWiki\\Extension\\EnhancedUpload\\HookHandler\\CommonUserInterface"
 		}
 	},
 	"RestRoutes": [
@@ -342,6 +338,11 @@
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
 		"remoteExtPath": "EnhancedUpload/resources"
+	},
+	"config": {
+		"ENHOverrideStandardUpload": {
+			"value": false
+		}
 	},
 	"manifest_version": 2,
 	"load_composer_autoloader": true
