@@ -27,8 +27,8 @@ enhancedUpload.ui.AttachmentsWidget = function ( cfg ) {
 	if ( this.editRight ) {
 		this.addUploadWidget();
 		var addNewFileInput = new OO.ui.SelectFileWidget( {
+			title: mw.message( 'enhancedupload-attachments-add-new-media-button-title' ).plain(),
 			button: {
-				title: mw.message( 'enhancedupload-attachments-add-new-media-button-title' ).plain(),
 				icon: 'upload',
 				label: ''
 			},
