@@ -340,7 +340,7 @@
 		"remoteExtPath": "EnhancedUpload/resources"
 	},
 	"config": {
-		"ENHOverrideStandardUpload": {
+		"EnhancedUploadOverrideStandardUpload": {
 			"value": false
 		}
 	},
