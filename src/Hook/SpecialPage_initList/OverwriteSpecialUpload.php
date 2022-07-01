@@ -17,7 +17,7 @@ class OverwriteSpecialUpload {
 	public static function onSpecialPage_initList( &$specialPages ) {
 		$config = MediaWikiServices::getInstance()->getMainConfig();
 
-		if ( $config->get( 'ENHOverrideStandardUpload' ) ) {
+		if ( $config->get( 'EnhancedUploadOverrideStandardUpload' ) ) {
 			$specialPages['Upload'] = EnhancedUpload::class;
 		}
 		return true;
