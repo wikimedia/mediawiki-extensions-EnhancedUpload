@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"MITO"
+			"MITO",
+			"Nike"
 		]
 	},
 	"enhancedupload-text": "Tallenna tiedostoja",
@@ -22,7 +23,7 @@
 	"enhancedupload-tab-warnings-upload": "Varoitukset",
 	"enhancedupload-ve-dialog-title": "Tallenna tiedosto",
 	"enhancedupload-attachments-add-media-button-title": "Lisää tiedosto wikistä",
-	"enhancedupload-attachments-add-new-media-button-title": "Lisää uusi tiedosto",
+	"enhancedupload-attachments-add-new-media-button-title": "Lisää uusia tiedostoja wikiin",
 	"enhancedupload-attachments-tag-grid-file-label": "Tiedosto",
 	"enhancedupload-attachments-tag-grid-size-label": "Koko",
 	"enhancedupload-attachments-tag-grid-version-label": "Viimeisin versio",
