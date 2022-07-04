@@ -78,7 +78,6 @@ enhancedUpload.ui.panel.Preview.prototype.removeItemFromPreview = function ( wid
 	widget.$element.hide();
 
 	this.itemData.splice( index, 1 );
-	this.emit( 'updateElements', index );
 };
 
 enhancedUpload.ui.panel.Preview.prototype.getFiles = function () {
