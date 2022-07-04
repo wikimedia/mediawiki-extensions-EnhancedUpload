@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"MathXplore"
+			"MathXplore",
+			"Mugenpman"
 		]
 	},
 	"enhancedupload-text": "ファイルをアップロード",
@@ -48,5 +49,6 @@
 	"enhancedupload-ve-attachmentinspector-grid-size": "サイズを表示",
 	"enhancedupload-ve-attachmentinspector-grid-categories": "カテゴリを表示",
 	"enhancedupload-attachments-tag-grid-details-title": "詳細",
-	"enhancedupload-attachments-tag-grid-remove-title": "除去"
+	"enhancedupload-attachments-tag-grid-remove-title": "除去",
+	"enhancedupload-attachments-confirm-remove": "リストからファイル「$1」を削除しますか？"
 }
