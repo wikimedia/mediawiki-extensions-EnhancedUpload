@@ -70,7 +70,7 @@ enhancedUpload.ui.UploadWidget.prototype.setupFileWidgets = function () {
 		this.previewWidget = new enhancedUpload.ui.panel.Preview();
 
 		this.previewWidget.connect( this, {
-			updateElements: 'updateElements'
+			updateElements: 'emptyFiles'
 		} );
 
 		this.previewWidgetLayout = new OO.ui.FieldLayout( this.previewWidget, {
@@ -199,14 +199,6 @@ enhancedUpload.ui.UploadWidget.prototype.emptyFiles = function () {
 	this.previewWidget.clearPreview();
 	$( this.previewWidgetLayout.$element ).addClass( 'no-files' );
 	this.detailsWidget.setToDefault();
-};
-
-enhancedUpload.ui.UploadWidget.prototype.updateElements = function ( index ) {
-	if ( index === 0 ) {
-		this.selectFiles.setValue( '' );
-		$( this.previewWidgetLayout.$element ).addClass( 'no-files' );
-		this.emit( 'clearPreview' );
-	}
 };
 
 enhancedUpload.ui.UploadWidget.prototype.setUpProgressBar = function () {
