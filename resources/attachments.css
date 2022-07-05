@@ -38,12 +38,12 @@
 	height: auto;
 }
 
-<<<<<<< HEAD   (77f43e Localisation updates from https://translatewiki.net.)
-.attachments-filelist .oojsplus-data-gridWidget-table .oojsplus-data-gridWidget-header td.oojsplus-data-gridWidget-cell {
-=======
+.ve-activated .attachments-filelist > ul {
+	visibility: visible;
+}
+
 /* stylelint-disable declaration-no-important */
-.attachments-filelist .oojsplus-data-gridWidget-table .oojsplus-data-gridWidget-header th.oojsplus-data-gridWidget-cell {
->>>>>>> CHANGE (81644d Fix delete in grid)
+.attachments-filelist .oojsplus-data-gridWidget-table .oojsplus-data-gridWidget-header td.oojsplus-data-gridWidget-cell {
 	border-bottom: 1px solid #a5a5a5;
 	border-right-color: transparent !important;
 }
