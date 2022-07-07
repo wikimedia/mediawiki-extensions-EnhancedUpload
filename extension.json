@@ -189,14 +189,10 @@
 				"enhancedupload-attachments-tag-grid-version-label",
 				"enhancedupload-attachments-tag-grid-category-label",
 				"enhancedupload-attachments-tag-no-attached-files",
-<<<<<<< HEAD   (77f43e Localisation updates from https://translatewiki.net.)
-				"enhancedupload-attachments-tag-grid-editor-label"
-=======
 				"enhancedupload-attachments-tag-grid-editor-label",
 				"enhancedupload-attachments-tag-grid-details-title",
 				"enhancedupload-attachments-tag-grid-remove-title",
 				"enhancedupload-attachments-confirm-remove"
->>>>>>> CHANGE (81644d Fix delete in grid)
 			]
 		},
 		"ext.enhancedupload.attachments.styles": {
