@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Asma",
+			"Mohanad Kh",
 			"محمد أحمد عبد الفتاح"
 		]
 	},
@@ -25,7 +26,7 @@
 	"enhancedupload-ve-dialog-title": "تحميل الملف",
 	"enhancedupload-preview-widget-label": "هذه الملفات محددة للتحميل",
 	"enhancedupload-attachments-add-media-button-title": "أضف ملفًا من موقع ويكي",
-	"enhancedupload-attachments-add-new-media-button-title": "أضف ملف جديد",
+	"enhancedupload-attachments-add-new-media-button-title": "إضافة ملفات جديدة للويكي",
 	"enhancedupload-attachments-tag-grid-file-label": "ملف",
 	"enhancedupload-attachments-tag-grid-size-label": "حجم",
 	"enhancedupload-attachments-tag-grid-category-label": "فئات",
