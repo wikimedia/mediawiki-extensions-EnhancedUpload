@@ -120,7 +120,8 @@
 			"dependencies": [
 				"oojs-ui",
 				"ext.enhancedUpload.widgets",
-				"ext.enhancedUpload.detailsUploadWidget"
+				"ext.enhancedUpload.detailsUploadWidget",
+				"ext.enhancedUpload.paramsProcessor"
 			]
 		},
 		"ext.enhancedUpload.widgets": {
@@ -336,11 +337,29 @@
 			"dependencies": [
 				"ext.visualEditor.mwcore"
 			]
+		},
+		"ext.enhancedUpload.paramsProcessor": {
+			"packageFiles": [
+				"ParamsProcessor.js"
+			],
+			"dependencies": [
+				"mediawiki.widgets"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
 		"remoteExtPath": "EnhancedUpload/resources"
+	},
+	"QUnitTestModule": {
+		"localBasePath": "",
+		"remoteExtPath": "EnhancedUpload",
+		"scripts": [
+			"tests/qunit/ext.enhancedUpload.paramsProcessor.test.js"
+		],
+		"dependencies": [
+			"ext.enhancedUpload.paramsProcessor"
+		]
 	},
 	"config": {
 		"EnhancedUploadOverrideStandardUpload": {

@@ -17,7 +17,8 @@
 		"enhancedUpload": "readonly",
 		"ve": "readonly",
 		"OOJSPlus": "readonly",
-		"blueSpice": "readonly"
+		"blueSpice": "readonly",
+		"QUnit": "readonly"
 	},
 	"rules": {
 		"no-implicit-globals": "off"
