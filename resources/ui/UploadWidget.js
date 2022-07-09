@@ -37,7 +37,16 @@ enhancedUpload.ui.UploadWidget = function enhancedUploadUiUploadWidget( cfg ) {
 		this.setupActionButtons();
 
 		this.$mainContainer.append( this.selectFiles.$element );
-		mw.hook( 'upload.init' ).fire( this.detailsWidget );
+
+		var paramsProcessor = { processor: new enhancedUpload.ParamsProcessor() };
+		mw.hook( 'enhancedUpload.makeParamProcessor' ).fire( paramsProcessor );
+		this.paramsProcessor = paramsProcessor.processor;
+
+		if ( this.paramsProcessor.init ) {
+			var paramElement = this.paramsProcessor.init();
+			this.detailsWidget.$element.prepend( paramElement.$element );
+		}
+
 		if ( !this.hidePreview ) {
 			this.$mainContainer.append( this.previewWidgetLayout.$element );
 			this.$mainContainer.append( this.headerLine.$element );
@@ -242,7 +251,9 @@ enhancedUpload.ui.UploadWidget.prototype.startUpload = function () {
 				comment: descAndCommentText
 			};
 
-			mw.hook( 'upload.getUploadParams' ).fire( params );
+			if ( me.paramsProcessor.getParams ) {
+				params = me.paramsProcessor.getParams( params, items[ i ] );
+			}
 
 			var uploadDfd = me.doUpload( items[ i ].data, params );
 			$.when.apply( me, uploadDfd ).done( function ( dfd, progress, maxUpload ) {
@@ -325,8 +336,13 @@ enhancedUpload.ui.UploadWidget.prototype.startQuickUpload = function ( items ) {
 		} );
 
 		dialog.show();
-		mw.hook( 'upload.init' ).fire( dialog.details );
-		mw.hook( 'upload.setNamespaceValue' ).fire( this.defaultPrefix );
+		if ( this.paramsProcessor.init ) {
+			var paramElement = this.paramsProcessor.init();
+			dialog.details.$element.prepend( paramElement.$element );
+			if ( this.paramsProcessor.setNamespaceValue ) {
+				this.paramsProcessor.setNamespaceValue( this.defaultPrefix );
+			}
+		}
 		dialog.on( 'detailscompleted', function ( descCatText ) {
 			this.quickUpload( items, descCatText );
 		}.bind( this ) );
@@ -348,22 +364,19 @@ enhancedUpload.ui.UploadWidget.prototype.quickUpload = function ( items, descAnd
 		var pageNames = [];
 
 		for ( var i = 0; i < items.length; i++ ) {
+			var item = items[ i ];
 			var params = {
-				filename: items[ i ].name,
-				format: items[ i ].type,
+				prefix: me.defaultPrefix,
+				filename: item.name,
+				format: item.type,
 				ignorewarnings: true,
 				comment: descAndCatText
 			};
-			if ( !me.skipOptions ) {
-				mw.hook( 'upload.getUploadParams' ).fire( params, me.defaultPrefix );
-			} else {
-				mw.hook( 'upload.getPrefixParams' ).fire( params, me.defaultPrefix );
-			}
-			if ( params.filename === items[ i ].name && me.defaultPrefix !== '' ) {
-				params.filename = me.defaultPrefix + '.' + items[ i ].name;
+			if ( me.paramsProcessor.getParams ) {
+				params = me.paramsProcessor.getParams( params, item, me.skipOptions );
 			}
 			pageNames.push( params.filename );
-			var uploadDfd = me.doUpload( items[ i ], params );
+			var uploadDfd = me.doUpload( item, params );
 			$.when( uploadDfd ).done( function ( dfd, progress, maxUpload ) {
 				uploadDfds.push( dfd );
 				me.uploadProgressBar.setProgress( ( progress / ( maxUpload - 1 ) ) * 100 );
