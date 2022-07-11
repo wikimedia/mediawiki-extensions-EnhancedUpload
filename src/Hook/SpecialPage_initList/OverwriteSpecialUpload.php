@@ -5,6 +5,7 @@
 namespace MediaWiki\Extension\EnhancedUpload\Hook\SpecialPage_initList;
 
 use MediaWiki\Extension\EnhancedUpload\Special\EnhancedUpload;
+use MediaWiki\MediaWikiServices;
 
 class OverwriteSpecialUpload {
 
@@ -14,7 +15,11 @@ class OverwriteSpecialUpload {
 	 * @return void
 	 */
 	public static function onSpecialPage_initList( &$specialPages ) {
-		$specialPages['Upload'] = EnhancedUpload::class;
+		$config = MediaWikiServices::getInstance()->getMainConfig();
+
+		if ( $config->get( 'EnhancedUploadOverrideStandardUpload' ) ) {
+			$specialPages['Upload'] = EnhancedUpload::class;
+		}
 		return true;
 	}
 }

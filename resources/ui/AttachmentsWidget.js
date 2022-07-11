@@ -90,7 +90,7 @@ enhancedUpload.ui.AttachmentsWidget = function ( cfg ) {
 			var uploadFiles = e.originalEvent.dataTransfer.files;
 			this.upload.startQuickUpload( uploadFiles );
 			e.preventDefault();
-			$( this ).removeClass( 'drag-file' );
+			$( this.$element ).removeClass( 'drag-file' );
 		}.bind( this ) );
 	}
 
@@ -183,6 +183,7 @@ enhancedUpload.ui.AttachmentsWidget.prototype.setupColumns = function () {
 
 	this.gridCfg.columns.details = {
 		type: 'action',
+		title: mw.message( 'enhancedupload-attachments-tag-grid-details-title' ).plain(),
 		actionId: 'details',
 		icon: 'infoFilled'
 	};
