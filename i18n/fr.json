@@ -5,7 +5,7 @@
 		]
 	},
 	"enhancedupload": "Téléversement amélioré",
-	"enhancedupload-desc": "Fournit une page spéciale avec l’option pour téléverser un ou plusieurs fichiers vers le wiki",
+	"enhancedupload-desc": "Fournit une page spéciale avec l’option pour téléverser un ou plusieurs fichiers vers le wiki local.",
 	"enhancedupload-text": "Téléverser des fichiers",
 	"enhancedupload-details-header-label": "Détails",
 	"enhancedupload-details-namespace-label": "Espace de noms",
@@ -31,7 +31,7 @@
 	"enhancedupload-ve-dialog-title-exists": "Un fichier portant ce nom existe déjà. Veuillez insérer un nouveau nom de fichier.",
 	"enhancedupload-preview-widget-label": "Les fichiers suivants sont sélectionnés à téléverser",
 	"enhancedupload-attachments-add-media-button-title": "Ajouter un fichier depuis le wiki",
-	"enhancedupload-attachments-add-new-media-button-title": "Ajouter un nouveau fichier",
+	"enhancedupload-attachments-add-new-media-button-title": "Ajouter de nouveaux fichiers au wiki",
 	"enhancedupload-attachments-tag-grid-file-label": "Fichier",
 	"enhancedupload-attachments-tag-grid-size-label": "Taille",
 	"enhancedupload-attachments-tag-grid-version-label": "Dernière version",
@@ -62,5 +62,8 @@
 	"enhancedupload-ve-attachmentinspector-grid-version": "Masquer la version",
 	"enhancedupload-ve-attachmentinspector-grid-editor": "Masquer l’éditeur",
 	"enhancedupload-ve-attachmentinspector-grid-size": "Montrer la taille",
-	"enhancedupload-ve-attachmentinspector-grid-categories": "Montrer les catégories"
+	"enhancedupload-ve-attachmentinspector-grid-categories": "Montrer les catégories",
+	"enhancedupload-attachments-tag-grid-details-title": "Détails",
+	"enhancedupload-attachments-tag-grid-remove-title": "Enlever",
+	"enhancedupload-attachments-confirm-remove": "Enlever le fichier « $1 » de la liste ?"
 }
