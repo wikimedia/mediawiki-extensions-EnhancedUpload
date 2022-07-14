@@ -67,6 +67,24 @@ Test Test
 <attachments>
 </attachments>';
 
+public const WIKITEXT4 =
+'Test
+
+[[:Datei:Upload Test 24.txt|Datei:Upload Test 24.txt]]
+
+=== ACB ===
+
+<attachments></attachments>';
+
+public const WIKITEXT5 =
+'Test
+
+[[:Datei:Upload Test 24.txt|Datei:Upload Test 24.txt]]
+
+=== ACB ===
+
+<attachments />';
+
 public const WIKITEXT1EXP = 'Test
 
 [[:Datei:Upload Test 24.txt|Datei:Upload Test 24.txt]]
@@ -106,6 +124,17 @@ Test Test
 * [[Media:FileTest1.pdf]]
 * [[Media:FileTest2.pdf]]
 * [[Media:FileTest3.pdf]]
+</attachments>';
+
+public const WIKITEXT4EXP =
+'Test
+
+[[:Datei:Upload Test 24.txt|Datei:Upload Test 24.txt]]
+
+=== ACB ===
+
+<attachments>
+* [[Media:FileTest.pdf]]
 </attachments>';
 
 public const WIKITEXT3REXP = 'Test
@@ -238,6 +267,12 @@ Test';
 
 		$modifiedWikiText = $modifier->add( static::WIKITEXT1, 3, [ 'FileTest1.pdf','FileTest2.pdf','FileTest3.pdf' ] );
 		$this->assertEquals( static::WIKITEXT4REXP, $modifiedWikiText );
+
+		$modifiedWikiText = $modifier->add( static::WIKITEXT4, 0, [ 'FileTest.pdf' ] );
+		$this->assertEquals( static::WIKITEXT4EXP, $modifiedWikiText );
+
+		$modifiedWikiText = $modifier->add( static::WIKITEXT5, 0, [ 'FileTest.pdf' ] );
+		$this->assertEquals( static::WIKITEXT4EXP, $modifiedWikiText );
 
 		$modifiedWikiText = $modifier->add( static::WIKITEXT1, 0, [] );
 		$this->assertEquals( static::WIKITEXT4REXP, $modifiedWikiText );
