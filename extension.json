@@ -53,7 +53,10 @@
 	},
 	"HookHandlers": {
 		"tag": {
-			"class": "\\MediaWiki\\Extension\\EnhancedUpload\\HookHandler\\Tag"
+			"class": "\\MediaWiki\\Extension\\EnhancedUpload\\HookHandler\\Tag",
+			"services": [
+				"TitleFactory"
+			]
 		},
 		"addModules": {
 			"class": "MediaWiki\\Extension\\EnhancedUpload\\Hook\\BeforePageDisplay\\AddModules"

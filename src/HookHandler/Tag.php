@@ -7,10 +7,17 @@ use Html;
 use MediaWiki\Hook\ParserFirstCallInitHook;
 use Parser;
 use PPFrame;
+use Sanitizer;
 use Title;
+use TitleFactory;
 
 class Tag implements ParserFirstCallInitHook {
 	public const NAME = 'attachments';
+
+	/**
+	 * @var TitleFactory
+	 */
+	private $titleFactory;
 
 	/**
 	 *
@@ -18,7 +25,11 @@ class Tag implements ParserFirstCallInitHook {
 	 */
 	private static $counter = 0;
 
-	public function __construct() {
+	/**
+	 * @param TitleFactory $titleFactory
+	 */
+	public function __construct( TitleFactory $titleFactory ) {
+		$this->titleFactory = $titleFactory;
 	}
 
 	/**
@@ -117,20 +128,30 @@ class Tag implements ParserFirstCallInitHook {
 	private function getFilesFromWikiText( $wikitext ): array {
 		$titles = [];
 		$tags = preg_match_all(
-			"#(\[\[.*?:.*?\]\])#is",
+			"#\[\[(.*?)\]\]#is",
 			$wikitext,
 			$matches
 		);
 		if ( $tags ) {
-			foreach ( $matches[0] as $match ) {
-				$match = str_replace( "[", "", $match );
-				$match = str_replace( "]", "", $match );
-				$match = ltrim( $match );
-				$title = Title::newFromText( $match );
-				array_push( $titles, $title );
+			foreach ( $matches[1] as $match ) {
+				$title = $this->getTitle( $match );
+				$titles[] = $title;
 			}
 		}
 		return $titles;
+	}
+
+	/**
+	 * @param string $text
+	 * @return title
+	 */
+	private function getTitle( string $text ): title {
+		$linkParts = explode( '|', $text );
+		$titleParts = explode( ':', $linkParts[ 0 ], 2 );
+		$titleText = trim( $titleParts[ 1 ] );
+		$sanitizedText = Sanitizer::decodeCharReferences( $titleText );
+		$title = $this->titleFactory->makeTitle( NS_MEDIA, $sanitizedText );
+		return $title;
 	}
 
 }
