@@ -49,7 +49,7 @@ class AttachmentTagModifier {
 		$this->targetCount = $count;
 		$this->files = $files;
 		$wikiText = preg_replace_callback(
-			"#(< ?attachments[^\/]*?>.*?< ?/ ?attachments ?>|< ?attachments.*?/ ?>)#is",
+			"#(< ?attachments[^\/]*?>.*?< ?/ ?attachments ?>)|(< ?attachments.*?/ ?>)#is",
 			[ $this, 'addModified' ],
 			$wikiText
 		);
@@ -67,18 +67,50 @@ class AttachmentTagModifier {
 			return $matches[ 0 ];
 		}
 
+		$tagMatches = [];
+		preg_match( "#(< ?attachments[^\/]*?>)(.*?)(< ?/ ?attachments ?>)#is", $matches[ 0 ], $tagMatches );
+		if ( empty( $tagMatches ) ) {
+			$attribs = [];
+			$closedTag = preg_match( "#< ?attachments\s*(.*?)/ ?>#is", $matches[ 0 ], $attribs );
+			if ( $closedTag !== false ) {
+				if ( $attribs[ 1 ] !== '' ) {
+					$attribs[ 1 ] = ' ' . $attribs[ 1 ];
+				}
+				$tagMatches = [
+					$attribs[ 1 ],
+					'<attachments' . $attribs[ 1 ] . '>',
+					'',
+					'</attachments>'
+				];
+			}
+		}
+
+		$items = $tagMatches[ 2 ];
+		$items = trim( $items, "\n" );
+
 		$this->counter++;
-		$contentInArray = explode( "\n", $matches[ 1 ] );
-		$newLines = [];
+		$contentInArray = explode( "\n", $items );
 		foreach ( $this->files as $file ) {
 			if ( !$this->titleExists( $contentInArray, $file ) ) {
 				$fileEntry = $this->buildFileEntry( $file );
-				$newLines[] = $fileEntry;
+				$contentInArray[] = $fileEntry;
 			}
 		}
-		$insertPosition = count( $contentInArray ) - 1;
-		array_splice( $contentInArray, $insertPosition, 0, $newLines );
-		$modifiedContent = implode( "\n", $contentInArray );
+
+		$replacement = $tagMatches;
+		array_shift( $replacement );
+		$contentArray = [];
+		foreach ( $contentInArray as $item ) {
+			if ( $item === '' ) {
+				continue;
+			}
+
+			$contentArray[] = $item;
+		}
+		$replacement[ 1 ] = implode( "\n", $contentArray );
+
+		$modifiedContent = implode( "\n", $replacement );
+
 		return $modifiedContent;
 	}
 
