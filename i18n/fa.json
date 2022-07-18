@@ -59,5 +59,7 @@
 	"enhancedupload-ve-attachmentinspector-grid-editor": "نهفتن ویرایشگر",
 	"enhancedupload-ve-attachmentinspector-grid-size": "نمایش اندازه",
 	"enhancedupload-ve-attachmentinspector-grid-categories": "نمایش رده‌ها",
-	"enhancedupload-attachments-tag-grid-details-title": "جزئیات"
+	"enhancedupload-attachments-tag-grid-details-title": "جزئیات",
+	"enhancedupload-attachments-tag-grid-remove-title": "حذف",
+	"enhancedupload-attachments-confirm-remove": "حذف پروندهٔ «$1» از فهرست؟"
 }
