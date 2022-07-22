@@ -161,7 +161,9 @@
 				"enhancedupload-tab-successfull-upload",
 				"enhancedupload-tab-warnings-upload",
 				"enhancedupload-warning-dialog-label",
-				"enhancedupload-preview-widget-label"
+				"enhancedupload-preview-widget-label",
+				"enhancedupload-tab-updated-upload",
+				"enhancedupload-updated-dialog-label"
 			]
 		},
 		"ext.enhancedupload.attachments.bootstrap": {
