@@ -7,6 +7,7 @@ enhancedUpload.ui.dialog.UploadFinishedDialog = function ( cfg ) {
 	this.finishedData = cfg.data[ 0 ];
 	this.failedData = cfg.data[ 1 ];
 	this.warningData = cfg.data[ 2 ];
+	this.updatedData = cfg.data[ 3 ];
 };
 
 OO.inheritClass( enhancedUpload.ui.dialog.UploadFinishedDialog, OO.ui.ProcessDialog );
@@ -58,8 +59,16 @@ enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initialize = function ()
 	}
 
 	if ( this.warningData.length ) {
+		if ( !renderHeader && this.updatedData.length ) {
+			renderHeader = true;
+		}
 		this.initializeWarningPanel();
 		this.content.addTabPanels( [ this.contentWarning ] );
+	}
+
+	if ( this.updatedData.length ) {
+		this.initializeUpdatedPanel();
+		this.content.addTabPanels( [ this.contentUpdated ] );
 	}
 
 	if ( !renderHeader ) {
@@ -138,4 +147,19 @@ enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initializeWarningPanel =
 	listView.addGrid( this.warningData );
 	this.contentWarning.$element.append( label.$element );
 	this.contentWarning.$element.append( listView.$element );
+};
+
+enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initializeUpdatedPanel = function () {
+	var label;
+	this.contentUpdated = new OO.ui.TabPanelLayout( 'updated-upload', {
+		label: mw.message( 'enhancedupload-tab-updated-upload' ).text(),
+		expanded: false
+	} );
+	for ( var i = 0; i < this.updatedData.length; i++ ) {
+		label = new OO.ui.LabelWidget( {
+			label: mw.message( 'enhancedupload-updated-dialog-label', this.updatedData[ 0 ] ).text()
+		} );
+
+		this.contentUpdated.$element.append( label.$element );
+	}
 };

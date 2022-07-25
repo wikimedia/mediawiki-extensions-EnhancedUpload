@@ -68,5 +68,7 @@
 	"enhancedupload-ve-attachmentinspector-grid-categories": "Label for switch if categories should be visible",
 	"enhancedupload-attachments-tag-grid-details-title": "Titel for icon with link to details\n{{identical|Details}}",
 	"enhancedupload-attachments-tag-grid-remove-title": "Title for icon to remove row from grid",
-	"enhancedupload-attachments-confirm-remove": "Label for confirm prompt if file should be removed from list\nParameters:\n* $1 - file name"
+	"enhancedupload-attachments-confirm-remove": "Label for confirm prompt if file should be removed from list\nParameters:\n* $1 - file name",
+	"enhancedupload-tab-updated-upload": "Tab title for files which were updated",
+	"enhancedupload-updated-dialog-label": "Label that contains title of file which was updated\nParameters:\n* $1 - file name"
 }
