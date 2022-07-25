@@ -18,6 +18,7 @@ enhancedUpload.ui.panel.FinishedList.prototype.addGrid = function ( data ) {
 		type = data[ i ][ 1 ].type;
 
 		page = new mw.Title( linkTitle );
+
 		this.data.push( {
 			type: type,
 			name: linkTitle,
