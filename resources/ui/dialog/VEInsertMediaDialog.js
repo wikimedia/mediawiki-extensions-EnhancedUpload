@@ -22,6 +22,11 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.initialize = function () 
 	var panel;
 	this.pageName = mw.config.get( 'wgPageName' );
 
+	var pageNameParts = this.pageName.split( '/' );
+	if ( pageNameParts.length > 0 ) {
+		this.pageName = pageNameParts[ pageNameParts.length - 1 ];
+	}
+
 	this.targetTitle = new OO.ui.TextInputWidget( {
 		value: this.pageName + '_' + Date.now()
 	} );
@@ -64,37 +69,67 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.getBodyHeight = function 
 };
 
 enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.getActionProcess = function ( action ) {
-	var me = this, params, dfdUpload, fileName, fileType, fileFormat;
+	var me = this;
+	if ( action === 'done' ) {
+		var doneActionProcess = this.makeDoneProcess();
+		doneActionProcess.next( function () {
+			me.close( { action: action } );
+		} );
+		return doneActionProcess;
+	}
 	return enhancedUpload.ui.dialog.VEInsertMediaDialog.super.prototype.getActionProcess.call(
 		this, action
-	).next( function () {
-		if ( action === 'done' ) {
-			fileType = me.file.type;
-			// eslint-disable-next-line unicorn/prefer-string-slice
-			fileFormat = me.file.name.substring( me.file.name.indexOf( '.' ) + 1 );
-			fileName = me.targetTitle.getValue() + '.' + fileFormat;
+	);
+};
 
-			params = {
-				filename: fileName,
-				format: fileType,
-				ignorewarnings: false
-			};
+enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.makeDoneProcess = function () {
+	var dfd = new $.Deferred(),
+		me = this,
+		params, dfdUpload, fileName, fileType, fileFormat;
 
-			dfdUpload = this.doUpload( me.file, params );
+	fileType = this.file.type;
+	// eslint-disable-next-line unicorn/prefer-string-slice
+	fileFormat = this.file.name.substring( this.file.name.indexOf( '.' ) + 1 );
+	fileName = this.targetTitle.getValue() + '.' + fileFormat;
 
-			dfdUpload.done( function ( resp ) {
-				me.insertMedia( fileName, resp.upload.imageinfo.url, me.file );
-				me.close( { action: action } );
-			} )
-				// eslint-disable-next-line no-shadow-restricted-names
-				.fail( function ( error, arguments ) {
-					me.handleErrors( error, arguments, fileName, me.fragment );
-					me.close( { action: action } );
-				} );
-			me.targetTitle.setValue( '' );
+	params = {
+		filename: fileName,
+		format: fileType,
+		ignorewarnings: false
+	};
+
+	var fileNameParts = fileName.split( ':' );
+	if ( fileNameParts.length > 0 ) {
+		var partsLength = fileNameParts.length;
+		params.prefix = '';
+		for ( var i = 0; i < partsLength - 1; i++ ) {
+			params.prefix += fileNameParts[ i ] + ':';
 		}
-	}, this );
+		params.filename = fileNameParts[ partsLength - 1 ];
+		params = this.preprocessParams( params );
+	}
 
+	dfdUpload = this.doUpload( me.file, params );
+
+	dfdUpload.done( function ( resp ) {
+		me.insertMedia( fileName, resp.upload.imageinfo.url, me.file );
+		dfd.resolve.apply( me );
+	} )
+		// eslint-disable-next-line no-shadow-restricted-names
+		.fail( function ( error, arguments ) {
+			if ( error === 'fileexists-no-change' || error === 'duplicate' || error === 'exists' ) {
+				me.handleErrors( error, arguments, fileName, me.fragment );
+				dfd.resolve.apply( me );
+			} else {
+				me.updateSize();
+				dfd.reject.apply(
+					me,
+					[ new OO.ui.Error( arguments[ 0 ], { recoverable: true } ) ]
+				);
+			}
+		} );
+
+	return new OO.ui.Process( dfd.promise(), this );
 };
 
 enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.doUpload = function ( file, params ) {
@@ -179,9 +214,11 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.insertExistingMedia =
 enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.handleErrors =
 // eslint-disable-next-line no-shadow-restricted-names
 	function ( error, arguments, fileName, fragment ) {
-		var me = this;
+		var me = this,
+			dfd = $.Deferred();
 		if ( error === 'fileexists-no-change' ) {
 			me.insertExistingMedia( fragment, fileName );
+			dfd.resolve();
 		}
 		if ( error === 'duplicate' ) {
 			var origFileName = arguments[ 1 ].upload.warnings.duplicate[ 0 ];
@@ -190,6 +227,7 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.handleErrors =
 				.done( function ( confirmed ) {
 					if ( confirmed ) {
 						me.insertExistingMedia( fragment, origFileName );
+						dfd.resolve();
 					}
 				} );
 		}
@@ -223,15 +261,31 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.handleErrors =
 							);
 							// eslint-disable-next-line no-undef
 							me.close( { action: action } );
+							dfd.resolve();
 						} )
 							// eslint-disable-next-line no-shadow-restricted-names
 							.fail( function ( err, arguments ) {
 								me.handleErrors( err, arguments, newFileName, fragment );
+								dfd.resolve();
 							} );
 					}
 				} );
 		}
+		return new OO.ui.Process( dfd.promise(), this );
 	};
+
+enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.preprocessParams = function ( params ) {
+	var paramsProcessor = { processor: new enhancedUpload.ParamsProcessor() };
+	mw.hook( 'enhancedUpload.makeParamProcessor' ).fire( paramsProcessor );
+	this.paramsProcessor = paramsProcessor.processor;
+
+	var item = { name: params.filename };
+	var skipOption = true;
+
+	params = this.paramsProcessor.getParams( params, item, skipOption );
+
+	return params;
+};
 
 /* Registration */
 ve.ui.windowFactory.register( enhancedUpload.ui.dialog.VEInsertMediaDialog );

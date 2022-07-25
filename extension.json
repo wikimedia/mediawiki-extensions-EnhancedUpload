@@ -208,8 +208,12 @@
 			]
 		},
 		"ext.enhancedUpload.ve.bootstrap": {
-			"scripts": [
-				"ext.enhancedUpload.ve.bootstrap.js"
+			"packageFiles": [
+				"ext.enhancedUpload.ve.bootstrap.js",
+				{
+					"name": "pluginModules.json",
+					"callback": "MediaWiki\\Extension\\EnhancedUpload\\EnhancedUploadPluginModules::getPluginModules"
+				}
 			],
 			"dependencies": [
 				"oojs-ui"
@@ -234,7 +238,8 @@
 			"dependencies": [
 				"ext.visualEditor.mwimage",
 				"oojs-ui",
-				"ext.visualEditor.mwlink"
+				"ext.visualEditor.mwlink",
+				"ext.enhancedUpload.paramsProcessor"
 			],
 			"messages": [
 				"enhancedupload-ve-dialog-title",
