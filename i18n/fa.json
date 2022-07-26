@@ -61,5 +61,7 @@
 	"enhancedupload-ve-attachmentinspector-grid-categories": "نمایش رده‌ها",
 	"enhancedupload-attachments-tag-grid-details-title": "جزئیات",
 	"enhancedupload-attachments-tag-grid-remove-title": "حذف",
-	"enhancedupload-attachments-confirm-remove": "حذف پروندهٔ «$1» از فهرست؟"
+	"enhancedupload-attachments-confirm-remove": "حذف پروندهٔ «$1» از فهرست؟",
+	"enhancedupload-tab-updated-upload": "پرونده‌های به‌روز شده",
+	"enhancedupload-updated-dialog-label": "پروندهٔ «$1» به‌روز شد"
 }

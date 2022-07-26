@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mschlindwein",
 			"Ajeje Brazorf",
-			"Verdy p",
-			"Robby"
+			"Mschlindwein",
+			"Robby",
+			"Verdy p"
 		]
 	},
 	"enhancedupload": "Special page name for [[Special:EnhancedUpload]] special page.\n{{Identical|Enhanced Upload}}",
