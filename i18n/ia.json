@@ -65,5 +65,7 @@
 	"enhancedupload-ve-attachmentinspector-grid-categories": "Monstrar categorias",
 	"enhancedupload-attachments-tag-grid-details-title": "Detalios",
 	"enhancedupload-attachments-tag-grid-remove-title": "Remover",
-	"enhancedupload-attachments-confirm-remove": "Remover le file \"$1\" del lista?"
+	"enhancedupload-attachments-confirm-remove": "Remover le file \"$1\" del lista?",
+	"enhancedupload-tab-updated-upload": "Files actualisate",
+	"enhancedupload-updated-dialog-label": "Le file \"$1\" ha essite actualisate"
 }

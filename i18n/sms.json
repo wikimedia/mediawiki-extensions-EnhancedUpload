@@ -4,5 +4,18 @@
 			"Yupik"
 		]
 	},
-	"enhancedupload-attachments-media-dialog-add-title": "Lââʹzzet"
+	"enhancedupload-attachments-media-dialog-add-title": "Lââʹzzet",
+	"enhancedupload-details-description-label": "Deskriptt",
+	"enhancedupload-upload-button-label": "Ruõkk",
+	"enhancedupload-tab-failed-upload": "Ij oʹnnstam",
+	"enhancedupload-attachments-add-new-media-button-title": "Lââʹzzet ođđ teâttõõzzid wikiprojektta",
+	"enhancedupload-attachments-tag-grid-size-label": "Šorradvuõtt",
+	"enhancedupload-upload-media-dialog-upload-title": "Ruõkk",
+	"enhancedupload-attachments-media-dialog-details-upload": "Ruõkk",
+	"enhancedupload-ve-attachment-title": "Meâlddõõzz",
+	"enhancedupload-ve-attachmentinspector-desc": "Deskriptt",
+	"enhancedupload-ve-attachmentinspector-grid-version": "Čiõǥǥ versio",
+	"enhancedupload-ve-attachmentinspector-grid-size": "Čuäʹjet šorradvuõđ",
+	"enhancedupload-ve-attachmentinspector-grid-categories": "Čuäʹjet kategoriaid",
+	"enhancedupload-attachments-confirm-remove": "Haaʹlääk-a ton teâttõõzz \"$1\" jaukkeed liistâst?"
 }
