@@ -5,7 +5,7 @@
 		]
 	},
 	"enhancedupload": "Подобрено подигање",
-	"enhancedupload-desc": "Дава службена страница со можност за подигање една или повеќе податотеки на викито",
+	"enhancedupload-desc": "Дава службена страница со можност за подигање на една или повеќе податотеки на викито",
 	"enhancedupload-text": "Подигни податотеки",
 	"enhancedupload-details-header-label": "Подробно",
 	"enhancedupload-details-namespace-label": "Именски простор",
@@ -31,7 +31,7 @@
 	"enhancedupload-ve-dialog-title-exists": "Веќе постои податотека со тоа име. Внесете друго",
 	"enhancedupload-preview-widget-label": "Овие податотеки се избрани за подигање",
 	"enhancedupload-attachments-add-media-button-title": "Додај податотека од вики",
-	"enhancedupload-attachments-add-new-media-button-title": "Додај нова податотека",
+	"enhancedupload-attachments-add-new-media-button-title": "Додај нови податотеки во викито",
 	"enhancedupload-attachments-tag-grid-file-label": "Податотека",
 	"enhancedupload-attachments-tag-grid-size-label": "Големина",
 	"enhancedupload-attachments-tag-grid-version-label": "Најнова верзија",
@@ -65,5 +65,7 @@
 	"enhancedupload-ve-attachmentinspector-grid-categories": "Прикажи категории",
 	"enhancedupload-attachments-tag-grid-details-title": "Подробно",
 	"enhancedupload-attachments-tag-grid-remove-title": "Отстрани",
-	"enhancedupload-attachments-confirm-remove": "Да ја отстранам податотеката „$1“ од списокот?"
+	"enhancedupload-attachments-confirm-remove": "Да ја отстранам податотеката „$1“ од списокот?",
+	"enhancedupload-tab-updated-upload": "Подновени податотеки",
+	"enhancedupload-updated-dialog-label": "Податотеката „$1“ е подновена"
 }
