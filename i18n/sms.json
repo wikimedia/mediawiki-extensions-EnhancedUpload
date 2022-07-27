@@ -17,5 +17,8 @@
 	"enhancedupload-attachments-media-dialog-details-upload": "Ruõkk",
 	"enhancedupload-ve-attachment-title": "Meâlddõõzz",
 	"enhancedupload-ve-attachmentinspector-desc": "Deskriptt",
-	"enhancedupload-attachments-confirm-remove": "Haaʹlääk-a ton teâttõõzz \"$1\" jaukkeed liistâst?"
+	"enhancedupload-attachments-confirm-remove": "Haaʹlääk-a ton teâttõõzz \"$1\" jaukkeed liistâst?",
+	"enhancedupload-ve-dialog-title": "Ruõkk teâttõõzz",
+	"enhancedupload-ui-action-new-upload-title": "Ruõkk ođđ teâttõõzz",
+	"enhancedupload-upload-media-dialog-title": "Ruõkk teâttõõzz"
 }
