@@ -77,9 +77,15 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.getActionProcess = functi
 		} );
 		return doneActionProcess;
 	}
-	return enhancedUpload.ui.dialog.VEInsertMediaDialog.super.prototype.getActionProcess.call(
-		this, action
+	return enhancedUpload.ui.dialog.VEInsertMediaDialog.parent.prototype.getActionProcess.call(
+		this,
+		action
 	);
+};
+
+enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.showErrors = function ( errors ) {
+	enhancedUpload.ui.dialog.VEInsertMediaDialog.parent.prototype.showErrors.call( this, errors );
+	this.updateSize();
 };
 
 enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.makeDoneProcess = function () {
@@ -112,18 +118,16 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.makeDoneProcess = functio
 	dfdUpload = this.doUpload( me.file, params );
 
 	dfdUpload.done( function ( resp ) {
-		me.insertMedia( fileName, resp.upload.imageinfo.url, me.file );
+		me.insertMedia( params.filename, resp.upload.imageinfo.url, me.file );
 		dfd.resolve.apply( me );
 	} )
 		// eslint-disable-next-line no-shadow-restricted-names
 		.fail( function ( error, arguments ) {
 			if ( error === 'fileexists-no-change' || error === 'duplicate' || error === 'exists' ) {
-				me.handleErrors( error, arguments, fileName, me.fragment );
+				me.handleErrors( error, arguments, params.filename, me.fragment );
 				dfd.resolve.apply( me );
 			} else {
-				me.updateSize();
-				dfd.reject.apply(
-					me,
+				dfd.reject(
 					[ new OO.ui.Error( arguments[ 0 ], { recoverable: true } ) ]
 				);
 			}
@@ -218,7 +222,7 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.handleErrors =
 			dfd = $.Deferred();
 		if ( error === 'fileexists-no-change' ) {
 			me.insertExistingMedia( fragment, fileName );
-			dfd.resolve();
+			dfd.resolve.apply( me );
 		}
 		if ( error === 'duplicate' ) {
 			var origFileName = arguments[ 1 ].upload.warnings.duplicate[ 0 ];
@@ -227,7 +231,7 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.handleErrors =
 				.done( function ( confirmed ) {
 					if ( confirmed ) {
 						me.insertExistingMedia( fragment, origFileName );
-						dfd.resolve();
+						dfd.resolve.apply( me );
 					}
 				} );
 		}
@@ -251,22 +255,40 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.handleErrors =
 							ignorewarnings: true
 						};
 
+						var fileNameParts = newFileName.split( ':' );
+						if ( fileNameParts.length > 0 ) {
+							var partsLength = fileNameParts.length;
+							params.prefix = '';
+							for ( var i = 0; i < partsLength - 1; i++ ) {
+								params.prefix += fileNameParts[ i ] + ':';
+							}
+							params.filename = fileNameParts[ partsLength - 1 ];
+							params = me.preprocessParams( params );
+						}
+
 						dfdReUpload = me.doUpload( me.file, params );
 						dfdReUpload.done( function ( resp ) {
 							me.insertMedia(
-								newFileName,
+								params.filename,
 								resp.upload.imageinfo.url,
 								me.file,
 								fragment
 							);
 							// eslint-disable-next-line no-undef
 							me.close( { action: action } );
-							dfd.resolve();
+							dfd.resolve.apply( me );
 						} )
 							// eslint-disable-next-line no-shadow-restricted-names
 							.fail( function ( err, arguments ) {
-								me.handleErrors( err, arguments, newFileName, fragment );
-								dfd.resolve();
+								if ( err === 'fileexists-no-change' || err === 'duplicate' || err === 'exists' ) {
+									me.handleErrors( err, arguments, params.filename, fragment );
+									dfd.resolve.apply( me );
+								} else {
+									dfd.reject.apply(
+										me,
+										[ new OO.ui.Error( arguments[ 0 ], { recoverable: true } ) ]
+									);
+								}
 							} );
 					}
 				} );
