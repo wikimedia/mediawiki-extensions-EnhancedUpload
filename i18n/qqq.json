@@ -70,5 +70,6 @@
 	"enhancedupload-attachments-tag-grid-remove-title": "Title for icon to remove row from grid",
 	"enhancedupload-attachments-confirm-remove": "Label for confirm prompt if file should be removed from list\nParameters:\n* $1 - file name",
 	"enhancedupload-tab-updated-upload": "Tab title for files which were updated",
-	"enhancedupload-updated-dialog-label": "Label that contains title of file which was updated\nParameters:\n* $1 - file name"
+	"enhancedupload-updated-dialog-label": "Label that contains title of file which was updated\nParameters:\n* $1 - file name",
+	"enhancedupload-finished-dialog-action-close": "Title for dialog action close"
 }

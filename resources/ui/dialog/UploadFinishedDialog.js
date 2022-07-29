@@ -16,7 +16,7 @@ enhancedUpload.ui.dialog.UploadFinishedDialog.static.name = 'uploadfinished-dial
 enhancedUpload.ui.dialog.UploadFinishedDialog.static.title = mw.message( 'enhancedupload-finished-dialog-title' ).plain();
 enhancedUpload.ui.dialog.UploadFinishedDialog.static.actions = [
 	{
-		title: 'Cancel',
+		title: mw.message( 'enhancedupload-finished-dialog-action-close' ).plain(),
 		icon: 'close',
 		flags: 'safe'
 	}
