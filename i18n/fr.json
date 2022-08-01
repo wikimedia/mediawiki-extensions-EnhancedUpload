@@ -25,7 +25,7 @@
 	"enhancedupload-tab-failed-upload": "Échec",
 	"enhancedupload-tab-successfull-upload": "Succès",
 	"enhancedupload-tab-warnings-upload": "Avertissements",
-	"enhancedupload-warning-dialog-label": "{{PLURAL:$1|Un|des}} avertissement{{PLURAL:$1|Un|des}} {{PLURAL:$1|a|ont}} été émis pour ce{{PLURAL:$1||s}} fichier{{PLURAL:$1||s}}",
+	"enhancedupload-warning-dialog-label": "{{PLURAL:$1|Un|des}} avertissement{{PLURAL:$1||s}} {{PLURAL:$1|a|ont}} été émis pour ce{{PLURAL:$1||s}} fichier{{PLURAL:$1||s}}",
 	"enhancedupload-ve-dialog-title": "Téléverser le fichier",
 	"enhancedupload-ve-dialog-filename-label": "Insérer un nom de fichier",
 	"enhancedupload-ve-dialog-title-exists": "Un fichier portant ce nom existe déjà. Veuillez insérer un nouveau nom de fichier.",
