@@ -295,13 +295,16 @@ enhancedUpload.ui.UploadWidget.prototype.startUpload = function () {
 			$( me.$overlay ).remove();
 			$( document.body ).removeClass( 'upload-open' );
 
+			if ( me.fetchUpdatedUploads.length > 0 ) {
+				me.redirectToFile();
+			}
+
 			if ( !me.hideFinishedDialog ) {
 				me.finishedDialog = new enhancedUpload.ui.dialog.UploadFinishedDialog( {
 					size: 'large',
 					data: [ me.fetchFinishedUploads,
 						me.fetchFailedUploads,
-						me.fetchWarningUploads,
-						me.fetchUpdatedUploads
+						me.fetchWarningUploads
 					]
 				} );
 				me.finishedDialog.show();
@@ -310,8 +313,7 @@ enhancedUpload.ui.UploadWidget.prototype.startUpload = function () {
 				me.emit( 'uploadData', [
 					me.fetchFinishedUploads,
 					me.fetchFailedUploads,
-					me.fetchWarningUploads,
-					me.fetchUpdatedUploads
+					me.fetchWarningUploads
 				] );
 			}
 
@@ -474,4 +476,27 @@ enhancedUpload.ui.UploadWidget.prototype.handleFailedQuickUpload = function ( it
 		} );
 	}
 	me.finishedDialog.show();
+};
+
+enhancedUpload.ui.UploadWidget.prototype.redirectToFile = function () {
+	var file = this.fetchUpdatedUploads[ 0 ];
+
+	mw.loader.using( 'mediawiki.api' ).done( function () {
+		var mwApi = new mw.Api();
+		var apiParams = {
+			action: 'query',
+			format: 'json',
+			prop: 'imageinfo',
+			iiprop: 'url',
+			titles: 'File:' + file[ 0 ]
+		};
+
+		mwApi.get( apiParams ).done( function ( data ) {
+			var pages = data.query.pages, p, url;
+			for ( p in pages ) {
+				url = pages[ p ].imageinfo[ 0 ].descriptionurl;
+			}
+			window.location.href = url;
+		} );
+	} );
 };
