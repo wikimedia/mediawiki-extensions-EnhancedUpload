@@ -67,5 +67,6 @@
 	"enhancedupload-attachments-tag-grid-remove-title": "Remove",
 	"enhancedupload-attachments-confirm-remove": "Remove file \"$1\" from list?",
 	"enhancedupload-tab-updated-upload": "Updated files",
-	"enhancedupload-updated-dialog-label": "The file \"$1\" has been updated"
+	"enhancedupload-updated-dialog-label": "The file \"$1\" has been updated",
+	"enhancedupload-finished-dialog-action-close": "Close"
 }

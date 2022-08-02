@@ -163,7 +163,8 @@
 				"enhancedupload-warning-dialog-label",
 				"enhancedupload-preview-widget-label",
 				"enhancedupload-tab-updated-upload",
-				"enhancedupload-updated-dialog-label"
+				"enhancedupload-updated-dialog-label",
+				"enhancedupload-finished-dialog-action-close"
 			]
 		},
 		"ext.enhancedupload.attachments.bootstrap": {
