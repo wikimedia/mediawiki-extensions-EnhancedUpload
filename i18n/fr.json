@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Eihel",
 			"Verdy p"
 		]
 	},
@@ -67,5 +68,6 @@
 	"enhancedupload-attachments-tag-grid-remove-title": "Enlever",
 	"enhancedupload-attachments-confirm-remove": "Enlever le fichier « $1 » de la liste ?",
 	"enhancedupload-tab-updated-upload": "Fichiers mis à jour",
-	"enhancedupload-updated-dialog-label": "Le fichier « $1 » a été mis à jour."
+	"enhancedupload-updated-dialog-label": "Le fichier « $1 » a été mis à jour.",
+	"enhancedupload-finished-dialog-action-close": "Fermer"
 }

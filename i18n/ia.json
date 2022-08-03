@@ -67,5 +67,6 @@
 	"enhancedupload-attachments-tag-grid-remove-title": "Remover",
 	"enhancedupload-attachments-confirm-remove": "Remover le file \"$1\" del lista?",
 	"enhancedupload-tab-updated-upload": "Files actualisate",
-	"enhancedupload-updated-dialog-label": "Le file \"$1\" ha essite actualisate"
+	"enhancedupload-updated-dialog-label": "Le file \"$1\" ha essite actualisate",
+	"enhancedupload-finished-dialog-action-close": "Clauder"
 }
