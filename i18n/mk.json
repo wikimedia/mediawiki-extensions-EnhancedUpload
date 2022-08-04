@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bjankuloski06"
+			"Bjankuloski06",
+			"Vlad5250"
 		]
 	},
 	"enhancedupload": "Подобрено подигање",
@@ -67,5 +68,6 @@
 	"enhancedupload-attachments-tag-grid-remove-title": "Отстрани",
 	"enhancedupload-attachments-confirm-remove": "Да ја отстранам податотеката „$1“ од списокот?",
 	"enhancedupload-tab-updated-upload": "Подновени податотеки",
-	"enhancedupload-updated-dialog-label": "Податотеката „$1“ е подновена"
+	"enhancedupload-updated-dialog-label": "Податотеката „$1“ е подновена",
+	"enhancedupload-finished-dialog-action-close": "Затвори"
 }
