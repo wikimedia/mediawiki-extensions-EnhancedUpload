@@ -31,6 +31,13 @@
 			"PluginModules": [
 				"ext.enhancedUpload.attachments.visualEditor"
 			]
+		},
+		"ContentDroplets": {
+			"Droplets": {
+				"attachment": {
+					"class": "\\MediaWiki\\Extension\\EnhancedUpload\\ContentDroplets\\AttachmentDroplet"
+				}
+			}
 		}
 	},
 	"ExtensionMessagesFiles": {
