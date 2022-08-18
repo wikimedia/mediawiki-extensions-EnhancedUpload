@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Farras"
+			"Farras",
+			"Veracious"
 		]
 	},
 	"enhancedupload-text": "Unggah berkas",
@@ -55,5 +56,8 @@
 	"enhancedupload-ve-attachmentinspector-grid-version": "Sembunyikan versi",
 	"enhancedupload-ve-attachmentinspector-grid-editor": "Sembunyikan penyunting",
 	"enhancedupload-ve-attachmentinspector-grid-size": "Lihat ukuran",
-	"enhancedupload-ve-attachmentinspector-grid-categories": "Tampilkan kategori"
+	"enhancedupload-ve-attachmentinspector-grid-categories": "Tampilkan kategori",
+	"enhancedupload-tab-updated-upload": "Berkas yang diperbarui",
+	"enhancedupload-updated-dialog-label": "Berkas \"$1\" telah diperbarui",
+	"enhancedupload-finished-dialog-action-close": "Tutup"
 }
