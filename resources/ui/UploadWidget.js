@@ -345,15 +345,33 @@ enhancedUpload.ui.UploadWidget.prototype.doUpload = function ( file, params ) {
 	mwApi.upload( file, params ).then( function ( resp ) {
 		me.fetchFinishedUploads.push( [ resp.upload.imageinfo.canonicaltitle, file ] );
 		dfd.resolve( resp );
-	}, ( function ( error ) {
-		if ( me.warnings.indexOf( error ) === -1 ) {
-			me.fetchFailedUploads.push( [ error, file ] );
-			dfd.resolve( error );
+	}, ( function ( errorCode, result ) {
+		var errorMessage = '';
+
+		if ( result.errors ) {
+			// errorformat: 'html'
+			errorMessage = result.errors.map( function ( err ) {
+				// formatversion: 1 / 2
+				return err[ '*' ] || err.html;
+			} );
+
+			// It's enough to show the first error
+			errorMessage = errorMessage[ 0 ];
+		} else if ( result.error ) {
+			// For backward compatibility with old API response format.
+
+			// errorformat: 'bc' (or not specified)
+			errorMessage = result.error.info;
+		}
+
+		if ( me.warnings.indexOf( errorCode ) === -1 ) {
+			me.fetchFailedUploads.push( [ errorMessage, file ] );
+			dfd.resolve( errorCode );
 		} else {
-			if ( me.singleUpload && error === 'exists' ) {
+			if ( me.singleUpload && errorCode === 'exists' ) {
 				me.fetchUpdatedUploads.push( [ me.destFilename ] );
 			} else {
-				me.fetchWarningUploads.push( [ error, file ] );
+				me.fetchWarningUploads.push( [ errorMessage, file ] );
 			}
 			dfd.resolve();
 		}
