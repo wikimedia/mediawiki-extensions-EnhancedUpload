@@ -44,8 +44,7 @@ enhancedUpload.ui.UploadWidget = function enhancedUploadUiUploadWidget( cfg ) {
 		mw.hook( 'enhancedUpload.makeParamProcessor' ).fire( paramsProcessor );
 		this.paramsProcessor = paramsProcessor.processor;
 
-		if ( !this.singleUpload &&
-			this.paramsProcessor instanceof enhancedUpload.UiParamsProcessor ) {
+		if ( !this.singleUpload && this.paramsProcessor instanceof enhancedUpload.UiParamsProcessor ) {
 			var paramElement = this.paramsProcessor.getElement();
 			if ( paramElement instanceof OO.ui.Element ) {
 				this.detailsWidget.$element.prepend( paramElement.$element );
@@ -396,12 +395,12 @@ enhancedUpload.ui.UploadWidget.prototype.startQuickUpload = function ( items ) {
 		} );
 
 		dialog.show();
-		if ( this.paramsProcessor.init ) {
-			var paramElement = this.paramsProcessor.init();
-			dialog.details.$element.prepend( paramElement.$element );
-			if ( this.paramsProcessor.setNamespaceValue ) {
-				this.paramsProcessor.setNamespaceValue( this.defaultPrefix );
+		if ( this.paramsProcessor instanceof enhancedUpload.UiParamsProcessor ) {
+			var paramElement = this.paramsProcessor.getElement();
+			if ( paramElement instanceof OO.ui.Element ) {
+				this.detailsWidget.$element.prepend( paramElement.$element );
 			}
+			this.paramsProcessor.setDefaultPrefix( this.defaultPrefix );
 		}
 		dialog.on( 'detailscompleted', function ( descCatText ) {
 			this.quickUpload( items, descCatText );
@@ -437,6 +436,8 @@ enhancedUpload.ui.UploadWidget.prototype.quickUpload = function ( items, descAnd
 			}
 			pageNames.push( params.filename );
 			var uploadDfd = me.doUpload( item, params );
+			// TODO: Fix this, this will not work, self-calling functions will call themselves
+			// immediately, not when actually done/fail. For this, recursion is needed.
 			$.when( uploadDfd ).done( function ( dfd, progress, maxUpload ) {
 				uploadDfds.push( dfd );
 				me.uploadProgressBar.setProgress( ( progress / ( maxUpload - 1 ) ) * 100 );
