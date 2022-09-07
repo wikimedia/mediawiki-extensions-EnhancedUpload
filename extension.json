@@ -354,8 +354,9 @@
 			]
 		},
 		"ext.enhancedUpload.paramsProcessor": {
-			"packageFiles": [
-				"ParamsProcessor.js"
+			"scripts": [
+				"ParamsProcessor.js",
+				"UiParamsProcessor.js"
 			],
 			"dependencies": [
 				"mediawiki.widgets"

@@ -4,12 +4,10 @@ enhancedUpload.ParamsProcessor = function () {};
 
 OO.initClass( enhancedUpload.ParamsProcessor );
 
-// allows processor to create widget for upload params
-enhancedUpload.ParamsProcessor.prototype.init = function () {};
-
-// allows processor to set namespace values
 // eslint-disable-next-line no-unused-vars
-enhancedUpload.ParamsProcessor.prototype.setNamespaceValue = function ( prefix ) {};
+enhancedUpload.ParamsProcessor.prototype.setDefaultPrefix = function ( prefix ) {
+	// STUB
+};
 
 // allows modification for upload params
 // eslint-disable-next-line no-unused-vars
