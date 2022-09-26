@@ -16,7 +16,6 @@ use Title;
 use TitleFactory;
 use User;
 use Wikimedia\ParamValidator\ParamValidator;
-use WikiPage;
 use WikitextContent;
 
 class SetAttachments extends SimpleHandler {
@@ -127,12 +126,8 @@ class SetAttachments extends SimpleHandler {
 	 * @return string
 	 */
 	private function getWikiText( $title ) {
-		if ( method_exists( MediaWikiServices::class, 'getWikiPageFactory' ) ) {
-			// MW 1.36+
-			$wikiPage = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $title );
-		} else {
-			$wikiPage = WikiPage::factory( $title );
-		}
+		$wikiPage = MediaWikiServices::getInstance()->getWikiPageFactory()
+			->newFromTitle( $title );
 		if ( !$wikiPage ) {
 			return Status::newFatal( 'Invalid WikiPage' );
 		}
@@ -152,12 +147,8 @@ class SetAttachments extends SimpleHandler {
 	 * @return Status
 	 */
 	private function savePage( $title, WikitextContent $content, $user ): Status {
-		if ( method_exists( MediaWikiServices::class, 'getWikiPageFactory' ) ) {
-			// MW 1.36+
-			$wikiPage = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $title );
-		} else {
-			$wikiPage = WikiPage::factory( $title );
-		}
+		$wikiPage = MediaWikiServices::getInstance()->getWikiPageFactory()
+			->newFromTitle( $title );
 		$revision = null;
 		try {
 			$updater = $wikiPage->newPageUpdater( $user );
