@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Farras",
+			"Rex",
 			"Veracious"
 		]
 	},
@@ -27,7 +28,7 @@
 	"enhancedupload-ve-dialog-title-exists": "Berkas dengan nama ini sudah ada. Masukkan nama yang baru.",
 	"enhancedupload-preview-widget-label": "Berkas-berkas ini akan diunggah",
 	"enhancedupload-attachments-add-media-button-title": "Tambah berkas dari wiki",
-	"enhancedupload-attachments-add-new-media-button-title": "Tambah berkas baru",
+	"enhancedupload-attachments-add-new-media-button-title": "Tambah berkas baru ke wiki",
 	"enhancedupload-attachments-tag-grid-file-label": "Berkas",
 	"enhancedupload-attachments-tag-grid-size-label": "Ukuran",
 	"enhancedupload-attachments-tag-grid-version-label": "Versi terbaru",
