@@ -2,10 +2,8 @@ $( function () {
 	var singleUpload = false;
 	var destFilename = '';
 	if ( mw.util.getParamValue( 'wpDestFile' ) ) {
-		if ( mw.util.getParamValue( 'wpForReUpload' ) === '1' ) {
-			singleUpload = true;
-			destFilename = mw.util.getParamValue( 'wpDestFile' );
-		}
+		singleUpload = true;
+		destFilename = mw.util.getParamValue( 'wpDestFile' );
 	}
 
 	// eslint-disable-next-line no-jquery/no-global-selector
