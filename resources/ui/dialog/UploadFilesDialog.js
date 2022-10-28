@@ -83,10 +83,10 @@ enhancedUpload.ui.dialog.UploadFilesDialog.prototype.switchPage = function ( nam
 
 	switch ( name ) {
 		case 'UploadPage':
-			this.updateSize();
 			page.connect( this, {
 				filesUpdated: function () {
 					this.actions.setAbilities( { add: true } );
+					this.updateSize();
 				},
 				uploadData: function ( files ) {
 					this.pushPending();
@@ -94,6 +94,7 @@ enhancedUpload.ui.dialog.UploadFilesDialog.prototype.switchPage = function ( nam
 				},
 				clearedPreview: function () {
 					this.actions.setAbilities( { add: false } );
+					this.updateSize();
 				}
 			} );
 			break;
@@ -142,5 +143,5 @@ enhancedUpload.ui.dialog.UploadFilesDialog.prototype.getActionProcess = function
 };
 
 enhancedUpload.ui.dialog.UploadFilesDialog.prototype.getBodyHeight = function () {
-	return this.$element.find( '.oo-ui-window-body' )[ 0 ].scrollHeight;
+	return this.$element.find( '.oo-ui-window-body' )[ 0 ].scrollHeight + 85;
 };
