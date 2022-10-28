@@ -29,6 +29,7 @@ enhancedUpload.ui.panel.WarningList.prototype.addGrid = function ( data ) {
 	gridCfg = {
 		pageSize: 10,
 		border: 'horizontal',
+		toolbar: false,
 		columns: {
 			name: {
 				headerText: mw.message( 'enhancedupload-list-header-filename' ).plain(),
