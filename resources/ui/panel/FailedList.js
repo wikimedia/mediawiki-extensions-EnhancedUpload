@@ -27,6 +27,7 @@ enhancedUpload.ui.panel.FailedList.prototype.addGrid = function ( data ) {
 	gridCfg = {
 		pageSize: 10,
 		border: 'horizontal',
+		toolbar: false,
 		columns: {
 			typ: {
 				headerText: mw.message( 'enhancedupload-list-header-filetype' ).plain(),
