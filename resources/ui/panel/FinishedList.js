@@ -30,6 +30,7 @@ enhancedUpload.ui.panel.FinishedList.prototype.addGrid = function ( data ) {
 	gridCfg = {
 		pageSize: 10,
 		border: 'horizontal',
+		toolbar: false,
 		columns: {
 			name: {
 				headerText: mw.message( 'enhancedupload-list-header-link' ).plain(),
