@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hedda"
+			"Hedda",
+			"ToprakM"
 		]
 	},
 	"enhancedupload": "Gelişmiş Yükleme",
@@ -31,7 +32,7 @@
 	"enhancedupload-ve-dialog-title-exists": "Bu isme sahip bir dosya zaten var. Lütfen yeni bir dosya adı girin",
 	"enhancedupload-preview-widget-label": "Bu dosyalar, yüklenmek üzere seçildi",
 	"enhancedupload-attachments-add-media-button-title": "Viki'den dosya ekle",
-	"enhancedupload-attachments-add-new-media-button-title": "Yeni dosya ekle",
+	"enhancedupload-attachments-add-new-media-button-title": "Vikiye yeni dosya ekle",
 	"enhancedupload-attachments-tag-grid-file-label": "Dosya",
 	"enhancedupload-attachments-tag-grid-size-label": "Boyut",
 	"enhancedupload-attachments-tag-grid-version-label": "Güncel sürüm",
@@ -62,5 +63,6 @@
 	"enhancedupload-ve-attachmentinspector-grid-version": "Sürümü gizle",
 	"enhancedupload-ve-attachmentinspector-grid-editor": "Editörü gizle",
 	"enhancedupload-ve-attachmentinspector-grid-size": "Boyutu göster",
-	"enhancedupload-ve-attachmentinspector-grid-categories": "Kategorileri göster"
+	"enhancedupload-ve-attachmentinspector-grid-categories": "Kategorileri göster",
+	"enhancedupload-attachments-tag-grid-details-title": "Ayrıntılar"
 }
