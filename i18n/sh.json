@@ -4,15 +4,15 @@
 			"Vlad5250"
 		]
 	},
-	"enhancedupload-desc": "Nudi posebnu stranicu s mogućnošću postavljanja jedne ili više datoteka na wiki",
-	"enhancedupload-text": "Postavljanje datoteka",
+	"enhancedupload-desc": "Nudi posebnu stranicu s mogućnošću otpremanja jedne ili više datoteka na wiki",
+	"enhancedupload-text": "Otpremanje datoteka",
 	"enhancedupload-details-header-label": "Detalji",
 	"enhancedupload-details-namespace-label": "Imenski prostor",
 	"enhancedupload-details-categories-label": "Kategorije",
 	"enhancedupload-details-description-label": "Opis",
-	"enhancedupload-upload-button-label": "Postavi",
+	"enhancedupload-upload-button-label": "Otpremi",
 	"enhancedupload-cancel-button-label": "Otkaži",
-	"enhancedupload-finished-dialog-title": "Postavljanje završilo je",
+	"enhancedupload-finished-dialog-title": "Otpremanje završilo je",
 	"enhancedupload-failed-dialog-title": "Nešto je pošlo naopako",
 	"enhancedupload-list-header-filetype": "format",
 	"enhancedupload-list-header-filename": "ime datoteke",
@@ -47,5 +47,6 @@
 	"enhancedupload-attachments-tag-grid-details-title": "Detalji",
 	"enhancedupload-attachments-tag-grid-remove-title": "Ukloni",
 	"enhancedupload-tab-updated-upload": "Podnovljene datoteke",
-	"enhancedupload-finished-dialog-action-close": "Zatvori"
+	"enhancedupload-finished-dialog-action-close": "Zatvori",
+	"enhancedupload": "Poboljšano otpremanje"
 }
