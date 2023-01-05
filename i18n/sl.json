@@ -8,5 +8,9 @@
 	"enhancedupload-attachments-media-dialog-cancel-title": "Prekliči",
 	"enhancedupload-upload-media-dialog-cancel-title": "Prekliči",
 	"enhancedupload-attachments-media-dialog-details-cancel": "Prekliči",
-	"enhancedupload-tab-failed-upload": "Neuspešno"
+	"enhancedupload-tab-failed-upload": "Neuspešno",
+	"enhancedupload-cancel-button-label": "Prekliči",
+	"enhancedupload-attachments-add-new-media-button-title": "Dodaj v viki nove datoteke",
+	"enhancedupload-attachments-media-dialog-label": "Poišči datoteko",
+	"enhancedupload-ve-attachmentinspector-title": "Naslov"
 }
