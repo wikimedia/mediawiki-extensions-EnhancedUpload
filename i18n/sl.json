@@ -12,5 +12,7 @@
 	"enhancedupload-cancel-button-label": "Prekliči",
 	"enhancedupload-attachments-add-new-media-button-title": "Dodaj v viki nove datoteke",
 	"enhancedupload-attachments-media-dialog-label": "Poišči datoteko",
-	"enhancedupload-ve-attachmentinspector-title": "Naslov"
+	"enhancedupload-ve-attachmentinspector-title": "Naslov",
+	"enhancedupload-list-header-error": "napaka",
+	"enhancedupload-finished-dialog-action-close": "Zapri"
 }
