@@ -5,8 +5,14 @@
 		]
 	},
 	"enhancedupload-details-namespace-label": "Imenski prostor",
+	"enhancedupload-cancel-button-label": "Prekliči",
+	"enhancedupload-list-header-error": "napaka",
 	"enhancedupload-tab-failed-upload": "Neuspešno",
+	"enhancedupload-attachments-add-new-media-button-title": "Dodaj v viki nove datoteke",
 	"enhancedupload-attachments-media-dialog-cancel-title": "Prekliči",
+	"enhancedupload-attachments-media-dialog-label": "Poišči datoteko",
 	"enhancedupload-upload-media-dialog-cancel-title": "Prekliči",
-	"enhancedupload-attachments-media-dialog-details-cancel": "Prekliči"
+	"enhancedupload-attachments-media-dialog-details-cancel": "Prekliči",
+	"enhancedupload-ve-attachmentinspector-title": "Naslov",
+	"enhancedupload-finished-dialog-action-close": "Zapri"
 }
