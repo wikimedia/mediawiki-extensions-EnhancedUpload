@@ -6,34 +6,28 @@ namespace MediaWiki\Extension\EnhancedUpload\ContentDroplets;
 
 use MediaWiki\Extension\ContentDroplets\Droplet\TagDroplet;
 use Message;
-use RawMessage;
 
 class AttachmentDroplet extends TagDroplet {
-
-	/**
-	 */
-	public function __construct() {
-	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getName(): Message {
-		return new RawMessage( 'Attachments' );
+		return Message::newFromKey( 'enhancedupload-droplet-attachments-name' );
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getDescription(): Message {
-		return new RawMessage( "Area for organising attachments" );
+		return Message::newFromKey( 'enhancedupload-droplet-attachments-description' );
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getIcon(): string {
-		return 'articles';
+		return 'droplet-attachments';
 	}
 
 	/**
