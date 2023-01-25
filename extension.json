@@ -178,6 +178,7 @@
 			"scripts": [
 				"attachments.bootstrap.js"
 			],
+			"styles": "enhancedUpload.droplet.css",
 			"dependencies": [
 				"oojs-ui"
 			]

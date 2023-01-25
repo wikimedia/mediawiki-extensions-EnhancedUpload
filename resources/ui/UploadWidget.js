@@ -44,9 +44,12 @@ enhancedUpload.ui.UploadWidget = function enhancedUploadUiUploadWidget( cfg ) {
 		mw.hook( 'enhancedUpload.makeParamProcessor' ).fire( paramsProcessor );
 		this.paramsProcessor = paramsProcessor.processor;
 
-		if ( this.paramsProcessor.init && !this.singleUpload ) {
-			var paramElement = this.paramsProcessor.init();
-			this.detailsWidget.$element.prepend( paramElement.$element );
+		if ( !this.singleUpload &&
+			this.paramsProcessor instanceof enhancedUpload.UiParamsProcessor ) {
+			var paramElement = this.paramsProcessor.getElement();
+			if ( paramElement instanceof OO.ui.Element ) {
+				this.detailsWidget.$element.prepend( paramElement.$element );
+			}
 		}
 
 		if ( !this.hidePreview ) {
