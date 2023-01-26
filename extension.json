@@ -24,6 +24,14 @@
 		"EnhancedUpload": "i18n"
 	},
 	"attributes": {
+		"BlueSpiceFoundation": {
+			"ConfigDefinitionRegistry": {
+				"EnhancedUploadDragDropImagesAlignment": "\\MediaWiki\\Extension\\EnhancedUpload\\ConfigDefinition\\DragDropImagesAlignment::getInstance",
+				"EnhancedUploadDragDropImagesType": "\\MediaWiki\\Extension\\EnhancedUpload\\ConfigDefinition\\DragDropImagesType::getInstance",
+				"EnhancedUploadDragDropImagesHeight": "\\MediaWiki\\Extension\\EnhancedUpload\\ConfigDefinition\\DragDropImagesHeight::getInstance",
+				"EnhancedUploadDragDropImagesWidth": "\\MediaWiki\\Extension\\EnhancedUpload\\ConfigDefinition\\DragDropImagesWidth::getInstance"
+			}
+		},
 		"EnhancedUpload": {
 			"UploadFormPluginModules": []
 		},
@@ -241,8 +249,12 @@
 			]
 		},
 		"ext.enhancedUpload.ve.mediaDialog": {
-			"scripts": [
-				"ui/dialog/VEInsertMediaDialog.js"
+			"packageFiles": [
+				"ui/dialog/VEInsertMediaDialog.js",
+				{
+					"name": "ui/dialog/insertMediaConfig.json",
+					"callback": "MediaWiki\\Extension\\EnhancedUpload\\InsertMediaConfig::makeConfigJson"
+				}
 			],
 			"dependencies": [
 				"ext.visualEditor.mwimage",
@@ -380,6 +392,22 @@
 	"config": {
 		"EnhancedUploadOverrideStandardUpload": {
 			"value": false
+		},
+		"EnhancedUploadDragDropImagesAlignment": {
+			"value": "right",
+			"public": true
+		},
+		"EnhancedUploadDragDropImagesType": {
+			"value": "thumb",
+			"public": true
+		},
+		"EnhancedUploadDragDropImagesHeight": {
+			"value": "auto",
+			"public": true
+		},
+		"EnhancedUploadDragDropImagesWidth": {
+			"value": "300",
+			"public": true
 		}
 	},
 	"manifest_version": 2,
