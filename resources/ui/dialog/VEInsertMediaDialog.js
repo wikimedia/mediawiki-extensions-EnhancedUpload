@@ -157,18 +157,32 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.insertMedia =
 				fragment = this.getFragment();
 			}
 			title = mw.Title.newFromText( 'File:' + fileName );
+			var config = require( './insertMediaConfig.json' );
+			var alignConfig = config.imagesAlignment;
+			var typeConfig = config.imagesType;
+			var heightConfig = config.imagesHeight;
+			if ( heightConfig !== 'auto' ) {
+				heightConfig = parseInt( heightConfig );
+			}
+			var widthConfig = config.imagesWidth;
+			if ( widthConfig !== 'auto' ) {
+				widthConfig = parseInt( widthConfig );
+			}
+			var isDefaultSize = false;
+			if ( heightConfig === 'auto' && widthConfig === 'auto' ) {
+				isDefaultSize = true;
+			}
 			this.imageModel = ve.dm.MWImageModel.static.newFromImageAttributes(
 				{
 					src: url,
 					href: './' + title.getPrefixedText(),
-					width: 300,
-					height: 'auto',
+					width: widthConfig,
+					height: heightConfig,
 					resource: title.getPrefixedText(),
 					mediaType: file.type,
-					type: 'thumb',
-					align: 'default',
-					defaultSize: true
-
+					type: typeConfig,
+					align: alignConfig,
+					defaultSize: isDefaultSize
 				},
 				fragment.getDocument()
 			);
