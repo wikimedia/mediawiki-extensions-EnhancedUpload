@@ -76,5 +76,7 @@
 	"enhancedupload-config-height-label": "Image height:",
 	"enhancedupload-config-height-help": "Height setting for drag and drop images in visual editor. Set to 'auto' to scale with width. If both are set to 'auto', the default size will be used.",
 	"enhancedupload-config-width-label": "Image width:",
-	"enhancedupload-config-width-help": "Width setting for drag and drop images in visual editor Set to 'auto' to scale with height. If both are set to 'auto', the default size will be used."
+	"enhancedupload-config-width-help": "Width setting for drag and drop images in visual editor Set to 'auto' to scale with height. If both are set to 'auto', the default size will be used.",
+	"enhancedupload-droplet-attachments-name": "Attachments",
+	"enhancedupload-droplet-attachments-description": "Area for organizing attachments"
 }

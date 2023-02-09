@@ -77,5 +77,7 @@
 	"enhancedupload-config-height-label": "Bildhöhe:",
 	"enhancedupload-config-height-help": "Höheneinstellung für Drag-and-Drop-Bilder im visuellen Editor. Auf „auto“ setzen, um mit der Breite zu skalieren. Wenn beide auf „auto“ eingestellt sind, wird die Standardgröße verwendet.",
 	"enhancedupload-config-width-label": "Bildbreite:",
-	"enhancedupload-config-width-help": "Breiteneinstellung für Drag-and-Drop-Bilder im visuellen Editor. Auf „auto“ setzen, um mit der Höhe zu skalieren. Wenn beide auf „auto“ eingestellt sind, wird die Standardgröße verwendet."
+	"enhancedupload-config-width-help": "Breiteneinstellung für Drag-and-Drop-Bilder im visuellen Editor. Auf „auto“ setzen, um mit der Höhe zu skalieren. Wenn beide auf „auto“ eingestellt sind, wird die Standardgröße verwendet.",
+	"enhancedupload-droplet-attachments-name": "Anhänge",
+	"enhancedupload-droplet-attachments-description": "Bereich zur Organisation von Anhängen"
 }
