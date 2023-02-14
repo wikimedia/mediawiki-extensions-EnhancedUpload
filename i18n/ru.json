@@ -2,9 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Kareyac",
-			"Person or Persons Unknown"
+			"Person or Persons Unknown",
+			"Pacha Tchernof"
 		]
 	},
+	"enhancedupload-attachments-media-dialog-cancel-title": "Отмена",
+	"enhancedupload-upload-media-dialog-cancel-title": "Отмена",
+	"enhancedupload-attachments-media-dialog-details-cancel": "Отмена",
 	"enhancedupload-attachments-tag-grid-details-title": "Подробности",
 	"enhancedupload-tab-updated-upload": "Обновлённые файлы",
 	"enhancedupload-updated-dialog-label": "Файл «$1» был обновлён",
