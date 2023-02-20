@@ -71,5 +71,13 @@
 	"enhancedupload-attachments-confirm-remove": "Label for confirm prompt if file should be removed from list\nParameters:\n* $1 - file name",
 	"enhancedupload-tab-updated-upload": "Tab title for files which were updated",
 	"enhancedupload-updated-dialog-label": "Label that contains title of file which was updated\nParameters:\n* $1 - file name",
-	"enhancedupload-finished-dialog-action-close": "Title for dialog action close"
+	"enhancedupload-finished-dialog-action-close": "Title for dialog action close",
+	"enhancedupload-config-alignment-label": "Image alignment label in config manager",
+	"enhancedupload-config-alignment-help": "Image alignment help message in config manager",
+	"enhancedupload-config-type-label": "Image type label in config manager",
+	"enhancedupload-config-type-help": "Image type help message in config manager",
+	"enhancedupload-config-height-label": "Image height label in config manager",
+	"enhancedupload-config-height-help": "Image height help message in config manager",
+	"enhancedupload-config-width-label": "Image width label in config manager",
+	"enhancedupload-config-width-help": "Image width help message in config manager"
 }

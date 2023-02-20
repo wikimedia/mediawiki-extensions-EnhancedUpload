@@ -68,5 +68,13 @@
 	"enhancedupload-attachments-confirm-remove": "Remove file \"$1\" from list?",
 	"enhancedupload-tab-updated-upload": "Updated files",
 	"enhancedupload-updated-dialog-label": "The file \"$1\" has been updated",
-	"enhancedupload-finished-dialog-action-close": "Close"
+	"enhancedupload-finished-dialog-action-close": "Close",
+	"enhancedupload-config-alignment-label": "Image alignment:",
+	"enhancedupload-config-alignment-help": "Alignment setting for drag and drop images in visual editor",
+	"enhancedupload-config-type-label": "Image type:",
+	"enhancedupload-config-type-help": "Type setting for drag and drop images in visual editor",
+	"enhancedupload-config-height-label": "Image height:",
+	"enhancedupload-config-height-help": "Height setting for drag and drop images in visual editor. Set to 'auto' to scale with width. If both are set to 'auto', the default size will be used.",
+	"enhancedupload-config-width-label": "Image width:",
+	"enhancedupload-config-width-help": "Width setting for drag and drop images in visual editor Set to 'auto' to scale with height. If both are set to 'auto', the default size will be used."
 }
