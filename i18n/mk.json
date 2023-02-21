@@ -69,5 +69,13 @@
 	"enhancedupload-attachments-confirm-remove": "Да ја отстранам податотеката „$1“ од списокот?",
 	"enhancedupload-tab-updated-upload": "Подновени податотеки",
 	"enhancedupload-updated-dialog-label": "Податотеката „$1“ е подновена",
-	"enhancedupload-finished-dialog-action-close": "Затвори"
+	"enhancedupload-finished-dialog-action-close": "Затвори",
+	"enhancedupload-config-alignment-label": "Поставеност на сликата:",
+	"enhancedupload-config-alignment-help": "Можност за одредување на местото на сликата при влечење и пуштање на слики во нагледниот уредник",
+	"enhancedupload-config-type-label": "Вид на слика",
+	"enhancedupload-config-type-help": "Можност за вид при влечење и пуштање на слики во нагледниот уредник",
+	"enhancedupload-config-height-label": "Висина на сликата:",
+	"enhancedupload-config-height-help": "Можност за висина при влечење и пуштање на слики во нагледниот уредник. Задајте „auto“ за да се сразмери со ширината. Ако свете се на „auto“, тогаш се користи основно зададената големина.",
+	"enhancedupload-config-width-label": "Ширина на сликата:",
+	"enhancedupload-config-width-help": "Можност за ширина при влечење и пуштање на слики во нагледниот уредник. Задајте „auto“ за да се сразмери со ширината. Ако свете се на „auto“, тогаш се користи основно зададената големина."
 }
