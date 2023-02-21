@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kizule"
+		]
+	},
+	"enhancedupload-config-type-label": "Врста слике:",
+	"enhancedupload-config-height-label": "Висина слике:",
+	"enhancedupload-config-width-label": "Ширина слике:"
+}
