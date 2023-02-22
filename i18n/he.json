@@ -68,5 +68,13 @@
 	"enhancedupload-attachments-confirm-remove": "להסיר את הקובץ \"$1\" מהרשימה?",
 	"enhancedupload-tab-updated-upload": "קבצים מעודכנים",
 	"enhancedupload-updated-dialog-label": "הקובץ \"$1\" עודכן",
-	"enhancedupload-finished-dialog-action-close": "סגירה"
+	"enhancedupload-finished-dialog-action-close": "סגירה",
+	"enhancedupload-config-alignment-label": "יישור תמונה:",
+	"enhancedupload-config-alignment-help": "הגדרת יישור לגרירה ושחרור של תמונות בעורך החזותי",
+	"enhancedupload-config-type-label": "סוג התמונה:",
+	"enhancedupload-config-type-help": "הגדרת סוג עבור גרירה ושחרור של תמונות בעורך החזותי",
+	"enhancedupload-config-height-label": "גובה התמונה:",
+	"enhancedupload-config-height-help": "הגדרת גובה לגרירה ושחרור של תמונות בעורך החזותי. יש להגדיר ל\"אוטומטי\" כדי לשנות את קנה המידה עם הרוחב. אם שניהם מוגדרים ל\"אוטומטי\", ישמש גודל ברירת המחדל.",
+	"enhancedupload-config-width-label": "רוחב התמונה:",
+	"enhancedupload-config-width-help": "הגדרת רוחב לגרירה ושחרור של תמונות בעורך החזותי. יש להגדיר ל\"אוטומטי\" כדי לשנות את קנה המידה עם הגובה. אם שניהם מוגדרים ל\"אוטומטי\", ישמש גודל ברירת המחדל."
 }
