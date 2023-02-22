@@ -68,5 +68,13 @@
 	"enhancedupload-attachments-confirm-remove": "Remover le file \"$1\" del lista?",
 	"enhancedupload-tab-updated-upload": "Files actualisate",
 	"enhancedupload-updated-dialog-label": "Le file \"$1\" ha essite actualisate",
-	"enhancedupload-finished-dialog-action-close": "Clauder"
+	"enhancedupload-finished-dialog-action-close": "Clauder",
+	"enhancedupload-config-alignment-label": "Alineamento de imagines:",
+	"enhancedupload-config-alignment-help": "Parametro de alineamento pro traher e deponer imagines in le editor visual",
+	"enhancedupload-config-type-label": "Typo de imagine:",
+	"enhancedupload-config-type-help": "Parametro de typo pro traher e deponer imagines in le editor visual",
+	"enhancedupload-config-height-label": "Altitude del imagine:",
+	"enhancedupload-config-height-help": "Parametro de altitude pro traher e deponer imagines in le editor visual. Mitter a 'auto' pro calcular un altitude in proportion con le latitude. Si ambes es mittite a 'auto', le dimension predefinite essera usate.",
+	"enhancedupload-config-width-label": "Latitude del imagine:",
+	"enhancedupload-config-width-help": "Parametro de latitude pro traher e deponer imagines in le editor visual. Mitter a 'auto' pro calcular un latitude in proportion con le altitude. Si ambes es mittite a 'auto', le dimension predefinite essera usate."
 }

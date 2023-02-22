@@ -60,5 +60,13 @@
 	"enhancedupload-ve-attachmentinspector-grid-version": "Versie verbergen",
 	"enhancedupload-ve-attachmentinspector-grid-editor": "Bewerker verbergen",
 	"enhancedupload-ve-attachmentinspector-grid-size": "Grootte weergeven",
-	"enhancedupload-ve-attachmentinspector-grid-categories": "Categorieën weergeven"
+	"enhancedupload-ve-attachmentinspector-grid-categories": "Categorieën weergeven",
+	"enhancedupload-config-alignment-label": "Uitlijning afbeelding:",
+	"enhancedupload-config-alignment-help": "Uitlijningsinstelling voor het slepen en neerzetten van afbeeldingen in de visuele editor",
+	"enhancedupload-config-type-label": "Soort afbeelding:",
+	"enhancedupload-config-type-help": "Type-instelling voor het slepen en neerzetten van afbeeldingen in de visuele editor",
+	"enhancedupload-config-height-label": "Hoogte afbeelding:",
+	"enhancedupload-config-height-help": "Hoogte-instelling voor het slepen en neerzetten van afbeeldingen in de visuele editor. Zet op 'auto' om in verhouding met de breedte in te stellen. Als beide op 'auto' zijn gezet, wordt de standaardgrootte gebruikt.",
+	"enhancedupload-config-width-label": "Breedte afbeelding:",
+	"enhancedupload-config-width-help": "Breedte-instelling voor het slepen en neerzetten van afbeeldingen in de visuele editor. Zet op 'auto' om in verhouding met de hoogte in te stellen. Als beide op 'auto' zijn gezet, wordt de standaardgrootte gebruikt."
 }
