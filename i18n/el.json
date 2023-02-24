@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Norhorn"
+		]
+	},
+	"enhancedupload-config-alignment-label": "Στοίχιση εικόνας:",
+	"enhancedupload-config-type-label": "Τύπος εικόνας:",
+	"enhancedupload-config-height-label": "Ύψος εικόνας:",
+	"enhancedupload-config-width-label": "Πλάτος εικόνας:"
+}
