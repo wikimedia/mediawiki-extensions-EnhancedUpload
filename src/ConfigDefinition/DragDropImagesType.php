@@ -35,7 +35,7 @@ class DragDropImagesType extends ArraySetting implements IOverwriteGlobal {
 			'thumb' => 'thumb',
 			'frameless' => 'frameless',
 			'frame' => 'frame',
-			'basic' => 'none/inline',
+			'basic' => 'none',
 		];
 	}
 
