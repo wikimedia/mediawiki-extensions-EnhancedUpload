@@ -52,5 +52,7 @@
 	"enhancedupload-attachments-tag-grid-remove-title": "除去",
 	"enhancedupload-attachments-confirm-remove": "リストからファイル「$1」を削除しますか？",
 	"enhancedupload-tab-updated-upload": "更新されたファイル",
-	"enhancedupload-finished-dialog-action-close": "閉じる"
+	"enhancedupload-finished-dialog-action-close": "閉じる",
+	"enhancedupload-config-type-label": "画像の種類",
+	"enhancedupload-config-width-label": "画像の幅"
 }

@@ -38,5 +38,7 @@
 	"enhancedupload-attachments-tag-grid-remove-title": "Quitar",
 	"enhancedupload-tab-updated-upload": "Archivos actualizados",
 	"enhancedupload-updated-dialog-label": "Se actualizó el archivo «$1»",
-	"enhancedupload-finished-dialog-action-close": "Cerrar"
+	"enhancedupload-finished-dialog-action-close": "Cerrar",
+	"enhancedupload-config-type-label": "Tipo de imagen:",
+	"enhancedupload-config-height-label": "Altura de la imagen:"
 }
