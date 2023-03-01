@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Seipinne",
 			"Yupik"
 		]
 	},
@@ -9,5 +10,8 @@
 	"enhancedupload-attachments-media-dialog-details-cancel": "Jooskâ",
 	"enhancedupload-attachments-tag-grid-remove-title": "Siho",
 	"enhancedupload-attachments-media-dialog-add-title": "Lasseet",
-	"enhancedupload-tab-failed-upload": "Ij luhostum"
+	"enhancedupload-tab-failed-upload": "Ij luhostum",
+	"enhancedupload-details-categories-label": "Luokah",
+	"enhancedupload-attachments-tag-grid-category-label": "Luokah",
+	"enhancedupload-ve-attachmentinspector-categories": "Luokah"
 }
