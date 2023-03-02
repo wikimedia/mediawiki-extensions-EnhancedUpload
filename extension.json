@@ -7,7 +7,7 @@
 		"Miriam Schlindwein",
 		"Patric Wirth"
 	],
-	"url": "https://www.hallowelt.com",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:EnhancedUpload",
 	"descriptionmsg": "enhancedupload-desc",
 	"requires": {
 		"MediaWiki": ">= 1.35.0",
