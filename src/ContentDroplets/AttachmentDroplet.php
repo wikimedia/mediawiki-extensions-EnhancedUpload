@@ -33,8 +33,8 @@ class AttachmentDroplet extends TagDroplet {
 	/**
 	 * @inheritDoc
 	 */
-	public function getRLModule(): string {
-		return 'ext.enhancedupload.attachments.bootstrap';
+	public function getRLModules(): array {
+		return [ 'ext.enhancedupload.attachments.bootstrap' ];
 	}
 
 	/**
