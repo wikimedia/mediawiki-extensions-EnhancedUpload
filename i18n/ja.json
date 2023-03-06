@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"MathXplore",
-			"Mugenpman"
+			"Mugenpman",
+			"もなー(偽物)"
 		]
 	},
 	"enhancedupload-text": "ファイルをアップロード",
@@ -53,6 +54,8 @@
 	"enhancedupload-attachments-confirm-remove": "リストからファイル「$1」を削除しますか？",
 	"enhancedupload-tab-updated-upload": "更新されたファイル",
 	"enhancedupload-finished-dialog-action-close": "閉じる",
+	"enhancedupload-config-alignment-label": "画像の配置:",
 	"enhancedupload-config-type-label": "画像の種類",
+	"enhancedupload-config-height-label": "画像の高さ:",
 	"enhancedupload-config-width-label": "画像の幅"
 }
