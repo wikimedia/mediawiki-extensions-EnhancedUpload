@@ -54,5 +54,8 @@
 	"enhancedupload-ve-attachmentinspector-grid-size": "إظهار الحجم",
 	"enhancedupload-ve-attachmentinspector-grid-categories": "عرض الفئات",
 	"enhancedupload-attachments-tag-grid-details-title": "تفاصيل",
-	"enhancedupload-attachments-tag-grid-remove-title": "أزل"
+	"enhancedupload-attachments-tag-grid-remove-title": "أزل",
+	"enhancedupload-config-type-label": "نوع الصورة:",
+	"enhancedupload-config-height-label": "ارتفاع الصورة:",
+	"enhancedupload-config-width-label": "عرض الصورة:"
 }
