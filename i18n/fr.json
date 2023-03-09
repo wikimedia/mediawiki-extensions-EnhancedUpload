@@ -77,5 +77,7 @@
 	"enhancedupload-config-height-label": "Hauteur de l’image :",
 	"enhancedupload-config-height-help": "Réglage de la hauteur pour glisser-déposer des images dans l’éditeur visuel. Réglez sur « auto » pour mettre à l’échelle avec la largeur. Si les deux sont réglés sur « auto », la taille par défaut sera utilisée.",
 	"enhancedupload-config-width-label": "Largeur de l’image :",
-	"enhancedupload-config-width-help": "Réglage de la largeur pour glisser-déposer des images dans l’éditeur visuel. Réglez sur « auto » pour mettre à l’échelle avec la hauteur. Si les deux sont réglés sur « auto », la taille par défaut sera utilisée."
+	"enhancedupload-config-width-help": "Réglage de la largeur pour glisser-déposer des images dans l’éditeur visuel. Réglez sur « auto » pour mettre à l’échelle avec la hauteur. Si les deux sont réglés sur « auto », la taille par défaut sera utilisée.",
+	"enhancedupload-droplet-attachments-name": "Pièces jointes",
+	"enhancedupload-droplet-attachments-description": "Zone pour l’organisation des pièces jointes"
 }

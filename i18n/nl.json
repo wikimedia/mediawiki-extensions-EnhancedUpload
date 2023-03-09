@@ -68,5 +68,7 @@
 	"enhancedupload-config-height-label": "Hoogte afbeelding:",
 	"enhancedupload-config-height-help": "Hoogte-instelling voor het slepen en neerzetten van afbeeldingen in de visuele editor. Zet op 'auto' om in verhouding met de breedte in te stellen. Als beide op 'auto' zijn gezet, wordt de standaardgrootte gebruikt.",
 	"enhancedupload-config-width-label": "Breedte afbeelding:",
-	"enhancedupload-config-width-help": "Breedte-instelling voor het slepen en neerzetten van afbeeldingen in de visuele editor. Zet op 'auto' om in verhouding met de hoogte in te stellen. Als beide op 'auto' zijn gezet, wordt de standaardgrootte gebruikt."
+	"enhancedupload-config-width-help": "Breedte-instelling voor het slepen en neerzetten van afbeeldingen in de visuele editor. Zet op 'auto' om in verhouding met de hoogte in te stellen. Als beide op 'auto' zijn gezet, wordt de standaardgrootte gebruikt.",
+	"enhancedupload-droplet-attachments-name": "Bijlagen",
+	"enhancedupload-droplet-attachments-description": "Ruimte voor het organiseren van bijlagen"
 }

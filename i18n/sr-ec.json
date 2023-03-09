@@ -8,5 +8,6 @@
 	"enhancedupload-config-alignment-label": "Подешавање слике:",
 	"enhancedupload-config-type-label": "Врста слике:",
 	"enhancedupload-config-height-label": "Висина слике:",
-	"enhancedupload-config-width-label": "Ширина слике:"
+	"enhancedupload-config-width-label": "Ширина слике:",
+	"enhancedupload-droplet-attachments-name": "Прилози"
 }
