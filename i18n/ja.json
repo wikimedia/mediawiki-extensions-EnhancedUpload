@@ -57,5 +57,6 @@
 	"enhancedupload-config-type-label": "画像の種類",
 	"enhancedupload-config-width-label": "画像の幅",
 	"enhancedupload-config-alignment-label": "画像の配置:",
-	"enhancedupload-config-height-label": "画像の高さ:"
+	"enhancedupload-config-height-label": "画像の高さ:",
+	"enhancedupload-droplet-attachments-name": "添付ファイル"
 }
