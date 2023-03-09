@@ -12,5 +12,6 @@
 	"enhancedupload-finished-dialog-action-close": "Закрыть",
 	"enhancedupload-attachments-media-dialog-cancel-title": "Отмена",
 	"enhancedupload-upload-media-dialog-cancel-title": "Отмена",
-	"enhancedupload-attachments-media-dialog-details-cancel": "Отмена"
+	"enhancedupload-attachments-media-dialog-details-cancel": "Отмена",
+	"enhancedupload-droplet-attachments-name": "Вложения"
 }
