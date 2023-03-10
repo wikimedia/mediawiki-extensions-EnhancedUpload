@@ -76,5 +76,7 @@
 	"enhancedupload-config-height-label": "Višina slike:",
 	"enhancedupload-config-height-help": "Nastavitev višine za slike »povleci in spusti« v Vizualnem urejevalniku. Nastavite na »samodejno«, da jo prilagodite širini. Če sta obe nastavljeni na »samodejno«, bo uporabljena privzeta velikost.",
 	"enhancedupload-config-width-label": "Širina slike:",
-	"enhancedupload-config-width-help": "Nastavitev širine za slike »povleci in spusti« v Vizualnem urejevalniku. Nastavite na »samodejno«, da jo prilagodite višini. Če sta obe nastavljeni na »samodejno«, bo uporabljena privzeta velikost."
+	"enhancedupload-config-width-help": "Nastavitev širine za slike »povleci in spusti« v Vizualnem urejevalniku. Nastavite na »samodejno«, da jo prilagodite višini. Če sta obe nastavljeni na »samodejno«, bo uporabljena privzeta velikost.",
+	"enhancedupload-droplet-attachments-name": "Priponke",
+	"enhancedupload-droplet-attachments-description": "Prostor za organiziranje priponk"
 }
