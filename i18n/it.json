@@ -10,5 +10,6 @@
 	"enhancedupload-config-alignment-label": "Allineamento immagine:",
 	"enhancedupload-config-type-label": "Tipo immagine:",
 	"enhancedupload-config-height-label": "Altezza immagine:",
-	"enhancedupload-config-width-label": "Larghezza immagine:"
+	"enhancedupload-config-width-label": "Larghezza immagine:",
+	"enhancedupload-droplet-attachments-name": "Allegati"
 }
