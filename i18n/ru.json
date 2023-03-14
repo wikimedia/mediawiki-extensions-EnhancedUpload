@@ -12,5 +12,6 @@
 	"enhancedupload-attachments-tag-grid-details-title": "Подробности",
 	"enhancedupload-tab-updated-upload": "Обновлённые файлы",
 	"enhancedupload-updated-dialog-label": "Файл «$1» был обновлён",
-	"enhancedupload-finished-dialog-action-close": "Закрыть"
+	"enhancedupload-finished-dialog-action-close": "Закрыть",
+	"enhancedupload-droplet-attachments-name": "Вложения"
 }

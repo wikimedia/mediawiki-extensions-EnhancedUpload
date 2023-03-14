@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eduardoaddad"
+			"Eduardoaddad",
+			"Re demz"
 		]
 	},
 	"enhancedupload": "Carregamento melhorado",
@@ -68,5 +69,7 @@
 	"enhancedupload-updated-dialog-label": "A tabela \"$1\" foi eliminada.",
 	"enhancedupload-finished-dialog-action-close": "Fechar",
 	"enhancedupload-config-type-label": "Tipo de imagem:",
-	"enhancedupload-config-height-label": "Altura da imagem:"
+	"enhancedupload-config-height-label": "Altura da imagem:",
+	"enhancedupload-droplet-attachments-name": "Anexos",
+	"enhancedupload-droplet-attachments-description": "Área para organizar anexos"
 }
