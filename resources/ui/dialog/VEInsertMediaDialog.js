@@ -151,7 +151,7 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.doUpload = function ( fil
 enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.insertMedia =
 	function ( fileName, url, file, fragment ) {
 		var title, annotationTitle, surfaceModel;
-		// eslint-disable-next-line no-restricted-syntax
+
 		if ( file.type.includes( 'image' ) ) {
 			if ( !fragment ) {
 				fragment = this.getFragment();
@@ -206,7 +206,7 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.insertExistingMedia =
 	function ( fragment, fileName ) {
 		var me = this,
 			url = '', imageInfoApi = new mw.Api(), apiParams, title;
-		// eslint-disable-next-line no-restricted-syntax
+
 		if ( this.file.type.includes( 'image' ) ) {
 			title = mw.Title.newFromText( 'File:' + fileName );
 			apiParams = {

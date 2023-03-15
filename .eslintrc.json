@@ -18,7 +18,9 @@
 		"QUnit": "readonly"
 	},
 	"rules": {
-		"no-implicit-globals": "off"
+		"no-implicit-globals": "off",
+		"es-x/no-array-prototype-includes": "warn",
+		"es-x/no-string-prototype-includes": "warn"
 	},
 	"env": {
 		"browser": true,
