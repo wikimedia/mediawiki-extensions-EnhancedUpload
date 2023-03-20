@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"MITO",
-			"Nike"
+			"Nike",
+			"Pyscowicz"
 		]
 	},
 	"enhancedupload-text": "Tallenna tiedostoja",
@@ -48,5 +49,7 @@
 	"enhancedupload-ve-attachmentinspector-grid-size": "Näytä koko",
 	"enhancedupload-ve-attachmentinspector-grid-categories": "Näytä luokat",
 	"enhancedupload-attachments-tag-grid-details-title": "Tiedot",
-	"enhancedupload-attachments-tag-grid-remove-title": "Poista"
+	"enhancedupload-attachments-tag-grid-remove-title": "Poista",
+	"enhancedupload-config-height-label": "Kuvan korkeus:",
+	"enhancedupload-config-width-label": "Kuvan leveys:"
 }

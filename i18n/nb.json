@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"EdoAug"
+		]
+	},
+	"enhancedupload-tab-warnings-upload": "Advarsler",
+	"enhancedupload-attachments-tag-grid-file-label": "Fil",
+	"enhancedupload-attachments-tag-grid-size-label": "Størrelse",
+	"enhancedupload-attachments-tag-grid-version-label": "Siste versjon",
+	"enhancedupload-attachments-media-dialog-cancel-title": "Avbryt",
+	"enhancedupload-attachments-media-dialog-add-title": "Legg til",
+	"enhancedupload-attachments-media-dialog-title": "Velg fil",
+	"enhancedupload-attachments-media-dialog-label": "Søk etter fil",
+	"enhancedupload-ui-action-new-upload-text": "Ny fil",
+	"enhancedupload-ui-action-new-upload-title": "Last opp en ny fil",
+	"enhancedupload-upload-media-dialog-title": "Last opp en fil",
+	"enhancedupload-upload-media-dialog-cancel-title": "Avbryt",
+	"enhancedupload-upload-media-dialog-upload-title": "Last opp",
+	"enhancedupload-upload-media-dialog-done-title": "Ferdig",
+	"enhancedupload-attachments-media-dialog-details-cancel": "Avbryt",
+	"enhancedupload-attachments-media-dialog-details-upload": "Last opp",
+	"enhancedupload-attachments-media-dialog-details-settings": "Detaljer",
+	"enhancedupload-ve-attachment-title": "Vedlegg",
+	"enhancedupload-ve-attachmentinspector-title": "Tittel",
+	"enhancedupload-ve-attachmentinspector-prefix": "Prefiks",
+	"enhancedupload-ve-attachmentinspector-categories": "Kategorier",
+	"enhancedupload-ve-attachmentinspector-desc": "Beskrivelse",
+	"enhancedupload-ve-attachmentinspector-options": "Hopp over opplastningsalternativ",
+	"enhancedupload-attachments-tag-grid-editor-label": "Bidragsyter"
+}

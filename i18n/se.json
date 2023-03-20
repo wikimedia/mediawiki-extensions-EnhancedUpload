@@ -12,5 +12,9 @@
 	"enhancedupload-list-header-error": "meattáhus",
 	"enhancedupload-attachments-media-dialog-cancel-title": "Šluhtte",
 	"enhancedupload-upload-media-dialog-cancel-title": "Šluhtte",
-	"enhancedupload-attachments-media-dialog-details-cancel": "Šluhtte"
+	"enhancedupload-attachments-media-dialog-details-cancel": "Šluhtte",
+	"enhancedupload-list-header-filename": "fiilanamma",
+	"enhancedupload-attachments-tag-grid-file-label": "Fiila",
+	"enhancedupload-attachments-media-dialog-title": "Vállje fiilla",
+	"enhancedupload-ui-action-new-upload-text": "Ođđa fiila"
 }
