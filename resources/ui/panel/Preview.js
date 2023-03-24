@@ -46,7 +46,7 @@ enhancedUpload.ui.panel.Preview.prototype.addToPreview = function ( value, url )
 		remove: 'removeItemFromPreview'
 	} );
 
-	this.addItems( itemWidget );
+	this.addItems( [ itemWidget ] );
 };
 
 enhancedUpload.ui.panel.Preview.prototype.showPreview = function () {
