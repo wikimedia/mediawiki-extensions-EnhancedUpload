@@ -120,18 +120,16 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.makeDoneProcess = functio
 	dfdUpload.done( function ( resp ) {
 		me.insertMedia( params.filename, resp.upload.imageinfo.url, me.file );
 		dfd.resolve.apply( me );
-	} )
-		// eslint-disable-next-line no-shadow-restricted-names
-		.fail( function ( error, arguments ) {
-			if ( error === 'fileexists-no-change' || error === 'duplicate' || error === 'exists' ) {
-				me.handleErrors( error, arguments, params.filename, me.fragment );
-				dfd.resolve.apply( me );
-			} else {
-				dfd.reject(
-					[ new OO.ui.Error( arguments[ 0 ], { recoverable: true } ) ]
-				);
-			}
-		} );
+	} ).fail( function ( error ) {
+		if ( error === 'fileexists-no-change' || error === 'duplicate' || error === 'exists' ) {
+			me.handleErrors( error, arguments, params.filename, me.fragment );
+			dfd.resolve.apply( me );
+		} else {
+			dfd.reject(
+				[ new OO.ui.Error( error, { recoverable: true } ) ]
+			);
+		}
+	} );
 
 	return new OO.ui.Process( dfd.promise(), this );
 };
@@ -141,8 +139,18 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.doUpload = function ( fil
 		dfd = new $.Deferred();
 	mwApi.upload( file, params ).done( function ( resp ) {
 		dfd.resolve( resp );
-	} ).fail( function ( error ) {
-		dfd.reject( error, arguments );
+	} ).fail( function ( error, result ) {
+		var warnings = arguments[ 1 ].upload.warnings,
+			errorMessage = '';
+		if ( 'exists' in warnings || 'exists-normalized' in warnings ) {
+			errorMessage = 'exists';
+			if ( 'nochange' in warnings ) {
+				errorMessage = 'fileexists-no-change';
+			}
+		} else if ( 'duplicate' in warnings ) {
+			errorMessage = 'duplicate';
+		}
+		dfd.reject( errorMessage, result );
 	} );
 
 	return dfd.promise();
@@ -298,9 +306,8 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.handleErrors =
 									me.handleErrors( err, arguments, params.filename, fragment );
 									dfd.resolve.apply( me );
 								} else {
-									dfd.reject.apply(
-										me,
-										[ new OO.ui.Error( arguments[ 0 ], { recoverable: true } ) ]
+									dfd.reject(
+										[ new OO.ui.Error( err, { recoverable: true } ) ]
 									);
 								}
 							} );
