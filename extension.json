@@ -155,7 +155,11 @@
 				"oojs-ui",
 				"ext.oOJSPlus.widgets",
 				"mediawiki.widgets",
-				"ext.oOJSPlus.data"
+				"ext.oOJSPlus.data",
+				"mediawiki.language",
+				"mediawiki.user",
+				"mediawiki.Title",
+				"mediawiki.util"
 			],
 			"messages": [
 				"enhancedupload-details-header-label",
