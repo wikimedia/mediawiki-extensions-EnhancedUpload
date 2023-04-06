@@ -76,5 +76,7 @@
 	"enhancedupload-config-height-label": "גובה התמונה:",
 	"enhancedupload-config-height-help": "הגדרת גובה לגרירה ושחרור של תמונות בעורך החזותי. יש להגדיר ל\"אוטומטי\" כדי לשנות את קנה המידה עם הרוחב. אם שניהם מוגדרים ל\"אוטומטי\", ישמש גודל ברירת המחדל.",
 	"enhancedupload-config-width-label": "רוחב התמונה:",
-	"enhancedupload-config-width-help": "הגדרת רוחב לגרירה ושחרור של תמונות בעורך החזותי. יש להגדיר ל\"אוטומטי\" כדי לשנות את קנה המידה עם הגובה. אם שניהם מוגדרים ל\"אוטומטי\", ישמש גודל ברירת המחדל."
+	"enhancedupload-config-width-help": "הגדרת רוחב לגרירה ושחרור של תמונות בעורך החזותי. יש להגדיר ל\"אוטומטי\" כדי לשנות את קנה המידה עם הגובה. אם שניהם מוגדרים ל\"אוטומטי\", ישמש גודל ברירת המחדל.",
+	"enhancedupload-droplet-attachments-name": "צרופות",
+	"enhancedupload-droplet-attachments-description": "אזור לארגון צרופות"
 }
