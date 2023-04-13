@@ -156,7 +156,7 @@
 				"ext.oOJSPlus.widgets",
 				"mediawiki.widgets",
 				"ext.oOJSPlus.data",
-				"mediawiki.language",
+				"mediawiki.language.months",
 				"mediawiki.user",
 				"mediawiki.Title",
 				"mediawiki.util"
