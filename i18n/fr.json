@@ -59,7 +59,7 @@
 	"enhancedupload-ve-attachmentinspector-desc": "Description",
 	"enhancedupload-ve-attachmentinspector-options": "Sauter les options de téléversement",
 	"enhancedupload-attachment-tag-desc": "Avec cette balise, des fichiers peuvent être ajoutés à cette page. De nouveaux fichiers peuvent être téléversés et ajoutés, de même que des fichiers existants du wiki peuvent être ajoutés à la balise. Un titre d’affichage peut être donné pour la zone de balise, ainsi que des options de téléversement : un préfixe, des catégories séparées par « | » et une description qui seront ajoutés automatiquement lors du téléversement.",
-	"enhancedupload-attachments-tag-grid-editor-label": "Éditeur",
+	"enhancedupload-attachments-tag-grid-editor-label": "Rédacteur",
 	"enhancedupload-ve-attachmentinspector-grid-version": "Masquer la version",
 	"enhancedupload-ve-attachmentinspector-grid-editor": "Masquer l’éditeur",
 	"enhancedupload-ve-attachmentinspector-grid-size": "Montrer la taille",
