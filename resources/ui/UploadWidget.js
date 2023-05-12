@@ -350,6 +350,21 @@ enhancedUpload.ui.UploadWidget.prototype.doUpload = function ( file, params ) {
 		dfd.resolve( resp );
 	}, ( function ( errorCode, result ) {
 		var errorMessage = '';
+		if ( result.upload ) {
+			if ( result.upload.warnings ) {
+				var warnings = result.upload.warnings;
+
+				// get errorCode from result
+				if ( 'exists' in warnings || 'exists-normalized' in warnings ) {
+					errorCode = 'exists';
+					if ( 'nochange' in warnings ) {
+						errorCode = 'fileexists-no-change';
+					}
+				} else if ( 'duplicate' in warnings ) {
+					errorCode = 'duplicate';
+				}
+			}
+		}
 
 		if ( result.errors ) {
 			// errorformat: 'html'
