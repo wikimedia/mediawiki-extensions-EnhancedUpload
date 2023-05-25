@@ -211,6 +211,9 @@ enhancedUpload.ui.AttachmentsWidget.prototype.getGridData = function () {
 				var categories = [], title, size, time, url, p, user;
 				for ( p in pages ) {
 					categories = [];
+					if ( !pages[ p ].title || !pages[ p ].imageinfo ) {
+						continue;
+					}
 					title = mw.Title.newFromText( pages[ p ].title );
 					size = me.calculateSize( pages[ p ].imageinfo[ 0 ].size );
 					time = me.getFormattedTime( pages[ p ].imageinfo[ 0 ].timestamp );
