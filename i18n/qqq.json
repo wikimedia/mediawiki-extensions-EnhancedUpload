@@ -81,5 +81,7 @@
 	"enhancedupload-config-width-label": "Image width label in config manager",
 	"enhancedupload-config-width-help": "Image width help message in config manager",
 	"enhancedupload-droplet-attachments-name": "Title of droplet for tag Attachments",
-	"enhancedupload-droplet-attachments-description": "Description of droplet for tag Attachments"
+	"enhancedupload-droplet-attachments-description": "Description of droplet for tag Attachments",
+	"enhancedupload-upload-warning-exists": "Warning message which is shown after upload if file exists already in the wiki",
+	"enhancedupload-upload-warning-duplicate": "Warning message which is shown after upload if file is a duplicate"
 }
