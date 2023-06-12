@@ -78,5 +78,7 @@
 	"enhancedupload-config-width-label": "Image width:",
 	"enhancedupload-config-width-help": "Width setting for drag and drop images in visual editor Set to 'auto' to scale with height. If both are set to 'auto', the default size will be used.",
 	"enhancedupload-droplet-attachments-name": "Attachments",
-	"enhancedupload-droplet-attachments-description": "Area for organizing attachments"
+	"enhancedupload-droplet-attachments-description": "Area for organizing attachments",
+	"enhancedupload-upload-warning-exists": "This file exists already",
+	"enhancedupload-upload-warning-duplicate": "This file is a duplicate"
 }

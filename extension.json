@@ -132,6 +132,10 @@
 					"callback": "MediaWiki\\Extension\\EnhancedUpload\\EnhancedUploadPluginModules::getPluginModules"
 				}
 			],
+			"messages": [
+				"enhancedupload-upload-warning-exists",
+				"enhancedupload-upload-warning-duplicate"
+			],
 			"dependencies": [
 				"oojs-ui",
 				"ext.enhancedUpload.widgets",
