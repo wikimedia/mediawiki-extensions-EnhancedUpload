@@ -78,5 +78,7 @@
 	"enhancedupload-config-width-label": "Latitude del imagine:",
 	"enhancedupload-config-width-help": "Parametro de latitude pro traher e deponer imagines in le editor visual. Mitter a 'auto' pro calcular un latitude in proportion con le altitude. Si ambes es mittite a 'auto', le dimension predefinite essera usate.",
 	"enhancedupload-droplet-attachments-name": "Annexos",
-	"enhancedupload-droplet-attachments-description": "Area pro organisar annexos"
+	"enhancedupload-droplet-attachments-description": "Area pro organisar annexos",
+	"enhancedupload-upload-warning-exists": "Iste file existe ja",
+	"enhancedupload-upload-warning-duplicate": "Iste file es un duplicato"
 }
