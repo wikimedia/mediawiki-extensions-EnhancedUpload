@@ -90,6 +90,9 @@
 							setLoading( count, false );
 						}
 					} );
+					// Avoid racing condition, make sure to call methods that fire events
+					// only after even handlers are attached. In this case, `loaded` event
+					attachments.init();
 				}
 			} );
 		} );

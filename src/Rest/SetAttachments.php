@@ -53,7 +53,9 @@ class SetAttachments extends SimpleHandler {
 	/**
 	 * @param int $pageId
 	 * @param int $counter
+	 *
 	 * @return true
+	 * @throws HttpException
 	 */
 	public function run( int $pageId, int $counter ) {
 		try {
@@ -161,7 +163,7 @@ class SetAttachments extends SimpleHandler {
 			return Status::newFatal( $e->getMessage() );
 		}
 		if ( !$revision ) {
-			return Status::newFatal( "Save Failed for {$wikiPage->getTitle()->getFullText()}" );
+			return $updater->getStatus();
 		}
 		return Status::newGood();
 	}
