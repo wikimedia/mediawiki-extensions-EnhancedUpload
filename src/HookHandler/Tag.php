@@ -20,10 +20,11 @@ class Tag implements ParserFirstCallInitHook {
 	private $titleFactory;
 
 	/**
-	 *
-	 * @var int
+	 * We must keep count per parser, as there might be other parsing
+	 * operations that are not actually rendering the page
+	 * @var array
 	 */
-	private static $counter = 0;
+	private static $counter = [];
 
 	/**
 	 * @param TitleFactory $titleFactory
@@ -44,10 +45,15 @@ class Tag implements ParserFirstCallInitHook {
 	 * @param array $args
 	 * @param Parser $parser
 	 * @param PPFrame $frame
-	 * @return array
+	 * @return string
 	 */
 	public function onFilelist( string $input, array $args, Parser $parser,
 		PPFrame $frame ) {
+		if ( isset( static::$counter[spl_object_id( $parser )] ) ) {
+			static::$counter[spl_object_id( $parser )]++;
+		} else {
+			static::$counter[spl_object_id( $parser )] = 0;
+		}
 		$parser->getOutput()->addModuleStyles( [ 'ext.enhancedupload.attachments.styles' ] );
 		$parser->getOutput()->addModules( [ 'ext.enhancedupload.attachments.bootstrap' ] );
 
@@ -93,7 +99,7 @@ class Tag implements ParserFirstCallInitHook {
 		foreach ( $this->getFilesFromWikiText( $input ) as $title ) {
 			$files[] = $title->getDBkey();
 		}
-		$count = static::$counter++;
+		$count = static::$counter[spl_object_id( $parser )];
 
 		$out = Html::openElement( 'div', [
 			'class' => 'attachments-filelist loading',

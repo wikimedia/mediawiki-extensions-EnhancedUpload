@@ -19,7 +19,11 @@ enhancedUpload.ui.AttachmentsWidget = function ( cfg ) {
 	this.showCategories = cfg.showCategories || false;
 
 	this.$element = $( '<div>' );
+};
 
+OO.inheritClass( enhancedUpload.ui.AttachmentsWidget, OO.ui.Widget );
+
+enhancedUpload.ui.AttachmentsWidget.prototype.init = function () {
 	var $header = $( '<div>' ).addClass( 'attachments-header' ),
 		$mainlabel = $( '<h2>' ).html( this.tagTitle );
 	$header.append( $mainlabel );
@@ -72,7 +76,7 @@ enhancedUpload.ui.AttachmentsWidget = function ( cfg ) {
 	this.addGrid();
 
 	if ( this.editRight ) {
-	// necessary to allow drop event
+		// necessary to allow drop event
 		this.$element.on( 'dragover', function ( event ) {
 			$( this ).addClass( 'drag-file' );
 			event.preventDefault();
@@ -93,10 +97,7 @@ enhancedUpload.ui.AttachmentsWidget = function ( cfg ) {
 			$( this.$element ).removeClass( 'drag-file' );
 		}.bind( this ) );
 	}
-
 };
-
-OO.inheritClass( enhancedUpload.ui.AttachmentsWidget, OO.ui.Widget );
 
 enhancedUpload.ui.AttachmentsWidget.prototype.addGrid = function () {
 	var me = this, dataLoaded;
@@ -143,6 +144,7 @@ enhancedUpload.ui.AttachmentsWidget.prototype.addGrid = function () {
 		} );
 	} else {
 		this.dataLayout.$element.append( mw.message( 'enhancedupload-attachments-tag-no-attached-files' ).plain() );
+		me.emit( 'loaded', me.counter );
 	}
 };
 

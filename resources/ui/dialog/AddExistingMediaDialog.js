@@ -53,7 +53,7 @@ enhancedUpload.ui.dialog.AddExistingMediaDialog.prototype.initialize = function 
 	this.titleSearch = new enhancedUpload.ui.widget.TitleInputWidget( {
 		namespace: 6,
 		showImages: true,
-		$overlay: true
+		$overlay: this.$overlay
 	} );
 
 	this.titleSearch.connect( this, {
