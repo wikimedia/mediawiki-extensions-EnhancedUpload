@@ -81,5 +81,7 @@
 	"enhancedupload-config-width-label": "عرض الصورة:",
 	"enhancedupload-config-width-help": "إعداد العرض لسحب الصور وإفلاتها في المحرر المرئي ، اضبط على \"تلقائي\" للقياس مع الارتفاع. إذا تم ضبط كلاهما على \"تلقائي\" ، فسيتم استخدام الحجم الافتراضي.",
 	"enhancedupload-droplet-attachments-name": "المرفقات",
-	"enhancedupload-droplet-attachments-description": "منطقة لتنظيم المرفقات"
+	"enhancedupload-droplet-attachments-description": "منطقة لتنظيم المرفقات",
+	"enhancedupload-upload-warning-exists": "هذا الملف موجود بالفعل",
+	"enhancedupload-upload-warning-duplicate": "هذا الملف مكرر"
 }
