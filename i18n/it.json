@@ -11,5 +11,7 @@
 	"enhancedupload-config-type-label": "Tipo immagine:",
 	"enhancedupload-config-height-label": "Altezza immagine:",
 	"enhancedupload-config-width-label": "Larghezza immagine:",
-	"enhancedupload-droplet-attachments-name": "Allegati"
+	"enhancedupload-droplet-attachments-name": "Allegati",
+	"enhancedupload-upload-warning-exists": "Questo file esiste già",
+	"enhancedupload-upload-warning-duplicate": "Questo file è un duplicato"
 }
