@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Hedda",
-			"ToprakM"
+			"ToprakM",
+			"Asma"
 		]
 	},
 	"enhancedupload": "Gelişmiş Yükleme",
@@ -64,5 +65,6 @@
 	"enhancedupload-ve-attachmentinspector-grid-editor": "Editörü gizle",
 	"enhancedupload-ve-attachmentinspector-grid-size": "Boyutu göster",
 	"enhancedupload-ve-attachmentinspector-grid-categories": "Kategorileri göster",
-	"enhancedupload-attachments-tag-grid-details-title": "Ayrıntılar"
+	"enhancedupload-attachments-tag-grid-details-title": "Ayrıntılar",
+	"enhancedupload-upload-warning-exists": "bu dosya zaten mevcut"
 }

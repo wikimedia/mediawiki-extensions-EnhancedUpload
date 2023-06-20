@@ -1,11 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Norhorn"
+			"Norhorn",
+			"MnLsVt",
+			"P20kios"
 		]
 	},
 	"enhancedupload-config-alignment-label": "Στοίχιση εικόνας:",
 	"enhancedupload-config-type-label": "Τύπος εικόνας:",
 	"enhancedupload-config-height-label": "Ύψος εικόνας:",
-	"enhancedupload-config-width-label": "Πλάτος εικόνας:"
+	"enhancedupload-config-width-label": "Πλάτος εικόνας:",
+	"enhancedupload-upload-warning-exists": "Το αρχείο υπάρχει ήδη",
+	"enhancedupload-upload-warning-duplicate": "Αυτό το αρχείο είναι διπλότυπο"
 }

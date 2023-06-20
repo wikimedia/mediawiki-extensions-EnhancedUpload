@@ -69,5 +69,6 @@
 	"enhancedupload-attachments-confirm-remove": "從清單中刪除檔案「$1」？",
 	"enhancedupload-tab-updated-upload": "已上傳檔案",
 	"enhancedupload-updated-dialog-label": "檔案「$1」已上傳",
-	"enhancedupload-finished-dialog-action-close": "關閉"
+	"enhancedupload-finished-dialog-action-close": "關閉",
+	"enhancedupload-upload-warning-exists": "已存在此檔案"
 }
