@@ -12,16 +12,14 @@ enhancedUpload.ui.panel.FinishedList = function enhancedUploadUiPanelFinishedLis
 OO.inheritClass( enhancedUpload.ui.panel.FinishedList, OO.ui.HorizontalLayout );
 
 enhancedUpload.ui.panel.FinishedList.prototype.addGrid = function ( data ) {
-	var i, linkTitle, type, gridCfg, voGrid, page;
+	var i, linkTitle, gridCfg, voGrid, page;
 	for ( i = 0; i < data.length; i++ ) {
 		linkTitle = data[ i ][ 0 ];
-		type = data[ i ][ 1 ].type;
 
 		page = new mw.Title( linkTitle );
 
 		this.data.push( {
-			type: type,
-			name: linkTitle,
+			name: page.getMainText(),
 			// eslint-disable-next-line camelcase
 			page_link: page.getUrl()
 		} );
@@ -36,10 +34,6 @@ enhancedUpload.ui.panel.FinishedList.prototype.addGrid = function ( data ) {
 				headerText: mw.message( 'enhancedupload-list-header-link' ).plain(),
 				type: 'url',
 				urlProperty: 'page_link'
-			},
-			type: {
-				headerText: mw.message( 'enhancedupload-list-header-filetype' ).plain(),
-				type: 'text'
 			}
 		},
 		data: this.data

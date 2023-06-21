@@ -105,20 +105,15 @@ enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initializeFailedPanel = 
 };
 
 enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initializeFinishedPanel = function () {
-	var label, listView;
+	var listView;
 	this.contentFinished = new OO.ui.TabPanelLayout( 'finished-upload', {
 		label: mw.message( 'enhancedupload-tab-successfull-upload' ).text(),
 		expanded: false
-	} );
-	label = new OO.ui.LabelWidget( {
-		label: mw.message( 'enhancedupload-finished-dialog-label' ).text(),
-		classes: [ 'enhancedupload-dialog-title' ]
 	} );
 	listView = new enhancedUpload.ui.panel.FinishedList( {
 		expanded: false
 	} );
 	listView.addGrid( this.finishedData );
-	this.contentFinished.$element.append( label.$element );
 	this.contentFinished.$element.append( listView.$element );
 };
 
