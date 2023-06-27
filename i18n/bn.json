@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"আজিজ",
-			"আফতাবুজ্জামান"
+			"আফতাবুজ্জামান",
+			"Yahya"
 		]
 	},
 	"enhancedupload-attachments-tag-grid-details-title": "বিস্তারিত",
@@ -10,5 +11,7 @@
 	"enhancedupload-updated-dialog-label": "\"$1\" ফাইলটি হালনাগাদ করা হয়েছে৷",
 	"enhancedupload-finished-dialog-action-close": "বন্ধ করুন",
 	"enhancedupload-config-type-label": "চিত্রের ধরন:",
-	"enhancedupload-config-height-label": "চিত্রের উচ্চতা:"
+	"enhancedupload-config-height-label": "চিত্রের উচ্চতা:",
+	"enhancedupload-upload-warning-exists": "এই ফাইলটি ইতিমধ্যেই বিদ্যমান",
+	"enhancedupload-upload-warning-duplicate": "এই ফাইলটি একটি ডুপ্লিকেট"
 }
