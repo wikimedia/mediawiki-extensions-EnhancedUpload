@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kokage si",
 			"MathXplore",
 			"Mugenpman",
 			"もなー(偽物)"
@@ -22,7 +23,7 @@
 	"enhancedupload-tab-successfull-upload": "成功",
 	"enhancedupload-tab-warnings-upload": "警告",
 	"enhancedupload-ve-dialog-title": "ファイルをアップロード",
-	"enhancedupload-attachments-add-new-media-button-title": "新しいファイルを追加",
+	"enhancedupload-attachments-add-new-media-button-title": "新しいファイルをウィキに追加",
 	"enhancedupload-attachments-tag-grid-file-label": "ファイル",
 	"enhancedupload-attachments-tag-grid-size-label": "サイズ",
 	"enhancedupload-attachments-tag-grid-version-label": "最新版",
