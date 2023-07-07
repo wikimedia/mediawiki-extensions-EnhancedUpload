@@ -359,11 +359,14 @@ enhancedUpload.ui.UploadWidget.prototype.doUpload = function ( file, params ) {
 					errorCode = 'exists';
 				} else if ( 'duplicate' in warnings ) {
 					errorCode = 'duplicate';
+				} else if ( 'was-deleted' in warnings ) {
+					errorCode = 'was-deleted';
 				}
 
 				// The following messages are used here
 				// * enhancedupload-upload-warning-exists
 				// * enhancedupload-upload-warning-duplicate
+				// * enhancedupload-upload-warning-was-deleted
 				errorMessage = mw.message( 'enhancedupload-upload-warning-' + errorCode ).text();
 			}
 		}

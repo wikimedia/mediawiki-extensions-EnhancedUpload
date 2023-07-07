@@ -134,7 +134,8 @@
 			],
 			"messages": [
 				"enhancedupload-upload-warning-exists",
-				"enhancedupload-upload-warning-duplicate"
+				"enhancedupload-upload-warning-duplicate",
+				"enhancedupload-upload-warning-was-deleted"
 			],
 			"dependencies": [
 				"oojs-ui",
