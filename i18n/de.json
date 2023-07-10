@@ -81,5 +81,6 @@
 	"enhancedupload-droplet-attachments-name": "Anhänge",
 	"enhancedupload-droplet-attachments-description": "Bereich zur Organisation von Anhängen",
 	"enhancedupload-upload-warning-exists": "Die Datei existiert bereits",
-	"enhancedupload-upload-warning-duplicate": "Die Datei ist ein Duplikat"
+	"enhancedupload-upload-warning-duplicate": "Die Datei ist ein Duplikat",
+	"enhancedupload-upload-warning-was-deleted": "Der Dateiname wurde bereits gelöscht."
 }
