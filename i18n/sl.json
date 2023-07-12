@@ -79,6 +79,7 @@
 	"enhancedupload-config-width-help": "Nastavitev širine za slike »povleci in spusti« v Vizualnem urejevalniku. Nastavite na »samodejno«, da jo prilagodite višini. Če sta obe nastavljeni na »samodejno«, bo uporabljena privzeta velikost.",
 	"enhancedupload-droplet-attachments-name": "Priponke",
 	"enhancedupload-droplet-attachments-description": "Prostor za organiziranje priponk",
-	"enhancedupload-upload-warning-exists": "Ta datoteka že obstaja",
-	"enhancedupload-upload-warning-duplicate": "Ta datoteka je dvojnik"
+	"enhancedupload-upload-warning-exists": "To datotečno ime že obstaja",
+	"enhancedupload-upload-warning-duplicate": "Ta datoteka je dvojnik",
+	"enhancedupload-upload-warning-was-deleted": "To datotečno ime je že bilo izbrisano."
 }
