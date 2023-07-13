@@ -87,6 +87,7 @@ enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.show = function () {
 
 enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initializeFailedPanel = function () {
 	var label, listView;
+	enhancedUpload.ui.dialog.UploadFinishedDialog.static.title = mw.message( 'enhancedupload-failed-dialog-title' ).plain();
 	this.contentFailed = new OO.ui.TabPanelLayout( 'failed-upload', {
 		label: mw.message( 'enhancedupload-tab-failed-upload' ).text(),
 		expanded: false

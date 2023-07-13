@@ -21,6 +21,7 @@
 	"enhancedupload-list-header-filetype": "Format",
 	"enhancedupload-list-header-filename": "Dateiname",
 	"enhancedupload-list-header-error": "Fehler",
+	"enhancedupload-list-header-warning": "Warnung",
 	"enhancedupload-list-header-link": "Link zur Datei",
 	"enhancedupload-finished-dialog-label": "Hochgeladene Dateien",
 	"enhancedupload-tab-failed-upload": "Fehlgeschlagen",
