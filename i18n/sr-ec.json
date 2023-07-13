@@ -10,6 +10,7 @@
 	"enhancedupload-config-width-label": "Ширина слике:",
 	"enhancedupload-config-alignment-label": "Подешавање слике:",
 	"enhancedupload-droplet-attachments-name": "Прилози",
-	"enhancedupload-upload-warning-exists": "Датотека већ постоји",
-	"enhancedupload-upload-warning-duplicate": "Ова датотека је дупликат"
+	"enhancedupload-upload-warning-exists": "Назив датотеке је заузет",
+	"enhancedupload-upload-warning-duplicate": "Ова датотека је дупликат",
+	"enhancedupload-upload-warning-was-deleted": "Датотека са овим називом је претходно обрисана."
 }
