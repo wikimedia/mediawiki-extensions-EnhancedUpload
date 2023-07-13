@@ -36,7 +36,7 @@ enhancedUpload.ui.panel.WarningList.prototype.addGrid = function ( data ) {
 				type: 'text'
 			},
 			error: {
-				headerText: mw.message( 'enhancedupload-list-header-error' ).plain(),
+				headerText: mw.message( 'enhancedupload-list-header-warning' ).plain(),
 				type: 'text'
 			}
 		},

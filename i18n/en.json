@@ -20,6 +20,7 @@
 	"enhancedupload-list-header-filetype": "format",
 	"enhancedupload-list-header-filename": "file name",
 	"enhancedupload-list-header-error": "error",
+	"enhancedupload-list-header-warning": "warning",
 	"enhancedupload-list-header-link": "Link to file",
 	"enhancedupload-finished-dialog-label": "Files uploaded",
 	"enhancedupload-tab-failed-upload": "Failed",
