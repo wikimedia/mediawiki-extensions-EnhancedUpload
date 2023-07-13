@@ -23,6 +23,7 @@
 	"enhancedupload-list-header-filetype": "Label for list header file format",
 	"enhancedupload-list-header-filename": "Label for list header file name",
 	"enhancedupload-list-header-error": "Label for list header error",
+	"enhancedupload-list-header-warning": "Label for list header warning",
 	"enhancedupload-list-header-link": "Label for list header link to file",
 	"enhancedupload-finished-dialog-label": "Title for panel which shows files which are successfully uploaded",
 	"enhancedupload-tab-failed-upload": "Tab title for files where upload failed",
