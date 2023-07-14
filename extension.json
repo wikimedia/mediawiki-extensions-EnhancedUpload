@@ -29,7 +29,8 @@
 				"EnhancedUploadDragDropImagesAlignment": "\\MediaWiki\\Extension\\EnhancedUpload\\ConfigDefinition\\DragDropImagesAlignment::getInstance",
 				"EnhancedUploadDragDropImagesType": "\\MediaWiki\\Extension\\EnhancedUpload\\ConfigDefinition\\DragDropImagesType::getInstance",
 				"EnhancedUploadDragDropImagesHeight": "\\MediaWiki\\Extension\\EnhancedUpload\\ConfigDefinition\\DragDropImagesHeight::getInstance",
-				"EnhancedUploadDragDropImagesWidth": "\\MediaWiki\\Extension\\EnhancedUpload\\ConfigDefinition\\DragDropImagesWidth::getInstance"
+				"EnhancedUploadDragDropImagesWidth": "\\MediaWiki\\Extension\\EnhancedUpload\\ConfigDefinition\\DragDropImagesWidth::getInstance",
+				"EnhancedUploadAllowMismatchedMimeTypes": "\\MediaWiki\\Extension\\EnhancedUpload\\ConfigDefinition\\AllowMismatchedMimeTypes::getInstance"
 			}
 		},
 		"EnhancedUpload": {
@@ -60,6 +61,7 @@
 	},
 	"Hooks": {
 		"ParserFirstCallInit": "tag",
+		"MimeMagicImproveFromExtension": "addMimeType",
 		"BeforePageDisplay": "addModules",
 		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin",
 		"SkinTemplateNavigation::Universal": "addContentActions",
@@ -75,6 +77,10 @@
 		},
 		"addModules": {
 			"class": "MediaWiki\\Extension\\EnhancedUpload\\Hook\\BeforePageDisplay\\AddModules"
+		},
+		"addMimeType": {
+			"class": "MediaWiki\\Extension\\EnhancedUpload\\HookHandler\\AddMimeType",
+			"services": [ "MainConfig" ]
 		},
 		"discovery-skin": {
 			"class": "MediaWiki\\Extension\\EnhancedUpload\\HookHandler\\DiscoverySkin"
@@ -419,6 +425,10 @@
 		},
 		"EnhancedUploadDragDropImagesWidth": {
 			"value": "300",
+			"public": true
+		},
+		"EnhancedUploadAllowMismatchedMimeTypes": {
+			"value": false,
 			"public": true
 		}
 	},
