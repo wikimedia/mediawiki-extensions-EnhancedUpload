@@ -81,5 +81,6 @@
 	"enhancedupload-droplet-attachments-description": "Area for organizing attachments",
 	"enhancedupload-upload-warning-exists": "This file name exists already",
 	"enhancedupload-upload-warning-duplicate": "This file is a duplicate",
-	"enhancedupload-upload-warning-was-deleted": "This file name was previously deleted."
+	"enhancedupload-upload-warning-was-deleted": "This file name was previously deleted.",
+	"enhancedupload-list-header-warning": "warning"
 }

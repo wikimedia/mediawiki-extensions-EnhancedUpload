@@ -84,5 +84,6 @@
 	"enhancedupload-droplet-attachments-description": "Description of droplet for tag Attachments",
 	"enhancedupload-upload-warning-exists": "Warning message which is shown after upload if file with the same name exists already in the wiki",
 	"enhancedupload-upload-warning-duplicate": "Warning message which is shown after upload if file is a duplicate",
-	"enhancedupload-upload-warning-was-deleted": "Warning message displayed after upload if file with the same name was previously deleted."
+	"enhancedupload-upload-warning-was-deleted": "Warning message displayed after upload if file with the same name was previously deleted.",
+	"enhancedupload-list-header-warning": "Label for list header warning"
 }
