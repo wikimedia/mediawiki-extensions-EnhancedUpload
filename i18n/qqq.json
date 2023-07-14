@@ -81,6 +81,8 @@
 	"enhancedupload-config-height-help": "Image height help message in config manager",
 	"enhancedupload-config-width-label": "Image width label in config manager",
 	"enhancedupload-config-width-help": "Image width help message in config manager",
+	"enhancedupload-config-extensions-label": "Allow mismatched MIME types label in config manager",
+	"enhancedupload-config-extensions-help": "Allow mismatched MIME types help message in config manager",
 	"enhancedupload-droplet-attachments-name": "Title of droplet for tag Attachments",
 	"enhancedupload-droplet-attachments-description": "Description of droplet for tag Attachments",
 	"enhancedupload-upload-warning-exists": "Warning message which is shown after upload if file with the same name exists already in the wiki",
