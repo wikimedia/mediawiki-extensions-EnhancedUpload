@@ -81,5 +81,6 @@
 	"enhancedupload-droplet-attachments-description": "אזור לארגון צרופות",
 	"enhancedupload-upload-warning-exists": "הקובץ הזה כבר קיים",
 	"enhancedupload-upload-warning-duplicate": "הקובץ הזה כפיל",
-	"enhancedupload-upload-warning-was-deleted": "שם הקובץ הזה נמחק בעבר."
+	"enhancedupload-upload-warning-was-deleted": "שם הקובץ הזה נמחק בעבר.",
+	"enhancedupload-list-header-warning": "אזהרה"
 }
