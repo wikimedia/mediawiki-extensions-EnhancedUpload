@@ -9,5 +9,6 @@
 	"enhancedupload-config-height-label": "Uchder y ddelwedd:",
 	"enhancedupload-config-width-label": "Lled y ddelwedd:",
 	"enhancedupload-upload-warning-exists": "Mae'r ffeil hon yn bodoli eisoes",
-	"enhancedupload-upload-warning-duplicate": "Mae'r ffeil hon yn ddyblyg"
+	"enhancedupload-upload-warning-duplicate": "Mae'r ffeil hon yn ddyblyg",
+	"enhancedupload-list-header-warning": "rhybudd"
 }
