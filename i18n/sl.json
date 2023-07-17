@@ -20,6 +20,7 @@
 	"enhancedupload-list-header-filetype": "format",
 	"enhancedupload-list-header-filename": "ime datoteke",
 	"enhancedupload-list-header-error": "napaka",
+	"enhancedupload-list-header-warning": "opozorilo",
 	"enhancedupload-list-header-link": "Povezava na datoteko",
 	"enhancedupload-finished-dialog-label": "Naložene datoteke",
 	"enhancedupload-tab-failed-upload": "Neuspešno",

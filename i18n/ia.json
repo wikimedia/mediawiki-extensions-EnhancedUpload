@@ -20,6 +20,7 @@
 	"enhancedupload-list-header-filetype": "formato",
 	"enhancedupload-list-header-filename": "nomine del file",
 	"enhancedupload-list-header-error": "error",
+	"enhancedupload-list-header-warning": "advertimento",
 	"enhancedupload-list-header-link": "Ligamine al file",
 	"enhancedupload-finished-dialog-label": "Files incargate",
 	"enhancedupload-tab-failed-upload": "Fallite",

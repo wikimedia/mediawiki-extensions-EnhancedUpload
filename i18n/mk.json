@@ -21,6 +21,7 @@
 	"enhancedupload-list-header-filetype": "формат",
 	"enhancedupload-list-header-filename": "име на податотека",
 	"enhancedupload-list-header-error": "грешка",
+	"enhancedupload-list-header-warning": "предупредување",
 	"enhancedupload-list-header-link": "Врска до податотека",
 	"enhancedupload-finished-dialog-label": "Подигнати податотеки",
 	"enhancedupload-tab-failed-upload": "Не успеа",
