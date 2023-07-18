@@ -21,6 +21,7 @@
 	"enhancedupload-list-header-filetype": "формат",
 	"enhancedupload-list-header-filename": "име на податотека",
 	"enhancedupload-list-header-error": "грешка",
+	"enhancedupload-list-header-warning": "предупредување",
 	"enhancedupload-list-header-link": "Врска до податотека",
 	"enhancedupload-finished-dialog-label": "Подигнати податотеки",
 	"enhancedupload-tab-failed-upload": "Не успеа",
@@ -80,6 +81,7 @@
 	"enhancedupload-config-width-help": "Можност за ширина при влечење и пуштање на слики во нагледниот уредник. Задајте „auto“ за да се сразмери со ширината. Ако свете се на „auto“, тогаш се користи основно зададената големина.",
 	"enhancedupload-droplet-attachments-name": "Прилози",
 	"enhancedupload-droplet-attachments-description": "Подрачје за организирање на прилози",
-	"enhancedupload-upload-warning-exists": "Оваа податотека веќе постои",
-	"enhancedupload-upload-warning-duplicate": "Оваа податотека е дупликат"
+	"enhancedupload-upload-warning-exists": "Веќе има податотека со тоа име",
+	"enhancedupload-upload-warning-duplicate": "Оваа податотека е дупликат",
+	"enhancedupload-upload-warning-was-deleted": "Оваа податотечно име е претходно бришано."
 }

@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Eihel",
-			"Verdy p"
+			"Verdy p",
+			"Gomoko"
 		]
 	},
 	"enhancedupload": "Téléversement amélioré",
@@ -21,6 +22,7 @@
 	"enhancedupload-list-header-filetype": "format",
 	"enhancedupload-list-header-filename": "nom du fichier",
 	"enhancedupload-list-header-error": "erreur",
+	"enhancedupload-list-header-warning": "avertissement",
 	"enhancedupload-list-header-link": "Lien vers le fichier",
 	"enhancedupload-finished-dialog-label": "Fichiers téléversés",
 	"enhancedupload-tab-failed-upload": "Échec",
@@ -80,6 +82,7 @@
 	"enhancedupload-config-width-help": "Réglage de la largeur pour glisser-déposer des images dans l’éditeur visuel. Réglez sur « auto » pour mettre à l’échelle avec la hauteur. Si les deux sont réglés sur « auto », la taille par défaut sera utilisée.",
 	"enhancedupload-droplet-attachments-name": "Pièces jointes",
 	"enhancedupload-droplet-attachments-description": "Zone pour l’organisation des pièces jointes",
-	"enhancedupload-upload-warning-exists": "Ce fichier existe déjà",
-	"enhancedupload-upload-warning-duplicate": "Ce fichier est un doublon"
+	"enhancedupload-upload-warning-exists": "Ce nom de fichier existe déjà",
+	"enhancedupload-upload-warning-duplicate": "Ce fichier est un doublon",
+	"enhancedupload-upload-warning-was-deleted": "Ce nom de fichier a été précédemment supprimé."
 }

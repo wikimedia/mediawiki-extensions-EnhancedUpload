@@ -18,6 +18,7 @@
 	"enhancedupload-list-header-filetype": "フォーマット",
 	"enhancedupload-list-header-filename": "ファイル名",
 	"enhancedupload-list-header-error": "エラー",
+	"enhancedupload-list-header-warning": "警告",
 	"enhancedupload-finished-dialog-label": "ファイルがアップロードされました",
 	"enhancedupload-tab-failed-upload": "失敗しました",
 	"enhancedupload-tab-successfull-upload": "成功",
