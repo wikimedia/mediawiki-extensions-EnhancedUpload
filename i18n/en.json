@@ -82,5 +82,7 @@
 	"enhancedupload-upload-warning-exists": "This file name exists already",
 	"enhancedupload-upload-warning-duplicate": "This file is a duplicate",
 	"enhancedupload-upload-warning-was-deleted": "This file name was previously deleted.",
-	"enhancedupload-list-header-warning": "warning"
+	"enhancedupload-list-header-warning": "warning",
+	"enhancedupload-config-extensions-label": "Allow mismatched MIME types (potential security risk)",
+	"enhancedupload-config-extensions-help": "Allow file extensions with mismatched MIME types to be uploaded. Warning: potential security risk."
 }
