@@ -82,5 +82,7 @@
 	"enhancedupload-upload-warning-exists": "Iste nomine de file existe ja",
 	"enhancedupload-upload-warning-duplicate": "Iste file es un duplicato",
 	"enhancedupload-upload-warning-was-deleted": "Iste nomine de file ha essite anteriormente delite.",
-	"enhancedupload-list-header-warning": "advertimento"
+	"enhancedupload-list-header-warning": "advertimento",
+	"enhancedupload-config-extensions-label": "Permitter typos MIME non correspondente (risco potential pro le securitate)",
+	"enhancedupload-config-extensions-help": "Permitter le incargamento de files con extension de nomine de file non correspondente al typo MIME. Attention: risco potential pro le securitate."
 }

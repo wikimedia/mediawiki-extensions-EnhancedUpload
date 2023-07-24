@@ -82,5 +82,7 @@
 	"enhancedupload-upload-warning-exists": "הקובץ הזה כבר קיים",
 	"enhancedupload-upload-warning-duplicate": "הקובץ הזה כפיל",
 	"enhancedupload-upload-warning-was-deleted": "שם הקובץ הזה נמחק בעבר.",
-	"enhancedupload-list-header-warning": "אזהרה"
+	"enhancedupload-list-header-warning": "אזהרה",
+	"enhancedupload-config-extensions-label": "לאפשר סוגי MIME לא תואמים (סיכון אבטחה אפשרי)",
+	"enhancedupload-config-extensions-help": "לאפשר להעלות סיומות קבצים עם סוגי MIME לא תואמים. אזהרה: סיכון אבטחה אפשרי."
 }
