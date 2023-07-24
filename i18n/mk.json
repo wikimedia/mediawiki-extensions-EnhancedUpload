@@ -83,5 +83,7 @@
 	"enhancedupload-upload-warning-exists": "Веќе има податотека со тоа име",
 	"enhancedupload-upload-warning-duplicate": "Оваа податотека е дупликат",
 	"enhancedupload-upload-warning-was-deleted": "Оваа податотечно име е претходно бришано.",
-	"enhancedupload-list-header-warning": "предупредување"
+	"enhancedupload-list-header-warning": "предупредување",
+	"enhancedupload-config-extensions-label": "Дозволи несовпаднати MIME-типови (потенцијален безбедносен ризик)",
+	"enhancedupload-config-extensions-help": "Дозволи подигање на податотечни наставки со несовпаднати MIME-типови. Предупредување: потенцијален безбедносен ризик."
 }

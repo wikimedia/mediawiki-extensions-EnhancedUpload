@@ -83,5 +83,7 @@
 	"enhancedupload-upload-warning-exists": "Der Dateiname existiert bereits",
 	"enhancedupload-upload-warning-duplicate": "Die Datei ist ein Duplikat",
 	"enhancedupload-upload-warning-was-deleted": "Der Dateiname wurde bereits gelöscht.",
-	"enhancedupload-list-header-warning": "Warnung"
+	"enhancedupload-list-header-warning": "Warnung",
+	"enhancedupload-config-extensions-label": "Nicht übereinstimmende MIME-Typen zulassen (potenzielles Sicherheitsrisiko)",
+	"enhancedupload-config-extensions-help": "Dateierweiterungen mit nicht übereinstimmenden MIME-Typen dürfen hochgeladen werden. Warnung: potenzielles Sicherheitsrisiko."
 }

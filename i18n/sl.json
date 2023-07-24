@@ -82,5 +82,7 @@
 	"enhancedupload-upload-warning-exists": "To datotečno ime že obstaja",
 	"enhancedupload-upload-warning-duplicate": "Ta datoteka je dvojnik",
 	"enhancedupload-upload-warning-was-deleted": "To datotečno ime je že bilo izbrisano.",
-	"enhancedupload-list-header-warning": "opozorilo"
+	"enhancedupload-list-header-warning": "opozorilo",
+	"enhancedupload-config-extensions-label": "Dovoljene neujemajoče se vrste MIME (možno varnostno tveganje)",
+	"enhancedupload-config-extensions-help": "Dovoljeno nalaganje končnic datotek z neujemajočimi se vrstami MIME. Opozorilo: možno varnostno tveganje."
 }
