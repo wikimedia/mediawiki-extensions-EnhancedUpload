@@ -79,6 +79,8 @@
 	"enhancedupload-config-height-help": "Можност за висина при влечење и пуштање на слики во нагледниот уредник. Задајте „auto“ за да се сразмери со ширината. Ако свете се на „auto“, тогаш се користи основно зададената големина.",
 	"enhancedupload-config-width-label": "Ширина на сликата:",
 	"enhancedupload-config-width-help": "Можност за ширина при влечење и пуштање на слики во нагледниот уредник. Задајте „auto“ за да се сразмери со ширината. Ако свете се на „auto“, тогаш се користи основно зададената големина.",
+	"enhancedupload-config-extensions-label": "Дозволи несовпаднати MIME-типови (потенцијален безбедносен ризик)",
+	"enhancedupload-config-extensions-help": "Дозволи подигање на податотечни наставки со несовпаднати MIME-типови. Предупредување: потенцијален безбедносен ризик.",
 	"enhancedupload-droplet-attachments-name": "Прилози",
 	"enhancedupload-droplet-attachments-description": "Подрачје за организирање на прилози",
 	"enhancedupload-upload-warning-exists": "Веќе има податотека со тоа име",
