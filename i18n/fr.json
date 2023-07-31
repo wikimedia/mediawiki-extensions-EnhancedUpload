@@ -3,7 +3,8 @@
 		"authors": [
 			"Eihel",
 			"Gomoko",
-			"Verdy p"
+			"Verdy p",
+			"Wladek92"
 		]
 	},
 	"enhancedupload": "Téléversement amélioré",
@@ -81,7 +82,7 @@
 	"enhancedupload-config-width-label": "Largeur de l’image :",
 	"enhancedupload-config-width-help": "Réglage de la largeur pour glisser-déposer des images dans l’éditeur visuel. Réglez sur « auto » pour mettre à l’échelle avec la hauteur. Si les deux sont réglés sur « auto », la taille par défaut sera utilisée.",
 	"enhancedupload-config-extensions-label": "Autoriser les types MIME incompatibles (risque de sécurité potentiel)",
-	"enhancedupload-config-extensions-help": "Permettre de télécharger les extensions de fichier avec des types MIME incompatibles. Attention : risque de sécurité potentiel.",
+	"enhancedupload-config-extensions-help": "Permettre de téléverser les extensions de fichiers avec des types MIME incompatibles. Attention : risque de sécurité potentiel.",
 	"enhancedupload-droplet-attachments-name": "Pièces jointes",
 	"enhancedupload-droplet-attachments-description": "Zone pour l’organisation des pièces jointes",
 	"enhancedupload-upload-warning-exists": "Ce nom de fichier existe déjà",
