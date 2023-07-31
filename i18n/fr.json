@@ -3,7 +3,8 @@
 		"authors": [
 			"Eihel",
 			"Gomoko",
-			"Verdy p"
+			"Verdy p",
+			"Wladek92"
 		]
 	},
 	"enhancedupload": "Téléversement amélioré",
@@ -86,5 +87,5 @@
 	"enhancedupload-upload-warning-was-deleted": "Ce nom de fichier a été précédemment supprimé.",
 	"enhancedupload-list-header-warning": "avertissement",
 	"enhancedupload-config-extensions-label": "Autoriser les types MIME incompatibles (risque de sécurité potentiel)",
-	"enhancedupload-config-extensions-help": "Permettre de télécharger les extensions de fichier avec des types MIME incompatibles. Attention : risque de sécurité potentiel."
+	"enhancedupload-config-extensions-help": "Permettre de téléverser les extensions de fichiers avec des types MIME incompatibles. Attention : risque de sécurité potentiel."
 }
