@@ -10,6 +10,6 @@
 	"enhancedupload-config-type-label": "Τύπος εικόνας:",
 	"enhancedupload-config-height-label": "Ύψος εικόνας:",
 	"enhancedupload-config-width-label": "Πλάτος εικόνας:",
-	"enhancedupload-upload-warning-exists": "Το αρχείο υπάρχει ήδη",
+	"enhancedupload-upload-warning-exists": "Το όνομα αρχείου υπάρχει ήδη",
 	"enhancedupload-upload-warning-duplicate": "Αυτό το αρχείο είναι διπλότυπο"
 }
