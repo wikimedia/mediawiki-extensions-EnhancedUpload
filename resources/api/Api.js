@@ -6,9 +6,9 @@ enhancedUpload.api.Api = function () {
 
 OO.initClass( enhancedUpload.api.Api );
 
-enhancedUpload.api.Api.prototype.put = function ( path, params ) {
+enhancedUpload.api.Api.prototype.post = function ( path, params ) {
 	params = params || {};
-	return this.ajax( path, JSON.stringify( { files: params } ), 'PUT' );
+	return this.ajax( path, JSON.stringify( { files: params } ), 'POST' );
 };
 
 enhancedUpload.api.Api.prototype.makeUrl = function ( path ) {
@@ -51,13 +51,13 @@ enhancedUpload.api.Api.prototype.addFiles = function ( pageId, tagcounter, data,
 	for ( item in pageNames ) {
 		files.push( pageNames[ item ] );
 	}
-	return this.put( 'addattachments/' + pageId + '/' + tagcounter, files );
+	return this.post( 'addattachments/' + pageId + '/' + tagcounter, files );
 };
 
 enhancedUpload.api.Api.prototype.removeFiles = function ( pageId, tagcounter, data ) {
-	return this.put( 'removeattachments/' + pageId + '/' + tagcounter, data );
+	return this.post( 'removeattachments/' + pageId + '/' + tagcounter, data );
 };
 
 enhancedUpload.api.Api.prototype.addLink = function ( pageId, tagcounter, data ) {
-	return this.put( 'addattachments/' + pageId + '/' + tagcounter, data );
+	return this.post( 'addattachments/' + pageId + '/' + tagcounter, data );
 };

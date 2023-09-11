@@ -98,7 +98,7 @@
 	"RestRoutes": [
 		{
 			"path": "/enhancedupload/addattachments/{pageId}/{counter}",
-			"method": "PUT",
+			"method": "POST",
 			"class": "\\MediaWiki\\Extension\\EnhancedUpload\\Rest\\SetAttachments",
 			"services": [
 				"EnhancedUploadAttachmentTagModifier",
@@ -108,7 +108,7 @@
 		},
 		{
 			"path": "/enhancedupload/removeattachments/{pageId}/{counter}",
-			"method": "PUT",
+			"method": "POST",
 			"class": "\\MediaWiki\\Extension\\EnhancedUpload\\Rest\\RemoveAttachments",
 			"services": [
 				"EnhancedUploadAttachmentTagModifier",
