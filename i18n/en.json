@@ -58,7 +58,6 @@
 	"enhancedupload-ve-attachmentinspector-categories": "Categories",
 	"enhancedupload-ve-attachmentinspector-desc": "Description",
 	"enhancedupload-ve-attachmentinspector-options": "Skip upload options",
-	"enhancedupload-attachment-tag-desc": "With this tag files can be added to this page. New files can be uploaded and added and also existing files from the wiki can be added to the tag. A display title can be given for the tag area as well as upload options: a prefix, categories separated by '|' and a description that are automatically added when uploading.",
 	"enhancedupload-attachments-tag-grid-editor-label": "Editor",
 	"enhancedupload-ve-attachmentinspector-grid-version": "Hide version",
 	"enhancedupload-ve-attachmentinspector-grid-editor": "Hide editor",
