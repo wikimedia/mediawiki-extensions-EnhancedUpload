@@ -61,7 +61,6 @@
 	"enhancedupload-ve-attachmentinspector-categories": "Label for categories input field",
 	"enhancedupload-ve-attachmentinspector-desc": "Label for description input field",
 	"enhancedupload-ve-attachmentinspector-options": "Label for switch if options should be skipped or not",
-	"enhancedupload-attachment-tag-desc": "Description for tag attachment",
 	"enhancedupload-attachments-tag-grid-editor-label": "Label for grid column which lists last editor",
 	"enhancedupload-ve-attachmentinspector-grid-version": "Label for switch if version should be hidden",
 	"enhancedupload-ve-attachmentinspector-grid-editor": "Label for switch if editor should be hidden",
