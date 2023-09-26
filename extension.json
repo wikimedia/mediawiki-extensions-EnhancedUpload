@@ -65,8 +65,7 @@
 		"BeforePageDisplay": "addModules",
 		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin",
 		"SkinTemplateNavigation::Universal": "addContentActions",
-		"SpecialPage_initList": "special-upload",
-		"BSInsertMagicAjaxGetData": "MediaWiki\\Extension\\EnhancedUpload\\Hook\\BSInsertMagicAjaxGetData\\AddAttachmentTag::callback"
+		"SpecialPage_initList": "special-upload"
 	},
 	"HookHandlers": {
 		"tag": {
