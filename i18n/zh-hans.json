@@ -58,7 +58,6 @@
 	"enhancedupload-ve-attachmentinspector-categories": "分类",
 	"enhancedupload-ve-attachmentinspector-desc": "描述",
 	"enhancedupload-ve-attachmentinspector-options": "跳过上传选项",
-	"enhancedupload-attachment-tag-desc": "带有此标签的文件可以添加到此页面。可以上传和添加新文件，也可以将wiki中的现有文件添加到标签中。可以在标签区域提供显示的标题以及上传选项：前缀、由“|”分隔的分类以及上传时自动添加的描述。",
 	"enhancedupload-attachments-tag-grid-editor-label": "编辑者",
 	"enhancedupload-ve-attachmentinspector-grid-version": "隐藏版本",
 	"enhancedupload-ve-attachmentinspector-grid-editor": "隐藏编辑者",

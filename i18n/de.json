@@ -59,7 +59,6 @@
 	"enhancedupload-ve-attachmentinspector-categories": "Kategorien",
 	"enhancedupload-ve-attachmentinspector-desc": "Beschreibung",
 	"enhancedupload-ve-attachmentinspector-options": "Hochlade-Optionen überspringen",
-	"enhancedupload-attachment-tag-desc": "Mit diesem Tag können Dateien der Seite hinzugefügt werden. Neue Dateien können hochgeladen und hinzugefügt werden, aber auch bereits existierende Dateien können dem Tag hinzugefügt werden. Es kann ein Anzeigetitel für den Tag-Bereich vergeben werden wie auch Hochladeoptionen: ein Präfix, Kategorien mit '|' getrennt und eine Beschreibung, die beim Hochladen automatisch hinzugefügt werden.",
 	"enhancedupload-attachments-tag-grid-editor-label": "Bearbeiter",
 	"enhancedupload-ve-attachmentinspector-grid-version": "Version verstecken",
 	"enhancedupload-ve-attachmentinspector-grid-editor": "Bearbeiter verstecken",

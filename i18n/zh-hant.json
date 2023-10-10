@@ -59,7 +59,6 @@
 	"enhancedupload-ve-attachmentinspector-categories": "分類",
 	"enhancedupload-ve-attachmentinspector-desc": "描述",
 	"enhancedupload-ve-attachmentinspector-options": "略過上傳選項",
-	"enhancedupload-attachment-tag-desc": "帶有此標記的檔案可以添加到此頁面。新檔案可以上傳和添加，另外在 wiki 中的現有檔案也可以添加標籤。可在標籤區域提供顯示的標題，以及上傳的選項：如字首、以「|」字元區別的分類、以及在上傳時可自動添加的描述。",
 	"enhancedupload-attachments-tag-grid-editor-label": "編輯者",
 	"enhancedupload-ve-attachmentinspector-grid-version": "隱藏版本",
 	"enhancedupload-ve-attachmentinspector-grid-editor": "隱藏編輯者",
