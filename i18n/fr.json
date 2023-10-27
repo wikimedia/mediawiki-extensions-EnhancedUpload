@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"BlueCamille",
 			"Eihel",
 			"Gomoko",
 			"Verdy p",
 			"Wladek92"
 		]
 	},
-	"enhancedupload": "Téléversement amélioré",
+	"enhancedupload": "Téléversement",
 	"enhancedupload-desc": "Fournit une page spéciale avec l’option pour téléverser un ou plusieurs fichiers vers le wiki local.",
 	"enhancedupload-text": "Téléverser des fichiers",
 	"enhancedupload-details-header-label": "Détails",
