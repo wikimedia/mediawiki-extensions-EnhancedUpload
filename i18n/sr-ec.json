@@ -13,5 +13,6 @@
 	"enhancedupload-upload-warning-exists": "Назив датотеке је заузет",
 	"enhancedupload-upload-warning-duplicate": "Ова датотека је дупликат",
 	"enhancedupload-upload-warning-was-deleted": "Датотека са овим називом је претходно обрисана.",
-	"enhancedupload-list-header-warning": "упозорење"
+	"enhancedupload-list-header-warning": "упозорење",
+	"enhancedupload": "Отпреми"
 }

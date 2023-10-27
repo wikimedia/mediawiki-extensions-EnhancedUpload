@@ -67,5 +67,6 @@
 	"enhancedupload-droplet-attachments-description": "添付ファイルを整理するための領域",
 	"enhancedupload-upload-warning-exists": "このファイルはすでに存在します",
 	"enhancedupload-upload-warning-duplicate": "このファイルは重複しています",
-	"enhancedupload-list-header-warning": "警告"
+	"enhancedupload-list-header-warning": "警告",
+	"enhancedupload": "アップロード"
 }
