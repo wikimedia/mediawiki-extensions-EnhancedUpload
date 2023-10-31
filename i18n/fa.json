@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jeeputer"
+			"Jeeputer",
+			"Rulebased"
 		]
 	},
+	"enhancedupload": "بارگذاری",
 	"enhancedupload-text": "بارگذاری پرونده",
 	"enhancedupload-details-header-label": "جزئیات",
 	"enhancedupload-details-namespace-label": "فضای نام",

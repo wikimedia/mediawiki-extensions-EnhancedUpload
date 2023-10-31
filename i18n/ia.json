@@ -4,7 +4,7 @@
 			"McDutchie"
 		]
 	},
-	"enhancedupload": "Incargamento meliorate",
+	"enhancedupload": "Incargar",
 	"enhancedupload-desc": "Forni un pagina special con le option de incargar un o plure files al wiki",
 	"enhancedupload-text": "Incargar files",
 	"enhancedupload-details-header-label": "Detalios",
@@ -58,7 +58,6 @@
 	"enhancedupload-ve-attachmentinspector-categories": "Categorias",
 	"enhancedupload-ve-attachmentinspector-desc": "Description",
 	"enhancedupload-ve-attachmentinspector-options": "Saltar optiones de incargamento",
-	"enhancedupload-attachment-tag-desc": "Iste etiquetta permitte adder files a iste pagina. Nove files pote esser incargate e addite. In ultra, files existente del wiki pote esser addite al etiquetta. Un titulo a monstrar in le area del etiquetta pote esser specificate, assi como le sequente optiones de incargamento: un prefixo, categorias separate per '|' e un description, le quales essera automaticamente addite durante le incargamento.",
 	"enhancedupload-attachments-tag-grid-editor-label": "Redactor",
 	"enhancedupload-ve-attachmentinspector-grid-version": "Celar version",
 	"enhancedupload-ve-attachmentinspector-grid-editor": "Celar redactor",
