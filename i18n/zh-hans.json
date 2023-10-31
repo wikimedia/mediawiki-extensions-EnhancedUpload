@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"GuoPC",
 			"Lakejason0",
 			"Wzl19371"
 		]
 	},
-	"enhancedupload": "增强型上传",
+	"enhancedupload": "上传",
 	"enhancedupload-desc": "提供可以选择一个或多个文件上传到wiki的特殊页面",
 	"enhancedupload-text": "上传文件",
 	"enhancedupload-details-header-label": "详情",
