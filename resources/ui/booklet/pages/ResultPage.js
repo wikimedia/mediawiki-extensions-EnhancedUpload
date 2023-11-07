@@ -86,10 +86,16 @@ enhancedUpload.ui.booklet.ResultPage.prototype.initializeFailedPanel = function 
 };
 
 enhancedUpload.ui.booklet.ResultPage.prototype.initializeFinishedPanel = function () {
-	var listView = new enhancedUpload.ui.panel.FinishedList( {
+	var label, listView;
+	label = new OO.ui.LabelWidget( {
+		label: mw.message( 'enhancedupload-finished-dialog-label' ).text(),
+		classes: [ 'enhancedupload-dialog-title' ]
+	} );
+	listView = new enhancedUpload.ui.panel.FinishedList( {
 		expanded: false
 	} );
 	listView.addGrid( this.finishedData );
+	this.contentFinished.$element.append( label.$element );
 	this.contentFinished.$element.append( listView.$element );
 };
 
