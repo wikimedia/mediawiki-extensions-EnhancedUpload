@@ -37,11 +37,7 @@ enhancedUpload.ui.panel.WarningList.prototype.addGrid = function ( data ) {
 			},
 			error: {
 				headerText: mw.message( 'enhancedupload-list-header-warning' ).plain(),
-				type: 'text',
-				showExpandedLabel: true,
-				valueParser: function ( val ) {
-					return new OO.ui.HtmlSnippet( val );
-				}
+				type: 'text'
 			}
 		},
 		data: this.data
