@@ -79,7 +79,7 @@
 	"enhancedupload-config-height-label": "圖片高度：",
 	"enhancedupload-config-height-help": "在可視化編輯器中拖放圖片的高度設定。設定為「自動」可隨寬度縮放。如果兩邊都設定為「自動」，則將使用預設大小。",
 	"enhancedupload-config-width-label": "圖片寬度：",
-	"enhancedupload-config-width-help": "在可視化編輯器中拖放圖片的寬度設定。設定為「自動」可隨高度縮放。如果兩邊都設定為「自動」，則將使用預設大小。",
+	"enhancedupload-config-width-help": "在視覺化編輯器中拖放圖片的寬度設定。設為「自動」可隨高度縮放。如果兩邊都設為「自動」則會使用預設大小。",
 	"enhancedupload-config-extensions-label": "允許不匹配的 MIME 類型（具潛在的資安風險）",
 	"enhancedupload-config-extensions-help": "允許上傳 MIME 類型不匹配的副檔名。警告：具潛在的資安風險",
 	"enhancedupload-droplet-attachments-name": "附件",
