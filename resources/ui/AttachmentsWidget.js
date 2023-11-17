@@ -113,7 +113,8 @@ enhancedUpload.ui.AttachmentsWidget.prototype.addGrid = function () {
 						editable: false,
 						urlProperty: 'file_url',
 						sortable: true,
-						filter: { type: 'string' }
+						filter: { type: 'string' },
+						autoClosePopup: true
 					}
 				},
 				data: files
