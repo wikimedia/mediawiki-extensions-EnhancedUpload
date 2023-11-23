@@ -78,7 +78,7 @@
 	"enhancedupload-config-height-label": "Hoogte afbeelding:",
 	"enhancedupload-config-height-help": "Hoogte-instelling voor het slepen en neerzetten van afbeeldingen in de visuele editor. Zet op ‘auto’ om in verhouding met de breedte in te stellen. Als beide op ‘auto’ zijn gezet, wordt de standaardgrootte gebruikt.",
 	"enhancedupload-config-width-label": "Breedte afbeelding:",
-	"enhancedupload-config-width-help": "Breedte-instelling voor het slepen en neerzetten van afbeeldingen in de visuele editor. Zet op 'auto' om in verhouding met de hoogte in te stellen. Als beide op 'auto' zijn gezet, wordt de standaardgrootte gebruikt.",
+	"enhancedupload-config-width-help": "Breedte-instelling voor het slepen en neerzetten van afbeeldingen in de visuele editor. Zet op ‘auto’ om in verhouding met de hoogte in te stellen. Als beide op ‘auto’ zijn gezet, wordt de standaardgrootte gebruikt.",
 	"enhancedupload-config-extensions-label": "Niet-overeenkomende MIME-typen toestaan (potentieel beveiligingsrisico)",
 	"enhancedupload-config-extensions-help": "Sta toe dat bestandextensies met niet-overeenkomende MIME-typen worden geüpload. Waarschuwing: potentieel veiligheidsrisico.",
 	"enhancedupload-droplet-attachments-name": "Bijlagen",

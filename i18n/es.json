@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"MarcoAurelio",
-			"OriginReboot",
 			"Fitoschido",
-			"No se"
+			"MarcoAurelio",
+			"No se",
+			"OriginReboot"
 		]
 	},
 	"enhancedupload-details-header-label": "Detalles",
