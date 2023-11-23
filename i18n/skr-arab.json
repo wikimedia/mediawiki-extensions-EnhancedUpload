@@ -7,5 +7,9 @@
 	"enhancedupload-attachments-tag-grid-remove-title": "ہٹاؤ",
 	"enhancedupload-config-type-label": "تصویر قسم:",
 	"enhancedupload-config-height-label": "تصویر اُوچائی",
-	"enhancedupload-droplet-attachments-name": "نتھیاں"
+	"enhancedupload-droplet-attachments-name": "نتھیاں",
+	"enhancedupload": "اپلوڈ",
+	"enhancedupload-list-header-warning": "ݙراوا",
+	"enhancedupload-upload-warning-exists": "ایہ فائل ناں پہلے ہی موجود ہے",
+	"enhancedupload-upload-warning-was-deleted": "ایہ فائل ناں پہلے مٹایا ہویا ہائی۔"
 }

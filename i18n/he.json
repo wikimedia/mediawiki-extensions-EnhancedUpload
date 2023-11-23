@@ -4,7 +4,7 @@
 			"Amire80"
 		]
 	},
-	"enhancedupload": "העלאה מורחבת",
+	"enhancedupload": "העלאה",
 	"enhancedupload-desc": "מספקת דף מיוחד עם אפשרות להעלות קובץ אחד או קבצים מרובים לוויקי",
 	"enhancedupload-text": "העלאת קבצים",
 	"enhancedupload-details-header-label": "פרטים",
@@ -78,5 +78,11 @@
 	"enhancedupload-config-width-label": "רוחב התמונה:",
 	"enhancedupload-config-width-help": "הגדרת רוחב לגרירה ושחרור של תמונות בעורך החזותי. יש להגדיר ל\"אוטומטי\" כדי לשנות את קנה המידה עם הגובה. אם שניהם מוגדרים ל\"אוטומטי\", ישמש גודל ברירת המחדל.",
 	"enhancedupload-droplet-attachments-name": "צרופות",
-	"enhancedupload-droplet-attachments-description": "אזור לארגון צרופות"
+	"enhancedupload-droplet-attachments-description": "אזור לארגון צרופות",
+	"enhancedupload-list-header-warning": "אזהרה",
+	"enhancedupload-config-extensions-label": "לאפשר סוגי MIME לא תואמים (סיכון אבטחה אפשרי)",
+	"enhancedupload-config-extensions-help": "לאפשר להעלות סיומות קבצים עם סוגי MIME לא תואמים. אזהרה: סיכון אבטחה אפשרי.",
+	"enhancedupload-upload-warning-exists": "הקובץ הזה כבר קיים",
+	"enhancedupload-upload-warning-duplicate": "הקובץ הזה כפיל",
+	"enhancedupload-upload-warning-was-deleted": "שם הקובץ הזה נמחק בעבר."
 }

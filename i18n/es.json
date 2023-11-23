@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Fitoschido",
 			"MarcoAurelio",
-			"OriginReboot",
-			"Fitoschido"
+			"No se",
+			"OriginReboot"
 		]
 	},
 	"enhancedupload-details-header-label": "Detalles",
@@ -40,5 +41,6 @@
 	"enhancedupload-updated-dialog-label": "Se actualizó el archivo «$1»",
 	"enhancedupload-finished-dialog-action-close": "Cerrar",
 	"enhancedupload-config-type-label": "Tipo de imagen:",
-	"enhancedupload-config-height-label": "Altura de la imagen:"
+	"enhancedupload-config-height-label": "Altura de la imagen:",
+	"enhancedupload-upload-warning-was-deleted": "Este nombre de archivo se eliminó previamente."
 }

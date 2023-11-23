@@ -4,7 +4,7 @@
 			"McDutchie"
 		]
 	},
-	"enhancedupload": "Incargamento meliorate",
+	"enhancedupload": "Incargar",
 	"enhancedupload-desc": "Forni un pagina special con le option de incargar un o plure files al wiki",
 	"enhancedupload-text": "Incargar files",
 	"enhancedupload-details-header-label": "Detalios",
@@ -78,5 +78,11 @@
 	"enhancedupload-config-width-label": "Latitude del imagine:",
 	"enhancedupload-config-width-help": "Parametro de latitude pro traher e deponer imagines in le editor visual. Mitter a 'auto' pro calcular un latitude in proportion con le altitude. Si ambes es mittite a 'auto', le dimension predefinite essera usate.",
 	"enhancedupload-droplet-attachments-name": "Annexos",
-	"enhancedupload-droplet-attachments-description": "Area pro organisar annexos"
+	"enhancedupload-droplet-attachments-description": "Area pro organisar annexos",
+	"enhancedupload-list-header-warning": "advertimento",
+	"enhancedupload-config-extensions-label": "Permitter typos MIME non correspondente (risco potential pro le securitate)",
+	"enhancedupload-config-extensions-help": "Permitter le incargamento de files con extension de nomine de file non correspondente al typo MIME. Attention: risco potential pro le securitate.",
+	"enhancedupload-upload-warning-exists": "Iste nomine de file existe ja",
+	"enhancedupload-upload-warning-duplicate": "Iste file es un duplicato",
+	"enhancedupload-upload-warning-was-deleted": "Iste nomine de file ha essite anteriormente delite."
 }

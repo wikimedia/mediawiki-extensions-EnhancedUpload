@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kokage si",
 			"MathXplore",
 			"Mugenpman",
 			"もなー(偽物)"
@@ -22,7 +23,7 @@
 	"enhancedupload-tab-successfull-upload": "成功",
 	"enhancedupload-tab-warnings-upload": "警告",
 	"enhancedupload-ve-dialog-title": "ファイルをアップロード",
-	"enhancedupload-attachments-add-new-media-button-title": "新しいファイルを追加",
+	"enhancedupload-attachments-add-new-media-button-title": "新しいファイルをウィキに追加",
 	"enhancedupload-attachments-tag-grid-file-label": "ファイル",
 	"enhancedupload-attachments-tag-grid-size-label": "サイズ",
 	"enhancedupload-attachments-tag-grid-version-label": "最新版",
@@ -63,5 +64,9 @@
 	"enhancedupload-config-width-label": "画像の幅",
 	"enhancedupload-config-width-help": "ビジュアル エディタで画像をドラッグ アンド ドロップするための幅の設定 高さに合わせて拡大縮小するには、「auto」に設定します。両方が「auto」に設定されている場合、デフォルトのサイズが使用されます。",
 	"enhancedupload-droplet-attachments-name": "添付ファイル",
-	"enhancedupload-droplet-attachments-description": "添付ファイルを整理するための領域"
+	"enhancedupload-droplet-attachments-description": "添付ファイルを整理するための領域",
+	"enhancedupload": "アップロード",
+	"enhancedupload-list-header-warning": "警告",
+	"enhancedupload-upload-warning-exists": "このファイルはすでに存在します",
+	"enhancedupload-upload-warning-duplicate": "このファイルは重複しています"
 }
