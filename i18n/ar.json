@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Alshamiri1",
 			"Asma",
 			"Mohanad Kh",
 			"محمد أحمد عبد الفتاح"
@@ -57,5 +58,29 @@
 	"enhancedupload-attachments-tag-grid-remove-title": "أزل",
 	"enhancedupload-config-type-label": "نوع الصورة:",
 	"enhancedupload-config-height-label": "ارتفاع الصورة:",
-	"enhancedupload-config-width-label": "عرض الصورة:"
+	"enhancedupload-config-width-label": "عرض الصورة:",
+	"enhancedupload": "تحميل محسن",
+	"enhancedupload-desc": "يوفر صفحة خاصة بها خيار تحميل ملف واحد أو عدة ملفات إلى wiki",
+	"enhancedupload-failed-dialog-label": "{{PLURAL:$1| ملف واحد | تعذر تحميل $1 files}}",
+	"enhancedupload-list-header-filetype": "الصيغة",
+	"enhancedupload-warning-dialog-label": "{{PLURAL:$1| حدث تحذير | التحذيرات}} حدث مع {{PLURAL:$1| هذا الملف | هذه الملفات}}",
+	"enhancedupload-ve-dialog-filename-label": "أدخل اسم الملف",
+	"enhancedupload-ve-dialog-title-exists": "يوجد ملف بهذا الاسم بالفعل. الرجاء إدخال اسم ملف جديد",
+	"enhancedupload-attachments-tag-grid-version-label": "احدث اصدار",
+	"enhancedupload-ve-dialog-duplicate-confirm": "هذا الملف مكرر. هل تريد إدراج الملف الحالي بدلاً من ذلك؟ وإلا فلن يتم إدراج أي ملف",
+	"enhancedupload-ve-attachmentinspector-prefix": "البادئة",
+	"enhancedupload-ve-attachmentinspector-grid-editor": "إخفاء المحرر",
+	"enhancedupload-attachments-confirm-remove": "هل تريد إزالة الملف \" $1 \" من القائمة؟",
+	"enhancedupload-tab-updated-upload": "الملفات المحدثة",
+	"enhancedupload-updated-dialog-label": "تم تحديث الملف \" $1 \"",
+	"enhancedupload-finished-dialog-action-close": "أغلق",
+	"enhancedupload-config-alignment-label": "محاذاة الصورة:",
+	"enhancedupload-config-alignment-help": "إعداد المحاذاة لسحب الصور وإفلاتها في المحرر المرئي",
+	"enhancedupload-config-type-help": "إعداد الكتابة لسحب وإسقاط الصور في المحرر المرئي",
+	"enhancedupload-config-height-help": "إعداد الارتفاع لسحب وإسقاط الصور في المحرر المرئي. اضبط على \"تلقائي\" للقياس مع العرض. إذا تم ضبط كلاهما على \"تلقائي\" ، فسيتم استخدام الحجم الافتراضي.",
+	"enhancedupload-config-width-help": "إعداد العرض لسحب الصور وإفلاتها في المحرر المرئي ، اضبط على \"تلقائي\" للقياس مع الارتفاع. إذا تم ضبط كلاهما على \"تلقائي\" ، فسيتم استخدام الحجم الافتراضي.",
+	"enhancedupload-droplet-attachments-name": "المرفقات",
+	"enhancedupload-droplet-attachments-description": "منطقة لتنظيم المرفقات",
+	"enhancedupload-upload-warning-exists": "هذا الملف موجود بالفعل",
+	"enhancedupload-upload-warning-duplicate": "هذا الملف مكرر"
 }

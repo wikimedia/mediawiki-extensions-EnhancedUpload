@@ -1,11 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"BlueCamille",
 			"Eihel",
-			"Verdy p"
+			"Gomoko",
+			"Verdy p",
+			"Wladek92"
 		]
 	},
-	"enhancedupload": "Téléversement amélioré",
+	"enhancedupload": "Téléversement",
 	"enhancedupload-desc": "Fournit une page spéciale avec l’option pour téléverser un ou plusieurs fichiers vers le wiki local.",
 	"enhancedupload-text": "Téléverser des fichiers",
 	"enhancedupload-details-header-label": "Détails",
@@ -59,7 +62,7 @@
 	"enhancedupload-ve-attachmentinspector-desc": "Description",
 	"enhancedupload-ve-attachmentinspector-options": "Sauter les options de téléversement",
 	"enhancedupload-attachment-tag-desc": "Avec cette balise, des fichiers peuvent être ajoutés à cette page. De nouveaux fichiers peuvent être téléversés et ajoutés, de même que des fichiers existants du wiki peuvent être ajoutés à la balise. Un titre d’affichage peut être donné pour la zone de balise, ainsi que des options de téléversement : un préfixe, des catégories séparées par « | » et une description qui seront ajoutés automatiquement lors du téléversement.",
-	"enhancedupload-attachments-tag-grid-editor-label": "Éditeur",
+	"enhancedupload-attachments-tag-grid-editor-label": "Rédacteur",
 	"enhancedupload-ve-attachmentinspector-grid-version": "Masquer la version",
 	"enhancedupload-ve-attachmentinspector-grid-editor": "Masquer l’éditeur",
 	"enhancedupload-ve-attachmentinspector-grid-size": "Montrer la taille",
@@ -79,5 +82,11 @@
 	"enhancedupload-config-width-label": "Largeur de l’image :",
 	"enhancedupload-config-width-help": "Réglage de la largeur pour glisser-déposer des images dans l’éditeur visuel. Réglez sur « auto » pour mettre à l’échelle avec la hauteur. Si les deux sont réglés sur « auto », la taille par défaut sera utilisée.",
 	"enhancedupload-droplet-attachments-name": "Pièces jointes",
-	"enhancedupload-droplet-attachments-description": "Zone pour l’organisation des pièces jointes"
+	"enhancedupload-droplet-attachments-description": "Zone pour l’organisation des pièces jointes",
+	"enhancedupload-list-header-warning": "avertissement",
+	"enhancedupload-config-extensions-label": "Autoriser les types MIME incompatibles (risque de sécurité potentiel)",
+	"enhancedupload-config-extensions-help": "Permettre de téléverser les extensions de fichiers avec des types MIME incompatibles. Attention : risque de sécurité potentiel.",
+	"enhancedupload-upload-warning-exists": "Ce nom de fichier existe déjà",
+	"enhancedupload-upload-warning-duplicate": "Ce fichier est un doublon",
+	"enhancedupload-upload-warning-was-deleted": "Ce nom de fichier a été précédemment supprimé."
 }

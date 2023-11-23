@@ -1,11 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"enhancedupload-attachments-add-new-media-button-title": "Nei Fichieren op d'Wiki derbäisetzen",
 	"enhancedupload-attachments-tag-grid-details-title": "Detailer",
 	"enhancedupload-config-height-label": "Héicht vum Bild:",
-	"enhancedupload-config-width-label": "Breet vum Bild:"
+	"enhancedupload-config-width-label": "Breet vum Bild:",
+	"enhancedupload": "Eroplueden",
+	"enhancedupload-upload-warning-exists": "Dëse Fichiernumm gëtt et schonn",
+	"enhancedupload-upload-warning-duplicate": "Dëse Fichier ass en Duplikat"
 }

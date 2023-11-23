@@ -7,5 +7,8 @@
 	"enhancedupload-config-alignment-label": "Aliniad y ddelwedd:",
 	"enhancedupload-config-type-label": "Math o ddelwedd:",
 	"enhancedupload-config-height-label": "Uchder y ddelwedd:",
-	"enhancedupload-config-width-label": "Lled y ddelwedd:"
+	"enhancedupload-config-width-label": "Lled y ddelwedd:",
+	"enhancedupload-list-header-warning": "rhybudd",
+	"enhancedupload-upload-warning-exists": "Mae'r ffeil hon yn bodoli eisoes",
+	"enhancedupload-upload-warning-duplicate": "Mae'r ffeil hon yn ddyblyg"
 }
