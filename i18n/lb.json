@@ -11,5 +11,6 @@
 	"enhancedupload-config-width-label": "Breet vum Bild:",
 	"enhancedupload-upload-warning-exists": "Dëse Fichiernumm gëtt et schonn",
 	"enhancedupload-upload-warning-duplicate": "Dëse Fichier ass en Duplikat",
-	"enhancedupload": "Eroplueden"
+	"enhancedupload": "Eroplueden",
+	"enhancedupload-list-header-error": "Feeler"
 }
