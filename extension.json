@@ -12,8 +12,8 @@
 	"requires": {
 		"MediaWiki": ">= 1.39.0",
 		"extensions": {
-			"OOJSPlus": "*",
-			"VisualEditor": "*"
+			"OOJSPlus": ">= 2.0.0",
+			"VisualEditor": ">= 0.1.2"
 		}
 	},
 	"callback": "mwsInitComponents",
