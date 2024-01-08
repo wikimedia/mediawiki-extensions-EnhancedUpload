@@ -10,10 +10,10 @@
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:EnhancedUpload",
 	"descriptionmsg": "enhancedupload-desc",
 	"requires": {
-		"MediaWiki": ">= 1.35.0",
+		"MediaWiki": ">= 1.39.0",
 		"extensions": {
-			"OOJSPlus": "*",
-			"VisualEditor": "*"
+			"OOJSPlus": ">= 2.0.0",
+			"VisualEditor": ">= 0.1.2"
 		}
 	},
 	"callback": "mwsInitComponents",
