@@ -4,12 +4,11 @@ namespace MediaWiki\Extension\EnhancedUpload;
 
 use Config;
 use MediaWiki\MediaWikiServices;
-use ResourceLoaderContext;
+use MediaWiki\ResourceLoader\Context as ResourceLoaderContext;
 
 class ClientConfig {
 
 	/**
-	 *
 	 * @param ResourceLoaderContext $context
 	 * @param Config $config
 	 * @return array
