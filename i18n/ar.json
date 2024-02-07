@@ -83,5 +83,6 @@
 	"enhancedupload-droplet-attachments-name": "المرفقات",
 	"enhancedupload-droplet-attachments-description": "منطقة لتنظيم المرفقات",
 	"enhancedupload-upload-warning-exists": "هذا الملف موجود بالفعل",
-	"enhancedupload-upload-warning-duplicate": "هذا الملف مكرر"
+	"enhancedupload-upload-warning-duplicate": "هذا الملف مكرر",
+	"enhancedupload-upload-warning-was-deleted": "حذف اسم الملف هذا سابقًا."
 }
