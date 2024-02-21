@@ -139,7 +139,7 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.doUpload = function ( fil
 		dfd.resolve( resp );
 	} ).fail( function ( error, result ) {
 		var warnings = arguments[ 1 ].upload.warnings,
-			errorMessage = '';
+			errorMessage = mw.message( 'enhancedupload-upload-error-unhandled' ).plain();
 		if ( 'exists' in warnings || 'exists-normalized' in warnings ) {
 			errorMessage = 'exists';
 			if ( 'nochange' in warnings ) {
@@ -147,6 +147,8 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.doUpload = function ( fil
 			}
 		} else if ( 'duplicate' in warnings ) {
 			errorMessage = 'duplicate';
+		} else if ( 'duplicate-archive' in warnings ) {
+			errorMessage = mw.message( 'enhancedupload-upload-error-duplicate', params.filename ).plain();
 		}
 		dfd.reject( errorMessage, result );
 	} );
