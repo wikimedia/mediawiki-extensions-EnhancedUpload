@@ -282,7 +282,9 @@
 				"enhancedupload-ve-dialog-title",
 				"enhancedupload-ve-dialog-filename-label",
 				"enhancedupload-ve-dialog-title-exists",
-				"enhancedupload-ve-dialog-duplicate-confirm"
+				"enhancedupload-ve-dialog-duplicate-confirm",
+				"enhancedupload-upload-error-duplicate",
+				"enhancedupload-upload-error-unhandled"
 			]
 		},
 		"ext.enhancedUpload.attachments.addMediaDialog": {
