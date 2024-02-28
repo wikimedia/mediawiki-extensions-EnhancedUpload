@@ -13,7 +13,6 @@ class AddModules implements BeforePageDisplayHook {
 	 * @return void
 	 */
 	public function onBeforePageDisplay( $out, $skin ): void {
-		$out->addModules( 'ext.enhancedUpload.ve.bootstrap' );
 		$out->addModules( 'ext.enhancedUpload.uploadDialog.bootstrap' );
 	}
 }
