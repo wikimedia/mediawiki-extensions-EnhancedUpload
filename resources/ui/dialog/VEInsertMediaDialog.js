@@ -22,10 +22,8 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.initialize = function () 
 	var panel;
 	this.pageName = mw.config.get( 'wgPageName' );
 
-	var pageNameParts = this.pageName.split( '/' );
-	if ( pageNameParts.length > 0 ) {
-		this.pageName = pageNameParts[ pageNameParts.length - 1 ];
-	}
+	// Slashes are no valid chars in a filename
+	this.pageName = this.pageName.replace(/\//g, '_');
 
 	this.targetTitle = new OO.ui.TextInputWidget( {
 		value: this.pageName + '_' + Date.now()
