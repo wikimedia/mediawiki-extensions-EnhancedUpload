@@ -90,5 +90,6 @@
 	"enhancedupload-upload-warning-was-deleted": "Warning message displayed after upload if file with the same name was previously deleted.",
 	"enhancedupload-upload-error-duplicate": "Error message displayed if a identical file has previously been deleted.",
 	"enhancedupload-upload-error-badfilename": "Error message displayed if a filename contains invalid characters.",
-	"enhancedupload-upload-error-unhandled": "Error message displayed if an unhandled exception occurred."
+	"enhancedupload-upload-error-unhandled": "Error message displayed if an unhandled exception occurred.",
+	"enhancedupload-single-file-dlg-title": "Dialog title to upload a new version of a file\nParameters:\n* $1 - file name"
 }
