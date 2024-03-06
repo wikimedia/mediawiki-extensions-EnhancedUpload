@@ -20,6 +20,10 @@ enhancedUpload.ui.UploadWidget = function enhancedUploadUiUploadWidget( cfg ) {
 	this.displayedItems = [];
 	this.allItems = [];
 	this.expanded = true;
+	// eslint-disable-next-line no-prototype-builtins
+	if ( cfg.hasOwnProperty( 'expandedOptions' ) ) {
+		this.expanded = cfg.expandedOptions;
+	}
 	this.warnings = [
 		'fileexists-no-change',
 		'page-exists',
@@ -209,6 +213,7 @@ enhancedUpload.ui.UploadWidget.prototype.onToggle = function () {
 			this.toggleButton.setIcon( 'collapse' );
 			this.toggleButton.setTitle( mw.message( 'enhancedupload-toggle-details-button-hide-label' ).plain() );
 			this.expanded = true;
+			this.emit( 'toggled' );
 		}.bind( this ) );
 	} else {
 		// eslint-disable-next-line no-jquery/no-slide
@@ -216,6 +221,7 @@ enhancedUpload.ui.UploadWidget.prototype.onToggle = function () {
 			this.toggleButton.setIcon( 'expand' );
 			this.toggleButton.setTitle( mw.message( 'enhancedupload-toggle-details-button-show-label' ).plain() );
 			this.expanded = false;
+			this.emit( 'toggled' );
 		}.bind( this ) );
 	}
 };

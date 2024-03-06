@@ -47,6 +47,11 @@
 					"class": "\\MediaWiki\\Extension\\EnhancedUpload\\ContentDroplets\\AttachmentDroplet"
 				}
 			}
+		},
+		"EnhancedStandardUIs": {
+			"FilelistPluginModules": [
+				"ext.enhancedUpload.filelist"
+			]
 		}
 	},
 	"ExtensionMessagesFiles": {
@@ -388,6 +393,35 @@
 			],
 			"dependencies": [
 				"mediawiki.widgets"
+			]
+		},
+		"ext.enhancedUpload.filelist": {
+			"packageFiles": [
+				"ext.enhancedUpload.filelist.bootstrap.js"
+			]
+		},
+		"ext.enhancedUpload.singleupload.dialog": {
+			"packageFiles": [
+				"ui/dialog/UploadSingleFileDialog.js",
+				{
+					"name": "ui/dialog/pluginModules.json",
+					"callback": "MediaWiki\\Extension\\EnhancedUpload\\EnhancedUploadPluginModules::getPluginModules"
+				}
+			],
+			"dependencies": [
+				"ext.enhancedUpload.uploadWidget",
+				"ext.enhancedUpload.widgets"
+			],
+			"styles": [
+				"singlefileupload.dialog.css"
+			],
+			"messages": [
+				"enhancedupload-upload-media-dialog-title",
+				"enhancedupload-upload-media-dialog-cancel-title",
+				"enhancedupload-upload-media-dialog-upload-title",
+				"enhancedupload-upload-media-dialog-done-title",
+				"enhancedupload-single-file-dlg-title",
+				"uploaderror"
 			]
 		}
 	},
