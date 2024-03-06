@@ -87,5 +87,6 @@
 	"enhancedupload-upload-warning-duplicate": "Die Datei ist ein Duplikat",
 	"enhancedupload-upload-warning-was-deleted": "Der Dateiname wurde bereits gelöscht.",
 	"enhancedupload-upload-error-duplicate": "Eine mit dieser Datei ($1) identische Datei wurde zuvor gelöscht.",
-	"enhancedupload-upload-error-badfilename": "Der Dateiname $1 enthält ungültige Zeichen."
+	"enhancedupload-upload-error-badfilename": "Der Dateiname $1 enthält ungültige Zeichen.",
+	"enhancedupload-single-file-dlg-title": "Neue Version von \"$1\""
 }

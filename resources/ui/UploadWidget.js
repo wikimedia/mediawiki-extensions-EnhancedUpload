@@ -20,6 +20,10 @@ enhancedUpload.ui.UploadWidget = function enhancedUploadUiUploadWidget( cfg ) {
 	this.displayedItems = [];
 	this.allItems = [];
 	this.expanded = true;
+	// eslint-disable-next-line no-prototype-builtins
+	if ( cfg.hasOwnProperty( 'expandedOptions' ) ) {
+		this.expanded = cfg.expandedOptions;
+	}
 	this.warnings = [
 		'fileexists-no-change',
 		'page-exists',
@@ -205,12 +209,14 @@ enhancedUpload.ui.UploadWidget.prototype.onToggle = function () {
 		this.detailsWidget.$element.slideDown( 300, function () {
 			this.toggleButton.setIcon( 'collapse' );
 			this.expanded = true;
+			this.emit( 'toggled' );
 		}.bind( this ) );
 	} else {
 		// eslint-disable-next-line no-jquery/no-slide
 		this.detailsWidget.$element.slideUp( 300, function () {
 			this.toggleButton.setIcon( 'expand' );
 			this.expanded = false;
+			this.emit( 'toggled' );
 		}.bind( this ) );
 	}
 };
