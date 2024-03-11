@@ -12,5 +12,7 @@
 	"enhancedupload": "Eroplueden",
 	"enhancedupload-upload-warning-exists": "Dëse Fichiernumm gëtt et schonn",
 	"enhancedupload-upload-warning-duplicate": "Dëse Fichier ass en Duplikat",
-	"enhancedupload-list-header-error": "Feeler"
+	"enhancedupload-list-header-error": "Feeler",
+	"enhancedupload-attachments-media-dialog-cancel-title": "Ofbriechen",
+	"enhancedupload-attachments-media-dialog-details-cancel": "Ofbriechen"
 }
