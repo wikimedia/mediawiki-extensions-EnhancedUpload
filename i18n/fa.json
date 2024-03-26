@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ebraminio",
 			"Jeeputer",
 			"Rulebased"
 		]
@@ -15,7 +16,7 @@
 	"enhancedupload-finished-dialog-title": "بارگذاری کامل شد",
 	"enhancedupload-failed-dialog-title": "مشکلی وجود دارد",
 	"enhancedupload-failed-dialog-label": "بارگذاری {{PLURAL:$1|یک پرونده|$1 پرونده}} مقدور نبود",
-	"enhancedupload-alert-missing-files": "پرونده‌ای برای بارگذاری انتخال نشده‌است",
+	"enhancedupload-alert-missing-files": "پرونده‌ای برای بارگذاری انتخال نشده است",
 	"enhancedupload-list-header-filetype": "قالب",
 	"enhancedupload-list-header-filename": "نام پرونده",
 	"enhancedupload-list-header-error": "خطا",
