@@ -8,7 +8,7 @@ enhancedUpload.ui.widget.DetailsUploadWidget = function ( cfg ) {
 
 	this.categoryInput = new OOJSPlus.ui.widget.CategoryMultiSelectWidget( {
 		allowArbitrary: true,
-		$overlay: true
+		$overlay: this.$overlay
 	} );
 	if ( cfg.categories ) {
 		this.setDefaultCategories( cfg.categories );
