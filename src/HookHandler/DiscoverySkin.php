@@ -13,5 +13,6 @@ class DiscoverySkin implements BlueSpiceDiscoveryTemplateDataProviderAfterInit {
 		$registry->register( 'panel/create', 'ca-upload-file' );
 		$registry->unregister( 'panel/create', 't-new-file' );
 		$registry->delete( 'actioncollection/toolbox', 't-upload' );
+		$registry->delete( 'actioncollection/toolbox', 't-new-file' );
 	}
 }
