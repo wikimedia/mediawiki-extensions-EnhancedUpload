@@ -284,6 +284,7 @@
 				"enhancedupload-ve-dialog-title-exists",
 				"enhancedupload-ve-dialog-duplicate-confirm",
 				"enhancedupload-upload-error-duplicate",
+				"enhancedupload-upload-error-badfilename",
 				"enhancedupload-upload-error-unhandled"
 			]
 		},
