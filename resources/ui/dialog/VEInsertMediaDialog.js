@@ -102,16 +102,8 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.makeDoneProcess = functio
 		ignorewarnings: false
 	};
 
-	var fileNameParts = fileName.split( ':' );
-	if ( fileNameParts.length > 0 ) {
-		var partsLength = fileNameParts.length;
-		params.prefix = '';
-		for ( var i = 0; i < partsLength - 1; i++ ) {
-			params.prefix += fileNameParts[ i ] + ':';
-		}
-		params.filename = fileNameParts[ partsLength - 1 ];
-		params = this.preprocessParams( params );
-	}
+	params = this.sanitizeFilename( params );
+	params = this.preprocessParams( params );
 
 	dfdUpload = this.doUpload( me.file, params );
 
@@ -149,6 +141,8 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.doUpload = function ( fil
 			errorMessage = 'duplicate';
 		} else if ( 'duplicate-archive' in warnings ) {
 			errorMessage = mw.message( 'enhancedupload-upload-error-duplicate', params.filename ).plain();
+		} else if ( 'badfilename' in warnings ) {
+			errorMessage = mw.message( 'enhancedupload-upload-error-badfilename', params.filename ).plain();
 		}
 		dfd.reject( errorMessage, result );
 	} );
@@ -277,17 +271,8 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.handleErrors =
 							ignorewarnings: true
 						};
 
-						var fileNameParts = newFileName.split( ':' );
-						if ( fileNameParts.length > 0 ) {
-							var partsLength = fileNameParts.length;
-							params.prefix = '';
-							for ( var i = 0; i < partsLength - 1; i++ ) {
-								params.prefix += fileNameParts[ i ] + ':';
-							}
-							params.filename = fileNameParts[ partsLength - 1 ];
-							params = me.preprocessParams( params );
-						}
-
+						params = this.sanitizeFilename( params );
+						params = me.preprocessParams( params );
 						dfdReUpload = me.doUpload( me.file, params );
 						dfdReUpload.done( function ( resp ) {
 							me.insertMedia(
@@ -316,6 +301,24 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.handleErrors =
 		}
 		return new OO.ui.Process( dfd.promise(), this );
 	};
+
+enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.sanitizeFilename = function ( params ) {
+	// Split namespace prefix and filename
+	var fileNameParts = params.filename.split( ':' );
+
+	var partsLength = fileNameParts.length;
+
+	params.prefix = '';
+	for ( var i = 0; i < partsLength - 1; i++ ) {
+		params.prefix += fileNameParts[ i ] + ':';
+	}
+	params.filename = fileNameParts[ partsLength - 1 ];
+
+	// Replace invalid characters in filename
+	params.filename = params.filename.replace( /\//g, '_' );
+
+	return params;
+};
 
 enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.preprocessParams = function ( params ) {
 	var paramsProcessor = { processor: new enhancedUpload.ParamsProcessor() };
