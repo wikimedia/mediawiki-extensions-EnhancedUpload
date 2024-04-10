@@ -67,5 +67,6 @@
 	"enhancedupload-attachments-confirm-remove": "حذف پروندهٔ «$1» از فهرست؟",
 	"enhancedupload-tab-updated-upload": "پرونده‌های به‌روز شده",
 	"enhancedupload-updated-dialog-label": "پروندهٔ «$1» به‌روز شد",
-	"enhancedupload-finished-dialog-action-close": "بستن"
+	"enhancedupload-finished-dialog-action-close": "بستن",
+	"enhancedupload-upload-error-duplicate": "پرونده‌ای مشابه این پرونده ($1) پیش از این حذف شده است."
 }

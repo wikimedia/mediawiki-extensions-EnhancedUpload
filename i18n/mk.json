@@ -84,5 +84,7 @@
 	"enhancedupload-droplet-attachments-description": "Подрачје за организирање на прилози",
 	"enhancedupload-upload-warning-exists": "Веќе има податотека со тоа име",
 	"enhancedupload-upload-warning-duplicate": "Оваа податотека е дупликат",
-	"enhancedupload-upload-warning-was-deleted": "Оваа податотечно име е претходно бришано."
+	"enhancedupload-upload-warning-was-deleted": "Оваа податотечно име е претходно бришано.",
+	"enhancedupload-upload-error-duplicate": "Податотека идентична на оваа ($1) е претходно избришана.",
+	"enhancedupload-upload-error-unhandled": "Се јави необработен исклучок."
 }
