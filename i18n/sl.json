@@ -83,5 +83,7 @@
 	"enhancedupload-droplet-attachments-description": "Prostor za organiziranje priponk",
 	"enhancedupload-upload-warning-exists": "To datotečno ime že obstaja",
 	"enhancedupload-upload-warning-duplicate": "Ta datoteka je dvojnik",
-	"enhancedupload-upload-warning-was-deleted": "To datotečno ime je že bilo izbrisano."
+	"enhancedupload-upload-warning-was-deleted": "To datotečno ime je že bilo izbrisano.",
+	"enhancedupload-upload-error-duplicate": "Datoteka, ki je enaka tej datoteki ($1), je že bila izbrisana.",
+	"enhancedupload-upload-error-unhandled": "Prišlo je do neobravnavane izjeme."
 }

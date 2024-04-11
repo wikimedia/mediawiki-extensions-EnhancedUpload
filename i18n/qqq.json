@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Ajeje Brazorf",
+			"Amire80",
 			"Mschlindwein",
 			"Robby",
 			"Verdy p"
@@ -88,5 +89,5 @@
 	"enhancedupload-upload-warning-duplicate": "Warning message which is shown after upload if file is a duplicate",
 	"enhancedupload-upload-warning-was-deleted": "Warning message displayed after upload if file with the same name was previously deleted.",
 	"enhancedupload-upload-error-duplicate": "Error message displayed if a indentical file has previously been deleted.",
-	"enhancedupload-upload-error-unhandled": "Error message displayed if an an unhandled exception occured."
+	"enhancedupload-upload-error-unhandled": "Error message displayed if an unhandled exception occurred."
 }

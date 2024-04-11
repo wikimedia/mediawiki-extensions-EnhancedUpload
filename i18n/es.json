@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Eulalio",
 			"Fitoschido",
 			"MarcoAurelio",
 			"No se",
@@ -42,5 +43,7 @@
 	"enhancedupload-finished-dialog-action-close": "Cerrar",
 	"enhancedupload-config-type-label": "Tipo de imagen:",
 	"enhancedupload-config-height-label": "Altura de la imagen:",
-	"enhancedupload-upload-warning-was-deleted": "Este nombre de archivo se eliminó previamente."
+	"enhancedupload-upload-warning-was-deleted": "Este nombre de archivo se eliminó previamente.",
+	"enhancedupload-upload-error-duplicate": "Un archivo idéntico a este archivo ($1) se ha eliminado previamente.",
+	"enhancedupload-upload-error-unhandled": "Se produjo una excepción no controlada."
 }
