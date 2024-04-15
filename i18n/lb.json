@@ -6,13 +6,14 @@
 		]
 	},
 	"enhancedupload": "Eroplueden",
+	"enhancedupload-list-header-error": "Feeler",
 	"enhancedupload-attachments-add-new-media-button-title": "Nei Fichieren op d'Wiki derbäisetzen",
+	"enhancedupload-attachments-media-dialog-cancel-title": "Ofbriechen",
+	"enhancedupload-attachments-media-dialog-details-cancel": "Ofbriechen",
 	"enhancedupload-attachments-tag-grid-details-title": "Detailer",
 	"enhancedupload-config-height-label": "Héicht vum Bild:",
 	"enhancedupload-config-width-label": "Breet vum Bild:",
 	"enhancedupload-upload-warning-exists": "Dëse Fichiernumm gëtt et schonn",
 	"enhancedupload-upload-warning-duplicate": "Dëse Fichier ass en Duplikat",
-	"enhancedupload-list-header-error": "Feeler",
-	"enhancedupload-attachments-media-dialog-cancel-title": "Ofbriechen",
-	"enhancedupload-attachments-media-dialog-details-cancel": "Ofbriechen"
+	"enhancedupload-upload-error-duplicate": "E Ficher, dee mat dësem Fichier identesch ass, ($1) gouf schonn eng Kéier geläscht."
 }

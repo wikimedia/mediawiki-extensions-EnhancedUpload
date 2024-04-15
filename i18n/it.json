@@ -15,5 +15,6 @@
 	"enhancedupload-config-extensions-help": "Consente il caricamento di estensioni di file con tipi MIME non corrispondenti. Avviso: potenziale rischio per la sicurezza.",
 	"enhancedupload-droplet-attachments-name": "Allegati",
 	"enhancedupload-upload-warning-exists": "Questo nome file esiste già",
-	"enhancedupload-upload-warning-duplicate": "Questo file è un duplicato"
+	"enhancedupload-upload-warning-duplicate": "Questo file è un duplicato",
+	"enhancedupload-upload-error-duplicate": "Un file identico a questo file ($1) è stato precedentemente cancellato."
 }

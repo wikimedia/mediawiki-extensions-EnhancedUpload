@@ -59,7 +59,6 @@
 	"enhancedupload-ve-attachmentinspector-categories": "Категории",
 	"enhancedupload-ve-attachmentinspector-desc": "Опис",
 	"enhancedupload-ve-attachmentinspector-options": "Прекокни можнсти за подигање",
-	"enhancedupload-attachment-tag-desc": "Со оваа ознака може да се додаваат податотеки во страницава. Новите податотеки можат да се подигаат и додаваат, а кон ознакава можат да се придодаваат и постоечки податотеки од викито. На подрачјето на ознаката може да му се даде наслов за приказ како и можности за подигање: претставка, категории одделени со „|“ и опис кои автоматски ќе се додаваат при подигање.",
 	"enhancedupload-attachments-tag-grid-editor-label": "Уредник",
 	"enhancedupload-ve-attachmentinspector-grid-version": "Скриј верзија",
 	"enhancedupload-ve-attachmentinspector-grid-editor": "Скриј уредник",
@@ -85,5 +84,7 @@
 	"enhancedupload-droplet-attachments-description": "Подрачје за организирање на прилози",
 	"enhancedupload-upload-warning-exists": "Веќе има податотека со тоа име",
 	"enhancedupload-upload-warning-duplicate": "Оваа податотека е дупликат",
-	"enhancedupload-upload-warning-was-deleted": "Оваа податотечно име е претходно бришано."
+	"enhancedupload-upload-warning-was-deleted": "Оваа податотечно име е претходно бришано.",
+	"enhancedupload-upload-error-duplicate": "Податотека идентична на оваа ($1) е претходно избришана.",
+	"enhancedupload-upload-error-unhandled": "Се јави необработен исклучок."
 }
