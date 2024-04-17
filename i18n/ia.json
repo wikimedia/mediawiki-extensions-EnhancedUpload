@@ -85,5 +85,6 @@
 	"enhancedupload-upload-warning-duplicate": "Iste file es un duplicato",
 	"enhancedupload-upload-warning-was-deleted": "Iste nomine de file ha essite anteriormente delite.",
 	"enhancedupload-upload-error-duplicate": "Un file identic a iste file ($1) ha essite anteriormente delite.",
+	"enhancedupload-upload-error-badfilename": "Le nomine de file $1 contine characteres invalide.",
 	"enhancedupload-upload-error-unhandled": "Un exception non gerite ha occurrite."
 }
