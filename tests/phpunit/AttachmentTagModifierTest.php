@@ -29,7 +29,7 @@ Test Test
 * [[Media:XZY.docx]]
 </attachments>';
 
-public const WIKITEXT2 =
+	public const WIKITEXT2 =
 'Test
 
 [[:Datei:Upload Test 24.txt|Datei:Upload Test 24.txt]]
@@ -46,7 +46,7 @@ Test Test
 * [[Media:XZY.docx]]
 </attachments>';
 
-public const WIKITEXT3 =
+	public const WIKITEXT3 =
 'Test
 
 [[:Datei:Upload Test 24.txt|Datei:Upload Test 24.txt]]
@@ -67,7 +67,7 @@ Test Test
 <attachments>
 </attachments>';
 
-public const WIKITEXT4 =
+	public const WIKITEXT4 =
 'Test
 
 [[:Datei:Upload Test 24.txt|Datei:Upload Test 24.txt]]
@@ -76,7 +76,7 @@ public const WIKITEXT4 =
 
 <attachments></attachments>';
 
-public const WIKITEXT5 =
+	public const WIKITEXT5 =
 'Test
 
 [[:Datei:Upload Test 24.txt|Datei:Upload Test 24.txt]]
@@ -85,7 +85,7 @@ public const WIKITEXT5 =
 
 <attachments />';
 
-public const WIKITEXT1EXP = 'Test
+	public const WIKITEXT1EXP = 'Test
 
 [[:Datei:Upload Test 24.txt|Datei:Upload Test 24.txt]]
 
@@ -107,7 +107,7 @@ Test Test
 * [[Media:XZY.docx]]
 </attachments>';
 
-public const WIKITEXT2EXP = 'Test
+	public const WIKITEXT2EXP = 'Test
 
 [[:Datei:Upload Test 24.txt|Datei:Upload Test 24.txt]]
 
@@ -126,7 +126,7 @@ Test Test
 * [[Media:FileTest3.pdf]]
 </attachments>';
 
-public const WIKITEXT4EXP =
+	public const WIKITEXT4EXP =
 'Test
 
 [[:Datei:Upload Test 24.txt|Datei:Upload Test 24.txt]]
@@ -137,7 +137,7 @@ public const WIKITEXT4EXP =
 * [[Media:FileTest.pdf]]
 </attachments>';
 
-public const WIKITEXT3REXP = 'Test
+	public const WIKITEXT3REXP = 'Test
 
 [[:Datei:Upload Test 24.txt|Datei:Upload Test 24.txt]]
 
@@ -158,7 +158,7 @@ Test Test
 * [[Media:XZY.docx]]
 </attachments>';
 
-public const WIKITEXT4REXP = 'Test
+	public const WIKITEXT4REXP = 'Test
 
 [[:Datei:Upload Test 24.txt|Datei:Upload Test 24.txt]]
 
@@ -179,7 +179,7 @@ Test Test
 * [[Media:XZY.docx]]
 </attachments>';
 
-public const WIKITEXT1REXP = 'Test
+	public const WIKITEXT1REXP = 'Test
 
 [[:Datei:Upload Test 24.txt|Datei:Upload Test 24.txt]]
 
@@ -199,7 +199,7 @@ Test Test
 * [[Media:XZY.docx]]
 </attachments>';
 
-public const WIKITEXT2REXP = 'Test
+	public const WIKITEXT2REXP = 'Test
 
 [[:Datei:Upload Test 24.txt|Datei:Upload Test 24.txt]]
 
@@ -218,7 +218,7 @@ Test Test
 * [[Media:XZY.docx]]
 </attachments>';
 
-public const WIKITEXTREMOVETEST = '
+	public const WIKITEXTREMOVETEST = '
 [[Medium:Upload Test 1649830505569.txt|Upload Test 1649830505569.txt]]
 
 
@@ -235,7 +235,7 @@ public const WIKITEXTREMOVETEST = '
 
 Test';
 
-public const WIKITEXTREMOVETESTEXP = '
+	public const WIKITEXTREMOVETESTEXP = '
 [[Medium:Upload Test 1649830505569.txt|Upload Test 1649830505569.txt]]
 
 
@@ -262,10 +262,10 @@ Test';
 		$modifiedWikiText = $modifier->add( static::WIKITEXT1, 0, [ 'FileTest.pdf', 'ABC.png' ] );
 		$this->assertEquals( static::WIKITEXT1EXP, $modifiedWikiText );
 
-		$modifiedWikiText = $modifier->add( static::WIKITEXT2, 1, [ 'FileTest1.pdf','FileTest2.pdf','FileTest3.pdf' ] );
+		$modifiedWikiText = $modifier->add( static::WIKITEXT2, 1, [ 'FileTest1.pdf', 'FileTest2.pdf', 'FileTest3.pdf' ] );
 		$this->assertEquals( static::WIKITEXT2EXP, $modifiedWikiText );
 
-		$modifiedWikiText = $modifier->add( static::WIKITEXT1, 3, [ 'FileTest1.pdf','FileTest2.pdf','FileTest3.pdf' ] );
+		$modifiedWikiText = $modifier->add( static::WIKITEXT1, 3, [ 'FileTest1.pdf', 'FileTest2.pdf', 'FileTest3.pdf' ] );
 		$this->assertEquals( static::WIKITEXT4REXP, $modifiedWikiText );
 
 		$modifiedWikiText = $modifier->add( static::WIKITEXT4, 0, [ 'FileTest.pdf' ] );
