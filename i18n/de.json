@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Brettchenweber",
-			"Mschlindwein"
+			"Mschlindwein",
+			"TomatoCake"
 		]
 	},
 	"enhancedupload": "Hochladen",
@@ -84,5 +85,7 @@
 	"enhancedupload-droplet-attachments-description": "Bereich zur Organisation von Anhängen",
 	"enhancedupload-upload-warning-exists": "Der Dateiname existiert bereits",
 	"enhancedupload-upload-warning-duplicate": "Die Datei ist ein Duplikat",
-	"enhancedupload-upload-warning-was-deleted": "Der Dateiname wurde bereits gelöscht."
+	"enhancedupload-upload-warning-was-deleted": "Der Dateiname wurde bereits gelöscht.",
+	"enhancedupload-upload-error-duplicate": "Eine mit dieser Datei ($1) identische Datei wurde zuvor gelöscht.",
+	"enhancedupload-upload-error-badfilename": "Der Dateiname $1 enthält ungültige Zeichen."
 }
