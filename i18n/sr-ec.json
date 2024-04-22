@@ -15,5 +15,7 @@
 	"enhancedupload-upload-warning-exists": "Назив датотеке је заузет",
 	"enhancedupload-upload-warning-duplicate": "Ова датотека је дупликат",
 	"enhancedupload-upload-warning-was-deleted": "Датотека са овим називом је претходно обрисана.",
-	"enhancedupload-upload-error-duplicate": "Датотека идентична овој ($1) је претходно обрисана."
+	"enhancedupload-upload-error-duplicate": "Датотека идентична овој ($1) је претходно обрисана.",
+	"enhancedupload-upload-error-badfilename": "Датотека $1 садржи неважеће знакове.",
+	"enhancedupload-upload-error-unhandled": "Дошло је до неочекиваног дешавања."
 }

@@ -85,5 +85,6 @@
 	"enhancedupload-upload-warning-duplicate": "הקובץ הזה כפיל",
 	"enhancedupload-upload-warning-was-deleted": "שם הקובץ הזה נמחק בעבר.",
 	"enhancedupload-upload-error-duplicate": "קובץ שזהה לקובץ הזה ($1) נמחק בעבר.",
+	"enhancedupload-upload-error-badfilename": "שם הקובץ $1 מכיל תווים בלתי־תקינים.",
 	"enhancedupload-upload-error-unhandled": "חריג שלא טופל."
 }
