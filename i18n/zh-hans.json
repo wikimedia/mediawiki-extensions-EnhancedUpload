@@ -3,7 +3,8 @@
 		"authors": [
 			"GuoPC",
 			"Lakejason0",
-			"Wzl19371"
+			"Wzl19371",
+			"沈澄心"
 		]
 	},
 	"enhancedupload": "上传",
@@ -22,6 +23,7 @@
 	"enhancedupload-list-header-filetype": "格式",
 	"enhancedupload-list-header-filename": "文件名",
 	"enhancedupload-list-header-error": "错误",
+	"enhancedupload-list-header-warning": "警告",
 	"enhancedupload-list-header-link": "链接至文件",
 	"enhancedupload-finished-dialog-label": "已上传文件",
 	"enhancedupload-tab-failed-upload": "失败",
@@ -68,5 +70,10 @@
 	"enhancedupload-attachments-tag-grid-remove-title": "移除",
 	"enhancedupload-attachments-confirm-remove": "从列表中删除文件“$1”？",
 	"enhancedupload-tab-updated-upload": "已更新文件",
-	"enhancedupload-updated-dialog-label": "文件“$1”已更新"
+	"enhancedupload-updated-dialog-label": "文件“$1”已更新",
+	"enhancedupload-finished-dialog-action-close": "关闭",
+	"enhancedupload-config-alignment-label": "图像对齐：",
+	"enhancedupload-config-type-label": "图像类型：",
+	"enhancedupload-config-height-label": "图像高度：",
+	"enhancedupload-config-width-label": "图像宽度："
 }
