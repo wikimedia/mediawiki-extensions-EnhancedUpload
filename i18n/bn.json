@@ -2,19 +2,19 @@
 	"@metadata": {
 		"authors": [
 			"Yahya",
-			"আজিজ",
-			"আফতাবুজ্জামান"
+			"\u0986\u099c\u09bf\u099c",
+			"\u0986\u09ab\u09a4\u09be\u09ac\u09c1\u099c\u09cd\u099c\u09be\u09ae\u09be\u09a8"
 		]
 	},
-	"enhancedupload-attachments-tag-grid-details-title": "বিস্তারিত",
-	"enhancedupload-tab-updated-upload": "হালনাগাদকৃত ফাইলসমূহ",
-	"enhancedupload-updated-dialog-label": "\"$1\" ফাইলটি হালনাগাদ করা হয়েছে৷",
-	"enhancedupload-finished-dialog-action-close": "বন্ধ করুন",
-	"enhancedupload-config-type-label": "চিত্রের ধরন:",
-	"enhancedupload-config-height-label": "চিত্রের উচ্চতা:",
-	"enhancedupload": "আপলোড",
-	"enhancedupload-list-header-warning": "সতর্কতা",
-	"enhancedupload-upload-warning-exists": "এই ফাইলের নামটি ইতিমধ্যেই বিদ্যমান",
-	"enhancedupload-upload-warning-duplicate": "এই ফাইলটি একটি ডুপ্লিকেট",
-	"enhancedupload-upload-warning-was-deleted": "এই ফাইলের নামটি পূর্বে মুছে ফেলা হয়েছে।"
+	"enhancedupload-attachments-tag-grid-details-title": "\u09ac\u09bf\u09b8\u09cd\u09a4\u09be\u09b0\u09bf\u09a4",
+	"enhancedupload-tab-updated-upload": "\u09b9\u09be\u09b2\u09a8\u09be\u0997\u09be\u09a6\u0995\u09c3\u09a4 \u09ab\u09be\u0987\u09b2\u09b8\u09ae\u09c2\u09b9",
+	"enhancedupload-updated-dialog-label": "\"$1\" \u09ab\u09be\u0987\u09b2\u099f\u09bf \u09b9\u09be\u09b2\u09a8\u09be\u0997\u09be\u09a6 \u0995\u09b0\u09be \u09b9\u09af\u09bc\u09c7\u099b\u09c7\u09f7",
+	"enhancedupload-finished-dialog-action-close": "\u09ac\u09a8\u09cd\u09a7 \u0995\u09b0\u09c1\u09a8",
+	"enhancedupload-config-type-label": "\u099a\u09bf\u09a4\u09cd\u09b0\u09c7\u09b0 \u09a7\u09b0\u09a8:",
+	"enhancedupload-config-height-label": "\u099a\u09bf\u09a4\u09cd\u09b0\u09c7\u09b0 \u0989\u099a\u09cd\u099a\u09a4\u09be:",
+	"enhancedupload": "\u0986\u09aa\u09b2\u09cb\u09a1",
+	"enhancedupload-list-header-warning": "\u09b8\u09a4\u09b0\u09cd\u0995\u09a4\u09be",
+	"enhancedupload-upload-warning-exists": "\u098f\u0987 \u09ab\u09be\u0987\u09b2\u09c7\u09b0 \u09a8\u09be\u09ae\u099f\u09bf \u0987\u09a4\u09bf\u09ae\u09a7\u09cd\u09af\u09c7\u0987 \u09ac\u09bf\u09a6\u09cd\u09af\u09ae\u09be\u09a8",
+	"enhancedupload-upload-warning-duplicate": "\u098f\u0987 \u09ab\u09be\u0987\u09b2\u099f\u09bf \u098f\u0995\u099f\u09bf \u09a1\u09c1\u09aa\u09cd\u09b2\u09bf\u0995\u09c7\u099f",
+	"enhancedupload-upload-warning-was-deleted": "\u098f\u0987 \u09ab\u09be\u0987\u09b2\u09c7\u09b0 \u09a8\u09be\u09ae\u099f\u09bf \u09aa\u09c2\u09b0\u09cd\u09ac\u09c7 \u09ae\u09c1\u099b\u09c7 \u09ab\u09c7\u09b2\u09be \u09b9\u09af\u09bc\u09c7\u099b\u09c7\u0964"
 }

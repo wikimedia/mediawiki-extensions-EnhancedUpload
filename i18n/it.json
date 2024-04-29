@@ -14,6 +14,9 @@
 	"enhancedupload-droplet-attachments-name": "Allegati",
 	"enhancedupload-config-extensions-label": "Consenti tipi MIME non corrispondenti (potenziale rischio per la sicurezza)",
 	"enhancedupload-config-extensions-help": "Consente il caricamento di estensioni di file con tipi MIME non corrispondenti. Avviso: potenziale rischio per la sicurezza.",
-	"enhancedupload-upload-warning-exists": "Questo nome file esiste già",
-	"enhancedupload-upload-warning-duplicate": "Questo file è un duplicato"
+	"enhancedupload-upload-warning-exists": "Questo nome file esiste gi\u00e0",
+	"enhancedupload-upload-warning-duplicate": "Questo file \u00e8 un duplicato",
+	"enhancedupload-upload-error-duplicate": "Un file identico a questo file ($1) \u00e8 stato precedentemente cancellato.",
+	"enhancedupload-upload-error-badfilename": "Il nome file $1 contiene caratteri non validi.",
+	"enhancedupload-upload-error-unhandled": "Si \u00e8 verificata un'eccezione non gestita."
 }

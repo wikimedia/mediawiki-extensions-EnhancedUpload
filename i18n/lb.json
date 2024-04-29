@@ -5,14 +5,16 @@
 			"Volvox"
 		]
 	},
-	"enhancedupload-attachments-add-new-media-button-title": "Nei Fichieren op d'Wiki derbäisetzen",
+	"enhancedupload-attachments-add-new-media-button-title": "Nei Fichieren op d'Wiki derb\u00e4isetzen",
 	"enhancedupload-attachments-tag-grid-details-title": "Detailer",
-	"enhancedupload-config-height-label": "Héicht vum Bild:",
+	"enhancedupload-config-height-label": "H\u00e9icht vum Bild:",
 	"enhancedupload-config-width-label": "Breet vum Bild:",
 	"enhancedupload": "Eroplueden",
-	"enhancedupload-upload-warning-exists": "Dëse Fichiernumm gëtt et schonn",
-	"enhancedupload-upload-warning-duplicate": "Dëse Fichier ass en Duplikat",
+	"enhancedupload-upload-warning-exists": "D\u00ebse Fichiernumm g\u00ebtt et schonn",
+	"enhancedupload-upload-warning-duplicate": "D\u00ebse Fichier ass en Duplikat",
 	"enhancedupload-list-header-error": "Feeler",
 	"enhancedupload-attachments-media-dialog-cancel-title": "Ofbriechen",
-	"enhancedupload-attachments-media-dialog-details-cancel": "Ofbriechen"
+	"enhancedupload-attachments-media-dialog-details-cancel": "Ofbriechen",
+	"enhancedupload-details-namespace-label": "Nummraum",
+	"enhancedupload-upload-error-duplicate": "E Ficher, dee mat d\u00ebsem Fichier identesch ass, ($1) gouf schonn eng K\u00e9ier gel\u00e4scht."
 }
