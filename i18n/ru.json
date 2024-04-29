@@ -16,6 +16,6 @@
 	"enhancedupload-updated-dialog-label": "Файл «$1» был обновлён",
 	"enhancedupload-finished-dialog-action-close": "Закрыть",
 	"enhancedupload-droplet-attachments-name": "Вложения",
-	"enhancedupload-upload-error-badfilename": "Пространство имён содержит недопустимые символы.",
+	"enhancedupload-upload-error-badfilename": "Пространство имён $1 содержит недопустимые символы.",
 	"enhancedupload-upload-error-unhandled": "Произошло необработанное исключение."
 }
