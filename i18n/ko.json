@@ -4,13 +4,13 @@
 			"Ykhwong"
 		]
 	},
-	"enhancedupload-attachments-add-new-media-button-title": "\uc0c8 \ud30c\uc77c\uc744 \uc704\ud0a4\uc5d0 \ucd94\uac00",
-	"enhancedupload-attachments-tag-grid-remove-title": "\uc81c\uac70",
-	"enhancedupload-attachments-confirm-remove": "\"$1\" \ud30c\uc77c\uc744 \ubaa9\ub85d\uc5d0\uc11c \uc81c\uac70\ud558\uc2dc\uaca0\uc2b5\ub2c8\uae4c?",
-	"enhancedupload-tab-updated-upload": "\uc5c5\ub370\uc774\ud2b8\ud55c \ud30c\uc77c",
-	"enhancedupload-updated-dialog-label": "\"$1\" \ud30c\uc77c\uc774 \uc5c5\ub370\uc774\ud2b8\ub418\uc5c8\uc2b5\ub2c8\ub2e4",
-	"enhancedupload-finished-dialog-action-close": "\ub2eb\uae30",
-	"enhancedupload": "\uc62c\ub9ac\uae30",
-	"enhancedupload-upload-error-badfilename": "$1 \ud30c\uc77c \uc774\ub984\uc5d0 \uc720\ud6a8\ud558\uc9c0 \uc54a\uc740 \ubb38\uc790\uac00 \ud3ec\ud568\ub418\uc5b4 \uc788\uc2b5\ub2c8\ub2e4.",
-	"enhancedupload-upload-error-unhandled": "\ucc98\ub9ac\ub418\uc9c0 \uc54a\uc740 \uc608\uc678\uac00 \ubc1c\uc0dd\ud588\uc2b5\ub2c8\ub2e4."
+	"enhancedupload-attachments-add-new-media-button-title": "새 파일을 위키에 추가",
+	"enhancedupload-attachments-tag-grid-remove-title": "제거",
+	"enhancedupload-attachments-confirm-remove": "\"$1\" 파일을 목록에서 제거하시겠습니까?",
+	"enhancedupload-tab-updated-upload": "업데이트한 파일",
+	"enhancedupload-updated-dialog-label": "\"$1\" 파일이 업데이트되었습니다",
+	"enhancedupload-finished-dialog-action-close": "닫기",
+	"enhancedupload": "올리기",
+	"enhancedupload-upload-error-badfilename": "$1 파일 이름에 유효하지 않은 문자가 포함되어 있습니다.",
+	"enhancedupload-upload-error-unhandled": "처리되지 않은 예외가 발생했습니다."
 }
