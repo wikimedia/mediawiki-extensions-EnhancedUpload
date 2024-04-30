@@ -7,15 +7,15 @@
 			"Person or Persons Unknown"
 		]
 	},
-	"enhancedupload-list-header-warning": "\u043f\u0440\u0435\u0434\u0443\u043f\u0440\u0435\u0436\u0434\u0435\u043d\u0438\u0435",
-	"enhancedupload-attachments-media-dialog-cancel-title": "\u041e\u0442\u043c\u0435\u043d\u0430",
-	"enhancedupload-upload-media-dialog-cancel-title": "\u041e\u0442\u043c\u0435\u043d\u0430",
-	"enhancedupload-attachments-media-dialog-details-cancel": "\u041e\u0442\u043c\u0435\u043d\u0430",
-	"enhancedupload-attachments-tag-grid-details-title": "\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u043e\u0441\u0442\u0438",
-	"enhancedupload-tab-updated-upload": "\u041e\u0431\u043d\u043e\u0432\u043b\u0451\u043d\u043d\u044b\u0435 \u0444\u0430\u0439\u043b\u044b",
-	"enhancedupload-updated-dialog-label": "\u0424\u0430\u0439\u043b \u00ab$1\u00bb \u0431\u044b\u043b \u043e\u0431\u043d\u043e\u0432\u043b\u0451\u043d",
-	"enhancedupload-finished-dialog-action-close": "\u0417\u0430\u043a\u0440\u044b\u0442\u044c",
-	"enhancedupload-droplet-attachments-name": "\u0412\u043b\u043e\u0436\u0435\u043d\u0438\u044f",
-	"enhancedupload-upload-error-badfilename": "\u041f\u0440\u043e\u0441\u0442\u0440\u0430\u043d\u0441\u0442\u0432\u043e \u0438\u043c\u0451\u043d $1 \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0435\u0434\u043e\u043f\u0443\u0441\u0442\u0438\u043c\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b.",
-	"enhancedupload-upload-error-unhandled": "\u041f\u0440\u043e\u0438\u0437\u043e\u0448\u043b\u043e \u043d\u0435\u043e\u0431\u0440\u0430\u0431\u043e\u0442\u0430\u043d\u043d\u043e\u0435 \u0438\u0441\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435."
+	"enhancedupload-list-header-warning": "предупреждение",
+	"enhancedupload-attachments-media-dialog-cancel-title": "Отмена",
+	"enhancedupload-upload-media-dialog-cancel-title": "Отмена",
+	"enhancedupload-attachments-media-dialog-details-cancel": "Отмена",
+	"enhancedupload-attachments-tag-grid-details-title": "Подробности",
+	"enhancedupload-tab-updated-upload": "Обновлённые файлы",
+	"enhancedupload-updated-dialog-label": "Файл «$1» был обновлён",
+	"enhancedupload-finished-dialog-action-close": "Закрыть",
+	"enhancedupload-droplet-attachments-name": "Вложения",
+	"enhancedupload-upload-error-badfilename": "Пространство имён $1 содержит недопустимые символы.",
+	"enhancedupload-upload-error-unhandled": "Произошло необработанное исключение."
 }
