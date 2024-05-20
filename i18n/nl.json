@@ -85,5 +85,8 @@
 	"enhancedupload-droplet-attachments-description": "Ruimte voor het organiseren van bijlagen",
 	"enhancedupload-upload-warning-exists": "Deze bestandsnaam bestaat al",
 	"enhancedupload-upload-warning-duplicate": "Dit bestand is een duplicaat",
-	"enhancedupload-upload-warning-was-deleted": "Deze bestandsnaam is eerder verwijderd."
+	"enhancedupload-upload-warning-was-deleted": "Deze bestandsnaam is eerder verwijderd.",
+	"enhancedupload-upload-error-duplicate": "Een bestand dat identiek is aan dit bestand ($1) is eerder verwijderd.",
+	"enhancedupload-upload-error-badfilename": "De bestandsnaam $1 bevat ongeldige tekens.",
+	"enhancedupload-upload-error-unhandled": "Er heeft zich een onbekende fout voorgedaan."
 }
