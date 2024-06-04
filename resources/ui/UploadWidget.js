@@ -270,14 +270,15 @@ enhancedUpload.ui.UploadWidget.prototype.startUpload = function () {
 	mw.loader.using( 'mediawiki.api' ).done( function () {
 		me.uploadProgressBar.setProgress( ( 0.5 / items.length ) * 100 );
 		var uploadDfds = [];
-		var descAndCommentText = me.detailsWidget.getDescription() + ' ' + me.detailsWidget.getCategories();
+		var descText = me.detailsWidget.getDescription();
+		var categories = me.detailsWidget.getCategories();
 
 		for ( var i = 0; i < items.length; i++ ) {
 			var params = {
 				filename: items[ i ].data.name,
 				format: items[ i ].data.type,
 				ignorewarnings: true,
-				comment: descAndCommentText
+				comment: descText
 			};
 			if ( me.destFilename ) {
 				params.filename = me.destFilename;
@@ -289,10 +290,22 @@ enhancedUpload.ui.UploadWidget.prototype.startUpload = function () {
 			}
 
 			var uploadDfd = me.doUpload( items[ i ].data, params );
+			// eslint-disable-next-line no-loop-func
 			$.when.apply( me, uploadDfd ).done( function ( dfd, progress, maxUpload ) {
-				uploadDfds.push( dfd );
-				me.uploadProgressBar.setProgress( ( progress / ( maxUpload - 1 ) ) * 100 );
-
+				if ( categories.length > 0 ) {
+					var catEditParams = {
+						action: 'edit',
+						title: 'File:' + items[ i ].data.name,
+						appendtext: categories
+					};
+					var editCategoriesDfd = me.doCategoriesEdit( catEditParams );
+					$.when.apply( me, editCategoriesDfd ).done( function () {
+						uploadDfds.push( dfd );
+					} );
+				} else {
+					uploadDfds.push( dfd );
+					me.uploadProgressBar.setProgress( ( progress / ( maxUpload - 1 ) ) * 100 );
+				}
 			}( uploadDfd, i, items.length ) ).fail( function ( dfd, progress, maxUpload ) {
 				uploadDfds.push( dfd );
 				me.uploadProgressBar.setProgress( ( progress / ( maxUpload - 1 ) ) * 100 );
@@ -406,6 +419,20 @@ enhancedUpload.ui.UploadWidget.prototype.doUpload = function ( file, params ) {
 		}
 	} ) );
 
+	return dfd.promise();
+};
+
+enhancedUpload.ui.UploadWidget.prototype.doCategoriesEdit = function ( params ) {
+	var api = new mw.Api();
+	var dfd = new $.Deferred();
+	api.postWithToken( 'csrf', params ).done( function ( data ) {
+		if ( data.edit.result === 'Success' ) {
+			dfd.resolve();
+		}
+		dfd.reject();
+	} ).fail( function ( error ) {
+		dfd.reject( error );
+	} );
 	return dfd.promise();
 };
 
