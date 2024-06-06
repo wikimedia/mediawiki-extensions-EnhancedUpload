@@ -20,7 +20,8 @@
 	"rules": {
 		"no-implicit-globals": "off",
 		"es-x/no-array-prototype-includes": "warn",
-		"es-x/no-string-prototype-includes": "warn"
+		"es-x/no-string-prototype-includes": "warn",
+		"no-jquery/no-extend": "warn"
 	},
 	"env": {
 		"browser": true,
