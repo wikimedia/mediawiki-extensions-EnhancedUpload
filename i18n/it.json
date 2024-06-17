@@ -18,5 +18,6 @@
 	"enhancedupload-upload-warning-duplicate": "Questo file è un duplicato",
 	"enhancedupload-upload-error-duplicate": "Un file identico a questo file ($1) è stato precedentemente cancellato.",
 	"enhancedupload-upload-error-badfilename": "Il nome file $1 contiene caratteri non validi.",
-	"enhancedupload-upload-error-unhandled": "Si è verificata un'eccezione non gestita."
+	"enhancedupload-upload-error-unhandled": "Si è verificata un'eccezione non gestita.",
+	"enhancedupload-single-file-dlg-title": "Nuova versione di \"$1\""
 }

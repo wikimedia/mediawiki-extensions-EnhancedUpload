@@ -5,7 +5,8 @@
 			"Eihel",
 			"Gomoko",
 			"Verdy p",
-			"Wladek92"
+			"Wladek92",
+			"SleaY"
 		]
 	},
 	"enhancedupload": "Téléversement",
@@ -87,5 +88,6 @@
 	"enhancedupload-droplet-attachments-description": "Zone pour l’organisation des pièces jointes",
 	"enhancedupload-upload-warning-exists": "Ce nom de fichier existe déjà",
 	"enhancedupload-upload-warning-duplicate": "Ce fichier est un doublon",
-	"enhancedupload-upload-warning-was-deleted": "Ce nom de fichier a été précédemment supprimé."
+	"enhancedupload-upload-warning-was-deleted": "Ce nom de fichier a été précédemment supprimé.",
+	"enhancedupload-single-file-dlg-title": "Nouvelle version de « $1 »"
 }
