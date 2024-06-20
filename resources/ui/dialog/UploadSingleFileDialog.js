@@ -28,7 +28,7 @@ enhancedUpload.ui.dialog.UploadSingleFileDialog.static.actions = [
 ];
 
 enhancedUpload.ui.dialog.UploadSingleFileDialog.prototype.getSetupProcess = function ( data ) {
-	data = $.extend( data, {
+	data = Object.assign( data, {
 		title: this.dialogTitle
 	} );
 	return enhancedUpload.ui.dialog.UploadSingleFileDialog.parent.prototype.getSetupProcess.call(

@@ -9,7 +9,7 @@ enhancedUpload.ui.panel.Preview = function enhancedUploadUiPanelPreview() {
 	cfg.classes = [ 'file-preview', 'no-files' ];
 
 	enhancedUpload.ui.panel.Preview.parent.call( this, cfg );
-	OO.ui.mixin.GroupElement.call( this, $.extend( {}, cfg, { $group: this.$element } ) );
+	OO.ui.mixin.GroupElement.call( this, Object.assign( {}, cfg, { $group: this.$element } ) );
 
 	this.items = [];
 	this.itemData = [];
