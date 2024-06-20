@@ -56,7 +56,9 @@ enhancedUpload.ui.widget.DetailsUploadWidget.prototype.setDescription = function
 enhancedUpload.ui.widget.DetailsUploadWidget.prototype.getCategories = function () {
 	var categories = '';
 	for ( var i = 0; i < this.categoryInput.getSelectedCategories().length; i++ ) {
-		var cat = '[[Category:' + this.categoryInput.getSelectedCategories()[ i ] + ']] ';
+		var catText = this.categoryInput.getSelectedCategories()[ i ];
+		var catTitle = mw.Title.newFromText( catText, 14 );
+		var cat = '[[' + catTitle.getPrefixedText() + ']] ';
 		categories += cat;
 	}
 	return categories;
