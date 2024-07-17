@@ -85,5 +85,9 @@
 	"enhancedupload-droplet-attachments-description": "整理附件的區域",
 	"enhancedupload-upload-warning-exists": "已存在此名稱的檔案",
 	"enhancedupload-upload-warning-duplicate": "此為重複檔案",
-	"enhancedupload-upload-warning-was-deleted": "此檔案名稱先前已刪除。"
+	"enhancedupload-upload-warning-was-deleted": "此檔案名稱先前已刪除。",
+	"enhancedupload-upload-error-duplicate": "與此檔案（$1）相同的檔案先前已被刪除。",
+	"enhancedupload-upload-error-badfilename": "檔案名稱「$1」包含無效字元。",
+	"enhancedupload-upload-error-unhandled": "發生未處理的異常。",
+	"enhancedupload-single-file-dlg-title": "新版本的「$1」"
 }

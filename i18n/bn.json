@@ -16,5 +16,6 @@
 	"enhancedupload-list-header-warning": "সতর্কতা",
 	"enhancedupload-upload-warning-exists": "এই ফাইলের নামটি ইতিমধ্যেই বিদ্যমান",
 	"enhancedupload-upload-warning-duplicate": "এই ফাইলটি একটি ডুপ্লিকেট",
-	"enhancedupload-upload-warning-was-deleted": "এই ফাইলের নামটি পূর্বে মুছে ফেলা হয়েছে।"
+	"enhancedupload-upload-warning-was-deleted": "এই ফাইলের নামটি পূর্বে মুছে ফেলা হয়েছে।",
+	"enhancedupload-single-file-dlg-title": "\"$1\"-এর নতুন সংস্করণ"
 }
