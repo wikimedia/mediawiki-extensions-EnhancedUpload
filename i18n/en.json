@@ -87,5 +87,7 @@
 	"enhancedupload-upload-error-duplicate": "A file identical to this file ($1) has previously been deleted.",
 	"enhancedupload-upload-error-badfilename": "The filename $1 contains invalid characters.",
 	"enhancedupload-upload-error-unhandled": "An unhandled exception occured.",
-	"enhancedupload-single-file-dlg-title": "New version of \"$1\""
+	"enhancedupload-single-file-dlg-title": "New version of \"$1\"",
+	"enhancedupload-toggle-details-button-hide-label": "Hide details",
+	"enhancedupload-toggle-details-button-show-label": "Show details"
 }
