@@ -130,8 +130,15 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.doUpload = function ( fil
 	mwApi.upload( file, params ).done( function ( resp ) {
 		dfd.resolve( resp );
 	} ).fail( function ( error, result ) {
-		var warnings = arguments[ 1 ].upload.warnings,
+		var warnings = [],
 			errorMessage = mw.message( 'enhancedupload-upload-error-unhandled' ).plain();
+
+		if ( result.error !== undefined ) {
+			dfd.reject( result.error.info, result );
+		}
+		if ( arguments[ 1 ] && arguments[ 1 ].upload && arguments[ 1 ].upload.warnings ) {
+			warnings = arguments[ 1 ].upload.warnings;
+		}
 		if ( 'exists' in warnings || 'exists-normalized' in warnings ) {
 			errorMessage = 'exists';
 			if ( 'nochange' in warnings ) {
@@ -292,7 +299,7 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.handleErrors =
 									dfd.resolve.apply( me );
 								} else {
 									dfd.reject(
-										[ new OO.ui.Error( err, { recoverable: true } ) ]
+										[ new OO.ui.Error( err, { recoverable: false } ) ]
 									);
 								}
 							} );
