@@ -88,5 +88,7 @@
 	"enhancedupload-upload-error-duplicate": "Податотека идентична на оваа ($1) е претходно избришана.",
 	"enhancedupload-upload-error-badfilename": "Податотечното име $1 содржи неважечки знаци.",
 	"enhancedupload-upload-error-unhandled": "Се јави необработен исклучок.",
-	"enhancedupload-single-file-dlg-title": "Нова верзија на „$1“"
+	"enhancedupload-single-file-dlg-title": "Нова верзија на „$1“",
+	"enhancedupload-toggle-details-button-hide-label": "Скриј поединости",
+	"enhancedupload-toggle-details-button-show-label": "Покажи поединости"
 }

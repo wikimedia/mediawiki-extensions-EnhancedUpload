@@ -87,5 +87,7 @@
 	"enhancedupload-upload-error-duplicate": "קובץ שזהה לקובץ הזה ($1) נמחק בעבר.",
 	"enhancedupload-upload-error-badfilename": "שם הקובץ $1 מכיל תווים בלתי־תקינים.",
 	"enhancedupload-upload-error-unhandled": "חריג שלא טופל.",
-	"enhancedupload-single-file-dlg-title": "גרסה חדשה של \"$1\""
+	"enhancedupload-single-file-dlg-title": "גרסה חדשה של \"$1\"",
+	"enhancedupload-toggle-details-button-hide-label": "הסתרת פרטים",
+	"enhancedupload-toggle-details-button-show-label": "הצגת פרטים"
 }
