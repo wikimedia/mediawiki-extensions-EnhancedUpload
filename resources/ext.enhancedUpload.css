@@ -65,7 +65,7 @@
 }
 
 .enhancedUpload-widget .thumbnail-items a.oo-ui-buttonElement-button {
-	visibility: hidden;
+	opacity: 0;
 	width: 12px;
 	border: transparent;
 	background-color: transparent;
@@ -75,11 +75,16 @@
 }
 
 .enhancedUpload-widget .thumbnail-items:hover a.oo-ui-buttonElement-button {
-	visibility: visible;
+	opacity: 1;
 }
 
 .enhancedUpload-widget .thumbnail-items a.oo-ui-buttonElement-button:hover {
+	opacity: 1;
 	background-color: transparent;
+}
+
+.enhancedUpload-widget .thumbnail-items a.oo-ui-buttonElement-button:focus-visible {
+	opacity: 1;
 }
 
 .enhancedUpload-widget span.oo-ui-indicator-clear {
