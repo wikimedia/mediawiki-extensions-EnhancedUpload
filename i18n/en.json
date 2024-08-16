@@ -89,5 +89,6 @@
 	"enhancedupload-upload-error-unhandled": "An unhandled exception occured.",
 	"enhancedupload-single-file-dlg-title": "New version of \"$1\"",
 	"enhancedupload-toggle-details-button-hide-label": "Hide details",
-	"enhancedupload-toggle-details-button-show-label": "Show details"
+	"enhancedupload-toggle-details-button-show-label": "Show details",
+	"enhancedupload-preview-widget-remove-label": "Remove"
 }

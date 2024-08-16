@@ -93,5 +93,6 @@
 	"enhancedupload-upload-error-unhandled": "Error message displayed if an unhandled exception occurred.",
 	"enhancedupload-single-file-dlg-title": "Dialog title to upload a new version of a file\nParameters:\n* $1 - file name",
 	"enhancedupload-toggle-details-button-hide-label": "Label for a button that hides additional details.",
-	"enhancedupload-toggle-details-button-show-label": "Label for a button that shows additional details."
+	"enhancedupload-toggle-details-button-show-label": "Label for a button that shows additional details.",
+	"enhancedupload-preview-widget-remove-label": "Label for icon to remove preview widget\n{{identical|Remove}}"
 }
