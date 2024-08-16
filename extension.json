@@ -197,7 +197,9 @@
 				"enhancedupload-preview-widget-label",
 				"enhancedupload-tab-updated-upload",
 				"enhancedupload-updated-dialog-label",
-				"enhancedupload-finished-dialog-action-close"
+				"enhancedupload-finished-dialog-action-close",
+				"enhancedupload-attachments-tag-grid-remove-title",
+				"enhancedupload-preview-widget-remove-label"
 			]
 		},
 		"ext.enhancedupload.attachments.bootstrap": {
