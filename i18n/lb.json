@@ -21,5 +21,7 @@
 	"enhancedupload-upload-warning-exists": "Dëse Fichiernumm gëtt et schonn",
 	"enhancedupload-upload-warning-duplicate": "Dëse Fichier ass en Duplikat",
 	"enhancedupload-upload-error-duplicate": "E Ficher, dee mat dësem Fichier identesch ass, ($1) gouf schonn eng Kéier geläscht.",
-	"enhancedupload-single-file-dlg-title": "Nei Versioun vun „$1“"
+	"enhancedupload-single-file-dlg-title": "Nei Versioun vun „$1“",
+	"enhancedupload-toggle-details-button-hide-label": "Detailer verstoppen",
+	"enhancedupload-toggle-details-button-show-label": "Detailer weisen"
 }
