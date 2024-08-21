@@ -108,10 +108,9 @@ enhancedUpload.ui.UploadWidget.prototype.setupDetailsWidgets = function () {
 		icon: this.expanded ? 'collapse' : 'expand',
 		framed: false,
 		classes: [ 'toggle-icon', 'collapsed-panel' ],
-		label: this.expanded ?
+		title: this.expanded ?
 			mw.message( 'enhancedupload-toggle-details-button-hide-label' ).plain() :
-			mw.message( 'enhancedupload-toggle-details-button-show-label' ).plain(),
-		invisibleLabel: true
+			mw.message( 'enhancedupload-toggle-details-button-show-label' ).plain()
 	} );
 
 	this.toggleButton.connect( this, {
@@ -208,14 +207,14 @@ enhancedUpload.ui.UploadWidget.prototype.onToggle = function () {
 		// eslint-disable-next-line no-jquery/no-slide
 		this.detailsWidget.$element.slideDown( 300, function () {
 			this.toggleButton.setIcon( 'collapse' );
-			this.toggleButton.setLabel( mw.message( 'enhancedupload-toggle-details-button-hide-label' ).plain() );
+			this.toggleButton.setTitle( mw.message( 'enhancedupload-toggle-details-button-hide-label' ).plain() );
 			this.expanded = true;
 		}.bind( this ) );
 	} else {
 		// eslint-disable-next-line no-jquery/no-slide
 		this.detailsWidget.$element.slideUp( 300, function () {
 			this.toggleButton.setIcon( 'expand' );
-			this.toggleButton.setLabel( mw.message( 'enhancedupload-toggle-details-button-show-label' ).plain() );
+			this.toggleButton.setTitle( mw.message( 'enhancedupload-toggle-details-button-show-label' ).plain() );
 			this.expanded = false;
 		}.bind( this ) );
 	}
