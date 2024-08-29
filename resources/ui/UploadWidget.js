@@ -290,11 +290,11 @@ enhancedUpload.ui.UploadWidget.prototype.startUpload = function () {
 
 			var uploadDfd = me.doUpload( items[ i ].data, params );
 			// eslint-disable-next-line no-loop-func
-			$.when.apply( me, uploadDfd ).done( function ( dfd, progress, maxUpload ) {
+			uploadDfd.done( function ( dfd, progress, maxUpload ) {
 				if ( categories.length > 0 ) {
 					var catEditParams = {
 						action: 'edit',
-						title: 'File:' + items[ i ].data.name,
+						title: 'File:' + params.filename,
 						appendtext: categories
 					};
 					var editCategoriesDfd = me.doCategoriesEdit( catEditParams );
