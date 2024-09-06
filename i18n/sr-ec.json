@@ -18,5 +18,7 @@
 	"enhancedupload-upload-error-duplicate": "Датотека идентична овој ($1) је претходно обрисана.",
 	"enhancedupload-upload-error-badfilename": "Датотека $1 садржи неважеће знакове.",
 	"enhancedupload-upload-error-unhandled": "Дошло је до неочекиваног дешавања.",
-	"enhancedupload-single-file-dlg-title": "Нова верзија „$1”"
+	"enhancedupload-single-file-dlg-title": "Нова верзија „$1”",
+	"enhancedupload-toggle-details-button-hide-label": "Сакриј детаље",
+	"enhancedupload-toggle-details-button-show-label": "Прикажи детаље"
 }

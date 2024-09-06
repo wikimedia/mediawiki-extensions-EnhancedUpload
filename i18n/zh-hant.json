@@ -89,5 +89,7 @@
 	"enhancedupload-upload-error-duplicate": "與此檔案（$1）相同的檔案先前已被刪除。",
 	"enhancedupload-upload-error-badfilename": "檔案名稱「$1」包含無效字元。",
 	"enhancedupload-upload-error-unhandled": "發生未處理的異常。",
-	"enhancedupload-single-file-dlg-title": "新版本的「$1」"
+	"enhancedupload-single-file-dlg-title": "新版本的「$1」",
+	"enhancedupload-toggle-details-button-hide-label": "隱藏詳細資料",
+	"enhancedupload-toggle-details-button-show-label": "顯示詳細資料"
 }

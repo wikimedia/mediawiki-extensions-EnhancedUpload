@@ -89,5 +89,6 @@
 	"enhancedupload-config-extensions-help": "Dateierweiterungen mit nicht übereinstimmenden MIME-Typen dürfen hochgeladen werden. Warnung: potenzielles Sicherheitsrisiko.",
 	"enhancedupload-upload-error-duplicate": "Eine mit dieser Datei ($1) identische Datei wurde zuvor gelöscht.",
 	"enhancedupload-upload-error-badfilename": "Der Dateiname $1 enthält ungültige Zeichen.",
-	"enhancedupload-single-file-dlg-title": "Neue Version von \"$1\""
+	"enhancedupload-single-file-dlg-title": "Neue Version von \"$1\"",
+	"enhancedupload-upload-error-unhandled": "Ein unerwarteter Fehler ist aufgetreten."
 }
