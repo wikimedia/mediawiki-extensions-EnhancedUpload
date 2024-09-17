@@ -90,6 +90,7 @@
 .enhancedUpload-widget span.oo-ui-indicator-clear {
 	height: 12px;
 	right: 0;
+	background-color: white; /* stylelint-disable-line color-named */
 }
 
 /* stylelint-disable declaration-no-important */

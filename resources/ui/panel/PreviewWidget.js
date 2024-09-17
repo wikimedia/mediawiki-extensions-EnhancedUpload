@@ -17,7 +17,7 @@ enhancedUpload.ui.panel.PreviewWidget = function ( cfg ) {
 
 	this.$button.append( this.$indicator );
 	this.$button.attr( 'tabindex', 0 );
-	this.$button.attr( 'aria-label', mw.message( 'enhancedupload-preview-widget-remove-label' ).plain() );
+	this.$button.attr( 'aria-label', mw.message( 'enhancedupload-preview-widget-remove-label', this.name ).plain() );
 
 	this.connect( this, {
 		click: 'removeItem'
