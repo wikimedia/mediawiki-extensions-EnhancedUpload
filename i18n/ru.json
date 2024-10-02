@@ -17,5 +17,6 @@
 	"enhancedupload-droplet-attachments-name": "Вложения",
 	"enhancedupload-list-header-warning": "предупреждение",
 	"enhancedupload-upload-error-badfilename": "Пространство имён $1 содержит недопустимые символы.",
-	"enhancedupload-upload-error-unhandled": "Произошло необработанное исключение."
+	"enhancedupload-upload-error-unhandled": "Произошло необработанное исключение.",
+	"enhancedupload-preview-widget-remove-label": "Удалить $1"
 }
