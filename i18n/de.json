@@ -90,5 +90,8 @@
 	"enhancedupload-upload-error-duplicate": "Eine mit dieser Datei ($1) identische Datei wurde zuvor gelöscht.",
 	"enhancedupload-upload-error-badfilename": "Der Dateiname $1 enthält ungültige Zeichen.",
 	"enhancedupload-single-file-dlg-title": "Neue Version von \"$1\"",
-	"enhancedupload-upload-error-unhandled": "Ein unerwarteter Fehler ist aufgetreten."
+	"enhancedupload-upload-error-unhandled": "Ein unerwarteter Fehler ist aufgetreten.",
+	"enhancedupload-toggle-details-button-hide-label": "Details ausblenden",
+	"enhancedupload-toggle-details-button-show-label": "Details anzeigen",
+	"enhancedupload-preview-widget-remove-label": "„$1“ entfernen"
 }
