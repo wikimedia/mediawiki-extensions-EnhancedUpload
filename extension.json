@@ -297,21 +297,13 @@
 				"ui/dialog/AddExistingMediaDialog.js"
 			],
 			"dependencies": [
-				"ext.enhancedUpload.titleInputWidget"
+				"ext.oOJSPlus.widgets"
 			],
 			"messages": [
 				"enhancedupload-attachments-media-dialog-title",
 				"enhancedupload-attachments-media-dialog-cancel-title",
 				"enhancedupload-attachments-media-dialog-add-title",
 				"enhancedupload-attachments-media-dialog-label"
-			]
-		},
-		"ext.enhancedUpload.titleInputWidget": {
-			"scripts": [
-				"ui/widget/TitleInputWidget.js"
-			],
-			"dependencies": [
-				"mediawiki.widgets"
 			]
 		},
 		"ext.enhancedUpload.detailsUploadWidget": {
