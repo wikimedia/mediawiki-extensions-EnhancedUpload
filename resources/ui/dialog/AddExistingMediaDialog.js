@@ -50,7 +50,7 @@ enhancedUpload.ui.dialog.AddExistingMediaDialog.prototype.initialize = function 
 		padded: true
 	} );
 
-	this.titleSearch = new enhancedUpload.ui.widget.TitleInputWidget( {
+	this.titleSearch = new OOJSPlus.ui.widget.FileSearchWidget( {
 		namespace: 6,
 		showImages: true,
 		$overlay: this.$overlay
