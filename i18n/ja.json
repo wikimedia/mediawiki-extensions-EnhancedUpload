@@ -7,6 +7,7 @@
 			"もなー(偽物)"
 		]
 	},
+	"enhancedupload": "アップロード",
 	"enhancedupload-text": "ファイルをアップロード",
 	"enhancedupload-details-header-label": "詳細",
 	"enhancedupload-details-namespace-label": "名前空間",
@@ -18,6 +19,7 @@
 	"enhancedupload-list-header-filetype": "フォーマット",
 	"enhancedupload-list-header-filename": "ファイル名",
 	"enhancedupload-list-header-error": "エラー",
+	"enhancedupload-list-header-warning": "警告",
 	"enhancedupload-finished-dialog-label": "ファイルがアップロードされました",
 	"enhancedupload-tab-failed-upload": "失敗しました",
 	"enhancedupload-tab-successfull-upload": "成功",
@@ -65,8 +67,6 @@
 	"enhancedupload-config-width-help": "ビジュアル エディタで画像をドラッグ アンド ドロップするための幅の設定 高さに合わせて拡大縮小するには、「auto」に設定します。両方が「auto」に設定されている場合、デフォルトのサイズが使用されます。",
 	"enhancedupload-droplet-attachments-name": "添付ファイル",
 	"enhancedupload-droplet-attachments-description": "添付ファイルを整理するための領域",
-	"enhancedupload": "アップロード",
-	"enhancedupload-list-header-warning": "警告",
 	"enhancedupload-upload-warning-exists": "このファイルはすでに存在します",
 	"enhancedupload-upload-warning-duplicate": "このファイルは重複しています"
 }

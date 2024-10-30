@@ -91,15 +91,8 @@
 	"enhancedupload-upload-error-duplicate": "Error message displayed if a identical file has previously been deleted.",
 	"enhancedupload-upload-error-badfilename": "Error message displayed if a filename contains invalid characters.",
 	"enhancedupload-upload-error-unhandled": "Error message displayed if an unhandled exception occurred.",
-<<<<<<< HEAD   (d405a0 Switch to file input widget)
 	"enhancedupload-single-file-dlg-title": "Dialog title to upload a new version of a file\nParameters:\n* $1 - file name",
 	"enhancedupload-toggle-details-button-hide-label": "Label for a button that hides additional details.",
 	"enhancedupload-toggle-details-button-show-label": "Label for a button that shows additional details.",
 	"enhancedupload-preview-widget-remove-label": "Label for icon to remove preview widget\nParameters:\n* $1 - file name"
-||||||| BASE
-	"enhancedupload-upload-error-badfilename": "Error message displayed if a filename contains invalid characters."
-=======
-	"enhancedupload-upload-error-badfilename": "Error message displayed if a filename contains invalid characters.",
-	"enhancedupload-single-file-dlg-title": "Dialog title to upload a new version of a file\nParameters:\n* $1 - file name"
->>>>>>> CHANGE (bfcfbd Add integration to enhanced filelist)
 }

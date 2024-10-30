@@ -7,6 +7,7 @@
 			"Rulebased"
 		]
 	},
+	"enhancedupload": "بارگذاری",
 	"enhancedupload-text": "بارگذاری پرونده",
 	"enhancedupload-details-header-label": "جزئیات",
 	"enhancedupload-details-namespace-label": "فضای نام",
@@ -68,7 +69,6 @@
 	"enhancedupload-tab-updated-upload": "پرونده‌های به‌روز شده",
 	"enhancedupload-updated-dialog-label": "پروندهٔ «$1» به‌روز شد",
 	"enhancedupload-finished-dialog-action-close": "بستن",
-	"enhancedupload": "بارگذاری",
 	"enhancedupload-upload-error-duplicate": "پرونده‌ای مشابه این پرونده ($1) پیش از این حذف شده است.",
 	"enhancedupload-toggle-details-button-hide-label": "نهفتن جزئیات",
 	"enhancedupload-toggle-details-button-show-label": "نمایش جزئیات"

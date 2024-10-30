@@ -70,8 +70,8 @@
 	"enhancedupload-config-type-label": "Bildetype:",
 	"enhancedupload-config-height-label": "Bildehøyde:",
 	"enhancedupload-config-width-label": "Bildebredde:",
-	"enhancedupload-droplet-attachments-name": "Vedlegg",
-	"enhancedupload-droplet-attachments-description": "Område for å organisere vedlegg",
 	"enhancedupload-config-extensions-label": "Tillat feilaktige MIME-typer (potensiell sikkerhetsrisiko)",
-	"enhancedupload-config-extensions-help": "Tillat opplasting av filutvidelser som ikke har samsvarende MIME-typer. Advarsel: Mulig sikkerhetsrisiko."
+	"enhancedupload-config-extensions-help": "Tillat opplasting av filutvidelser som ikke har samsvarende MIME-typer. Advarsel: Mulig sikkerhetsrisiko.",
+	"enhancedupload-droplet-attachments-name": "Vedlegg",
+	"enhancedupload-droplet-attachments-description": "Område for å organisere vedlegg"
 }
