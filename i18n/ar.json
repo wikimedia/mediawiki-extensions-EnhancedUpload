@@ -5,10 +5,11 @@
 			"Asma",
 			"Mohanad",
 			"Mohanad Kh",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"Meno25"
 		]
 	},
-	"enhancedupload": "تحميل محسن",
+	"enhancedupload": "رفع",
 	"enhancedupload-desc": "يوفر صفحة خاصة بها خيار تحميل ملف واحد أو عدة ملفات إلى wiki",
 	"enhancedupload-text": "تحميل الملفات",
 	"enhancedupload-details-header-label": "التفاصيل",
