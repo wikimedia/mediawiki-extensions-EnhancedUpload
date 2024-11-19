@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Mbs262"
 		]
 	},
-	"enhancedupload": "Carregamento melhorado",
+	"enhancedupload": "Carregamento",
 	"enhancedupload-desc": "Fornece uma página especial com a opção de carregar um ou vários ficheiros na wiki",
 	"enhancedupload-text": "Carregar ficheiros",
 	"enhancedupload-details-header-label": "Detalhes",
