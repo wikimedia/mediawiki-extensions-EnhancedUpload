@@ -6,7 +6,6 @@
 		"wikimedia/mediawiki"
 	],
 	"globals": {
-		"Ext": "readonly",
 		"jQuery": "readonly",
 		"BS": "readonly",
 		"bs": "readonly",
