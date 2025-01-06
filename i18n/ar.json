@@ -6,7 +6,8 @@
 			"Meno25",
 			"Mohanad",
 			"Mohanad Kh",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"Cigaryno"
 		]
 	},
 	"enhancedupload": "رفع",
@@ -25,6 +26,7 @@
 	"enhancedupload-list-header-filetype": "الصيغة",
 	"enhancedupload-list-header-filename": "اسم الملف",
 	"enhancedupload-list-header-error": "خطأ",
+	"enhancedupload-list-header-warning": "تحذير",
 	"enhancedupload-list-header-link": "رابط إلى ملف",
 	"enhancedupload-finished-dialog-label": "تم تحميل الملفات",
 	"enhancedupload-tab-failed-upload": "فشلت",
@@ -85,5 +87,10 @@
 	"enhancedupload-droplet-attachments-description": "منطقة لتنظيم المرفقات",
 	"enhancedupload-upload-warning-exists": "هذا الملف موجود بالفعل",
 	"enhancedupload-upload-warning-duplicate": "هذا الملف مكرر",
-	"enhancedupload-upload-warning-was-deleted": "حذف اسم الملف هذا سابقًا."
+	"enhancedupload-upload-warning-was-deleted": "حذف اسم الملف هذا سابقًا.",
+	"enhancedupload-upload-error-unhandled": "حدث استثناء غير مسبوق",
+	"enhancedupload-single-file-dlg-title": "نسخة جديدة ل\" $1 \"",
+	"enhancedupload-toggle-details-button-hide-label": "أخفِ التفاصيل",
+	"enhancedupload-toggle-details-button-show-label": "أظهر التفاصيل",
+	"enhancedupload-preview-widget-remove-label": "أزل '$1'"
 }
