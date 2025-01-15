@@ -13,5 +13,10 @@
 	"enhancedupload-finished-dialog-action-close": "닫기",
 	"enhancedupload-upload-error-badfilename": "$1 파일 이름에 유효하지 않은 문자가 포함되어 있습니다.",
 	"enhancedupload-upload-error-unhandled": "처리되지 않은 예외가 발생했습니다.",
-	"enhancedupload-preview-widget-remove-label": "$1 제거"
+	"enhancedupload-preview-widget-remove-label": "$1 제거",
+	"enhancedupload-cancel-button-label": "취소",
+	"enhancedupload-attachments-media-dialog-cancel-title": "취소",
+	"enhancedupload-attachments-media-dialog-add-title": "추가",
+	"enhancedupload-upload-media-dialog-cancel-title": "취소",
+	"enhancedupload-attachments-media-dialog-details-cancel": "취소"
 }

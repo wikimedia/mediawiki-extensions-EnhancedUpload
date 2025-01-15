@@ -18,5 +18,11 @@
 	"enhancedupload-ve-attachmentinspector-grid-version": "Čiega veršuvnna",
 	"enhancedupload-attachments-tag-grid-remove-title": "Sihko",
 	"enhancedupload-ve-attachment-title": "Mildosat",
-	"enhancedupload-droplet-attachments-name": "Mildosat"
+	"enhancedupload-droplet-attachments-name": "Mildosat",
+	"enhancedupload-details-categories-label": "Kategoriijat",
+	"enhancedupload-ve-dialog-title": "Vurke fiilla",
+	"enhancedupload-attachments-tag-grid-category-label": "Kategoriijat",
+	"enhancedupload-ui-action-new-upload-title": "Vurke ođđa fiilla",
+	"enhancedupload-upload-media-dialog-title": "Vurke fiilla",
+	"enhancedupload-ve-attachmentinspector-categories": "Kategoriijat"
 }

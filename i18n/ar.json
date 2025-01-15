@@ -3,6 +3,7 @@
 		"authors": [
 			"Alshamiri1",
 			"Asma",
+			"Cigaryno",
 			"Meno25",
 			"Mohanad",
 			"Mohanad Kh",
@@ -10,7 +11,7 @@
 		]
 	},
 	"enhancedupload": "رفع",
-	"enhancedupload-desc": "يوفر صفحة خاصة بها خيار تحميل ملف واحد أو عدة ملفات إلى wiki",
+	"enhancedupload-desc": "توفر صفحة خاصة مع خيار تحميل ملف واحد أو ملفات متعددة إلى الويكي",
 	"enhancedupload-text": "تحميل الملفات",
 	"enhancedupload-details-header-label": "التفاصيل",
 	"enhancedupload-details-namespace-label": "مساحة الاسم",
@@ -39,8 +40,8 @@
 	"enhancedupload-attachments-add-new-media-button-title": "إضافة ملفات جديدة للويكي",
 	"enhancedupload-attachments-tag-grid-file-label": "ملف",
 	"enhancedupload-attachments-tag-grid-size-label": "حجم",
-	"enhancedupload-attachments-tag-grid-version-label": "احدث اصدار",
-	"enhancedupload-attachments-tag-grid-category-label": "فئات",
+	"enhancedupload-attachments-tag-grid-version-label": "أحدث إصدار",
+	"enhancedupload-attachments-tag-grid-category-label": "التصنيفات",
 	"enhancedupload-attachments-tag-no-attached-files": "لا توجد ملفات مرفقة. لإضافة ملف ، قم بتحميل ملف أو إضافة ملف موجود من ويكي",
 	"enhancedupload-attachments-media-dialog-cancel-title": "إلغاء",
 	"enhancedupload-attachments-media-dialog-add-title": "أضف",
@@ -86,5 +87,15 @@
 	"enhancedupload-droplet-attachments-description": "منطقة لتنظيم المرفقات",
 	"enhancedupload-upload-warning-exists": "هذا الملف موجود بالفعل",
 	"enhancedupload-upload-warning-duplicate": "هذا الملف مكرر",
-	"enhancedupload-upload-warning-was-deleted": "حذف اسم الملف هذا سابقًا."
+	"enhancedupload-upload-warning-was-deleted": "حذف اسم الملف هذا سابقًا.",
+	"enhancedupload-list-header-warning": "تحذير",
+	"enhancedupload-config-extensions-label": "السماح بأنواع MIME غير المتطابقة (خطر أمني محتمل)",
+	"enhancedupload-config-extensions-help": "السماح بتحميل ملحقات الملفات التي تحتوي على أنواع MIME غير متطابقة. تحذير: خطر أمني محتمل.",
+	"enhancedupload-upload-error-duplicate": "لقد تم حذف ملف مماثل لهذا الملف ($1) مسبقا.",
+	"enhancedupload-upload-error-badfilename": "يحتوي اسم الملف $1 على أحرف غير صالحة.",
+	"enhancedupload-upload-error-unhandled": "حدث استثناء غير مسبوق",
+	"enhancedupload-single-file-dlg-title": "نسخة جديدة ل\" $1 \"",
+	"enhancedupload-toggle-details-button-hide-label": "أخفِ التفاصيل",
+	"enhancedupload-toggle-details-button-show-label": "أظهر التفاصيل",
+	"enhancedupload-preview-widget-remove-label": "أزل '$1'"
 }

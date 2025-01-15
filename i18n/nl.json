@@ -88,5 +88,9 @@
 	"enhancedupload-upload-warning-was-deleted": "Deze bestandsnaam is eerder verwijderd.",
 	"enhancedupload-upload-error-duplicate": "Een bestand dat identiek is aan dit bestand ($1) is eerder verwijderd.",
 	"enhancedupload-upload-error-badfilename": "De bestandsnaam $1 bevat ongeldige tekens.",
-	"enhancedupload-upload-error-unhandled": "Er heeft zich een onbekende fout voorgedaan."
+	"enhancedupload-upload-error-unhandled": "Er heeft zich een onbekende fout voorgedaan.",
+	"enhancedupload-single-file-dlg-title": "Nieuwe versie van “$1”",
+	"enhancedupload-toggle-details-button-hide-label": "Details verbergen",
+	"enhancedupload-toggle-details-button-show-label": "Details weergeven",
+	"enhancedupload-preview-widget-remove-label": "“$1” verwijderen"
 }
