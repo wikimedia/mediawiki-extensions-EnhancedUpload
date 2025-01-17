@@ -5,10 +5,10 @@ namespace MediaWiki\Extension\EnhancedUpload\HookHandler;
 use FormatJson;
 use Html;
 use MediaWiki\Hook\ParserFirstCallInitHook;
+use MediaWiki\Title\Title;
 use Parser;
 use PPFrame;
 use Sanitizer;
-use Title;
 use TitleFactory;
 
 class Tag implements ParserFirstCallInitHook {
@@ -149,9 +149,9 @@ class Tag implements ParserFirstCallInitHook {
 
 	/**
 	 * @param string $text
-	 * @return title
+	 * @return Title
 	 */
-	private function getTitle( string $text ): title {
+	private function getTitle( string $text ): Title {
 		$linkParts = explode( '|', $text );
 		$titleParts = explode( ':', $linkParts[ 0 ], 2 );
 		$titleText = trim( $titleParts[ 1 ] );

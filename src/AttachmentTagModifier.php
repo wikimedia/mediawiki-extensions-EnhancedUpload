@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\EnhancedUpload;
 
-use Title;
+use MediaWiki\Title\Title;
 use TitleFactory;
 
 class AttachmentTagModifier {
