@@ -11,10 +11,10 @@ use MediaWiki\Rest\HttpException;
 use MediaWiki\Rest\SimpleHandler;
 use MediaWiki\Revision\SlotRecord;
 use MediaWiki\Title\Title;
+use MediaWiki\User\User;
 use RequestContext;
 use Status;
 use TitleFactory;
-use User;
 use Wikimedia\ParamValidator\ParamValidator;
 use WikitextContent;
 
