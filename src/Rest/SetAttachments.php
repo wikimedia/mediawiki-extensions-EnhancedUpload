@@ -12,9 +12,9 @@ use MediaWiki\Rest\HttpException;
 use MediaWiki\Rest\SimpleHandler;
 use MediaWiki\Revision\SlotRecord;
 use MediaWiki\Title\Title;
+use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\User;
 use Status;
-use TitleFactory;
 use Wikimedia\ParamValidator\ParamValidator;
 use WikitextContent;
 
