@@ -6,10 +6,10 @@ use FormatJson;
 use Html;
 use MediaWiki\Hook\ParserFirstCallInitHook;
 use MediaWiki\Title\Title;
+use MediaWiki\Title\TitleFactory;
 use Parser;
 use PPFrame;
 use Sanitizer;
-use TitleFactory;
 
 class Tag implements ParserFirstCallInitHook {
 	public const NAME = 'attachments';
