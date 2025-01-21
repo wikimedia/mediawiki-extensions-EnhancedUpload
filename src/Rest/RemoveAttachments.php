@@ -4,6 +4,7 @@ namespace MediaWiki\Extension\EnhancedUpload\Rest;
 
 use CommentStoreComment;
 use Exception;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Extension\EnhancedUpload\AttachmentTagModifier;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Permissions\PermissionManager;
@@ -12,7 +13,6 @@ use MediaWiki\Rest\SimpleHandler;
 use MediaWiki\Revision\SlotRecord;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
-use RequestContext;
 use Status;
 use TitleFactory;
 use Wikimedia\ParamValidator\ParamValidator;
