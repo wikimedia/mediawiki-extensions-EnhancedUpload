@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\EnhancedUpload\HookHandler;
 
-use Config;
+use MediaWiki\Config\Config;
 use MediaWiki\Hook\MimeMagicImproveFromExtensionHook;
 
 class AddMimeType implements MimeMagicImproveFromExtensionHook {
