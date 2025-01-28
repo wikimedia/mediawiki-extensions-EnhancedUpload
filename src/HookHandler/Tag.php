@@ -3,8 +3,8 @@
 namespace MediaWiki\Extension\EnhancedUpload\HookHandler;
 
 use FormatJson;
-use Html;
 use MediaWiki\Hook\ParserFirstCallInitHook;
+use MediaWiki\Html\Html;
 use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
 use Parser;
