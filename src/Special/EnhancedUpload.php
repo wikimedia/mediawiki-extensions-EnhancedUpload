@@ -3,7 +3,7 @@
 namespace MediaWiki\Extension\EnhancedUpload\Special;
 
 use Html;
-use SpecialPage;
+use MediaWiki\SpecialPage\SpecialPage;
 
 class EnhancedUpload extends SpecialPage {
 
