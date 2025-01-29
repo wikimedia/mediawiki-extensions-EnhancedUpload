@@ -3,6 +3,7 @@
 namespace MediaWiki\Extension\EnhancedUpload\Hook\BeforePageDisplay;
 
 use MediaWiki\Hook\BeforePageDisplayHook;
+use MediaWiki\Output\OutputPage;
 
 class AddModules implements BeforePageDisplayHook {
 
