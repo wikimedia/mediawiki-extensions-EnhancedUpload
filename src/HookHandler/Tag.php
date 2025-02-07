@@ -5,9 +5,9 @@ namespace MediaWiki\Extension\EnhancedUpload\HookHandler;
 use MediaWiki\Hook\ParserFirstCallInitHook;
 use MediaWiki\Html\Html;
 use MediaWiki\Json\FormatJson;
+use MediaWiki\Parser\Parser;
 use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
-use Parser;
 use PPFrame;
 use Sanitizer;
 
