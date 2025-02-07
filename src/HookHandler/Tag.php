@@ -6,9 +6,9 @@ use MediaWiki\Hook\ParserFirstCallInitHook;
 use MediaWiki\Html\Html;
 use MediaWiki\Json\FormatJson;
 use MediaWiki\Parser\Parser;
+use MediaWiki\Parser\PPFrame;
 use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
-use PPFrame;
 use Sanitizer;
 
 class Tag implements ParserFirstCallInitHook {
