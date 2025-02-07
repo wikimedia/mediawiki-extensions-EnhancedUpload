@@ -2,8 +2,8 @@
 
 namespace MediaWiki\Extension\EnhancedUpload\Rest;
 
-use CommentStoreComment;
 use Exception;
+use MediaWiki\CommentStore\CommentStoreComment;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Extension\EnhancedUpload\AttachmentTagModifier;
 use MediaWiki\MediaWikiServices;
