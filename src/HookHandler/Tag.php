@@ -7,9 +7,9 @@ use MediaWiki\Html\Html;
 use MediaWiki\Json\FormatJson;
 use MediaWiki\Parser\Parser;
 use MediaWiki\Parser\PPFrame;
+use MediaWiki\Parser\Sanitizer;
 use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
-use Sanitizer;
 
 class Tag implements ParserFirstCallInitHook {
 	public const NAME = 'attachments';
