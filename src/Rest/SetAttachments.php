@@ -4,6 +4,7 @@ namespace MediaWiki\Extension\EnhancedUpload\Rest;
 
 use CommentStoreComment;
 use Exception;
+use MediaWiki\Content\WikitextContent;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Extension\EnhancedUpload\AttachmentTagModifier;
 use MediaWiki\MediaWikiServices;
@@ -16,7 +17,6 @@ use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\User;
 use Wikimedia\ParamValidator\ParamValidator;
-use WikitextContent;
 
 class SetAttachments extends SimpleHandler {
 	protected const INPUT_PAGE_ID = 'pageId';

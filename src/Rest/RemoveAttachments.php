@@ -4,6 +4,7 @@ namespace MediaWiki\Extension\EnhancedUpload\Rest;
 
 use Exception;
 use MediaWiki\CommentStore\CommentStoreComment;
+use MediaWiki\Content\WikitextContent;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Extension\EnhancedUpload\AttachmentTagModifier;
 use MediaWiki\MediaWikiServices;
@@ -16,7 +17,6 @@ use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\User;
 use Wikimedia\ParamValidator\ParamValidator;
-use WikitextContent;
 
 class RemoveAttachments extends SimpleHandler {
 	protected const INPUT_PAGE_ID = 'pageId';
