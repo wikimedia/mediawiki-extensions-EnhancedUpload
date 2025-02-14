@@ -1,9 +1,9 @@
-$( document ).on( 'click', '#enhanced-filelist-upload-file', function ( e ) {
-	mw.loader.using( [ 'ext.enhancedUpload.upload.dialog' ] ).done( function () {
+$( document ).on( 'click', '.enhanced-filelist-upload-file a', ( e ) => {
+	e.preventDefault();
+	mw.loader.using( [ 'ext.enhancedUpload.upload.dialog' ] ).done( () => {
 		var dialog = new enhancedUpload.ui.dialog.UploadFilesDialog();
 		dialog.show();
 	} );
-	e.defaultPrevented = true;
 	return false;
 } );
 

@@ -97,6 +97,7 @@ enhancedUpload.ui.dialog.UploadFilesDialog.prototype.switchPage = function ( nam
 					this.updateSize();
 				}
 			} );
+			this.updateSize();
 			break;
 		case 'ResultPage':
 			this.actions.setAbilities( { cancel: false, add: false, done: true } );
