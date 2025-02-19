@@ -143,3 +143,7 @@ label.enhancedupload-dialog-title {
 .oo-ui-popupButtonWidget-popup.preview-label label {
 	font-size: 0.75rem;
 }
+
+.index-width .oo-ui-horizontalLayout {
+	display: block;
+}
