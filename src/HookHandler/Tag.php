@@ -117,7 +117,6 @@ class Tag implements ParserFirstCallInitHook {
 			'data-showsize' => $tagShowSize,
 			'data-showcategories' => $tagShowCategories
 		] );
-		$out .= $parser->recursiveTagParseFully( $input, $frame );
 		$out .= Html::element( 'div', [
 			'class' => 'attachments-loader',
 			'id' => 'loader-' . $count
