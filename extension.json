@@ -285,7 +285,8 @@
 				"ext.visualEditor.mwimage",
 				"oojs-ui",
 				"ext.visualEditor.mwlink",
-				"ext.enhancedUpload.paramsProcessor"
+				"ext.enhancedUpload.paramsProcessor",
+				"ext.oOJSPlus.widgets"
 			],
 			"messages": [
 				"enhancedupload-ve-dialog-title",
@@ -294,7 +295,8 @@
 				"enhancedupload-ve-dialog-duplicate-confirm",
 				"enhancedupload-upload-error-duplicate",
 				"enhancedupload-upload-error-badfilename",
-				"enhancedupload-upload-error-unhandled"
+				"enhancedupload-upload-error-unhandled",
+				"enhancedupload-details-categories-label"
 			]
 		},
 		"ext.enhancedUpload.attachments.addMediaDialog": {
