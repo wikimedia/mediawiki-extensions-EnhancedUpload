@@ -28,7 +28,7 @@ enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.getSetupProcess = functi
 };
 
 enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initialize = function () {
-	var renderHeader = false;
+	let renderHeader = false;
 	enhancedUpload.ui.dialog.UploadFinishedDialog.super.prototype.initialize.call( this );
 	this.content = new OO.ui.IndexLayout( {
 		expanded: false,
@@ -86,7 +86,7 @@ enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.show = function () {
 };
 
 enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initializeFailedPanel = function () {
-	var label, listView;
+	let label, listView;
 	enhancedUpload.ui.dialog.UploadFinishedDialog.static.title = mw.message( 'enhancedupload-failed-dialog-title' ).plain();
 	this.contentFailed = new OO.ui.TabPanelLayout( 'failed-upload', {
 		label: mw.message( 'enhancedupload-tab-failed-upload' ).text(),
@@ -105,7 +105,7 @@ enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initializeFailedPanel = 
 };
 
 enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initializeFinishedPanel = function () {
-	var label, listView;
+	let label, listView;
 	this.contentFinished = new OO.ui.TabPanelLayout( 'finished-upload', {
 		label: mw.message( 'enhancedupload-tab-successfull-upload' ).text(),
 		expanded: false
@@ -123,7 +123,7 @@ enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initializeFinishedPanel 
 };
 
 enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initializeWarningPanel = function () {
-	var label, listView;
+	let label, listView;
 	this.contentWarning = new OO.ui.TabPanelLayout( 'warnings-upload', {
 		label: mw.message( 'enhancedupload-tab-warnings-upload' ).text(),
 		expanded: false

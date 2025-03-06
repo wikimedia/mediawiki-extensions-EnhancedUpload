@@ -31,7 +31,7 @@ enhancedUpload.ui.dataTransferHandler.MediaTransferHandler.static.extensions =
  * @inheritdoc
  */
 enhancedUpload.ui.dataTransferHandler.MediaTransferHandler.prototype.process = function () {
-	var action,
+	let action,
 		file = this.item.getAsFile();
 
 	action = ve.ui.actionFactory.create( 'window', this.surface );

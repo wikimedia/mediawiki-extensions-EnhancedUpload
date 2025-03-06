@@ -1,6 +1,6 @@
-$( function () {
-	var singleUpload = false;
-	var destFilename = '';
+$( () => {
+	let singleUpload = false;
+	let destFilename = '';
 	if ( mw.util.getParamValue( 'wpDestFile' ) ) {
 		singleUpload = true;
 		destFilename = mw.util.getParamValue( 'wpDestFile' );

@@ -36,7 +36,7 @@ enhancedUpload.ui.dialog.UploadSingleFileDialog.prototype.getSetupProcess = func
 };
 
 enhancedUpload.ui.dialog.UploadSingleFileDialog.prototype.initialize = function () {
-	var pluginModules = require( './pluginModules.json' );
+	const pluginModules = require( './pluginModules.json' );
 	enhancedUpload.ui.dialog.UploadSingleFileDialog.super.prototype.initialize.call( this );
 
 	this.content = new OO.ui.PanelLayout( {
@@ -60,7 +60,7 @@ enhancedUpload.ui.dialog.UploadSingleFileDialog.prototype.initialize = function 
 				this.close();
 			} else {
 				// TODO error handling if something went wrong
-				var error = this.findError( files );
+				const error = this.findError( files );
 				this.showErrors( error );
 			}
 		},

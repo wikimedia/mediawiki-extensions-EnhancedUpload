@@ -24,13 +24,13 @@ enhancedUpload.ui.AttachmentsWidget = function ( cfg ) {
 OO.inheritClass( enhancedUpload.ui.AttachmentsWidget, OO.ui.Widget );
 
 enhancedUpload.ui.AttachmentsWidget.prototype.init = function () {
-	var $header = $( '<div>' ).addClass( 'attachments-header' ),
+	const $header = $( '<div>' ).addClass( 'attachments-header' ),
 		$mainlabel = $( '<h2>' ).html( this.tagTitle );
 	$header.append( $mainlabel );
 
 	if ( this.editRight ) {
 		this.addUploadWidget();
-		var addNewFileInput = new OO.ui.SelectFileWidget( {
+		const addNewFileInput = new OO.ui.SelectFileWidget( {
 			title: mw.message( 'enhancedupload-attachments-add-new-media-button-title' ).plain(),
 			button: {
 				icon: 'upload',
@@ -42,7 +42,7 @@ enhancedUpload.ui.AttachmentsWidget.prototype.init = function () {
 		} );
 		$( addNewFileInput.$input ).attr( 'multiple', 'true' );
 
-		var addDataBtn = new OO.ui.ButtonWidget( {
+		const addDataBtn = new OO.ui.ButtonWidget( {
 			title: mw.message( 'enhancedupload-attachments-add-media-button-title' ).plain(),
 			icon: 'add',
 			classes: [ 'add-existing-button' ]
@@ -52,7 +52,7 @@ enhancedUpload.ui.AttachmentsWidget.prototype.init = function () {
 		} );
 		addNewFileInput.connect( this, {
 			change: function () {
-				var items = addNewFileInput.getValue();
+				let items = addNewFileInput.getValue();
 				if ( !items.length ) {
 					items = [ items ];
 				}
@@ -60,7 +60,7 @@ enhancedUpload.ui.AttachmentsWidget.prototype.init = function () {
 			}
 		} );
 
-		var buttonGroup = new OO.ui.ButtonGroupWidget( {
+		const buttonGroup = new OO.ui.ButtonGroupWidget( {
 			items: [ addNewFileInput, addDataBtn ]
 		} );
 
@@ -90,20 +90,20 @@ enhancedUpload.ui.AttachmentsWidget.prototype.init = function () {
 			event.originalEvent.dataTransfer.effectAllowed = 'none';
 		} );
 
-		this.$element.on( 'drop', function ( e ) {
-			var uploadFiles = e.originalEvent.dataTransfer.files;
+		this.$element.on( 'drop', ( e ) => {
+			const uploadFiles = e.originalEvent.dataTransfer.files;
 			this.upload.startQuickUpload( uploadFiles );
 			e.preventDefault();
 			$( this.$element ).removeClass( 'drag-file' );
-		}.bind( this ) );
+		} );
 	}
 };
 
 enhancedUpload.ui.AttachmentsWidget.prototype.addGrid = function () {
-	var me = this, dataLoaded;
+	let me = this, dataLoaded;
 	if ( this.filesTitle.length > 0 ) {
 		dataLoaded = this.getGridData();
-		dataLoaded.done( function ( files ) {
+		dataLoaded.done( ( files ) => {
 			me.gridCfg = {
 				pageSize: 10,
 				columns: {
@@ -125,12 +125,12 @@ enhancedUpload.ui.AttachmentsWidget.prototype.addGrid = function () {
 			me.grid.connect( me, {
 				action: function ( action, row ) {
 					if ( action === 'details' ) {
-						var fileTitle = mw.Title.newFromText( 'File:' + row.filename );
+						const fileTitle = mw.Title.newFromText( 'File:' + row.filename );
 						window.open( fileTitle.getUrl(), '_blank' );
 					}
 					if ( action === 'remove' ) {
 						OO.ui.confirm( mw.message( 'enhancedupload-attachments-confirm-remove', row.filename ).plain() )
-							.done( function ( confirmed ) {
+							.done( ( confirmed ) => {
 								if ( !confirmed ) {
 									return;
 								}
@@ -202,16 +202,16 @@ enhancedUpload.ui.AttachmentsWidget.prototype.setupColumns = function () {
 };
 
 enhancedUpload.ui.AttachmentsWidget.prototype.getGridData = function () {
-	var me = this,
+	const me = this,
 		dfd = new $.Deferred();
 
-	mw.loader.using( 'mediawiki.api' ).done( function () {
-		var files = [], dfds = [], i, fileTitle, dfdInfo;
+	mw.loader.using( 'mediawiki.api' ).done( () => {
+		let files = [], dfds = [], i, fileTitle, dfdInfo;
 		for ( i = 0; i < me.filesTitle.length; i++ ) {
 			fileTitle = me.filesTitle[ i ];
 			dfdInfo = me.getFileInfo( fileTitle );
-			dfdInfo.done( function ( pages ) {
-				var categories = [], title, size, time, url, p, user;
+			dfdInfo.done( ( pages ) => {
+				let categories = [], title, size, time, url, p, user;
 				for ( p in pages ) {
 					categories = [];
 					if ( !pages[ p ].title || !pages[ p ].imageinfo ) {
@@ -232,13 +232,9 @@ enhancedUpload.ui.AttachmentsWidget.prototype.getGridData = function () {
 						file_url: url,
 						size: size,
 						version: time,
-						categories: categories.map( function ( category ) {
-							return category.name;
-						} ),
+						categories: categories.map( ( category ) => category.name ),
 						// eslint-disable-next-line camelcase
-						category_url: categories.map( function ( category ) {
-							return category.url;
-						} ),
+						category_url: categories.map( ( category ) => category.url ),
 						editor: user,
 						// eslint-disable-next-line camelcase
 						editor_url: mw.Title.newFromText( user, 2 ).getUrl()
@@ -247,7 +243,7 @@ enhancedUpload.ui.AttachmentsWidget.prototype.getGridData = function () {
 			} );
 			dfds.push( dfdInfo );
 		}
-		$.when.apply( me, dfds ).done( function () {
+		$.when.apply( me, dfds ).done( () => {
 			dfd.resolve( files );
 		} );
 	} );
@@ -256,26 +252,26 @@ enhancedUpload.ui.AttachmentsWidget.prototype.getGridData = function () {
 };
 
 enhancedUpload.ui.AttachmentsWidget.prototype.getFormattedTime = function ( timestamp ) {
-	var dateSetting = mw.user.options.values.date;
-	var monthID = timestamp.slice( 5, 7 ) - 1;
+	const dateSetting = mw.user.options.values.date;
+	const monthID = timestamp.slice( 5, 7 ) - 1;
 
 	if ( dateSetting === 'ISO 8601' ) {
 		return timestamp;
 	}
-	var date = new Date( timestamp ).toLocaleDateString();
+	const date = new Date( timestamp ).toLocaleDateString();
 	return this.insertMonth( date, monthID );
 };
 
 enhancedUpload.ui.AttachmentsWidget.prototype.insertMonth = function ( date, monthID ) {
-	var month = ' ' + mw.language.months.names[ monthID ] + ' ';
-	var posStart = date.indexOf( '.' ) + 1;
-	var posEnd = date.lastIndexOf( '.' ) + 1;
+	const month = ' ' + mw.language.months.names[ monthID ] + ' ';
+	const posStart = date.indexOf( '.' ) + 1;
+	const posEnd = date.lastIndexOf( '.' ) + 1;
 	date = date.slice( 0, posStart ) + month + date.slice( posEnd );
 	return date;
 };
 
 enhancedUpload.ui.AttachmentsWidget.prototype.getFileInfo = function ( fileTitle ) {
-	var dfd = new $.Deferred(),
+	const dfd = new $.Deferred(),
 		imageInfoApi = new mw.Api(),
 		title = mw.Title.newFromText( 'File:' + fileTitle ),
 		params = {
@@ -286,7 +282,7 @@ enhancedUpload.ui.AttachmentsWidget.prototype.getFileInfo = function ( fileTitle
 			titles: title.getPrefixedText()
 		};
 
-	imageInfoApi.get( params ).done( function ( data ) {
+	imageInfoApi.get( params ).done( ( data ) => {
 		dfd.resolve( data.query.pages );
 	} );
 
@@ -294,7 +290,7 @@ enhancedUpload.ui.AttachmentsWidget.prototype.getFileInfo = function ( fileTitle
 };
 
 enhancedUpload.ui.AttachmentsWidget.prototype.getCategories = function ( categoriesInfo ) {
-	var categories = [], title, category;
+	let categories = [], title, category;
 	for ( category in categoriesInfo ) {
 		title = mw.Title.newFromText( categoriesInfo[ category ].title );
 		categories.push( {
@@ -306,7 +302,7 @@ enhancedUpload.ui.AttachmentsWidget.prototype.getCategories = function ( categor
 };
 
 enhancedUpload.ui.AttachmentsWidget.prototype.calculateSize = function ( bytes ) {
-	var i = 0,
+	let i = 0,
 		units = [ ' b', ' KB', ' MB', ' GB', ' TB', ' PB' ];
 
 	if ( bytes > 0 ) {
@@ -319,7 +315,7 @@ enhancedUpload.ui.AttachmentsWidget.prototype.calculateSize = function ( bytes )
 };
 
 enhancedUpload.ui.AttachmentsWidget.prototype.addUploadWidget = function () {
-	var $container = $( '<div>' ).addClass( 'enhancedUpload-widget' );
+	const $container = $( '<div>' ).addClass( 'enhancedUpload-widget' );
 	this.upload = new enhancedUpload.ui.UploadWidget( {
 		container: $container,
 		hidePreview: true,
@@ -336,53 +332,53 @@ enhancedUpload.ui.AttachmentsWidget.prototype.addUploadWidget = function () {
 };
 
 enhancedUpload.ui.AttachmentsWidget.prototype.addItems = function ( widget, items, pageNames ) {
-	var me = this;
+	const me = this;
 
 	if ( items.length < 1 ) {
 		return;
 	}
 
-	mw.loader.using( 'ext.enhancedUpload.attachments.api' ).done( function () {
-		var api = new enhancedUpload.api.Api(),
+	mw.loader.using( 'ext.enhancedUpload.attachments.api' ).done( () => {
+		const api = new enhancedUpload.api.Api(),
 			addFiles = api.addFiles( me.pageID, me.counter, items, pageNames );
-		addFiles.done( function () {
+		addFiles.done( () => {
 			window.location.reload();
 		} );
 	} );
 };
 
 enhancedUpload.ui.AttachmentsWidget.prototype.removeItems = function ( row ) {
-	var me = this,
+	const me = this,
 		items = [ row.filename ];
 
-	mw.loader.using( 'ext.enhancedUpload.attachments.api' ).done( function () {
-		var api = new enhancedUpload.api.Api(),
+	mw.loader.using( 'ext.enhancedUpload.attachments.api' ).done( () => {
+		const api = new enhancedUpload.api.Api(),
 			removedFile = api.removeFiles( me.pageID, me.counter, items );
-		removedFile.done( function () {
+		removedFile.done( () => {
 			window.location.reload();
 		} );
 	} );
 };
 
 enhancedUpload.ui.AttachmentsWidget.prototype.addExistingMedia = function () {
-	var me = this;
+	const me = this;
 	mw.loader.using( 'ext.enhancedUpload.attachments.addMediaDialog' ).done( function () {
 		this.media = new enhancedUpload.ui.dialog.AddExistingMediaDialog( {
 			size: 'medium',
 			classes: [ 'attachments-add-dialog' ]
 		} );
 
-		this.media.on( 'actioncompleted', function ( title ) {
-			mw.loader.using( 'ext.enhancedUpload.attachments.api' ).done( function () {
-				var api = new enhancedUpload.api.Api();
-				var titleText = title.getMainText();
+		this.media.on( 'actioncompleted', ( title ) => {
+			mw.loader.using( 'ext.enhancedUpload.attachments.api' ).done( () => {
+				const api = new enhancedUpload.api.Api();
+				let titleText = title.getMainText();
 
 				if ( title.getNamespaceId() !== 6 ) {
 					titleText = title.getPrefixedText();
 				}
 
-				var addLink = api.addLink( me.pageID, me.counter, [ titleText ] );
-				addLink.done( function () {
+				const addLink = api.addLink( me.pageID, me.counter, [ titleText ] );
+				addLink.done( () => {
 					window.location.reload();
 				} );
 			} );

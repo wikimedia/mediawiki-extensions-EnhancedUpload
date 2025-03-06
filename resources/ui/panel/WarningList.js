@@ -11,7 +11,7 @@ enhancedUpload.ui.panel.WarningList = function enhancedUploadUiPanelWarningList(
 OO.inheritClass( enhancedUpload.ui.panel.WarningList, OO.ui.HorizontalLayout );
 
 enhancedUpload.ui.panel.WarningList.prototype.addGrid = function ( data ) {
-	var gridCfg = {}, i, voGrid, page, errorType, filename;
+	let gridCfg = {}, i, voGrid, page, errorType, filename;
 
 	for ( i = 0; i < data.length; i++ ) {
 		errorType = data[ i ][ 0 ];

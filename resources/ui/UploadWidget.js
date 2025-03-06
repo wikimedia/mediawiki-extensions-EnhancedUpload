@@ -5,7 +5,7 @@ enhancedUpload.ui.UploadWidget = function enhancedUploadUiUploadWidget( cfg ) {
 	cfg = cfg || {};
 	enhancedUpload.ui.UploadWidget.parent.call( this, cfg );
 
-	var pluginModules = require( './pluginModules.json' );
+	const pluginModules = require( './pluginModules.json' );
 	this.namespaces = mw.config.get( 'wgFormattedNamespaces' );
 	this.pluginModules = pluginModules || [];
 	this.hideFinishedDialog = cfg.hideFinishedDialog || false;
@@ -37,20 +37,20 @@ enhancedUpload.ui.UploadWidget = function enhancedUploadUiUploadWidget( cfg ) {
 	this.$mainContainer = cfg.container || $( '#enhancedUpload-container' );
 	this.hidePreview = cfg.hidePreview || false;
 	this.hideInput = cfg.hideInput || false;
-	mw.loader.using( this.pluginModules ).done( function () {
+	mw.loader.using( this.pluginModules ).done( () => {
 		this.setupFileWidgets();
 		this.setupDetailsWidgets();
 		this.setupActionButtons();
 
 		this.$mainContainer.append( this.selectFiles.$element );
 
-		var paramsProcessor = { processor: new enhancedUpload.ParamsProcessor() };
+		const paramsProcessor = { processor: new enhancedUpload.ParamsProcessor() };
 		mw.hook( 'enhancedUpload.makeParamProcessor' ).fire( paramsProcessor );
 		this.paramsProcessor = paramsProcessor.processor;
 
 		if ( !this.singleUpload &&
 			this.paramsProcessor instanceof enhancedUpload.UiParamsProcessor ) {
-			var paramElement = this.paramsProcessor.getElement();
+			const paramElement = this.paramsProcessor.getElement();
 			if ( paramElement instanceof OO.ui.Element ) {
 				this.detailsWidget.$element.prepend( paramElement.$element );
 			}
@@ -64,7 +64,7 @@ enhancedUpload.ui.UploadWidget = function enhancedUploadUiUploadWidget( cfg ) {
 			this.$mainContainer.append( this.detailsWidget.$element );
 			this.$mainContainer.append( this.actionFieldLayout.$element );
 		}
-	}.bind( this ) );
+	} );
 };
 
 OO.inheritClass( enhancedUpload.ui.UploadWidget, OO.ui.Widget );
@@ -164,16 +164,16 @@ enhancedUpload.ui.UploadWidget.prototype.setupActionButtons = function () {
 };
 
 enhancedUpload.ui.UploadWidget.prototype.updateUIFiles = function () {
-	var items = this.previewWidget.getFiles();
+	const items = this.previewWidget.getFiles();
 	if ( items.length === 0 ) {
 		this.previewWidget.showPreview();
 		$( this.previewWidgetLayout.$element ).removeClass( 'no-files' );
 	}
 
-	var values = this.selectFiles.getValue();
-	for ( var i = 0; i < values.length; i++ ) {
-		var previewHasItem = this.itemExists( items, values[ i ] );
-		var inList = this.allItems.indexOf( values[ i ] ) === -1;
+	const values = this.selectFiles.getValue();
+	for ( let i = 0; i < values.length; i++ ) {
+		const previewHasItem = this.itemExists( items, values[ i ] );
+		const inList = this.allItems.indexOf( values[ i ] ) === -1;
 		if ( inList && !previewHasItem ) {
 			this.allItems.push( values[ i ] );
 			this.getUrl( values[ i ] );
@@ -184,7 +184,7 @@ enhancedUpload.ui.UploadWidget.prototype.updateUIFiles = function () {
 };
 
 enhancedUpload.ui.UploadWidget.prototype.itemExists = function ( items, value ) {
-	return items.some( function ( item ) {
+	return items.some( ( item ) => {
 		if ( item.data === value ) {
 			return true;
 		}
@@ -193,12 +193,12 @@ enhancedUpload.ui.UploadWidget.prototype.itemExists = function ( items, value ) 
 };
 
 enhancedUpload.ui.UploadWidget.prototype.getUrl = function ( value ) {
-	var me = this;
-	var dfd = $.Deferred();
-	this.selectFiles.loadAndGetImageUrl( value ).done( function ( url ) {
+	const me = this;
+	const dfd = $.Deferred();
+	this.selectFiles.loadAndGetImageUrl( value ).done( ( url ) => {
 		me.previewWidget.addToPreview( value, url );
 		dfd.resolve( url );
-	} ).fail( function () {
+	} ).fail( () => {
 		me.previewWidget.addToPreview( value );
 		dfd.reject();
 	} );
@@ -209,20 +209,20 @@ enhancedUpload.ui.UploadWidget.prototype.getUrl = function ( value ) {
 enhancedUpload.ui.UploadWidget.prototype.onToggle = function () {
 	if ( !this.expanded ) {
 		// eslint-disable-next-line no-jquery/no-slide
-		this.detailsWidget.$element.slideDown( 300, function () {
+		this.detailsWidget.$element.slideDown( 300, () => {
 			this.toggleButton.setIcon( 'collapse' );
 			this.toggleButton.setTitle( mw.message( 'enhancedupload-toggle-details-button-hide-label' ).plain() );
 			this.expanded = true;
 			this.emit( 'toggled' );
-		}.bind( this ) );
+		} );
 	} else {
 		// eslint-disable-next-line no-jquery/no-slide
-		this.detailsWidget.$element.slideUp( 300, function () {
+		this.detailsWidget.$element.slideUp( 300, () => {
 			this.toggleButton.setIcon( 'expand' );
 			this.toggleButton.setTitle( mw.message( 'enhancedupload-toggle-details-button-show-label' ).plain() );
 			this.expanded = false;
 			this.emit( 'toggled' );
-		}.bind( this ) );
+		} );
 	}
 };
 
@@ -250,7 +250,7 @@ enhancedUpload.ui.UploadWidget.prototype.setUpProgressBar = function () {
 };
 
 enhancedUpload.ui.UploadWidget.prototype.startUpload = function () {
-	var items = [];
+	let items = [];
 	if ( this.singleUpload ) {
 		items.push( {
 			data: this.selectFiles.getValue()
@@ -266,19 +266,19 @@ enhancedUpload.ui.UploadWidget.prototype.startUpload = function () {
 		return;
 	}
 
-	var me = this;
+	const me = this;
 	me.setUpProgressBar();
 	me.fetchFailedUploads = [];
 	me.fetchFinishedUploads = [];
 	me.fetchWarningUploads = [];
 	me.fetchUpdatedUploads = [];
-	mw.loader.using( 'mediawiki.api' ).done( function () {
+	mw.loader.using( 'mediawiki.api' ).done( () => {
 		me.uploadProgressBar.setProgress( ( 0.5 / items.length ) * 100 );
-		var uploadDfds = [];
-		var descText = me.detailsWidget.getDescription();
-		var categories = me.detailsWidget.getCategories();
+		const uploadDfds = [];
+		const descText = me.detailsWidget.getDescription();
+		const categories = me.detailsWidget.getCategories();
 
-		for ( var i = 0; i < items.length; i++ ) {
+		for ( let i = 0; i < items.length; i++ ) {
 			var params = {
 				filename: items[ i ].data.name,
 				format: items[ i ].data.type,
@@ -290,21 +290,21 @@ enhancedUpload.ui.UploadWidget.prototype.startUpload = function () {
 			}
 
 			if ( me.paramsProcessor.getParams ) {
-				var skipOption = me.singleUpload;
+				const skipOption = me.singleUpload;
 				params = me.paramsProcessor.getParams( params, items[ i ], skipOption );
 			}
 
-			var uploadDfd = me.doUpload( items[ i ].data, params );
+			const uploadDfd = me.doUpload( items[ i ].data, params );
 			// eslint-disable-next-line no-loop-func
 			uploadDfd.done( function ( dfd, progress, maxUpload ) {
 				if ( categories.length > 0 ) {
-					var catEditParams = {
+					const catEditParams = {
 						action: 'edit',
 						title: 'File:' + params.filename,
 						appendtext: categories
 					};
-					var editCategoriesDfd = me.doCategoriesEdit( catEditParams );
-					$.when.apply( me, editCategoriesDfd ).done( function () {
+					const editCategoriesDfd = me.doCategoriesEdit( catEditParams );
+					$.when.apply( me, editCategoriesDfd ).done( () => {
 						uploadDfds.push( dfd );
 					} );
 				} else {
@@ -317,7 +317,7 @@ enhancedUpload.ui.UploadWidget.prototype.startUpload = function () {
 			}( uploadDfd, i, items.length ) );
 		}
 
-		$.when.apply( me, uploadDfds ).done( function () {
+		$.when.apply( me, uploadDfds ).done( () => {
 			me.emptyFiles();
 			$( me.$overlay ).remove();
 			$( document.body ).removeClass( 'upload-open' );
@@ -347,15 +347,15 @@ enhancedUpload.ui.UploadWidget.prototype.startUpload = function () {
 			me.emit( 'uploadComplete', me, items );
 		} );
 
-	} ).fail( function () {
+	} ).fail( () => {
 		$( me.$overlay ).remove();
 		$( document.body ).removeClass( 'upload-open' );
 	} );
 };
 
 enhancedUpload.ui.UploadWidget.prototype.getFileName = function ( name ) {
-	var namespaceId = this.namespaceInput.getValue();
-	var namespace = this.namespaces[ namespaceId ];
+	const namespaceId = this.namespaceInput.getValue();
+	const namespace = this.namespaces[ namespaceId ];
 
 	if ( namespaceId === 0 ) {
 		return name;
@@ -365,18 +365,18 @@ enhancedUpload.ui.UploadWidget.prototype.getFileName = function ( name ) {
 };
 
 enhancedUpload.ui.UploadWidget.prototype.doUpload = function ( file, params ) {
-	var me = this;
-	var mwApi = new mw.Api();
-	var dfd = new $.Deferred();
+	const me = this;
+	const mwApi = new mw.Api();
+	const dfd = new $.Deferred();
 
-	mwApi.upload( file, params ).then( function ( resp ) {
+	mwApi.upload( file, params ).then( ( resp ) => {
 		me.fetchFinishedUploads.push( [ resp.upload.imageinfo.canonicaltitle, file ] );
 		dfd.resolve( resp );
-	}, ( function ( errorCode, result ) {
-		var errorMessage = '';
+	}, ( ( errorCode, result ) => {
+		let errorMessage = '';
 		if ( result.upload ) {
 			if ( result.upload.warnings ) {
-				var warnings = result.upload.warnings;
+				const warnings = result.upload.warnings;
 
 				// get errorCode from result
 				if ( 'exists' in warnings || 'exists-normalized' in warnings ) {
@@ -397,10 +397,10 @@ enhancedUpload.ui.UploadWidget.prototype.doUpload = function ( file, params ) {
 
 		if ( result.errors ) {
 			// errorformat: 'html'
-			errorMessage = result.errors.map( function ( err ) {
+			errorMessage = result.errors.map( ( err ) =>
 				// formatversion: 1 / 2
-				return err[ '*' ] || err.html;
-			} );
+				 err[ '*' ] || err.html
+			 );
 
 			// It's enough to show the first error
 			errorMessage = errorMessage[ 0 ];
@@ -428,14 +428,14 @@ enhancedUpload.ui.UploadWidget.prototype.doUpload = function ( file, params ) {
 };
 
 enhancedUpload.ui.UploadWidget.prototype.doCategoriesEdit = function ( params ) {
-	var api = new mw.Api();
-	var dfd = new $.Deferred();
-	api.postWithToken( 'csrf', params ).done( function ( data ) {
+	const api = new mw.Api();
+	const dfd = new $.Deferred();
+	api.postWithToken( 'csrf', params ).done( ( data ) => {
 		if ( data.edit.result === 'Success' ) {
 			dfd.resolve();
 		}
 		dfd.reject();
-	} ).fail( function ( error ) {
+	} ).fail( ( error ) => {
 		dfd.reject( error );
 	} );
 	return dfd.promise();
@@ -447,7 +447,7 @@ enhancedUpload.ui.UploadWidget.prototype.startQuickUpload = function ( items ) {
 	}
 
 	if ( !this.skipOptions ) {
-		var dialog = new enhancedUpload.ui.dialog.DetailsDialog( {
+		const dialog = new enhancedUpload.ui.dialog.DetailsDialog( {
 			categories: this.defaultCategories,
 			prefix: this.defaultPrefix,
 			description: this.defaultDescription
@@ -455,35 +455,35 @@ enhancedUpload.ui.UploadWidget.prototype.startQuickUpload = function ( items ) {
 
 		dialog.show();
 		if ( this.paramsProcessor instanceof enhancedUpload.UiParamsProcessor ) {
-			var paramElement = this.paramsProcessor.getElement();
+			const paramElement = this.paramsProcessor.getElement();
 			if ( paramElement instanceof OO.ui.Element ) {
 				this.detailsWidget.$element.prepend( paramElement.$element );
 			}
 			this.paramsProcessor.setDefaultPrefix( this.defaultPrefix );
 		}
-		dialog.on( 'detailscompleted', function ( descCatText ) {
+		dialog.on( 'detailscompleted', ( descCatText ) => {
 			this.quickUpload( items, descCatText );
-		}.bind( this ) );
+		} );
 	} else {
-		var descAndCatText = this.defaultDescription + ' ' + this.formatCategories();
+		const descAndCatText = this.defaultDescription + ' ' + this.formatCategories();
 		this.quickUpload( items, descAndCatText );
 	}
 };
 
 enhancedUpload.ui.UploadWidget.prototype.quickUpload = function ( items, descAndCatText ) {
-	var me = this;
+	const me = this;
 	me.fetchFailedUploads = [];
 	me.fetchFinishedUploads = [];
 	me.fetchWarningUploads = [];
 	me.setUpProgressBar();
-	mw.loader.using( 'mediawiki.api' ).done( function () {
+	mw.loader.using( 'mediawiki.api' ).done( () => {
 		me.uploadProgressBar.setProgress( ( 0.5 / items.length ) * 100 );
-		var uploadDfds = [];
-		var pageNames = [];
+		const uploadDfds = [];
+		const pageNames = [];
 
-		for ( var i = 0; i < items.length; i++ ) {
-			var item = items[ i ];
-			var params = {
+		for ( let i = 0; i < items.length; i++ ) {
+			const item = items[ i ];
+			let params = {
 				prefix: me.defaultPrefix,
 				filename: item.name,
 				format: item.type,
@@ -494,7 +494,7 @@ enhancedUpload.ui.UploadWidget.prototype.quickUpload = function ( items, descAnd
 				params = me.paramsProcessor.getParams( params, item, me.skipOptions );
 			}
 			pageNames.push( params.filename );
-			var uploadDfd = me.doUpload( item, params );
+			const uploadDfd = me.doUpload( item, params );
 			// TODO: Fix this, this will not work, self-calling functions will call themselves
 			// immediately, not when actually done/fail. For this, recursion is needed.
 			$.when( uploadDfd ).done( function ( dfd, progress, maxUpload ) {
@@ -505,7 +505,7 @@ enhancedUpload.ui.UploadWidget.prototype.quickUpload = function ( items, descAnd
 				me.uploadProgressBar.setProgress( ( progress / ( maxUpload - 1 ) ) * 100 );
 			}( uploadDfd, i, items.length ) );
 		}
-		$.when.apply( me, uploadDfds ).done( function () {
+		$.when.apply( me, uploadDfds ).done( () => {
 			me.selectFiles.setValue( '' );
 			$( me.$overlay ).remove();
 			$( document.body ).removeClass( 'upload-open' );
@@ -528,25 +528,25 @@ enhancedUpload.ui.UploadWidget.prototype.processUpload =
 	};
 
 enhancedUpload.ui.UploadWidget.prototype.formatCategories = function () {
-	var categories = this.defaultCategories.split( '|' );
-	var category = '';
-	for ( var i = 0; i < categories.length; i++ ) {
-		var cat = '[[Category:' + categories[ i ] + ']] ';
+	const categories = this.defaultCategories.split( '|' );
+	let category = '';
+	for ( let i = 0; i < categories.length; i++ ) {
+		const cat = '[[Category:' + categories[ i ] + ']] ';
 		category += cat;
 	}
 	return category;
 };
 
 enhancedUpload.ui.UploadWidget.prototype.handleFailedQuickUpload = function ( items, pageNames ) {
-	var me = this;
+	const me = this;
 	me.finishedDialog = new enhancedUpload.ui.dialog.UploadFinishedDialog( {
 		size: 'large',
 		data: [ [], me.fetchFailedUploads, [] ]
 	} );
 
-	for ( var item in me.fetchFailedUploads ) {
-		var file = me.fetchFailedUploads[ item ][ 1 ];
-		var index = items.indexOf( file );
+	for ( const item in me.fetchFailedUploads ) {
+		const file = me.fetchFailedUploads[ item ][ 1 ];
+		const index = items.indexOf( file );
 		items.splice( index, 1 );
 	}
 	if ( items.length ) {
@@ -560,11 +560,11 @@ enhancedUpload.ui.UploadWidget.prototype.handleFailedQuickUpload = function ( it
 };
 
 enhancedUpload.ui.UploadWidget.prototype.redirectToFile = function () {
-	var file = this.fetchUpdatedUploads[ 0 ];
+	const file = this.fetchUpdatedUploads[ 0 ];
 
-	mw.loader.using( 'mediawiki.api' ).done( function () {
-		var mwApi = new mw.Api();
-		var apiParams = {
+	mw.loader.using( 'mediawiki.api' ).done( () => {
+		const mwApi = new mw.Api();
+		const apiParams = {
 			action: 'query',
 			format: 'json',
 			prop: 'imageinfo',
@@ -572,8 +572,8 @@ enhancedUpload.ui.UploadWidget.prototype.redirectToFile = function () {
 			titles: 'File:' + file[ 0 ]
 		};
 
-		mwApi.get( apiParams ).done( function ( data ) {
-			var pages = data.query.pages, p, url;
+		mwApi.get( apiParams ).done( ( data ) => {
+			let pages = data.query.pages, p, url;
 			for ( p in pages ) {
 				url = pages[ p ].imageinfo[ 0 ].descriptionurl;
 			}

@@ -12,7 +12,7 @@ enhancedUpload.ui.panel.FinishedList = function enhancedUploadUiPanelFinishedLis
 OO.inheritClass( enhancedUpload.ui.panel.FinishedList, OO.ui.HorizontalLayout );
 
 enhancedUpload.ui.panel.FinishedList.prototype.addGrid = function ( data ) {
-	var i, linkTitle, type, gridCfg, voGrid, page;
+	let i, linkTitle, type, gridCfg, voGrid, page;
 	for ( i = 0; i < data.length; i++ ) {
 		linkTitle = data[ i ][ 0 ];
 		type = data[ i ][ 1 ].type;
