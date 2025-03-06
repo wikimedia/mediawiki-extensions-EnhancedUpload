@@ -1,7 +1,7 @@
 ( function () {
 	QUnit.module( 'ext.enhancedUpload.paramsProcessor.test', QUnit.newMwEnvironment() );
 
-	var tests = [
+	const tests = [
 		[
 			{
 				prefix: 'ABC',
@@ -51,7 +51,7 @@
 			}
 		]
 	];
-	var expectedParams = [
+	const expectedParams = [
 		{
 			filename: 'ABCTest.txt',
 			format: 'txt',
@@ -82,10 +82,10 @@
 		}
 	];
 
-	QUnit.test( 'ext.enhancedUpload.paramsProcessor.test', function ( assert ) {
-		for ( var i = 0; i < 4; i++ ) {
-			var processor = new enhancedUpload.ParamsProcessor();
-			var retrievedParams = processor.getParams( tests[ i ][ 0 ], tests[ i ][ 1 ], true );
+	QUnit.test( 'ext.enhancedUpload.paramsProcessor.test', ( assert ) => {
+		for ( let i = 0; i < 4; i++ ) {
+			const processor = new enhancedUpload.ParamsProcessor();
+			const retrievedParams = processor.getParams( tests[ i ][ 0 ], tests[ i ][ 1 ], true );
 			assert.deepEqual( retrievedParams, expectedParams[ i ], 'params' );
 		}
 	} );

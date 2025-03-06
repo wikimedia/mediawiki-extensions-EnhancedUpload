@@ -11,7 +11,7 @@ enhancedUpload.ui.panel.FailedList = function enhancedUploadUiPanelFailedList( c
 OO.inheritClass( enhancedUpload.ui.panel.FailedList, OO.ui.HorizontalLayout );
 
 enhancedUpload.ui.panel.FailedList.prototype.addGrid = function ( data ) {
-	var i, errorType, filename, type, gridCfg, voGrid;
+	let i, errorType, filename, type, gridCfg, voGrid;
 	for ( i = 0; i < data.length; i++ ) {
 		errorType = data[ i ][ 0 ];
 		type = data[ i ][ 1 ].type;

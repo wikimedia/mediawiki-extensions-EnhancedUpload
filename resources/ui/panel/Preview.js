@@ -3,7 +3,7 @@ window.enhancedUpload.ui = window.enhancedUpload.ui || {};
 window.enhancedUpload.ui.panel = window.enhancedUpload.ui.panel || {};
 
 enhancedUpload.ui.panel.Preview = function enhancedUploadUiPanelPreview() {
-	var cfg = {};
+	const cfg = {};
 	cfg.orientation = 'horizontal';
 	cfg.draggable = true;
 	cfg.classes = [ 'file-preview', 'no-files' ];
@@ -23,7 +23,7 @@ enhancedUpload.ui.panel.Preview.static.label = '';
 enhancedUpload.ui.panel.Preview.static.tagName = 'div';
 
 enhancedUpload.ui.panel.Preview.prototype.addToPreview = function ( value, url ) {
-	var itemWidget;
+	let itemWidget;
 	this.itemData.push( {
 		data: value,
 		url: url
@@ -62,7 +62,7 @@ enhancedUpload.ui.panel.Preview.prototype.clearPreview = function () {
 };
 
 enhancedUpload.ui.panel.Preview.prototype.removeItemFromPreview = function ( widget ) {
-	var index;
+	let index;
 	if ( !this.items.length ) {
 		return;
 	}
