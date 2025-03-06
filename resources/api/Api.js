@@ -47,7 +47,8 @@ enhancedUpload.api.Api.prototype.ajax = function ( path, data, method ) {
 };
 
 enhancedUpload.api.Api.prototype.addFiles = function ( pageId, tagcounter, data, pageNames ) {
-	let files = [], item;
+	const files = [];
+	let item;
 	for ( item in pageNames ) {
 		files.push( pageNames[ item ] );
 	}

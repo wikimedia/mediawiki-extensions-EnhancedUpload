@@ -279,7 +279,7 @@ enhancedUpload.ui.UploadWidget.prototype.startUpload = function () {
 		const categories = me.detailsWidget.getCategories();
 
 		for ( let i = 0; i < items.length; i++ ) {
-			var params = {
+			let params = {
 				filename: items[ i ].data.name,
 				format: items[ i ].data.type,
 				ignorewarnings: true,
@@ -295,7 +295,7 @@ enhancedUpload.ui.UploadWidget.prototype.startUpload = function () {
 			}
 
 			const uploadDfd = me.doUpload( items[ i ].data, params );
-			// eslint-disable-next-line no-loop-func
+
 			uploadDfd.done( function ( dfd, progress, maxUpload ) {
 				if ( categories.length > 0 ) {
 					const catEditParams = {
@@ -397,10 +397,10 @@ enhancedUpload.ui.UploadWidget.prototype.doUpload = function ( file, params ) {
 
 		if ( result.errors ) {
 			// errorformat: 'html'
-			errorMessage = result.errors.map( ( err ) =>
+			errorMessage = result.errors.map(
 				// formatversion: 1 / 2
-				 err[ '*' ] || err.html
-			 );
+				( err ) => err[ '*' ] || err.html
+			);
 
 			// It's enough to show the first error
 			errorMessage = errorMessage[ 0 ];
@@ -573,7 +573,8 @@ enhancedUpload.ui.UploadWidget.prototype.redirectToFile = function () {
 		};
 
 		mwApi.get( apiParams ).done( ( data ) => {
-			let pages = data.query.pages, p, url;
+			const pages = data.query.pages;
+			let p, url;
 			for ( p in pages ) {
 				url = pages[ p ].imageinfo[ 0 ].descriptionurl;
 			}

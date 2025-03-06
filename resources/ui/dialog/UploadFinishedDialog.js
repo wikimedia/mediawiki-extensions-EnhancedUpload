@@ -86,17 +86,16 @@ enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.show = function () {
 };
 
 enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initializeFailedPanel = function () {
-	let label, listView;
 	enhancedUpload.ui.dialog.UploadFinishedDialog.static.title = mw.message( 'enhancedupload-failed-dialog-title' ).plain();
 	this.contentFailed = new OO.ui.TabPanelLayout( 'failed-upload', {
 		label: mw.message( 'enhancedupload-tab-failed-upload' ).text(),
 		expanded: false
 	} );
-	label = new OO.ui.LabelWidget( {
+	const label = new OO.ui.LabelWidget( {
 		label: mw.message( 'enhancedupload-failed-dialog-label', this.failedData.length ).text(),
 		classes: [ 'enhancedupload-dialog-title' ]
 	} );
-	listView = new enhancedUpload.ui.panel.FailedList( {
+	const listView = new enhancedUpload.ui.panel.FailedList( {
 		expanded: false
 	} );
 	listView.addGrid( this.failedData );
@@ -105,16 +104,15 @@ enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initializeFailedPanel = 
 };
 
 enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initializeFinishedPanel = function () {
-	let label, listView;
 	this.contentFinished = new OO.ui.TabPanelLayout( 'finished-upload', {
 		label: mw.message( 'enhancedupload-tab-successfull-upload' ).text(),
 		expanded: false
 	} );
-	label = new OO.ui.LabelWidget( {
+	const label = new OO.ui.LabelWidget( {
 		label: mw.message( 'enhancedupload-finished-dialog-label' ).text(),
 		classes: [ 'enhancedupload-dialog-title' ]
 	} );
-	listView = new enhancedUpload.ui.panel.FinishedList( {
+	const listView = new enhancedUpload.ui.panel.FinishedList( {
 		expanded: false
 	} );
 	listView.addGrid( this.finishedData );
@@ -123,16 +121,15 @@ enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initializeFinishedPanel 
 };
 
 enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initializeWarningPanel = function () {
-	let label, listView;
 	this.contentWarning = new OO.ui.TabPanelLayout( 'warnings-upload', {
 		label: mw.message( 'enhancedupload-tab-warnings-upload' ).text(),
 		expanded: false
 	} );
-	label = new OO.ui.LabelWidget( {
+	const label = new OO.ui.LabelWidget( {
 		label: mw.message( 'enhancedupload-warning-dialog-label', this.warningData.length ).text(),
 		classes: [ 'enhancedupload-dialog-title' ]
 	} );
-	listView = new enhancedUpload.ui.panel.WarningList( {
+	const listView = new enhancedUpload.ui.panel.WarningList( {
 		expanded: false
 	} );
 
