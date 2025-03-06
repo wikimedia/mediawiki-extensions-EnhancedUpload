@@ -11,7 +11,7 @@ enhancedUpload.ui.panel.WarningList = function enhancedUploadUiPanelWarningList(
 OO.inheritClass( enhancedUpload.ui.panel.WarningList, OO.ui.HorizontalLayout );
 
 enhancedUpload.ui.panel.WarningList.prototype.addGrid = function ( data ) {
-	let gridCfg = {}, i, voGrid, page, errorType, filename;
+	let gridCfg = {}, i, page, errorType, filename;
 
 	for ( i = 0; i < data.length; i++ ) {
 		errorType = data[ i ][ 0 ];
@@ -43,6 +43,6 @@ enhancedUpload.ui.panel.WarningList.prototype.addGrid = function ( data ) {
 		data: this.data
 	};
 
-	voGrid = new OOJSPlus.ui.data.GridWidget( gridCfg );
+	const voGrid = new OOJSPlus.ui.data.GridWidget( gridCfg );
 	this.$grid.html( voGrid.$element );
 };

@@ -100,7 +100,8 @@ enhancedUpload.ui.AttachmentsWidget.prototype.init = function () {
 };
 
 enhancedUpload.ui.AttachmentsWidget.prototype.addGrid = function () {
-	let me = this, dataLoaded;
+	const me = this;
+	let dataLoaded;
 	if ( this.filesTitle.length > 0 ) {
 		dataLoaded = this.getGridData();
 		dataLoaded.done( ( files ) => {
@@ -206,7 +207,9 @@ enhancedUpload.ui.AttachmentsWidget.prototype.getGridData = function () {
 		dfd = new $.Deferred();
 
 	mw.loader.using( 'mediawiki.api' ).done( () => {
-		let files = [], dfds = [], i, fileTitle, dfdInfo;
+		const dfds = [];
+		const files = [];
+		let i, fileTitle, dfdInfo;
 		for ( i = 0; i < me.filesTitle.length; i++ ) {
 			fileTitle = me.filesTitle[ i ];
 			dfdInfo = me.getFileInfo( fileTitle );
@@ -290,7 +293,8 @@ enhancedUpload.ui.AttachmentsWidget.prototype.getFileInfo = function ( fileTitle
 };
 
 enhancedUpload.ui.AttachmentsWidget.prototype.getCategories = function ( categoriesInfo ) {
-	let categories = [], title, category;
+	const categories = [];
+	let title, category;
 	for ( category in categoriesInfo ) {
 		title = mw.Title.newFromText( categoriesInfo[ category ].title );
 		categories.push( {
@@ -302,8 +306,8 @@ enhancedUpload.ui.AttachmentsWidget.prototype.getCategories = function ( categor
 };
 
 enhancedUpload.ui.AttachmentsWidget.prototype.calculateSize = function ( bytes ) {
-	let i = 0,
-		units = [ ' b', ' KB', ' MB', ' GB', ' TB', ' PB' ];
+	const units = [ ' b', ' KB', ' MB', ' GB', ' TB', ' PB' ];
+	let i = 0;
 
 	if ( bytes > 0 ) {
 		for ( i = 0; bytes >= 1024; bytes /= 1024 ) {

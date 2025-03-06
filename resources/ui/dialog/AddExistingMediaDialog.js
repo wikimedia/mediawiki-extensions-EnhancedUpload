@@ -42,7 +42,6 @@ enhancedUpload.ui.dialog.AddExistingMediaDialog.prototype.getBodyHeight = functi
 };
 
 enhancedUpload.ui.dialog.AddExistingMediaDialog.prototype.initialize = function () {
-	let titleField;
 	enhancedUpload.ui.dialog.AddExistingMediaDialog.super.prototype.initialize.call( this );
 
 	this.content = new OO.ui.PanelLayout( {
@@ -60,7 +59,7 @@ enhancedUpload.ui.dialog.AddExistingMediaDialog.prototype.initialize = function 
 		choose: 'activateAdd'
 	} );
 
-	titleField = new OO.ui.FieldsetLayout( {
+	const titleField = new OO.ui.FieldsetLayout( {
 		expanded: true,
 		items: [
 			new OO.ui.FieldLayout( this.titleSearch, {

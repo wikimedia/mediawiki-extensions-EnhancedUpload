@@ -19,7 +19,6 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.static.size = 'medium';
  */
 enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.initialize = function () {
 	enhancedUpload.ui.dialog.VEInsertMediaDialog.super.prototype.initialize.call( this );
-	let panel;
 	this.pageName = mw.config.get( 'wgPageName' );
 
 	// Slashes are no valid chars in a filename
@@ -34,7 +33,7 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.initialize = function () 
 		expanded: true
 	} );
 
-	panel = new OO.ui.FieldLayout( this.targetTitle, {
+	const panel = new OO.ui.FieldLayout( this.targetTitle, {
 		label: mw.message( 'enhancedupload-ve-dialog-filename-label' ).plain(),
 		align: 'top'
 	} );
@@ -87,14 +86,14 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.showErrors = function ( e
 };
 
 enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.makeDoneProcess = function () {
-	let dfd = new $.Deferred(),
-		me = this,
-		params, dfdUpload, fileName, fileType, fileFormat;
+	const me = this;
+	const dfd = new $.Deferred();
+	let params;
 
-	fileType = this.file.type;
+	const fileType = this.file.type;
 	// eslint-disable-next-line unicorn/prefer-string-slice
-	fileFormat = this.file.name.substring( this.file.name.indexOf( '.' ) + 1 );
-	fileName = this.targetTitle.getValue() + '.' + fileFormat;
+	const fileFormat = this.file.name.substring( this.file.name.indexOf( '.' ) + 1 );
+	const fileName = this.targetTitle.getValue() + '.' + fileFormat;
 
 	params = {
 		filename: fileName,
@@ -105,7 +104,7 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.makeDoneProcess = functio
 	params = this.sanitizeFilename( params );
 	params = this.preprocessParams( params );
 
-	dfdUpload = this.doUpload( me.file, params );
+	const dfdUpload = this.doUpload( me.file, params );
 
 	dfdUpload.done( ( resp ) => {
 		me.insertMedia( params.filename, resp.upload.imageinfo.url, me.file );
@@ -213,8 +212,8 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.insertMedia =
 
 enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.insertExistingMedia =
 	function ( fragment, fileName ) {
-		let me = this,
-			url = '', imageInfoApi = new mw.Api(), apiParams, title;
+		const me = this;
+		let url = '', apiParams, title;
 
 		if ( this.file.type.includes( 'image' ) ) {
 			title = mw.Title.newFromText( 'File:' + fileName );
@@ -226,8 +225,10 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.insertExistingMedia =
 				titles: title.getPrefixedText()
 			};
 
+			const imageInfoApi = new mw.Api();
 			imageInfoApi.get( apiParams ).done( ( data ) => {
-				let pages = data.query.pages, p;
+				const pages = data.query.pages;
+				let p;
 				for ( p in pages ) {
 					url = pages[ p ].imageinfo[ 0 ].url;
 				}
@@ -267,10 +268,10 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.handleErrors =
 					}
 				} )
 				.done( function ( result ) {
-					/* eslint-disable-next-line unicorn/prefer-string-slice */
-					let fileFormat = me.file.name.substring( me.file.name.indexOf( '.' ) + 1 ),
-						newFileName = result + '.' + fileFormat,
-						params, dfdReUpload;
+					const fileFormat = me.file.name.slice( Math.max( 0, me.file.name.indexOf( '.' ) + 1 ) );
+					const newFileName = result + '.' + fileFormat;
+
+					let params, dfdReUpload;
 					if ( result !== null ) {
 						params = {
 							filename: newFileName,

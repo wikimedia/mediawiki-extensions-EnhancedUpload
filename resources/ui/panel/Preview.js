@@ -62,7 +62,6 @@ enhancedUpload.ui.panel.Preview.prototype.clearPreview = function () {
 };
 
 enhancedUpload.ui.panel.Preview.prototype.removeItemFromPreview = function ( widget ) {
-	let index;
 	if ( !this.items.length ) {
 		return;
 	}
@@ -72,7 +71,7 @@ enhancedUpload.ui.panel.Preview.prototype.removeItemFromPreview = function ( wid
 		return;
 	}
 
-	index = this.items.indexOf( widget );
+	const index = this.items.indexOf( widget );
 
 	this.removeItems( widget );
 	widget.$element.hide();

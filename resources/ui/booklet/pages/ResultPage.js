@@ -72,12 +72,11 @@ enhancedUpload.ui.booklet.ResultPage.prototype.updateUI = function () {
 };
 
 enhancedUpload.ui.booklet.ResultPage.prototype.initializeFailedPanel = function () {
-	let label, listView;
-	label = new OO.ui.LabelWidget( {
+	const label = new OO.ui.LabelWidget( {
 		label: mw.message( 'enhancedupload-failed-dialog-label', this.failedData.length ).text(),
 		classes: [ 'enhancedupload-dialog-title' ]
 	} );
-	listView = new enhancedUpload.ui.panel.FailedList( {
+	const listView = new enhancedUpload.ui.panel.FailedList( {
 		expanded: false
 	} );
 	listView.addGrid( this.failedData );
@@ -86,12 +85,11 @@ enhancedUpload.ui.booklet.ResultPage.prototype.initializeFailedPanel = function 
 };
 
 enhancedUpload.ui.booklet.ResultPage.prototype.initializeFinishedPanel = function () {
-	let label, listView;
-	label = new OO.ui.LabelWidget( {
+	const label = new OO.ui.LabelWidget( {
 		label: mw.message( 'enhancedupload-finished-dialog-label' ).text(),
 		classes: [ 'enhancedupload-dialog-title' ]
 	} );
-	listView = new enhancedUpload.ui.panel.FinishedList( {
+	const listView = new enhancedUpload.ui.panel.FinishedList( {
 		expanded: false
 	} );
 	listView.addGrid( this.finishedData );
@@ -100,12 +98,11 @@ enhancedUpload.ui.booklet.ResultPage.prototype.initializeFinishedPanel = functio
 };
 
 enhancedUpload.ui.booklet.ResultPage.prototype.initializeWarningPanel = function () {
-	let label, listView;
-	label = new OO.ui.LabelWidget( {
+	const label = new OO.ui.LabelWidget( {
 		label: mw.message( 'enhancedupload-warning-dialog-label', this.warningData.length ).text(),
 		classes: [ 'enhancedupload-dialog-title' ]
 	} );
-	listView = new enhancedUpload.ui.panel.WarningList( {
+	const listView = new enhancedUpload.ui.panel.WarningList( {
 		expanded: false
 	} );
 
