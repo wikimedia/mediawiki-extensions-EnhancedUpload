@@ -136,6 +136,11 @@
 				"ext.enhancedUpload.uploadWidget"
 			]
 		},
+		"ext.enhancedUpload.special.skeleton.styles": {
+			"styles": [
+				"ext.enhancedUpload.skeleton.css"
+			]
+		},
 		"ext.enhancedUpload.uploadWidget": {
 			"packageFiles": [
 				"ui/UploadWidget.js",
