@@ -36,6 +36,7 @@ enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initialize = function ()
 	enhancedUpload.ui.dialog.UploadFinishedDialog.super.prototype.initialize.call( this );
 	this.content = new OO.ui.IndexLayout( {
 		expanded: false,
+		padded: true,
 		framed: true,
 		classes: [ 'index-width' ]
 	} );
@@ -71,6 +72,7 @@ enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initialize = function ()
 	}
 
 	this.$body.append( this.content.$element );
+	this.updateSize();
 };
 
 enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.show = function () {
@@ -133,7 +135,14 @@ enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initializeWarningPanel =
 		classes: [ 'enhancedupload-dialog-title' ]
 	} );
 	const listView = new enhancedUpload.ui.panel.WarningList( {
-		expanded: false
+		expanded: false,
+		padded: true
+	} );
+
+	listView.connect( this, {
+		dataset: () => {
+			this.updateSize();
+		}
 	} );
 
 	listView.addGrid( this.warningData );
