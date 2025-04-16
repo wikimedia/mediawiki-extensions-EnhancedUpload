@@ -24,7 +24,11 @@ enhancedUpload.ui.dialog.UploadFinishedDialog.static.actions = [
 enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.getSetupProcess = function () {
 	return enhancedUpload.ui.dialog.UploadFinishedDialog.super.prototype.getSetupProcess.call(
 		this
-	);
+	).next( function () {
+		if ( this.failedData.length ) {
+			this.title.setLabel( mw.message( 'enhancedupload-failed-dialog-title' ).plain() );
+		}
+	}, this );
 };
 
 enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initialize = function () {
@@ -86,7 +90,6 @@ enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.show = function () {
 };
 
 enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initializeFailedPanel = function () {
-	enhancedUpload.ui.dialog.UploadFinishedDialog.static.title = mw.message( 'enhancedupload-failed-dialog-title' ).plain();
 	this.contentFailed = new OO.ui.TabPanelLayout( 'failed-upload', {
 		label: mw.message( 'enhancedupload-tab-failed-upload' ).text(),
 		expanded: false
