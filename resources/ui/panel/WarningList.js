@@ -11,38 +11,88 @@ enhancedUpload.ui.panel.WarningList = function enhancedUploadUiPanelWarningList(
 OO.inheritClass( enhancedUpload.ui.panel.WarningList, OO.ui.HorizontalLayout );
 
 enhancedUpload.ui.panel.WarningList.prototype.addGrid = function ( data ) {
-	var gridCfg = {}, i, voGrid, page, errorType, filename;
+	var gridCfg = {}, i, error, filename;
+	var self = this;
 
-	for ( i = 0; i < data.length; i++ ) {
-		errorType = data[ i ][ 0 ];
-		filename = data[ i ][ 1 ].name;
+	this.parseMessages( data ).then( function ( result ) {
+		if ( !result ) {
+			for ( i = 0; i < data.length; i++ ) {
+				filename = data[ i ][ 1 ].name;
+				error = data[ i ][ 0 ];
+				self.data.push( {
+					name: filename,
+					error: error
+				} );
+			}
+		} else {
+			for ( i = 0; i < data.length; i++ ) {
+				filename = data[ i ][ 1 ].name;
+				error = result[ i ];
+				self.data.push( {
+					name: filename,
+					error: error
+				} );
+			}
+		}
+		gridCfg = {
+			pageSize: 10,
+			border: 'horizontal',
+			toolbar: false,
+			columns: {
+				name: {
+					headerText: mw.message( 'enhancedupload-list-header-filename' ).plain(),
+					type: 'text'
+				},
+				error: {
+					headerText: mw.message( 'enhancedupload-list-header-warning' ).plain(),
+					type: 'text',
+					valueParser: function ( value ) {
+						return new OO.ui.HtmlSnippet( value );
+					}
+				}
+			},
+			data: self.data
+		};
+		var voGrid = new OOJSPlus.ui.data.GridWidget( gridCfg );
+		self.$grid.html( voGrid.$element );
+		self.emit( 'dataset' );
+	} );
+};
 
-		page = new mw.Title( filename, 6 );
-		this.data.push( {
-			name: filename,
-			// eslint-disable-next-line camelcase
-			page_link: page.getUrl(),
-			error: errorType
-		} );
+enhancedUpload.ui.panel.WarningList.prototype.parseMessages = function ( data ) {
+	var dfd = $.Deferred(),
+		resultsDfd = [],
+		results = [];
+
+	for ( var i = 0; i < data.length; i++ ) {
+		var errorText = data[ i ][ 0 ];
+		var parseDfd = this.parse( errorText );
+		parseDfd.done( function ( parsedText ) {
+			results.push( parsedText );
+		} )
+			.fail( function () {
+				dfd.reject();
+			} );
+		resultsDfd.push( parseDfd );
 	}
 
-	gridCfg = {
-		pageSize: 10,
-		border: 'horizontal',
-		toolbar: false,
-		columns: {
-			name: {
-				headerText: mw.message( 'enhancedupload-list-header-filename' ).plain(),
-				type: 'text'
-			},
-			error: {
-				headerText: mw.message( 'enhancedupload-list-header-warning' ).plain(),
-				type: 'text'
-			}
-		},
-		data: this.data
-	};
+	$.when.apply( $, resultsDfd ).done( function () {
+		dfd.resolve( results );
+	} );
 
-	voGrid = new OOJSPlus.ui.data.GridWidget( gridCfg );
-	this.$grid.html( voGrid.$element );
+	return dfd.promise();
+};
+
+enhancedUpload.ui.panel.WarningList.prototype.parse = function ( text ) {
+	var dfd = $.Deferred(),
+		api = new mw.Api();
+
+	api.parse( text ).done( function ( data ) {
+		dfd.resolve( data );
+	} )
+		.fail( function () {
+			dfd.reject();
+		} );
+
+	return dfd.promise();
 };
