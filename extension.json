@@ -61,7 +61,9 @@
 		"EnhancedUpload": "MediaWiki\\Extension\\EnhancedUpload\\Special\\EnhancedUpload"
 	},
 	"AutoloadNamespaces": {
-		"MediaWiki\\Extension\\EnhancedUpload\\": "src/",
+		"MediaWiki\\Extension\\EnhancedUpload\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
 		"MediaWiki\\Extension\\EnhancedUpload\\Tests\\": "tests/phpunit"
 	},
 	"Hooks": {
