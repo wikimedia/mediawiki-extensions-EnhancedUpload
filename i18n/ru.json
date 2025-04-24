@@ -4,7 +4,8 @@
 			"Dirruw'o",
 			"Kareyac",
 			"Pacha Tchernof",
-			"Person or Persons Unknown"
+			"Person or Persons Unknown",
+			"Yurina Tatiana"
 		]
 	},
 	"enhancedupload-list-header-warning": "предупреждение",
@@ -18,5 +19,6 @@
 	"enhancedupload-droplet-attachments-name": "Вложения",
 	"enhancedupload-upload-error-badfilename": "Пространство имён $1 содержит недопустимые символы.",
 	"enhancedupload-upload-error-unhandled": "Произошло необработанное исключение.",
-	"enhancedupload-preview-widget-remove-label": "Удалить $1"
+	"enhancedupload-preview-widget-remove-label": "Удалить $1",
+	"enhancedupload-attachments-tag-grid-editor-label": "Редактор"
 }
