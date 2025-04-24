@@ -2,6 +2,10 @@
 	max-width: unset;
 }
 
+.enhancedUpload-widget .oo-ui-horizontalLayout {
+	justify-content: space-between;
+}
+
 .enhancedUpload-widget .oo-ui-horizontalLayout.heading {
 	margin: 1rem 0;
 	border-bottom: 1px solid #747474;
