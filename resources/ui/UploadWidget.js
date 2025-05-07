@@ -44,15 +44,18 @@ enhancedUpload.ui.UploadWidget = function enhancedUploadUiUploadWidget( cfg ) {
 
 		this.$mainContainer.append( this.selectFiles.$element );
 
-		const paramsProcessor = { processor: new enhancedUpload.ParamsProcessor() };
+		const paramsProcessor = { processors: [ new enhancedUpload.ParamsProcessor() ] };
 		mw.hook( 'enhancedUpload.makeParamProcessor' ).fire( paramsProcessor );
-		this.paramsProcessor = paramsProcessor.processor;
+		this.paramsProcessors = paramsProcessor.processors;
 
-		if ( !this.singleUpload &&
-			this.paramsProcessor instanceof enhancedUpload.UiParamsProcessor ) {
-			const paramElement = this.paramsProcessor.getElement();
-			if ( paramElement instanceof OO.ui.Element ) {
-				this.detailsWidget.$element.prepend( paramElement.$element );
+		if ( !this.singleUpload ) {
+			for ( let i = 0; i < this.paramsProcessors.length; i++ ) {
+				if ( this.paramsProcessors[ i ] instanceof enhancedUpload.UiParamsProcessor ) {
+					const paramElement = this.paramsProcessors[ i ].getElement();
+					if ( paramElement instanceof OO.ui.Element ) {
+						this.detailsWidget.$element.prepend( paramElement.$element );
+					}
+				}
 			}
 		}
 
@@ -289,9 +292,13 @@ enhancedUpload.ui.UploadWidget.prototype.startUpload = function () {
 				params.filename = me.destFilename;
 			}
 
-			if ( me.paramsProcessor.getParams ) {
-				const skipOption = me.singleUpload;
-				params = me.paramsProcessor.getParams( params, items[ i ], skipOption );
+			for ( let j = 0; j < me.paramsProcessors.length; j++ ) {
+				if ( me.paramsProcessors[ j ] instanceof enhancedUpload.UiParamsProcessor ) {
+					if ( me.paramsProcessors[ j ].getParams ) {
+						const skipOption = me.singleUpload;
+						params = me.paramsProcessors[ j ].getParams( params, items[ i ], skipOption );
+					}
+				}
 			}
 
 			const uploadDfd = me.doUpload( items[ i ].data, params );
@@ -369,7 +376,13 @@ enhancedUpload.ui.UploadWidget.prototype.doUpload = function ( file, params ) {
 	const mwApi = new mw.Api();
 	const dfd = new $.Deferred();
 
-	mwApi.upload( file, params ).then( ( resp ) => {
+	let promise;
+	if ( params.uploadToForeign && params.foreignUrl ) {
+		promise = new mw.ForeignApi( params.foreignUrl ).upload( file, params );
+	} else {
+		promise = mwApi.upload( file, params );
+	}
+	promise.then( ( resp ) => {
 		me.fetchFinishedUploads.push( [ resp.upload.imageinfo.canonicaltitle, file ] );
 		dfd.resolve( resp );
 	}, ( ( errorCode, result ) => {
@@ -454,12 +467,14 @@ enhancedUpload.ui.UploadWidget.prototype.startQuickUpload = function ( items ) {
 		} );
 
 		dialog.show();
-		if ( this.paramsProcessor instanceof enhancedUpload.UiParamsProcessor ) {
-			const paramElement = this.paramsProcessor.getElement();
-			if ( paramElement instanceof OO.ui.Element ) {
-				this.detailsWidget.$element.prepend( paramElement.$element );
+		for ( let i = 0; i < this.paramsProcessors.length; i++ ) {
+			if ( this.paramsProcessors[ i ] instanceof enhancedUpload.UiParamsProcessor ) {
+				const paramElement = this.paramsProcessors[ i ].getElement();
+				if ( paramElement instanceof OO.ui.Element ) {
+					this.detailsWidget.$element.prepend( paramElement.$element );
+				}
+				this.paramsProcessors[ i ].setDefaultPrefix( this.defaultPrefix );
 			}
-			this.paramsProcessor.setDefaultPrefix( this.defaultPrefix );
 		}
 		dialog.on( 'detailscompleted', ( descCatText ) => {
 			this.quickUpload( items, descCatText );
@@ -490,8 +505,14 @@ enhancedUpload.ui.UploadWidget.prototype.quickUpload = function ( items, descAnd
 				ignorewarnings: true,
 				comment: descAndCatText
 			};
-			if ( me.paramsProcessor.getParams ) {
-				params = me.paramsProcessor.getParams( params, item, me.skipOptions );
+
+			for ( let j = 0; j < me.paramsProcessors.length; j++ ) {
+				if ( me.paramsProcessors[ j ] instanceof enhancedUpload.UiParamsProcessor ) {
+					if ( me.paramsProcessors[ j ].getParams ) {
+						const skipOption = me.singleUpload;
+						params = me.paramsProcessors[ j ].getParams( params, items[ i ], skipOption );
+					}
+				}
 			}
 			pageNames.push( params.filename );
 			const uploadDfd = me.doUpload( item, params );

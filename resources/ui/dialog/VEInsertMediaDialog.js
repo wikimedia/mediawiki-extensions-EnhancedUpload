@@ -328,14 +328,19 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.sanitizeFilename = functi
 };
 
 enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.preprocessParams = function ( params ) {
-	const paramsProcessor = { processor: new enhancedUpload.ParamsProcessor() };
+	const paramsProcessor = { processors: [ new enhancedUpload.ParamsProcessor() ] };
 	mw.hook( 'enhancedUpload.makeParamProcessor' ).fire( paramsProcessor );
-	this.paramsProcessor = paramsProcessor.processor;
+	this.paramsProcessors = paramsProcessor.processors;
 
 	const item = { name: params.filename };
 	const skipOption = true;
 
-	params = this.paramsProcessor.getParams( params, item, skipOption );
+	for ( let i = 0; i < this.paramsProcessors.length; i++ ) {
+		const processor = this.paramsProcessors[ i ];
+		if ( processor instanceof enhancedUpload.ParamsProcessor ) {
+			params = processor.getParams( params, item, skipOption );
+		}
+	}
 
 	return params;
 };
