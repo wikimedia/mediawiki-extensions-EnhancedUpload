@@ -75,7 +75,7 @@ enhancedUpload.ui.UploadWidget.static.tagName = 'div';
 
 enhancedUpload.ui.UploadWidget.prototype.setupFileWidgets = function () {
 	if ( this.singleUpload ) {
-		this.selectFiles = new OO.ui.SelectFileWidget( {
+		this.selectFiles = new OO.ui.SelectFileInputWidget( {
 			showDropTarget: true
 		} );
 	} else {
@@ -146,7 +146,7 @@ enhancedUpload.ui.UploadWidget.prototype.setupActionButtons = function () {
 	} );
 
 	this.cancelButton = new OO.ui.ButtonWidget( {
-		label: mw.message( 'enhancedupload-cancel-button-label' ).plain()
+		label: mw.message( 'enhancedupload-reset-button-label' ).plain()
 	} );
 
 	this.actionFieldLayout = new OO.ui.HorizontalLayout( {
@@ -227,7 +227,7 @@ enhancedUpload.ui.UploadWidget.prototype.onToggle = function () {
 };
 
 enhancedUpload.ui.UploadWidget.prototype.emptyFiles = function () {
-	this.selectFiles.setValue( '' );
+	this.selectFiles.setValue( [] );
 	this.allItems.splice( 0, this.allItems.length );
 	if ( !this.singleUpload ) {
 		this.previewWidget.clearPreview();
