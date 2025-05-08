@@ -38,7 +38,7 @@
 	border-radius: 50%;
 }
 
-.input-group {
+.input-group-skeleton {
 	margin-bottom: 20px;
 	display: flex;
 	justify-content: space-between;
