@@ -154,7 +154,8 @@
 				"enhancedupload-upload-warning-duplicate",
 				"enhancedupload-upload-warning-was-deleted",
 				"enhancedupload-toggle-details-button-hide-label",
-				"enhancedupload-toggle-details-button-show-label"
+				"enhancedupload-toggle-details-button-show-label",
+				"enhancedupload-reset-button-label"
 			],
 			"dependencies": [
 				"oojs-ui",
