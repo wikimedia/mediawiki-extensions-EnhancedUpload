@@ -96,5 +96,6 @@
 	"enhancedupload-single-file-dlg-title": "نسخة جديدة ل\" $1 \"",
 	"enhancedupload-toggle-details-button-hide-label": "أخفِ التفاصيل",
 	"enhancedupload-toggle-details-button-show-label": "أظهر التفاصيل",
-	"enhancedupload-preview-widget-remove-label": "أزل '$1'"
+	"enhancedupload-preview-widget-remove-label": "أزل '$1'",
+	"enhancedupload-reset-button-label": "إعادة ضبط"
 }
