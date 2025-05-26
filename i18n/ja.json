@@ -4,7 +4,8 @@
 			"Kokage si",
 			"MathXplore",
 			"Mugenpman",
-			"もなー(偽物)"
+			"もなー(偽物)",
+			"Shirayuki"
 		]
 	},
 	"enhancedupload": "アップロード",
@@ -67,6 +68,6 @@
 	"enhancedupload-config-width-help": "ビジュアル エディタで画像をドラッグ アンド ドロップするための幅の設定 高さに合わせて拡大縮小するには、「auto」に設定します。両方が「auto」に設定されている場合、デフォルトのサイズが使用されます。",
 	"enhancedupload-droplet-attachments-name": "添付ファイル",
 	"enhancedupload-droplet-attachments-description": "添付ファイルを整理するための領域",
-	"enhancedupload-upload-warning-exists": "このファイルはすでに存在します",
+	"enhancedupload-upload-warning-exists": "このファイル名は既に存在します",
 	"enhancedupload-upload-warning-duplicate": "このファイルは重複しています"
 }
