@@ -8,7 +8,8 @@
 			"Mahabarata",
 			"SleaY",
 			"Verdy p",
-			"Wladek92"
+			"Wladek92",
+			"Derugon"
 		]
 	},
 	"enhancedupload": "Téléversement",
@@ -97,5 +98,6 @@
 	"enhancedupload-single-file-dlg-title": "Nouvelle version de « $1 »",
 	"enhancedupload-toggle-details-button-hide-label": "Masquer les détails",
 	"enhancedupload-toggle-details-button-show-label": "Afficher les détails",
-	"enhancedupload-preview-widget-remove-label": "Supprimer $1"
+	"enhancedupload-preview-widget-remove-label": "Supprimer $1",
+	"enhancedupload-reset-button-label": "Réinitialiser"
 }
