@@ -206,13 +206,13 @@
 				"enhancedupload-tab-failed-upload",
 				"enhancedupload-tab-successfull-upload",
 				"enhancedupload-tab-warnings-upload",
-				"enhancedupload-warning-dialog-label",
 				"enhancedupload-preview-widget-label",
 				"enhancedupload-tab-updated-upload",
 				"enhancedupload-updated-dialog-label",
 				"enhancedupload-finished-dialog-action-close",
 				"enhancedupload-attachments-tag-grid-remove-title",
-				"enhancedupload-preview-widget-remove-label"
+				"enhancedupload-preview-widget-remove-label",
+				"enhancedupload-warning-dialog-upload-label"
 			]
 		},
 		"ext.enhancedupload.attachments.bootstrap": {
