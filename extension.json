@@ -297,8 +297,8 @@
 				"ext.oOJSPlus.widgets"
 			],
 			"messages": [
-				"enhancedupload-ve-dialog-title",
-				"enhancedupload-ve-dialog-filename-label",
+				"enhancedupload-ve-file-dialog-title",
+				"enhancedupload-ve-file-dialog-filename-label",
 				"enhancedupload-ve-dialog-title-exists",
 				"enhancedupload-ve-dialog-duplicate-confirm",
 				"enhancedupload-upload-error-duplicate",
