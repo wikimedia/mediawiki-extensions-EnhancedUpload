@@ -64,7 +64,7 @@
 		"MediaWiki\\Extension\\EnhancedUpload\\": "src/"
 	},
 	"TestAutoloadNamespaces": {
-		"MediaWiki\\Extension\\EnhancedUpload\\Tests\\": "tests/phpunit"
+		"MediaWiki\\Extension\\EnhancedUpload\\Tests\\": "tests/phpunit/"
 	},
 	"Hooks": {
 		"ParserFirstCallInit": "tag",
