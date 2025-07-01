@@ -28,8 +28,6 @@
 	"enhancedupload-tab-successfull-upload": "成功",
 	"enhancedupload-tab-warnings-upload": "警告",
 	"enhancedupload-warning-dialog-label": "{{PLURAL:$1|這個|這些}}檔案出現了{{PLURAL:$1|一個警告|警告}}",
-	"enhancedupload-ve-dialog-title": "上傳檔案",
-	"enhancedupload-ve-dialog-filename-label": "插入檔案名稱",
 	"enhancedupload-ve-dialog-title-exists": "已存在同名稱檔案。請插入一個新檔案名稱",
 	"enhancedupload-preview-widget-label": "選來上傳的檔案",
 	"enhancedupload-attachments-add-media-button-title": "從 wiki 添加檔案",

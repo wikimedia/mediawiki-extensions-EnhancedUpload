@@ -27,8 +27,6 @@
 	"enhancedupload-tab-successfull-upload": "Uspešno",
 	"enhancedupload-tab-warnings-upload": "Opozorila",
 	"enhancedupload-warning-dialog-label": "{{PLURAL:$1|Pri {{PLURAL:$1|tej datoteki|teh datotekah}} se je pojavilo opozorilo|Pri {{PLURAL:$1|tej datoteki|teh datotekah}} so se pojavila opozorila}}",
-	"enhancedupload-ve-dialog-title": "Naloži datoteko",
-	"enhancedupload-ve-dialog-filename-label": "Vnesite ime datoteke",
 	"enhancedupload-ve-dialog-title-exists": "Datoteka s tem imenom že obstaja. Vnesite novo ime datoteke.",
 	"enhancedupload-preview-widget-label": "Te datoteke so izbrane za nalaganje",
 	"enhancedupload-attachments-add-media-button-title": "Dodaj datoteko iz vikija",

@@ -26,8 +26,6 @@
 	"enhancedupload-tab-successfull-upload": "Lyckades",
 	"enhancedupload-tab-warnings-upload": "Varningar",
 	"enhancedupload-warning-dialog-label": "{{PLURAL:$1|En varning|Varningar}} har påträffats med {{PLURAL:$1|denna fil|dessa filer}}",
-	"enhancedupload-ve-dialog-title": "Ladda upp fil",
-	"enhancedupload-ve-dialog-filename-label": "Ange filnamn",
 	"enhancedupload-ve-dialog-title-exists": "En fil med det här namnet finns redan. Var god ange ett nytt filnamn",
 	"enhancedupload-preview-widget-label": "Dessa filer har valts för att laddas upp",
 	"enhancedupload-attachments-add-media-button-title": "Lägg till fil från wiki",
