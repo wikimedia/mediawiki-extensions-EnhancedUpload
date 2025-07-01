@@ -68,5 +68,6 @@
 	"enhancedupload-droplet-attachments-name": "添付ファイル",
 	"enhancedupload-droplet-attachments-description": "添付ファイルを整理するための領域",
 	"enhancedupload-upload-warning-exists": "このファイル名は既に存在します",
-	"enhancedupload-upload-warning-duplicate": "このファイルは重複しています"
+	"enhancedupload-upload-warning-duplicate": "このファイルは重複しています",
+	"enhancedupload-ve-dialog-title": "ファイルをアップロード"
 }

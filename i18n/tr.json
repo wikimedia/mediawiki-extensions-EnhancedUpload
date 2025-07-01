@@ -63,5 +63,7 @@
 	"enhancedupload-ve-attachmentinspector-grid-size": "Boyutu göster",
 	"enhancedupload-ve-attachmentinspector-grid-categories": "Kategorileri göster",
 	"enhancedupload-attachments-tag-grid-details-title": "Ayrıntılar",
-	"enhancedupload-upload-warning-exists": "bu dosya zaten mevcut"
+	"enhancedupload-upload-warning-exists": "bu dosya zaten mevcut",
+	"enhancedupload-ve-dialog-title": "Dosya yükle",
+	"enhancedupload-ve-dialog-filename-label": "Dosya adı ekle"
 }
