@@ -75,5 +75,7 @@
 	"enhancedupload-preview-widget-remove-label": "$1 ewechhuelen",
 	"enhancedupload-reset-button-label": "Zrécksetzen",
 	"enhancedupload-ve-dialog-title": "Fichier eroplueden",
-	"enhancedupload-ve-dialog-filename-label": "Numm vum Fichier aginn"
+	"enhancedupload-ve-dialog-filename-label": "Numm vum Fichier aginn",
+	"enhancedupload-ve-file-dialog-title": "Fichier",
+	"enhancedupload-ve-file-dialog-filename-label": "Numm vum Fichier"
 }
