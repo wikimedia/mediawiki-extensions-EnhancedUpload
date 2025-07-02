@@ -27,8 +27,6 @@
 	"enhancedupload-tab-successfull-upload": "Huet geklappt",
 	"enhancedupload-tab-warnings-upload": "Warnungen",
 	"enhancedupload-warning-dialog-label": "Et gouf {{PLURAL:$1|eng Warnung|Warnunge}} bei {{PLURAL:$1|dësem Fichier|dëse Fichieren}}",
-	"enhancedupload-ve-dialog-title": "Fichier eroplueden",
-	"enhancedupload-ve-dialog-filename-label": "Numm vum Fichier aginn",
 	"enhancedupload-ve-dialog-title-exists": "Et gëtt schonn e Fichier mat deem Numm. Gitt wgl. en aneren Numm fir de Fichier an",
 	"enhancedupload-preview-widget-label": "Dës Fichiere sinn ausgewielt fir eropgelueden ze ginn",
 	"enhancedupload-attachments-add-new-media-button-title": "Nei Fichieren op d'Wiki derbäisetzen",
@@ -75,5 +73,7 @@
 	"enhancedupload-toggle-details-button-hide-label": "Detailer verstoppen",
 	"enhancedupload-toggle-details-button-show-label": "Detailer weisen",
 	"enhancedupload-preview-widget-remove-label": "$1 ewechhuelen",
-	"enhancedupload-reset-button-label": "Zrécksetzen"
+	"enhancedupload-reset-button-label": "Zrécksetzen",
+	"enhancedupload-ve-file-dialog-title": "Fichier",
+	"enhancedupload-ve-file-dialog-filename-label": "Numm vum Fichier"
 }

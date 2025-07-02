@@ -28,8 +28,6 @@
 	"enhancedupload-tab-successfull-upload": "הצליחה",
 	"enhancedupload-tab-warnings-upload": "אזהרות",
 	"enhancedupload-warning-dialog-label": "{{PLURAL:$1|הועלתה אזהרה|הועלו אזהרות}} עם {{PLURAL:$1|הקובץ הזה|הקבצים האלה}}",
-	"enhancedupload-ve-dialog-title": "העלאת קובץ",
-	"enhancedupload-ve-dialog-filename-label": "נא להזין שם קובץ",
 	"enhancedupload-ve-dialog-title-exists": "קובץ בשם כזה כבר קיים. נא להזין שם קובץ חדש",
 	"enhancedupload-preview-widget-label": "הקבצים האלה נבחרו להעלאה",
 	"enhancedupload-attachments-add-media-button-title": "הוספת קובץ מוויקי",

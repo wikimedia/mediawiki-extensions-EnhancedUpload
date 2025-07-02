@@ -28,8 +28,6 @@
 	"enhancedupload-tab-successfull-upload": "Успеа",
 	"enhancedupload-tab-warnings-upload": "Предупредувања",
 	"enhancedupload-warning-dialog-label": "За {{PLURAL:$1|оваа податотека|овие податотеки}} {{PLURAL:$1|се јави предупредување|се јавија предупредувања}}",
-	"enhancedupload-ve-dialog-title": "Подигни податотека",
-	"enhancedupload-ve-dialog-filename-label": "Внесете име на податотека",
 	"enhancedupload-ve-dialog-title-exists": "Веќе постои податотека со тоа име. Внесете друго",
 	"enhancedupload-preview-widget-label": "Овие податотеки се избрани за подигање",
 	"enhancedupload-attachments-add-media-button-title": "Додај податотека од вики",

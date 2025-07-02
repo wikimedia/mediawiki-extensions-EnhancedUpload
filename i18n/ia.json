@@ -27,8 +27,6 @@
 	"enhancedupload-tab-successfull-upload": "Successo",
 	"enhancedupload-tab-warnings-upload": "Advertimentos",
 	"enhancedupload-warning-dialog-label": "{{PLURAL:$1|Un advertimento|Advertimentos}} se ha producite con iste file{{PLURAL:$1||s}}",
-	"enhancedupload-ve-dialog-title": "Incargar file",
-	"enhancedupload-ve-dialog-filename-label": "Insere nomine de file",
 	"enhancedupload-ve-dialog-title-exists": "Un file con iste nomine ja existe. Per favor insere un nove nomine de file",
 	"enhancedupload-preview-widget-label": "Iste files es seligite pro incargamento",
 	"enhancedupload-attachments-add-media-button-title": "Adder file del wiki",
@@ -91,5 +89,7 @@
 	"enhancedupload-toggle-details-button-hide-label": "Celar detalios",
 	"enhancedupload-toggle-details-button-show-label": "Monstrar detalios",
 	"enhancedupload-preview-widget-remove-label": "Remover $1",
-	"enhancedupload-reset-button-label": "Reinitialisar"
+	"enhancedupload-reset-button-label": "Reinitialisar",
+	"enhancedupload-ve-file-dialog-title": "File",
+	"enhancedupload-ve-file-dialog-filename-label": "Nomine de file"
 }

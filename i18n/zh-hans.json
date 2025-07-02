@@ -30,8 +30,6 @@
 	"enhancedupload-tab-successfull-upload": "成功",
 	"enhancedupload-tab-warnings-upload": "警告",
 	"enhancedupload-warning-dialog-label": "{{PLURAL:$1|这个|这些}}文件出现了{{PLURAL:$1|警告}}",
-	"enhancedupload-ve-dialog-title": "上传文件",
-	"enhancedupload-ve-dialog-filename-label": "插入文件名",
 	"enhancedupload-ve-dialog-title-exists": "已存在同名文件。请插入一个新的文件名",
 	"enhancedupload-preview-widget-label": "选为上传的档案",
 	"enhancedupload-attachments-add-media-button-title": "从wiki添加文件",
