@@ -6,6 +6,7 @@
 			"Eihel",
 			"Gomoko",
 			"Goombiis",
+			"JLTRY",
 			"Mahabarata",
 			"SleaY",
 			"Verdy p",
@@ -99,5 +100,7 @@
 	"enhancedupload-toggle-details-button-hide-label": "Masquer les détails",
 	"enhancedupload-toggle-details-button-show-label": "Afficher les détails",
 	"enhancedupload-preview-widget-remove-label": "Supprimer $1",
-	"enhancedupload-reset-button-label": "Réinitialiser"
+	"enhancedupload-reset-button-label": "Réinitialiser",
+	"enhancedupload-ve-file-dialog-title": "Fichier",
+	"enhancedupload-ve-file-dialog-filename-label": "Nom de fichier"
 }
