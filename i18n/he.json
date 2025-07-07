@@ -92,5 +92,7 @@
 	"enhancedupload-toggle-details-button-hide-label": "הסתרת פרטים",
 	"enhancedupload-toggle-details-button-show-label": "הצגת פרטים",
 	"enhancedupload-preview-widget-remove-label": "הסרת $1",
-	"enhancedupload-reset-button-label": "איפוס"
+	"enhancedupload-reset-button-label": "איפוס",
+	"enhancedupload-ve-file-dialog-title": "קובץ",
+	"enhancedupload-ve-file-dialog-filename-label": "שם הקובץ"
 }
