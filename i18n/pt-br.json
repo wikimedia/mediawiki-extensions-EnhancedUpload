@@ -70,7 +70,5 @@
 	"enhancedupload-config-type-label": "Tipo de imagem:",
 	"enhancedupload-config-height-label": "Altura da imagem:",
 	"enhancedupload-droplet-attachments-name": "Anexos",
-	"enhancedupload-droplet-attachments-description": "Área para organizar anexos",
-	"enhancedupload-ve-dialog-title": "Enviar arquivo",
-	"enhancedupload-ve-dialog-filename-label": "Inserir nome do arquivo"
+	"enhancedupload-droplet-attachments-description": "Área para organizar anexos"
 }

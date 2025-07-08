@@ -58,7 +58,5 @@
 	"enhancedupload-ve-attachmentinspector-grid-categories": "Tampilkan kategori",
 	"enhancedupload-tab-updated-upload": "Berkas yang diperbarui",
 	"enhancedupload-updated-dialog-label": "Berkas \"$1\" telah diperbarui",
-	"enhancedupload-finished-dialog-action-close": "Tutup",
-	"enhancedupload-ve-dialog-title": "Unggah berkas",
-	"enhancedupload-ve-dialog-filename-label": "Masukkan nama berkas"
+	"enhancedupload-finished-dialog-action-close": "Tutup"
 }

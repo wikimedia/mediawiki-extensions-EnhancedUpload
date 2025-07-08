@@ -72,7 +72,5 @@
 	"enhancedupload-config-height-label": "Paveikslėlio aukštis:",
 	"enhancedupload-config-width-label": "Paveikslėlio plotis:",
 	"enhancedupload-droplet-attachments-name": "Priedai",
-	"enhancedupload-droplet-attachments-description": "Priedų organizavimo zona",
-	"enhancedupload-ve-dialog-title": "Įkelti failą",
-	"enhancedupload-ve-dialog-filename-label": "Įterpti failo pavadinimą"
+	"enhancedupload-droplet-attachments-description": "Priedų organizavimo zona"
 }

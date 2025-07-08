@@ -45,6 +45,5 @@
 	"enhancedupload-upload-warning-was-deleted": "Este nombre de archivo se eliminó previamente.",
 	"enhancedupload-upload-error-duplicate": "Un archivo idéntico a este archivo ($1) se ha eliminado previamente.",
 	"enhancedupload-upload-error-badfilename": "El nombre de archivo $1 contiene caracteres no válidos.",
-	"enhancedupload-upload-error-unhandled": "Se produjo una excepción no controlada.",
-	"enhancedupload-ve-dialog-title": "Cargar archivo"
+	"enhancedupload-upload-error-unhandled": "Se produjo una excepción no controlada."
 }

@@ -69,7 +69,5 @@
 	"enhancedupload-finished-dialog-action-close": "بستن",
 	"enhancedupload-upload-error-duplicate": "پرونده‌ای مشابه این پرونده ($1) پیش از این حذف شده است.",
 	"enhancedupload-toggle-details-button-hide-label": "نهفتن جزئیات",
-	"enhancedupload-toggle-details-button-show-label": "نمایش جزئیات",
-	"enhancedupload-ve-dialog-title": "بارگذاری پرونده",
-	"enhancedupload-ve-dialog-filename-label": "نام پرونده را درج کنید"
+	"enhancedupload-toggle-details-button-show-label": "نمایش جزئیات"
 }

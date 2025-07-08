@@ -66,7 +66,5 @@
 	"enhancedupload-attachments-confirm-remove": "Remover o ficheiro \"$1\" da lista?",
 	"enhancedupload-tab-updated-upload": "Ficheiros carregados",
 	"enhancedupload-updated-dialog-label": "O ficheiro \"$1\" foi atualizado",
-	"enhancedupload-finished-dialog-action-close": "Fechar",
-	"enhancedupload-ve-dialog-title": "Carregar ficheiro",
-	"enhancedupload-ve-dialog-filename-label": "Inserir nome do ficheiro"
+	"enhancedupload-finished-dialog-action-close": "Fechar"
 }
