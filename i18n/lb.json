@@ -74,5 +74,8 @@
 	"enhancedupload-tab-updated-upload": "Aktualiséiert Fichieren",
 	"enhancedupload-updated-dialog-label": "De Fichier „$1“ gouf aktualiséiert",
 	"enhancedupload-finished-dialog-action-close": "Zoumaachen",
-	"enhancedupload-config-type-label": "Bildtyp:"
+	"enhancedupload-config-type-label": "Bildtyp:",
+	"enhancedupload-reset-button-label": "Zrécksetzen",
+	"enhancedupload-ve-file-dialog-title": "Fichier",
+	"enhancedupload-ve-file-dialog-filename-label": "Numm vum Fichier"
 }

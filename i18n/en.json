@@ -90,5 +90,8 @@
 	"enhancedupload-single-file-dlg-title": "New version of \"$1\"",
 	"enhancedupload-toggle-details-button-hide-label": "Hide details",
 	"enhancedupload-toggle-details-button-show-label": "Show details",
-	"enhancedupload-preview-widget-remove-label": "Remove $1"
+	"enhancedupload-preview-widget-remove-label": "Remove $1",
+	"enhancedupload-reset-button-label": "Reset",
+	"enhancedupload-ve-file-dialog-title": "File",
+	"enhancedupload-ve-file-dialog-filename-label": "Filename"
 }

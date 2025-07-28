@@ -18,5 +18,7 @@
 	"enhancedupload-attachments-media-dialog-cancel-title": "취소",
 	"enhancedupload-attachments-media-dialog-add-title": "추가",
 	"enhancedupload-upload-media-dialog-cancel-title": "취소",
-	"enhancedupload-attachments-media-dialog-details-cancel": "취소"
+	"enhancedupload-attachments-media-dialog-details-cancel": "취소",
+	"enhancedupload-ve-file-dialog-title": "파일",
+	"enhancedupload-ve-file-dialog-filename-label": "파일 이름"
 }
