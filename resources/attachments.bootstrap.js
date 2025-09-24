@@ -28,7 +28,7 @@
 			const dfd = $.Deferred();
 
 			mw.user.getRights().done( ( rights ) => {
-				if ( rights.indexOf( 'edit' ) !== -1 ) {
+				if ( rights.includes( 'edit' ) ) {
 					dfd.resolve( true );
 				} else {
 					dfd.resolve( false );

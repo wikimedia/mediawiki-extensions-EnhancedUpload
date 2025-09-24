@@ -176,7 +176,7 @@ enhancedUpload.ui.UploadWidget.prototype.updateUIFiles = function () {
 	const values = this.selectFiles.getValue();
 	for ( let i = 0; i < values.length; i++ ) {
 		const previewHasItem = this.itemExists( items, values[ i ] );
-		const inList = this.allItems.indexOf( values[ i ] ) === -1;
+		const inList = !this.allItems.includes( values[ i ] );
 		if ( inList && !previewHasItem ) {
 			this.allItems.push( values[ i ] );
 			this.getUrl( values[ i ] );
@@ -424,7 +424,7 @@ enhancedUpload.ui.UploadWidget.prototype.doUpload = function ( file, params ) {
 			errorMessage = result.error.info;
 		}
 
-		if ( me.warnings.indexOf( errorCode ) === -1 ) {
+		if ( !me.warnings.includes( errorCode ) ) {
 			me.fetchFailedUploads.push( [ errorMessage, file ] );
 			dfd.resolve( errorCode );
 		} else {
