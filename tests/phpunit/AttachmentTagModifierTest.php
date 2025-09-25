@@ -252,7 +252,6 @@ Test';
 Test';
 
 	/**
-	 *
 	 * @covers \EnhancedUpload\AttachmentTagModifier::add
 	 */
 	public function testAdd() {
@@ -282,7 +281,6 @@ Test';
 	}
 
 	/**
-	 *
 	 * @covers \EnhancedUpload\AttachmentTagModifier::remove
 	 */
 	public function testRemove() {
