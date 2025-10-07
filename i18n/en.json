@@ -93,5 +93,6 @@
 	"enhancedupload-preview-widget-remove-label": "Remove $1",
 	"enhancedupload-reset-button-label": "Reset",
 	"enhancedupload-ve-file-dialog-title": "File",
-	"enhancedupload-ve-file-dialog-filename-label": "Filename"
+	"enhancedupload-ve-file-dialog-filename-label": "Filename",
+	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|A warning has|Warnings have}} occurred with {{PLURAL:$1|this uploaded file|these uploaded files}}"
 }
