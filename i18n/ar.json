@@ -35,6 +35,8 @@
 	"enhancedupload-tab-successfull-upload": "نجاح",
 	"enhancedupload-tab-warnings-upload": "تحذيرات",
 	"enhancedupload-warning-dialog-label": "{{PLURAL:$1| حدث تحذير | التحذيرات}} حدث مع {{PLURAL:$1| هذا الملف | هذه الملفات}}",
+	"enhancedupload-ve-dialog-title": "تحميل الملف",
+	"enhancedupload-ve-dialog-filename-label": "أدخل اسم الملف",
 	"enhancedupload-ve-dialog-title-exists": "يوجد ملف بهذا الاسم بالفعل. الرجاء إدخال اسم ملف جديد",
 	"enhancedupload-preview-widget-label": "هذه الملفات محددة للتحميل",
 	"enhancedupload-attachments-add-media-button-title": "أضف ملفًا من موقع ويكي",

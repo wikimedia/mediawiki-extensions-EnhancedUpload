@@ -29,6 +29,8 @@
 	"enhancedupload-tab-successfull-upload": "Erfolgreich",
 	"enhancedupload-tab-warnings-upload": "Warnungen",
 	"enhancedupload-warning-dialog-label": "{{PLURAL:$1|Eine Warnung ist|Warnungen sind}} bei {{PLURAL:$1|dieser Datei|diesen Dateien}} aufgetreten",
+	"enhancedupload-ve-dialog-title": "Datei hochladen",
+	"enhancedupload-ve-dialog-filename-label": "Dateinamen eingeben",
 	"enhancedupload-ve-dialog-title-exists": "Eine Datei mit diesem Namen existiert bereits. Bitte einen neuen Namen für die Datei eingeben",
 	"enhancedupload-preview-widget-label": "Diese Dateien sind zum Hochladen ausgewählt",
 	"enhancedupload-attachments-add-media-button-title": "Eine Datei aus dem Wiki hinzufügen",
