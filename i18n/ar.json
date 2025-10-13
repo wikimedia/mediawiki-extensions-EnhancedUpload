@@ -9,7 +9,8 @@
 			"Mohanad Kh",
 			"محمد أحمد عبد الفتاح",
 			"Hubaishan",
-			"Mdktb"
+			"Mdktb",
+			"Mohammed Qays"
 		]
 	},
 	"enhancedupload": "رفع",
@@ -55,7 +56,7 @@
 	"enhancedupload-upload-media-dialog-title": "تحميل الملف",
 	"enhancedupload-upload-media-dialog-cancel-title": "إلغاء",
 	"enhancedupload-upload-media-dialog-upload-title": "رفع",
-	"enhancedupload-upload-media-dialog-done-title": "تم",
+	"enhancedupload-upload-media-dialog-done-title": "نُفّذ",
 	"enhancedupload-ve-dialog-duplicate-confirm": "هذا الملف مكرر. هل تريد إدراج الملف الحالي بدلاً من ذلك؟ وإلا فلن يتم إدراج أي ملف",
 	"enhancedupload-attachments-media-dialog-details-cancel": "إلغاء",
 	"enhancedupload-attachments-media-dialog-details-upload": "تحميل",
