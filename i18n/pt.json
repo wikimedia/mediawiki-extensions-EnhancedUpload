@@ -28,6 +28,8 @@
 	"enhancedupload-tab-successfull-upload": "Êxitos",
 	"enhancedupload-tab-warnings-upload": "Avisos",
 	"enhancedupload-warning-dialog-label": "{{PLURAL:$1|Ocorreu um aviso|Ocorreram avisos}} no carregamento {{PLURAL:$1|deste ficheiro|destes ficheiros}}",
+	"enhancedupload-ve-dialog-title": "Carregar ficheiro",
+	"enhancedupload-ve-dialog-filename-label": "Inserir nome do ficheiro",
 	"enhancedupload-ve-dialog-title-exists": "Já existe um ficheiro com este nome. Insira um nome novo, por favor",
 	"enhancedupload-preview-widget-label": "Estes ficheiro estão selecionados para carregamento",
 	"enhancedupload-attachments-add-media-button-title": "Adicionar ficheiro da wiki",

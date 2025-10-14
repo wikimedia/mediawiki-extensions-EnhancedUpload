@@ -27,6 +27,8 @@
 	"enhancedupload-tab-successfull-upload": "Pavyko",
 	"enhancedupload-tab-warnings-upload": "Įspėjimai",
 	"enhancedupload-warning-dialog-label": "Įvyko {{PLURAL:$1|įspėjimas|įspėjimai}} su {{PLURAL:$1|šiuo failu|šiais failais}}",
+	"enhancedupload-ve-dialog-title": "Įkelti failą",
+	"enhancedupload-ve-dialog-filename-label": "Įterpti failo pavadinimą",
 	"enhancedupload-ve-dialog-title-exists": "Failas tokiu pavadinimu jau yra. Įveskite naują failo pavadinimą",
 	"enhancedupload-preview-widget-label": "Šie failai pasirinkti įkėlimui",
 	"enhancedupload-attachments-add-media-button-title": "Pridėti failą iš viki",

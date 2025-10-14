@@ -25,6 +25,8 @@
 	"enhancedupload-tab-successfull-upload": "Suksess",
 	"enhancedupload-tab-warnings-upload": "Advarsler",
 	"enhancedupload-warning-dialog-label": "{{PLURAL:$1|En advarsel|Advarsler}} oppsto med {{PLURAL:$1|denne fila|disse filene}}",
+	"enhancedupload-ve-dialog-title": "Last opp fil",
+	"enhancedupload-ve-dialog-filename-label": "Sett inn filnavn",
 	"enhancedupload-ve-dialog-title-exists": "Ei fil med dette navnet finnes allerede. Angi et annet filnavn",
 	"enhancedupload-preview-widget-label": "Disse filene er valgt for opplasting",
 	"enhancedupload-attachments-add-media-button-title": "Legg til fil fra wiki",

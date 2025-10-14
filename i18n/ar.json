@@ -9,7 +9,8 @@
 			"Mohanad",
 			"Mohanad Kh",
 			"محمد أحمد عبد الفتاح",
-			"Hubaishan"
+			"Hubaishan",
+			"Mohammed Qays"
 		]
 	},
 	"enhancedupload": "رفع",
@@ -35,6 +36,8 @@
 	"enhancedupload-tab-successfull-upload": "نجاح",
 	"enhancedupload-tab-warnings-upload": "تحذيرات",
 	"enhancedupload-warning-dialog-label": "{{PLURAL:$1| حدث تحذير | التحذيرات}} حدث مع {{PLURAL:$1| هذا الملف | هذه الملفات}}",
+	"enhancedupload-ve-dialog-title": "تحميل الملف",
+	"enhancedupload-ve-dialog-filename-label": "أدخل اسم الملف",
 	"enhancedupload-ve-dialog-title-exists": "يوجد ملف بهذا الاسم بالفعل. الرجاء إدخال اسم ملف جديد",
 	"enhancedupload-preview-widget-label": "هذه الملفات محددة للتحميل",
 	"enhancedupload-attachments-add-media-button-title": "أضف ملفًا من موقع ويكي",
@@ -53,7 +56,7 @@
 	"enhancedupload-upload-media-dialog-title": "تحميل الملف",
 	"enhancedupload-upload-media-dialog-cancel-title": "إلغاء",
 	"enhancedupload-upload-media-dialog-upload-title": "رفع",
-	"enhancedupload-upload-media-dialog-done-title": "تم",
+	"enhancedupload-upload-media-dialog-done-title": "نُفّذ",
 	"enhancedupload-ve-dialog-duplicate-confirm": "هذا الملف مكرر. هل تريد إدراج الملف الحالي بدلاً من ذلك؟ وإلا فلن يتم إدراج أي ملف",
 	"enhancedupload-attachments-media-dialog-details-cancel": "إلغاء",
 	"enhancedupload-attachments-media-dialog-details-upload": "تحميل",
@@ -99,5 +102,6 @@
 	"enhancedupload-preview-widget-remove-label": "أزل '$1'",
 	"enhancedupload-reset-button-label": "إعادة ضبط",
 	"enhancedupload-ve-file-dialog-title": "ملف",
-	"enhancedupload-ve-file-dialog-filename-label": "اسم الملف"
+	"enhancedupload-ve-file-dialog-filename-label": "اسم الملف",
+	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|حدث تحذير}} مع {{PLURAL:$1| هذا الملف الذي تم تحميله|هذه الملفات التي تم تحميلها}}"
 }
