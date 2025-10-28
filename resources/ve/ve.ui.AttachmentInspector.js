@@ -72,20 +72,20 @@ ve.ui.AttachmentInspector.prototype.createFields = function () {
 
 ve.ui.AttachmentInspector.prototype.setLayouts = function () {
 	this.titleLayout = new OO.ui.FieldLayout( this.titleInput, {
-		align: 'right',
+		align: 'top',
 		label: ve.msg( 'enhancedupload-ve-attachmentinspector-title' )
 	} );
 
 	this.prefixLayout = new OO.ui.FieldLayout( this.prefixInput, {
-		align: 'right',
+		align: 'top',
 		label: ve.msg( 'enhancedupload-ve-attachmentinspector-prefix' )
 	} );
 	this.catLayout = new OO.ui.FieldLayout( this.catInput, {
-		align: 'right',
+		align: 'top',
 		label: ve.msg( 'enhancedupload-ve-attachmentinspector-categories' )
 	} );
 	this.descLayout = new OO.ui.FieldLayout( this.descInput, {
-		align: 'right',
+		align: 'top',
 		label: ve.msg( 'enhancedupload-ve-attachmentinspector-desc' )
 	} );
 	this.optionsLayout = new OO.ui.FieldLayout( this.optionsInput, {
