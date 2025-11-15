@@ -244,7 +244,7 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.insertExistingMedia = fun
 	}
 };
 
-enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.handleErrors = function ( error, results, fileName, fragment ) { // eslint-disable-line no-shadow-restricted-names
+enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.handleErrors = function ( error, results, fileName, fragment ) {
 	const dfd = $.Deferred();
 	if ( error === 'fileexists-no-change' ) {
 		this.insertExistingMedia( fragment, fileName );
