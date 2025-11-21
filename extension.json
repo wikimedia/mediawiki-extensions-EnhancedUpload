@@ -382,15 +382,17 @@
 			],
 			"messages": [
 				"enhancedupload-ve-attachment-title",
-				"enhancedupload-ve-attachmentinspector-title",
-				"enhancedupload-ve-attachmentinspector-prefix",
 				"enhancedupload-ve-attachmentinspector-categories",
 				"enhancedupload-ve-attachmentinspector-desc",
 				"enhancedupload-ve-attachmentinspector-options",
 				"enhancedupload-ve-attachmentinspector-grid-version",
 				"enhancedupload-ve-attachmentinspector-grid-editor",
 				"enhancedupload-ve-attachmentinspector-grid-size",
-				"enhancedupload-ve-attachmentinspector-grid-categories"
+				"enhancedupload-ve-attachmentinspector-grid-categories",
+				"enhancedupload-ve-attachmentinspector-title-label",
+				"enhancedupload-ve-attachmentinspector-title-help",
+				"enhancedupload-ve-attachmentinspector-prefix-label",
+				"enhancedupload-ve-attachmentinspector-prefix-help"
 			],
 			"dependencies": [
 				"ext.visualEditor.mwcore"
