@@ -53,8 +53,6 @@
 	"enhancedupload-attachments-media-dialog-details-upload": "Upload",
 	"enhancedupload-attachments-media-dialog-details-settings": "Details",
 	"enhancedupload-ve-attachment-title": "Attachments",
-	"enhancedupload-ve-attachmentinspector-title": "Title",
-	"enhancedupload-ve-attachmentinspector-prefix": "Prefix",
 	"enhancedupload-ve-attachmentinspector-categories": "Categories",
 	"enhancedupload-ve-attachmentinspector-desc": "Description",
 	"enhancedupload-ve-attachmentinspector-options": "Skip upload options",
@@ -94,5 +92,9 @@
 	"enhancedupload-reset-button-label": "Reset",
 	"enhancedupload-ve-file-dialog-title": "File",
 	"enhancedupload-ve-file-dialog-filename-label": "Filename",
-	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|A warning has|Warnings have}} occurred with {{PLURAL:$1|this uploaded file|these uploaded files}}"
+	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|A warning has|Warnings have}} occurred with {{PLURAL:$1|this uploaded file|these uploaded files}}",
+	"enhancedupload-ve-attachmentinspector-title-label": "Title for attachment section",
+	"enhancedupload-ve-attachmentinspector-title-help": "Title of the area where the files are displayed",
+	"enhancedupload-ve-attachmentinspector-prefix-label": "File prefix",
+	"enhancedupload-ve-attachmentinspector-prefix-help": "Identifier inserted before the file name"
 }
