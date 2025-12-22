@@ -53,8 +53,6 @@
 	"enhancedupload-attachments-media-dialog-details-upload": "Subir",
 	"enhancedupload-attachments-media-dialog-details-settings": "Detalles",
 	"enhancedupload-ve-attachment-title": "Anexos",
-	"enhancedupload-ve-attachmentinspector-title": "Título",
-	"enhancedupload-ve-attachmentinspector-prefix": "Prefixo",
 	"enhancedupload-ve-attachmentinspector-categories": "Categorías",
 	"enhancedupload-ve-attachmentinspector-desc": "Descrición",
 	"enhancedupload-ve-attachmentinspector-options": "Omitir as opcións de subida",
@@ -94,5 +92,9 @@
 	"enhancedupload-reset-button-label": "Restablecer",
 	"enhancedupload-ve-file-dialog-title": "Ficheiro",
 	"enhancedupload-ve-file-dialog-filename-label": "Nome de ficheiro",
-	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|Produciuse un aviso|Producíronse varios avisos}} con {{PLURAL:$1|este ficheiro subido|estes ficheiros subidos}}"
+	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|Produciuse un aviso|Producíronse varios avisos}} con {{PLURAL:$1|este ficheiro subido|estes ficheiros subidos}}",
+	"enhancedupload-ve-attachmentinspector-title-label": "Título da sección de anexos",
+	"enhancedupload-ve-attachmentinspector-title-help": "Título da zona onde se mostran os ficheiros",
+	"enhancedupload-ve-attachmentinspector-prefix-label": "Prefixo do ficheiro",
+	"enhancedupload-ve-attachmentinspector-prefix-help": "Identificador inserido antes do nome do ficheiro"
 }
