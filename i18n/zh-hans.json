@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Anterdc99",
 			"GuoPC",
 			"Lakejason0",
+			"Pawsdt",
 			"Wzl19371",
 			"沈澄心"
 		]
@@ -75,5 +77,7 @@
 	"enhancedupload-config-alignment-label": "图像对齐：",
 	"enhancedupload-config-type-label": "图像类型：",
 	"enhancedupload-config-height-label": "图像高度：",
-	"enhancedupload-config-width-label": "图像宽度："
+	"enhancedupload-config-width-label": "图像宽度：",
+	"enhancedupload-ve-attachmentinspector-title-label": "附件部分标题",
+	"enhancedupload-ve-attachmentinspector-prefix-label": "文件前缀"
 }
