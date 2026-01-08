@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sabelöga"
+			"Sabelöga",
+			"Stefan2255"
 		]
 	},
 	"enhancedupload": "Utökad uppladdning",
@@ -63,5 +64,9 @@
 	"enhancedupload-ve-attachmentinspector-grid-editor": "Göm redigerare",
 	"enhancedupload-ve-attachmentinspector-grid-size": "Visa storlek",
 	"enhancedupload-ve-attachmentinspector-grid-categories": "Visa kategorier",
-	"enhancedupload-attachments-tag-grid-remove-title": "Ta bort"
+	"enhancedupload-attachments-tag-grid-remove-title": "Ta bort",
+	"enhancedupload-ve-attachmentinspector-title-label": "Rubrik för bilageavsnitt",
+	"enhancedupload-ve-attachmentinspector-title-help": "Titel på området där filerna visas",
+	"enhancedupload-ve-attachmentinspector-prefix-label": "Filprefix",
+	"enhancedupload-ve-attachmentinspector-prefix-help": "Identifierare infogas före filnamnet"
 }
