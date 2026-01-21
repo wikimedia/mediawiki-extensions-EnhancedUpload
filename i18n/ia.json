@@ -92,5 +92,9 @@
 	"enhancedupload-reset-button-label": "Reinitialisar",
 	"enhancedupload-ve-file-dialog-title": "File",
 	"enhancedupload-ve-file-dialog-filename-label": "Nomine de file",
-	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|Un advertimento|Advertimentos}} se ha producite con iste file{{PLURAL:$1||s}} incargate"
+	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|Un advertimento|Advertimentos}} se ha producite con iste file{{PLURAL:$1||s}} incargate",
+	"enhancedupload-ve-attachmentinspector-title-label": "Titulo pro le section de annexos",
+	"enhancedupload-ve-attachmentinspector-title-help": "Titulo del area ubi se monstra le files",
+	"enhancedupload-ve-attachmentinspector-prefix-label": "Prefixo de files",
+	"enhancedupload-ve-attachmentinspector-prefix-help": "Identificator a inserer ante le nomine de file"
 }
