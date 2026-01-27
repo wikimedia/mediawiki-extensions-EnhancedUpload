@@ -4,8 +4,6 @@
 			"Cabal"
 		]
 	},
-	"enhancedupload-tab-updated-upload": "ਫ਼ਾਈਲਾਂ ਨਵਿਆਈਆਂ ਗਈਆਂ",
-	"enhancedupload-preview-widget-remove-label": "$1 ਹਟਾਓ",
 	"enhancedupload": "ਚੜ੍ਹਾਉ",
 	"enhancedupload-details-header-label": "ਵੇਰਵੇ",
 	"enhancedupload-details-namespace-label": "ਨਾਂ-ਥਾਂ",
@@ -30,8 +28,10 @@
 	"enhancedupload-attachments-tag-grid-editor-label": "ਸੋਧਕ",
 	"enhancedupload-attachments-tag-grid-details-title": "ਵੇਰਵੇ",
 	"enhancedupload-attachments-tag-grid-remove-title": "ਹਟਾਓ",
+	"enhancedupload-tab-updated-upload": "ਫ਼ਾਈਲਾਂ ਨਵਿਆਈਆਂ ਗਈਆਂ",
 	"enhancedupload-finished-dialog-action-close": "ਬੰਦ ਕਰੋ",
 	"enhancedupload-droplet-attachments-name": "ਨੱਥੀਆਂ",
 	"enhancedupload-toggle-details-button-hide-label": "ਵੇਰਵੇ ਲੁਕਾਓ",
+	"enhancedupload-preview-widget-remove-label": "$1 ਹਟਾਓ",
 	"enhancedupload-reset-button-label": "ਮੁੜ-ਬਣਾਓ"
 }
