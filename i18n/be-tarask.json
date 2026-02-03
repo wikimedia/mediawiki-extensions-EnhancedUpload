@@ -1,13 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kareyac",
 			"Ucukor"
 		]
 	},
 	"enhancedupload-cancel-button-label": "Скасаваць",
 	"enhancedupload-attachments-media-dialog-cancel-title": "Скасаваць",
 	"enhancedupload-upload-media-dialog-cancel-title": "Скасаваць",
-	"enhancedupload-attachments-media-dialog-details-cancel": "Скасаваць",
-	"enhancedupload-finished-dialog-action-close": "Закрыць"
+	"enhancedupload-attachments-media-dialog-details-cancel": "Скасаваць"
 }
