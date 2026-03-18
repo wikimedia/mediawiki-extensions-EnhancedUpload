@@ -1,4 +1,4 @@
-$( document ).on( 'click', '#ca-upload-file', ( e ) => {
+$( document ).on( 'click', '#ca-upload-file, .ca-upload-file', ( e ) => {
 	mw.loader.using( [ 'ext.enhancedUpload.upload.dialog' ] ).done( () => {
 		const dialog = new enhancedUpload.ui.dialog.UploadFilesDialog();
 		dialog.show();
