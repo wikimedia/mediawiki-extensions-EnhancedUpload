@@ -49,5 +49,9 @@
 	"enhancedupload-tab-warnings-upload": "Vaartõõzz",
 	"enhancedupload-attachments-media-dialog-cancel-title": "Jõõsk",
 	"enhancedupload-upload-media-dialog-cancel-title": "Jõõsk",
-	"enhancedupload-attachments-media-dialog-details-cancel": "Jõõsk"
+	"enhancedupload-attachments-media-dialog-details-cancel": "Jõõsk",
+	"enhancedupload-config-width-label": "Kaart kobddâdvuõtt:",
+	"enhancedupload-droplet-attachments-name": "Meâlddõõzz",
+	"enhancedupload-single-file-dlg-title": "Ođđ versio teâttõõzzâst \"$1\"",
+	"enhancedupload-preview-widget-remove-label": "Jaukkâd $1"
 }

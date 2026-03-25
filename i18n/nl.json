@@ -3,6 +3,7 @@
 		"authors": [
 			"Mainframe98",
 			"McDutchie",
+			"Siebrand",
 			"Vistaus"
 		]
 	},
@@ -66,9 +67,9 @@
 	"enhancedupload-config-type-label": "Soort afbeelding:",
 	"enhancedupload-config-type-help": "Type-instelling voor het slepen en neerzetten van afbeeldingen in de visuele editor",
 	"enhancedupload-config-height-label": "Hoogte afbeelding:",
-	"enhancedupload-config-height-help": "Hoogte-instelling voor het slepen en neerzetten van afbeeldingen in de visuele editor. Zet op ‘auto’ om in verhouding met de breedte in te stellen. Als beide op ‘auto’ zijn gezet, wordt de standaardgrootte gebruikt.",
+	"enhancedupload-config-height-help": "Instelling voor de hoogte van afbeeldingen die u sleept en neerzet in de visuele tekstverwerker. Laat dit veld leeg om de hoogte aan te passen aan de breedte. Als u beide velden leeg laat, wordt de standaardgrootte gebruikt.",
 	"enhancedupload-config-width-label": "Breedte afbeelding:",
-	"enhancedupload-config-width-help": "Breedte-instelling voor het slepen en neerzetten van afbeeldingen in de visuele editor. Zet op ‘auto’ om in verhouding met de hoogte in te stellen. Als beide op ‘auto’ zijn gezet, wordt de standaardgrootte gebruikt.",
+	"enhancedupload-config-width-help": "Breedte-instelling voor afbeeldingen die u in de visuele tekstverwerker sleept. Laat dit veld leeg om de breedte aan te passen aan de hoogte. Als u beide velden leeg laat, wordt de standaardgrootte gebruikt.",
 	"enhancedupload-droplet-attachments-name": "Bijlagen",
 	"enhancedupload-droplet-attachments-description": "Ruimte voor het organiseren van bijlagen",
 	"enhancedupload-list-header-warning": "waarschuwing",
@@ -85,5 +86,20 @@
 	"enhancedupload-config-extensions-help": "Sta toe dat bestandextensies met niet-overeenkomende MIME-typen worden geüpload. Waarschuwing: potentieel veiligheidsrisico.",
 	"enhancedupload-upload-warning-exists": "Deze bestandsnaam bestaat al",
 	"enhancedupload-upload-warning-duplicate": "Dit bestand is een duplicaat",
-	"enhancedupload-upload-warning-was-deleted": "Deze bestandsnaam is eerder verwijderd."
+	"enhancedupload-upload-warning-was-deleted": "Deze bestandsnaam is eerder verwijderd.",
+	"enhancedupload-upload-error-duplicate": "Een bestand dat identiek is aan dit bestand ($1) is eerder verwijderd.",
+	"enhancedupload-upload-error-badfilename": "De bestandsnaam $1 bevat ongeldige tekens.",
+	"enhancedupload-upload-error-unhandled": "Er heeft zich een onbekende fout voorgedaan.",
+	"enhancedupload-single-file-dlg-title": "Nieuwe versie van “$1”",
+	"enhancedupload-toggle-details-button-hide-label": "Details verbergen",
+	"enhancedupload-toggle-details-button-show-label": "Details weergeven",
+	"enhancedupload-preview-widget-remove-label": "“$1” verwijderen",
+	"enhancedupload-reset-button-label": "Opnieuw instellen",
+	"enhancedupload-ve-file-dialog-title": "Bestand",
+	"enhancedupload-ve-file-dialog-filename-label": "Bestandsnaam",
+	"enhancedupload-warning-dialog-upload-label": "Er {{PLURAL:$1|is een waarschuwing|zijn waarschuwingen}} uitgegaan voor {{PLURAL:$1|dit geüploade bestand|deze geüploade bestanden}}",
+	"enhancedupload-ve-attachmentinspector-title-label": "Titel voor het bijlagegedeelte",
+	"enhancedupload-ve-attachmentinspector-title-help": "Titel van het gebied waar de bestanden worden weergegeven",
+	"enhancedupload-ve-attachmentinspector-prefix-label": "Bestandsvoorvoegsel",
+	"enhancedupload-ve-attachmentinspector-prefix-help": "Identificatiecode toegevoegd vóór de bestandsnaam"
 }

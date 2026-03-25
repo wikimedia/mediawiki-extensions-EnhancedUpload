@@ -15,5 +15,12 @@
 	"enhancedupload-upload-warning-exists": "Questo nome file esiste già",
 	"enhancedupload-upload-warning-duplicate": "Questo file è un duplicato",
 	"enhancedupload-config-extensions-label": "Consenti tipi MIME non corrispondenti (potenziale rischio per la sicurezza)",
-	"enhancedupload-config-extensions-help": "Consente il caricamento di estensioni di file con tipi MIME non corrispondenti. Avviso: potenziale rischio per la sicurezza."
+	"enhancedupload-config-extensions-help": "Consente il caricamento di estensioni di file con tipi MIME non corrispondenti. Avviso: potenziale rischio per la sicurezza.",
+	"enhancedupload-upload-error-duplicate": "Un file identico a questo file ($1) è stato precedentemente cancellato.",
+	"enhancedupload-upload-error-badfilename": "Il nome file $1 contiene caratteri non validi.",
+	"enhancedupload-upload-error-unhandled": "Si è verificata un'eccezione non gestita.",
+	"enhancedupload-single-file-dlg-title": "Nuova versione di \"$1\"",
+	"enhancedupload-preview-widget-remove-label": "Rimuovi $1",
+	"enhancedupload-ve-file-dialog-title": "File",
+	"enhancedupload-ve-file-dialog-filename-label": "Nome del file"
 }

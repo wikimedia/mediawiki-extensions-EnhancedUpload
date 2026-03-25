@@ -5,7 +5,7 @@
 			"Vlad5250"
 		]
 	},
-	"enhancedupload": "Подобрено подигање",
+	"enhancedupload": "Подигни",
 	"enhancedupload-desc": "Дава службена страница со можност за подигање на една или повеќе податотеки на викито",
 	"enhancedupload-text": "Подигни податотеки",
 	"enhancedupload-details-header-label": "Подробно",
@@ -75,9 +75,9 @@
 	"enhancedupload-config-type-label": "Вид на слика",
 	"enhancedupload-config-type-help": "Можност за вид при влечење и пуштање на слики во нагледниот уредник",
 	"enhancedupload-config-height-label": "Висина на сликата:",
-	"enhancedupload-config-height-help": "Можност за висина при влечење и пуштање на слики во нагледниот уредник. Задајте „auto“ за да се сразмери со ширината. Ако свете се на „auto“, тогаш се користи основно зададената големина.",
+	"enhancedupload-config-height-help": "Можност за висина при влечење и пуштање на слики во нагледниот уредник. Оставете непополнето за да се сразмери со ширината. Ако двете се оставени непополнети тогаш се користи основно зададената големина.",
 	"enhancedupload-config-width-label": "Ширина на сликата:",
-	"enhancedupload-config-width-help": "Можност за ширина при влечење и пуштање на слики во нагледниот уредник. Задајте „auto“ за да се сразмери со ширината. Ако свете се на „auto“, тогаш се користи основно зададената големина.",
+	"enhancedupload-config-width-help": "Можност за ширина при влечење и пуштање на слики во нагледниот уредник. Оставете непополнето за да се сразмери со ширината. Ако двете се оставени непополнети, тогаш се користи основно зададената големина.",
 	"enhancedupload-droplet-attachments-name": "Прилози",
 	"enhancedupload-droplet-attachments-description": "Подрачје за организирање на прилози",
 	"enhancedupload-upload-warning-exists": "Веќе има податотека со тоа име",
@@ -85,5 +85,20 @@
 	"enhancedupload-upload-warning-was-deleted": "Оваа податотечно име е претходно бришано.",
 	"enhancedupload-list-header-warning": "предупредување",
 	"enhancedupload-config-extensions-label": "Дозволи несовпаднати MIME-типови (потенцијален безбедносен ризик)",
-	"enhancedupload-config-extensions-help": "Дозволи подигање на податотечни наставки со несовпаднати MIME-типови. Предупредување: потенцијален безбедносен ризик."
+	"enhancedupload-config-extensions-help": "Дозволи подигање на податотечни наставки со несовпаднати MIME-типови. Предупредување: потенцијален безбедносен ризик.",
+	"enhancedupload-upload-error-duplicate": "Податотека идентична на оваа ($1) е претходно избришана.",
+	"enhancedupload-upload-error-badfilename": "Податотечното име $1 содржи неважечки знаци.",
+	"enhancedupload-upload-error-unhandled": "Се јави необработен исклучок.",
+	"enhancedupload-single-file-dlg-title": "Нова верзија на „$1“",
+	"enhancedupload-toggle-details-button-hide-label": "Скриј поединости",
+	"enhancedupload-toggle-details-button-show-label": "Покажи поединости",
+	"enhancedupload-preview-widget-remove-label": "Отстрани $1",
+	"enhancedupload-reset-button-label": "Одново",
+	"enhancedupload-ve-file-dialog-title": "Податотека",
+	"enhancedupload-ve-file-dialog-filename-label": "Име на податотеката",
+	"enhancedupload-warning-dialog-upload-label": "За {{PLURAL:$1|оваа подигната податотека|овие подигнати податотеки}} {{PLURAL:$1|се јави предупредување|се јавија предупредувања}}",
+	"enhancedupload-ve-attachmentinspector-title-label": "Наслов на одделот за прилог",
+	"enhancedupload-ve-attachmentinspector-title-help": "Наслов на одделот кајшто се прикажуваат податотеките",
+	"enhancedupload-ve-attachmentinspector-prefix-label": "Податотечна претставка",
+	"enhancedupload-ve-attachmentinspector-prefix-help": "Назнака што се вметнува пред податотечното име"
 }

@@ -16,5 +16,15 @@
 	"enhancedupload-list-header-filename": "fiilanamma",
 	"enhancedupload-attachments-tag-grid-file-label": "Fiila",
 	"enhancedupload-attachments-media-dialog-title": "Vállje fiilla",
-	"enhancedupload-ui-action-new-upload-text": "Ođđa fiila"
+	"enhancedupload-ui-action-new-upload-text": "Ođđa fiila",
+	"enhancedupload-details-categories-label": "Kategoriijat",
+	"enhancedupload-ve-dialog-title": "Vurke fiilla",
+	"enhancedupload-attachments-tag-grid-size-label": "Sturrodat",
+	"enhancedupload-attachments-tag-grid-category-label": "Kategoriijat",
+	"enhancedupload-ui-action-new-upload-title": "Vurke ođđa fiilla",
+	"enhancedupload-upload-media-dialog-title": "Vurke fiilla",
+	"enhancedupload-ve-attachment-title": "Mildosat",
+	"enhancedupload-ve-attachmentinspector-categories": "Kategoriijat",
+	"enhancedupload-config-width-label": "Gova govdodat:",
+	"enhancedupload-droplet-attachments-name": "Mildosat"
 }

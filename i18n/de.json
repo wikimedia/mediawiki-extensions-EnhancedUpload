@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Brettchenweber",
-			"Mschlindwein"
+			"Mschlindwein",
+			"TomatoCake"
 		]
 	},
 	"enhancedupload": "Hochladen",
@@ -85,5 +86,20 @@
 	"enhancedupload-upload-warning-was-deleted": "Der Dateiname wurde bereits gelöscht.",
 	"enhancedupload-list-header-warning": "Warnung",
 	"enhancedupload-config-extensions-label": "Nicht übereinstimmende MIME-Typen zulassen (potenzielles Sicherheitsrisiko)",
-	"enhancedupload-config-extensions-help": "Dateierweiterungen mit nicht übereinstimmenden MIME-Typen dürfen hochgeladen werden. Warnung: potenzielles Sicherheitsrisiko."
+	"enhancedupload-config-extensions-help": "Dateierweiterungen mit nicht übereinstimmenden MIME-Typen dürfen hochgeladen werden. Warnung: potenzielles Sicherheitsrisiko.",
+	"enhancedupload-upload-error-duplicate": "Eine mit dieser Datei ($1) identische Datei wurde zuvor gelöscht.",
+	"enhancedupload-upload-error-badfilename": "Der Dateiname $1 enthält ungültige Zeichen.",
+	"enhancedupload-upload-error-unhandled": "Ein unerwarteter Fehler ist aufgetreten.",
+	"enhancedupload-single-file-dlg-title": "Neue Version von \"$1\"",
+	"enhancedupload-toggle-details-button-hide-label": "Details ausblenden",
+	"enhancedupload-toggle-details-button-show-label": "Details anzeigen",
+	"enhancedupload-preview-widget-remove-label": "„$1“ entfernen",
+	"enhancedupload-reset-button-label": "Zurücksetzen",
+	"enhancedupload-ve-file-dialog-title": "Datei",
+	"enhancedupload-ve-file-dialog-filename-label": "Dateiname",
+	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|Eine Warnung ist|Warnungen sind}} bei {{PLURAL:$1|dieser hochgeladenenen Datei|diesen hochgeladenenen Dateien}} aufgetreten",
+	"enhancedupload-ve-attachmentinspector-title-label": "Titel für Anhangsbereich",
+	"enhancedupload-ve-attachmentinspector-title-help": "Titel des Bereichs, in dem die Dateien angezeigt werden",
+	"enhancedupload-ve-attachmentinspector-prefix-label": "Dateipräfix",
+	"enhancedupload-ve-attachmentinspector-prefix-help": "Kennzeichen, das vor dem Dateinamen eingefügt wird"
 }

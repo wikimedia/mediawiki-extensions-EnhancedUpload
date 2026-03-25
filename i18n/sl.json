@@ -84,5 +84,8 @@
 	"enhancedupload-upload-warning-was-deleted": "To datotečno ime je že bilo izbrisano.",
 	"enhancedupload-list-header-warning": "opozorilo",
 	"enhancedupload-config-extensions-label": "Dovoljene neujemajoče se vrste MIME (možno varnostno tveganje)",
-	"enhancedupload-config-extensions-help": "Dovoljeno nalaganje končnic datotek z neujemajočimi se vrstami MIME. Opozorilo: možno varnostno tveganje."
+	"enhancedupload-config-extensions-help": "Dovoljeno nalaganje končnic datotek z neujemajočimi se vrstami MIME. Opozorilo: možno varnostno tveganje.",
+	"enhancedupload-upload-error-duplicate": "Datoteka, ki je enaka tej datoteki ($1), je že bila izbrisana.",
+	"enhancedupload-upload-error-unhandled": "Prišlo je do neobravnavane izjeme.",
+	"enhancedupload-preview-widget-remove-label": "Odstrani $1"
 }

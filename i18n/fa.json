@@ -1,6 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ebrahim",
+			"Ebraminio",
 			"Jeeputer",
 			"Rulebased"
 		]
@@ -15,7 +17,7 @@
 	"enhancedupload-finished-dialog-title": "بارگذاری کامل شد",
 	"enhancedupload-failed-dialog-title": "مشکلی وجود دارد",
 	"enhancedupload-failed-dialog-label": "بارگذاری {{PLURAL:$1|یک پرونده|$1 پرونده}} مقدور نبود",
-	"enhancedupload-alert-missing-files": "پرونده‌ای برای بارگذاری انتخال نشده‌است",
+	"enhancedupload-alert-missing-files": "پرونده‌ای برای بارگذاری انتخال نشده است",
 	"enhancedupload-list-header-filetype": "قالب",
 	"enhancedupload-list-header-filename": "نام پرونده",
 	"enhancedupload-list-header-error": "خطا",
@@ -66,5 +68,8 @@
 	"enhancedupload-tab-updated-upload": "پرونده‌های به‌روز شده",
 	"enhancedupload-updated-dialog-label": "پروندهٔ «$1» به‌روز شد",
 	"enhancedupload-finished-dialog-action-close": "بستن",
-	"enhancedupload": "بارگذاری"
+	"enhancedupload": "بارگذاری",
+	"enhancedupload-upload-error-duplicate": "پرونده‌ای مشابه این پرونده ($1) پیش از این حذف شده است.",
+	"enhancedupload-toggle-details-button-hide-label": "نهفتن جزئیات",
+	"enhancedupload-toggle-details-button-show-label": "نمایش جزئیات"
 }

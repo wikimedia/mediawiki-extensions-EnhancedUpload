@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Eduardoaddad",
-			"Re demz"
+			"Re demz",
+			"YuriNikolai"
 		]
 	},
-	"enhancedupload": "Carregamento melhorado",
+	"enhancedupload": "Carregamento",
 	"enhancedupload-desc": "Fornece uma página especial com a opção de carregar um ou vários arquivos na wiki",
 	"enhancedupload-text": "Enviar arquivos",
 	"enhancedupload-details-header-label": "Detalhes",

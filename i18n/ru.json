@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Dirruw'o",
 			"Kareyac",
 			"Pacha Tchernof",
-			"Person or Persons Unknown"
+			"Person or Persons Unknown",
+			"Yurina Tatiana"
 		]
 	},
 	"enhancedupload-attachments-tag-grid-details-title": "Подробности",
@@ -14,5 +16,9 @@
 	"enhancedupload-upload-media-dialog-cancel-title": "Отмена",
 	"enhancedupload-attachments-media-dialog-details-cancel": "Отмена",
 	"enhancedupload-droplet-attachments-name": "Вложения",
-	"enhancedupload-list-header-warning": "предупреждение"
+	"enhancedupload-list-header-warning": "предупреждение",
+	"enhancedupload-attachments-tag-grid-editor-label": "Редактор",
+	"enhancedupload-upload-error-badfilename": "Пространство имён $1 содержит недопустимые символы.",
+	"enhancedupload-upload-error-unhandled": "Произошло необработанное исключение.",
+	"enhancedupload-preview-widget-remove-label": "Удалить $1"
 }

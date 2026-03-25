@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Ajeje Brazorf",
+			"Amire80",
 			"Mschlindwein",
 			"Robby",
 			"Verdy p"
@@ -87,5 +88,20 @@
 	"enhancedupload-upload-warning-was-deleted": "Warning message displayed after upload if file with the same name was previously deleted.",
 	"enhancedupload-list-header-warning": "Label for list header warning",
 	"enhancedupload-config-extensions-label": "Allow mismatched MIME types label in config manager",
-	"enhancedupload-config-extensions-help": "Allow mismatched MIME types help message in config manager"
+	"enhancedupload-config-extensions-help": "Allow mismatched MIME types help message in config manager",
+	"enhancedupload-upload-error-duplicate": "Error message displayed if a identical file has previously been deleted.",
+	"enhancedupload-upload-error-badfilename": "Error message displayed if a filename contains invalid characters.",
+	"enhancedupload-upload-error-unhandled": "Error message displayed if an unhandled exception occurred.",
+	"enhancedupload-single-file-dlg-title": "Dialog title to upload a new version of a file\nParameters:\n* $1 - file name",
+	"enhancedupload-toggle-details-button-hide-label": "Label for a button that hides additional details.",
+	"enhancedupload-toggle-details-button-show-label": "Label for a button that shows additional details.",
+	"enhancedupload-preview-widget-remove-label": "Label for icon to remove preview widget\nParameters:\n* $1 - file name",
+	"enhancedupload-reset-button-label": "Label for button to reset upload files",
+	"enhancedupload-ve-file-dialog-title": "Title for dialog to upload and insert file to content",
+	"enhancedupload-ve-file-dialog-filename-label": "Label for input to insert file name",
+	"enhancedupload-warning-dialog-upload-label": "A warning message that tells how many files are uploaded with a warning\n\nParameters:\n* $1 - number of files",
+	"enhancedupload-ve-attachmentinspector-title-label": "Label for input field to set title of attachment section",
+	"enhancedupload-ve-attachmentinspector-title-help": "Help text for input field to set title of attachment section",
+	"enhancedupload-ve-attachmentinspector-prefix-label": "Label for input field to set prefix for files",
+	"enhancedupload-ve-attachmentinspector-prefix-help": "Help text for input field to set prefix for files"
 }

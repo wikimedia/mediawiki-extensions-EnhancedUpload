@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Mansil alfalb",
+			"Mbs262"
 		]
 	},
-	"enhancedupload": "Carregamento melhorado",
+	"enhancedupload": "Carregamento",
 	"enhancedupload-desc": "Fornece uma página especial com a opção de carregar um ou vários ficheiros na wiki",
 	"enhancedupload-text": "Carregar ficheiros",
 	"enhancedupload-details-header-label": "Detalhes",
@@ -68,5 +70,7 @@
 	"enhancedupload-attachments-confirm-remove": "Remover o ficheiro \"$1\" da lista?",
 	"enhancedupload-tab-updated-upload": "Ficheiros carregados",
 	"enhancedupload-updated-dialog-label": "O ficheiro \"$1\" foi atualizado",
-	"enhancedupload-finished-dialog-action-close": "Fechar"
+	"enhancedupload-finished-dialog-action-close": "Fechar",
+	"enhancedupload-ve-file-dialog-title": "Ficheiro",
+	"enhancedupload-ve-file-dialog-filename-label": "Nome do ficheiro"
 }
