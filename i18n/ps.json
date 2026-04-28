@@ -4,9 +4,6 @@
 			"شاه زمان پټان"
 		]
 	},
-	"enhancedupload-ve-file-dialog-title": "دوتنه",
-	"enhancedupload-ve-file-dialog-filename-label": "دوتنې‌نوم",
-	"enhancedupload-ve-attachmentinspector-title-help": "د هغه سيمې سرليک چې دوتنې پکې ښودل کېږي",
 	"enhancedupload": "راپورته‌کول",
 	"enhancedupload-desc": "ويکي ته د يو يا څو دوتنو د راپورته کولو اختيار سره يو ځانگړی مخ چمتو کوي",
 	"enhancedupload-text": "دوتنې راپورته‌کول",
@@ -85,8 +82,11 @@
 	"enhancedupload-toggle-details-button-show-label": "سپيناوی ښودل",
 	"enhancedupload-preview-widget-remove-label": "$1 لرې‌کول",
 	"enhancedupload-reset-button-label": "له‌سره‌اوڼل",
+	"enhancedupload-ve-file-dialog-title": "دوتنه",
+	"enhancedupload-ve-file-dialog-filename-label": "دوتنې‌نوم",
 	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|دې راپورته‌شوې دوتنې|دې راپورته‌شوو دوتنو}} سره {{PLURAL:$1|گواښنه ورکړل شوې ده|گواښنې ورکړل شوې دي}}",
 	"enhancedupload-ve-attachmentinspector-title-label": "د مښلن برخې سرليک",
+	"enhancedupload-ve-attachmentinspector-title-help": "د هغه سيمې سرليک چې دوتنې پکې ښودل کېږي",
 	"enhancedupload-ve-attachmentinspector-prefix-label": "دوتنې مختاړی",
 	"enhancedupload-ve-attachmentinspector-prefix-help": "د دوتنې نوم څخه دمخه پېژندونکي نوم ټومبل شوی دی"
 }
