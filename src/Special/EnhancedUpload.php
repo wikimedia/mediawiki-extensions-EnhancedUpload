@@ -12,11 +12,16 @@ class EnhancedUpload extends SpecialPage {
 	protected $templateParser;
 
 	public function __construct() {
-		parent::__construct( 'EnhancedUpload', 'upload' );
+		parent::__construct( 'EnhancedUpload' );
 
 		$this->templateParser = new TemplateParser(
 			dirname( __DIR__, 2 ) . '/resources/templates'
 		);
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'upload';
 	}
 
 	/**
