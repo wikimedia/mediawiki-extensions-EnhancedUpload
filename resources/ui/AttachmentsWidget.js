@@ -189,7 +189,11 @@ enhancedUpload.ui.AttachmentsWidget.prototype.setupColumns = function () {
 		type: 'action',
 		title: mw.message( 'enhancedupload-attachments-tag-grid-details-title' ).plain(),
 		actionId: 'details',
-		icon: 'infoFilled'
+		icon: 'infoFilled',
+		visibleOnHover: true,
+		width: 34,
+		minWidth: 34,
+		maxWidth: 34
 	};
 
 	if ( this.editRight ) {
@@ -197,7 +201,11 @@ enhancedUpload.ui.AttachmentsWidget.prototype.setupColumns = function () {
 			type: 'action',
 			title: mw.message( 'enhancedupload-attachments-tag-grid-remove-title' ).plain(),
 			actionId: 'remove',
-			icon: 'close'
+			icon: 'close',
+			visibleOnHover: true,
+			width: 34,
+			minWidth: 34,
+			maxWidth: 34
 		};
 	}
 };
