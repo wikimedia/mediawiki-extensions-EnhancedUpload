@@ -26,6 +26,7 @@
 	"enhancedupload-tab-warnings-upload": "경고",
 	"enhancedupload-ve-dialog-title": "파일 업로드",
 	"enhancedupload-ve-dialog-filename-label": "파일 이름 삽입",
+	"enhancedupload-ve-dialog-title-exists": "이미 동일한 이름의 파일이 존재합니다. 새 파일 이름을 입력해 주세요",
 	"enhancedupload-attachments-add-media-button-title": "위키로부터 파일 추가",
 	"enhancedupload-attachments-add-new-media-button-title": "새 파일을 위키에 추가",
 	"enhancedupload-attachments-tag-grid-file-label": "파일",
@@ -42,9 +43,11 @@
 	"enhancedupload-upload-media-dialog-cancel-title": "취소",
 	"enhancedupload-upload-media-dialog-upload-title": "업로드",
 	"enhancedupload-upload-media-dialog-done-title": "완료",
+	"enhancedupload-ve-dialog-duplicate-confirm": "이 파일은 중복입니다. 기존 파일을 삽입하시겠습니까? 그렇지 않으면 파일이 삽입되지 않습니다",
 	"enhancedupload-attachments-media-dialog-details-cancel": "취소",
 	"enhancedupload-attachments-media-dialog-details-upload": "업로드",
 	"enhancedupload-attachments-media-dialog-details-settings": "세부 정보",
+	"enhancedupload-ve-attachment-title": "첨부",
 	"enhancedupload-ve-attachmentinspector-categories": "분류",
 	"enhancedupload-ve-attachmentinspector-desc": "설명",
 	"enhancedupload-ve-attachmentinspector-options": "업로드 옵션 건너뛰기",
@@ -63,6 +66,8 @@
 	"enhancedupload-config-type-label": "이미지 유형:",
 	"enhancedupload-config-height-label": "이미지 높이:",
 	"enhancedupload-config-width-label": "이미지 너비:",
+	"enhancedupload-droplet-attachments-name": "첨부",
+	"enhancedupload-droplet-attachments-description": "첨부 정리 공간",
 	"enhancedupload-upload-warning-exists": "이 파일 이름은 이미 존재합니다",
 	"enhancedupload-upload-warning-duplicate": "이 파일은 중복입니다",
 	"enhancedupload-upload-warning-was-deleted": "이 파일 이름은 과거에 삭제되었습니다.",
@@ -76,5 +81,8 @@
 	"enhancedupload-reset-button-label": "초기화",
 	"enhancedupload-ve-file-dialog-title": "파일",
 	"enhancedupload-ve-file-dialog-filename-label": "파일 이름",
-	"enhancedupload-ve-attachmentinspector-prefix-label": "파일 접두사"
+	"enhancedupload-ve-attachmentinspector-title-label": "첨부 섹션 제목",
+	"enhancedupload-ve-attachmentinspector-title-help": "파일이 표시되는 영역의 제목",
+	"enhancedupload-ve-attachmentinspector-prefix-label": "파일 접두사",
+	"enhancedupload-ve-attachmentinspector-prefix-help": "파일 이름 전에 삽입된 식별자"
 }
