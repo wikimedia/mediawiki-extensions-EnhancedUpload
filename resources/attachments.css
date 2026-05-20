@@ -98,6 +98,15 @@
 	position: relative;
 }
 
+.attachments-filelist .oojsplus-data-gridWidget-cell[ data-column='categories' ] span.oojsplus-ui-widget-linkwidget-label {
+	padding: 3px 10px;
+	border: 1px solid #747474;
+	border-radius: 26px;
+	margin: 5px 2px;
+	background-color: #f8f9fa;
+	color: #202122;
+}
+
 .attachments-filelist .attachments-loader {
 	height: 0;
 }
