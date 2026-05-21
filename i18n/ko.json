@@ -76,5 +76,13 @@
 	"enhancedupload-toggle-details-button-hide-label": "세부 정보 숨기기",
 	"enhancedupload-toggle-details-button-show-label": "세부 정보 표시",
 	"enhancedupload-reset-button-label": "초기화",
-	"enhancedupload-ve-attachmentinspector-prefix-label": "파일 접두사"
+	"enhancedupload-ve-attachmentinspector-prefix-label": "파일 접두사",
+	"enhancedupload-ve-dialog-title-exists": "이미 동일한 이름의 파일이 존재합니다. 새 파일 이름을 입력해 주세요",
+	"enhancedupload-ve-dialog-duplicate-confirm": "이 파일은 중복입니다. 기존 파일을 삽입하시겠습니까? 그렇지 않으면 파일이 삽입되지 않습니다",
+	"enhancedupload-ve-attachment-title": "첨부",
+	"enhancedupload-droplet-attachments-name": "첨부",
+	"enhancedupload-droplet-attachments-description": "첨부 정리 공간",
+	"enhancedupload-ve-attachmentinspector-title-label": "첨부 섹션 제목",
+	"enhancedupload-ve-attachmentinspector-title-help": "파일이 표시되는 영역의 제목",
+	"enhancedupload-ve-attachmentinspector-prefix-help": "파일 이름 전에 삽입된 식별자"
 }
