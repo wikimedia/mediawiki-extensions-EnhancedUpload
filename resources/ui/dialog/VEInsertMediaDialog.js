@@ -342,7 +342,14 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.preprocessParams = functi
 	mw.hook( 'enhancedUpload.makeParamProcessor' ).fire( paramsProcessor );
 	this.paramsProcessors = paramsProcessor.processors;
 
-	const item = { name: params.filename };
+	const item = {
+		name: params.filename,
+		// Mimic File object structure used in `enhancedUpload.ui.UploadWidget.startUpload`.
+		// Use params.filename (the intended destination name, not the raw uploaded file name)
+		// so that processors treating item.data.name as the original filename work correctly.
+		data: { name: params.filename },
+		url: '' // not provided in this context
+	};
 	const skipOption = true;
 
 	for ( let i = 0; i < this.paramsProcessors.length; i++ ) {
