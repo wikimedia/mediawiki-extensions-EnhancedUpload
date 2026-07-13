@@ -262,10 +262,10 @@ Test';
 		$modifiedWikiText = $modifier->add( static::WIKITEXT1, 0, [ 'FileTest.pdf', 'ABC.png' ] );
 		$this->assertEquals( static::WIKITEXT1EXP, $modifiedWikiText );
 
-		$modifiedWikiText = $modifier->add( static::WIKITEXT2, 1, [ 'FileTest1.pdf', 'FileTest2.pdf', 'FileTest3.pdf' ] );
+		$modifiedWikiText = $modifier->add( static::WIKITEXT2, 1, [ 'FileTest1.pdf', 'FileTest2.pdf', 'FileTest3.pdf' ] ); // phpcs:ignore Generic.Files.LineLength.TooLong
 		$this->assertEquals( static::WIKITEXT2EXP, $modifiedWikiText );
 
-		$modifiedWikiText = $modifier->add( static::WIKITEXT1, 3, [ 'FileTest1.pdf', 'FileTest2.pdf', 'FileTest3.pdf' ] );
+		$modifiedWikiText = $modifier->add( static::WIKITEXT1, 3, [ 'FileTest1.pdf', 'FileTest2.pdf', 'FileTest3.pdf' ] ); // phpcs:ignore Generic.Files.LineLength.TooLong
 		$this->assertEquals( static::WIKITEXT4REXP, $modifiedWikiText );
 
 		$modifiedWikiText = $modifier->add( static::WIKITEXT4, 0, [ 'FileTest.pdf' ] );
