@@ -8,7 +8,6 @@ use MediaWiki\MediaWikiServices;
 class OverwriteSpecialUpload {
 
 	/**
-	 *
 	 * @param array &$specialPages
 	 * @return void
 	 */
