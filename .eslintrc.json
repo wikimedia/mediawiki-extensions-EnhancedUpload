@@ -1,27 +1,24 @@
 {
 	"root": true,
 	"extends": [
-		"wikimedia/client-es6",
+		"wikimedia/client",
 		"wikimedia/jquery",
 		"wikimedia/mediawiki"
 	],
+	"parserOptions": {
+		"sourceType": "commonjs"
+	},
 	"globals": {
-		"jQuery": "readonly",
-		"BS": "readonly",
-		"bs": "readonly",
-		"mediaWiki": "readonly",
 		"enhancedUpload": "readonly",
-		"ve": "readonly",
+		"jQuery": "readonly",
+		"mediaWiki": "readonly",
 		"OOJSPlus": "readonly",
-		"blueSpice": "readonly",
-		"QUnit": "readonly"
+		"QUnit": "readonly",
+		"ve": "readonly"
 	},
 	"rules": {
 		"es-x/no-array-prototype-includes": "off",
-		"max-len": "off"
-	},
-	"env": {
-		"browser": true,
-		"es6": true
+		"max-len": "off",
+		"mediawiki/no-unlabeled-buttonwidget": "off"
 	}
 }
