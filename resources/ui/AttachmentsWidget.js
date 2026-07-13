@@ -42,7 +42,7 @@ enhancedUpload.ui.AttachmentsWidget.prototype.init = function () {
 		} );
 		$( addNewFileInput.$input ).attr( 'multiple', 'true' );
 
-		const addDataBtn = new OO.ui.ButtonWidget( {
+		const addDataBtn = new OO.ui.ButtonWidget( { // eslint-disable-line mediawiki/no-unlabeled-buttonwidget
 			title: mw.message( 'enhancedupload-attachments-add-media-button-title' ).plain(),
 			icon: 'add',
 			classes: [ 'add-existing-button' ]

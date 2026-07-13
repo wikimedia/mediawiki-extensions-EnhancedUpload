@@ -111,7 +111,7 @@ enhancedUpload.ui.UploadWidget.prototype.setupFileWidgets = function () {
 };
 
 enhancedUpload.ui.UploadWidget.prototype.setupDetailsWidgets = function () {
-	this.toggleButton = new OO.ui.ButtonWidget( {
+	this.toggleButton = new OO.ui.ButtonWidget( { // eslint-disable-line mediawiki/no-unlabeled-buttonwidget
 		icon: this.expanded ? 'collapse' : 'expand',
 		framed: false,
 		classes: [ 'toggle-icon', 'collapsed-panel' ],
