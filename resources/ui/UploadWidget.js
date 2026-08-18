@@ -412,7 +412,9 @@ enhancedUpload.ui.UploadWidget.prototype.doUpload = function ( file, params ) {
 		promise = mwApi.upload( file, params );
 	}
 	promise.then( ( resp ) => {
-		me.fetchFinishedUploads.push( [ resp.upload.imageinfo.canonicaltitle, file ] );
+		me.fetchFinishedUploads.push( [
+			resp.upload.imageinfo.canonicaltitle, file, resp.upload.imageinfo.descriptionurl
+		] );
 		dfd.resolve( resp );
 	}, ( ( errorCode, result ) => {
 		let errorMessage = '';

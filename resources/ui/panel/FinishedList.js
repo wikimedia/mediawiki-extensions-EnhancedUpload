@@ -12,18 +12,16 @@ enhancedUpload.ui.panel.FinishedList = function enhancedUploadUiPanelFinishedLis
 OO.inheritClass( enhancedUpload.ui.panel.FinishedList, OO.ui.HorizontalLayout );
 
 enhancedUpload.ui.panel.FinishedList.prototype.addGrid = function ( data ) {
-	let i, linkTitle, type, page;
+	let i, linkTitle, type;
 	for ( i = 0; i < data.length; i++ ) {
 		linkTitle = data[ i ][ 0 ];
 		type = data[ i ][ 1 ].type;
-
-		page = new mw.Title( linkTitle );
 
 		this.data.push( {
 			type: type,
 			name: linkTitle,
 			// eslint-disable-next-line camelcase
-			page_link: page.getUrl()
+			page_link: data[ i ][ 2 ]
 		} );
 	}
 
