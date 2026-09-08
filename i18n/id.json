@@ -3,14 +3,15 @@
 		"authors": [
 			"Farras",
 			"Rex",
-			"Veracious"
+			"Veracious",
+			"Bennylin"
 		]
 	},
 	"enhancedupload-text": "Unggah berkas",
 	"enhancedupload-details-header-label": "Rincian",
 	"enhancedupload-details-namespace-label": "Ruang nama",
 	"enhancedupload-details-categories-label": "Kategori",
-	"enhancedupload-details-description-label": "Keterangan",
+	"enhancedupload-details-description-label": "Deskripsi",
 	"enhancedupload-upload-button-label": "Unggah",
 	"enhancedupload-cancel-button-label": "Batal",
 	"enhancedupload-finished-dialog-title": "Selesai unggah",
