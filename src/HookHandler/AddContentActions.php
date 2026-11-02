@@ -6,6 +6,7 @@ namespace MediaWiki\Extension\EnhancedUpload\HookHandler;
 
 use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
 use MediaWiki\Permissions\PermissionManager;
+use MediaWiki\Skin\SkinTemplate;
 
 class AddContentActions implements SkinTemplateNavigation__UniversalHook {
 
@@ -22,7 +23,7 @@ class AddContentActions implements SkinTemplateNavigation__UniversalHook {
 	}
 
 	/**
-	 * @param \SkinTemplate $skinTemplate
+	 * @param SkinTemplate $skinTemplate
 	 * @param array &$links
 	 */
 	public function onSkinTemplateNavigation__Universal( $skinTemplate, &$links ): void {
