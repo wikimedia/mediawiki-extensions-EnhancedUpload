@@ -14,7 +14,7 @@
 	"enhancedupload-upload-button-label": "Eroplueden",
 	"enhancedupload-cancel-button-label": "Ofbriechen",
 	"enhancedupload-finished-dialog-title": "Eroplueden ofgeschloss",
-	"enhancedupload-failed-dialog-title": "Et ass eppes schif gaangen",
+	"enhancedupload-failed-dialog-title": "Et ass eppes schifgaangen",
 	"enhancedupload-failed-dialog-label": "{{PLURAL:$1|Ee Fichier|$1 Fichiere}} konnten net eropgeluede ginn",
 	"enhancedupload-alert-missing-files": "Keng Fichiere fir eropzelueden ausgewielt",
 	"enhancedupload-list-header-filetype": "Format",
